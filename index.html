@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KHBCC — Korea–Hungary Battery Cooperation Research Center</title>
+<meta name="description" content="KHBCC connects Korean and Hungarian battery firms to the testing, data, and regulatory work that EU Battery Regulation compliance requires.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#111820;
+  --ink-2:#1B2530;
+  --paper:#EAEDE9;
+  --paper-2:#F4F6F2;
+  --steel:#5D6B76;
+  --line:#C9D0C9;
+  --line-dark:#2C3844;
+  --signal:#C4223A;
+  --verde:#1F6E4C;
+  --amber:#D8A21A;
+
+  --display:'Archivo','Noto Sans KR',system-ui,sans-serif;
+  --body:'Inter','Noto Sans KR',system-ui,sans-serif;
+  --mono:'IBM Plex Mono','Noto Sans KR',monospace;
+
+  --pad:clamp(20px,5vw,72px);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:16px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+:focus-visible{outline:2px solid var(--signal);outline-offset:3px}
+img{max-width:100%}
+
+/* ---------- utility type ---------- */
+.eyebrow{
+  font-family:var(--mono);
+  font-size:11px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--steel);
+  display:block;
+}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1.08;letter-spacing:-.02em}
+h2{font-size:clamp(26px,4.4vw,44px)}
+h3{font-size:19px;font-weight:600;letter-spacing:-.01em;line-height:1.3}
+p{max-width:64ch}
+
+/* ---------- header ---------- */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(234,237,233,.88);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.bar{
+  display:flex;align-items:center;gap:20px;
+  padding:12px var(--pad);
+}
+.mark{
+  font-family:var(--display);font-weight:800;font-size:20px;
+  letter-spacing:.01em;text-decoration:none;color:var(--ink);
+  display:flex;align-items:center;gap:9px;flex-shrink:0;
+}
+.mark .glyph{
+  width:13px;height:22px;border:2px solid var(--ink);border-radius:2px;
+  position:relative;display:block;
+}
+.mark .glyph::before{
+  content:'';position:absolute;left:3px;right:3px;top:-4px;height:2px;background:var(--ink);
+}
+.mark .glyph::after{
+  content:'';position:absolute;left:1px;right:1px;bottom:1px;height:58%;
+  background:var(--signal);border-radius:1px;
+}
+nav{display:flex;gap:22px;margin-left:auto;align-items:center}
+nav a{
+  font-family:var(--mono);font-size:12px;letter-spacing:.04em;
+  color:var(--steel);text-decoration:none;padding:4px 0;
+  border-bottom:1px solid transparent;white-space:nowrap;
+}
+nav a:hover{color:var(--ink);border-bottom-color:var(--signal)}
+
+/* language switch — the stacked-cell selector */
+.lang{
+  display:flex;border:1.5px solid var(--ink);border-radius:3px;overflow:hidden;flex-shrink:0;
+}
+.lang button{
+  font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.08em;
+  background:transparent;border:0;border-right:1px solid var(--ink);
+  color:var(--ink);padding:6px 9px;cursor:pointer;line-height:1;
+  transition:background .15s,color .15s;
+}
+.lang button:last-child{border-right:0}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--paper-2)}
+.lang button:hover:not([aria-pressed="true"]){background:rgba(17,24,32,.09)}
+
+/* ---------- hero ---------- */
+.hero{
+  background:var(--ink);color:var(--paper-2);
+  padding:clamp(48px,8vw,96px) var(--pad) clamp(40px,6vw,72px);
+  position:relative;overflow:hidden;
+}
+.hero .eyebrow{color:#8FA0AC}
+.hero-grid{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,64px);
+  align-items:start;max-width:1280px;margin:0 auto;
+}
+.hero h1{
+  font-size:clamp(32px,5.6vw,62px);
+  margin:18px 0 20px;max-width:15ch;
+}
+.hero h1 em{font-style:normal;color:var(--amber)}
+.hero p.lede{font-size:clamp(15px,1.6vw,18px);color:#BAC6CE;max-width:48ch}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{
+  font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.07em;
+  text-transform:uppercase;text-decoration:none;
+  padding:13px 20px;border-radius:2px;display:inline-block;transition:.15s;
+}
+.btn-primary{background:var(--signal);color:#fff;border:1.5px solid var(--signal)}
+.btn-primary:hover{background:#a91a2f;border-color:#a91a2f}
+.btn-ghost{background:transparent;color:var(--paper-2);border:1.5px solid #46545F}
+.btn-ghost:hover{border-color:var(--paper-2)}
+
+/* the signature: DPP record card */
+.dpp{
+  background:var(--ink-2);border:1px solid var(--line-dark);border-radius:4px;
+  font-family:var(--mono);font-size:12px;overflow:hidden;
+}
+.dpp-head{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  padding:11px 14px;border-bottom:1px solid var(--line-dark);background:#151E28;
+}
+.dpp-head span:first-child{font-size:10px;letter-spacing:.14em;color:#8FA0AC;text-transform:uppercase}
+.dot{
+  width:7px;height:7px;border-radius:50%;background:var(--verde);display:inline-block;
+  margin-right:6px;vertical-align:middle;
+}
+.dpp-head .live{font-size:10px;letter-spacing:.1em;color:#6FBF95}
+.dpp-row{
+  display:flex;justify-content:space-between;gap:14px;
+  padding:9px 14px;border-bottom:1px solid rgba(255,255,255,.05);
+}
+.dpp-row:last-child{border-bottom:0}
+.dpp-row .k{color:#7E8F9B;font-size:11px}
+.dpp-row .v{color:#DCE4E8;text-align:right;font-weight:500}
+.dpp-row .v.ok{color:#6FBF95}
+.dpp-row .v.warn{color:var(--amber)}
+.gauge{
+  height:4px;background:#2C3844;border-radius:2px;margin:0 14px 14px;overflow:hidden;
+}
+.gauge i{display:block;height:100%;background:var(--verde);width:0;transition:width 1.4s cubic-bezier(.2,.7,.3,1)}
+.dpp-foot{
+  padding:10px 14px;font-size:10px;letter-spacing:.06em;color:#6C7C88;
+  border-top:1px solid var(--line-dark);background:#0E151D;
+}
+
+/* stat rail */
+.rail{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  border-top:1px solid var(--line-dark);margin-top:clamp(36px,6vw,64px);
+  max-width:1280px;margin-left:auto;margin-right:auto;
+}
+.rail div{padding:20px 18px 4px;border-right:1px solid var(--line-dark)}
+.rail div:last-child{border-right:0}
+.rail div:first-child{padding-left:0}
+.rail b{
+  display:block;font-family:var(--display);font-size:clamp(24px,3.2vw,34px);
+  font-weight:800;letter-spacing:-.02em;color:var(--paper-2);
+}
+.rail span{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;color:#7E8F9B;text-transform:uppercase}
+
+/* ---------- sections ---------- */
+section{padding:clamp(52px,7vw,92px) var(--pad)}
+.wrap{max-width:1280px;margin:0 auto}
+.sec-head{margin-bottom:clamp(28px,4vw,48px);max-width:70ch}
+.sec-head h2{margin:12px 0 14px}
+.sec-head p{color:var(--steel)}
+.alt{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+
+/* labs */
+.pillar{margin-bottom:44px}
+.pillar-label{
+  font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink);border-bottom:1.5px solid var(--ink);padding-bottom:8px;margin-bottom:22px;
+  display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+}
+.pillar-label i{font-style:normal;color:var(--steel);font-size:10px;letter-spacing:.06em;text-align:right}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1px;background:var(--line)}
+.card{background:var(--paper);padding:24px 22px}
+.alt .card{background:var(--paper-2)}
+.card .host{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;color:var(--signal);
+  text-transform:uppercase;display:block;margin-bottom:10px;
+}
+.card h3{margin-bottom:9px}
+.card p{font-size:14.5px;color:var(--steel);line-height:1.6}
+
+/* process — real sequence, so numbered */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:26px}
+.step{border-top:2px solid var(--ink);padding-top:16px}
+.step b{
+  font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--signal);
+  display:block;margin-bottom:10px;
+}
+.step h3{margin-bottom:8px}
+.step p{font-size:14.5px;color:var(--steel)}
+.values{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;
+  background:var(--line);margin-top:36px;border:1px solid var(--line);
+}
+.value{background:var(--paper-2);padding:20px}
+.value .tag{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+  display:inline-block;padding:3px 8px;border-radius:2px;margin-bottom:11px;color:#fff;
+}
+.value:nth-child(1) .tag{background:var(--ink)}
+.value:nth-child(2) .tag{background:var(--signal)}
+.value:nth-child(3) .tag{background:var(--verde)}
+.value p{font-size:14px;color:var(--steel)}
+
+/* governance */
+.gov{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+.gov-layer{background:var(--paper);padding:22px;display:grid;grid-template-columns:150px 1fr;gap:20px}
+.gov-layer .lvl{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;color:var(--steel);text-transform:uppercase}
+.gov-layer h3{margin-bottom:6px}
+.gov-layer p{font-size:14.5px;color:var(--steel)}
+
+/* partners */
+.orgs{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.org{
+  font-family:var(--mono);font-size:12px;letter-spacing:.03em;
+  border:1px solid var(--line);border-radius:2px;padding:9px 13px;background:var(--paper-2);
+}
+.org b{font-weight:600}
+.org span{color:var(--steel);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;margin-left:7px}
+.org-group{margin-bottom:26px}
+.org-group>.eyebrow{margin-bottom:12px}
+
+/* contact */
+.contact{background:var(--ink);color:var(--paper-2)}
+.contact h2{color:var(--paper-2)}
+.contact .sec-head p{color:#AAB7C0}
+.contact .eyebrow{color:#8FA0AC}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:26px;margin-top:34px}
+.cgrid div{border-top:1px solid var(--line-dark);padding-top:15px}
+.cgrid .eyebrow{margin-bottom:7px}
+.cgrid a,.cgrid p{color:var(--paper-2);font-size:15px;text-decoration:none;display:block}
+.cgrid a:hover{color:var(--amber)}
+
+footer{
+  background:#0B1118;color:#6C7C88;padding:24px var(--pad);
+  font-family:var(--mono);font-size:11px;letter-spacing:.04em;
+  display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .rail{grid-template-columns:1fr 1fr}
+  .rail div{border-bottom:1px solid var(--line-dark)}
+  .rail div:nth-child(2){border-right:0}
+  .rail div:nth-child(3){padding-left:0}
+  .gov-layer{grid-template-columns:1fr;gap:8px}
+  nav{display:none}
+  .bar{gap:12px}
+}
+@media (max-width:520px){
+  .mark{font-size:17px}
+  .lang button{padding:6px 7px;font-size:10px}
+  .rail div{padding:16px 12px 4px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .gauge i{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a href="#top" class="mark"><span class="glyph"></span>KHBCC</a>
+    <nav>
+      <a href="#about" data-i18n="nav1">센터 소개</a>
+      <a href="#labs" data-i18n="nav2">기능별 연구소</a>
+      <a href="#platform" data-i18n="nav3">B2B 플랫폼</a>
+      <a href="#governance" data-i18n="nav4">거버넌스</a>
+      <a href="#partners" data-i18n="nav5">파트너</a>
+      <a href="#contact" data-i18n="nav6">문의</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button data-lang="ko" aria-pressed="true">KO</button>
+      <button data-lang="en" aria-pressed="false">EN</button>
+      <button data-lang="hu" aria-pressed="false">HU</button>
+    </div>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow" data-i18n="heroEyebrow">한국–헝가리 배터리 협력 연구센터</span>
+      <h1 data-i18n="heroTitle">EU 배터리 여권, <em>2027년 2월</em> 의무화됩니다.</h1>
+      <p class="lede" data-i18n="heroLede">KHBCC는 한국과 헝가리의 배터리 기업을 시험·데이터·규제 대응 실무로 연결합니다. 3개 국어, 하나의 플랫폼에서.</p>
+      <div class="cta-row">
+        <a href="#platform" class="btn btn-primary" data-i18n="ctaJoin">기업 등록하기</a>
+        <a href="#about" class="btn btn-ghost" data-i18n="ctaLearn">센터가 하는 일</a>
+      </div>
+    </div>
+
+    <div class="dpp" aria-label="Digital Battery Passport sample record">
+      <div class="dpp-head">
+        <span data-i18n="dppTitle">디지털 배터리 여권 · 샘플 레코드</span>
+        <span class="live"><span class="dot"></span><span data-i18n="dppLive">검증됨</span></span>
+      </div>
+      <div class="dpp-row"><span class="k" data-i18n="dppK1">배터리 ID</span><span class="v">HU-2027-0042-SDI</span></div>
+      <div class="dpp-row"><span class="k" data-i18n="dppK2">화학 조성</span><span class="v">NMC 811</span></div>
+      <div class="dpp-row"><span class="k" data-i18n="dppK3">정격 용량</span><span class="v">78.4 kWh</span></div>
+      <div class="dpp-row"><span class="k" data-i18n="dppK4">건전성 (SoH)</span><span class="v ok" id="sohVal">—</span></div>
+      <div class="gauge"><i id="sohBar"></i></div>
+      <div class="dpp-row"><span class="k" data-i18n="dppK5">탄소발자국</span><span class="v">61.2 kg CO₂e/kWh</span></div>
+      <div class="dpp-row"><span class="k" data-i18n="dppK6">재활용 원료 함량</span><span class="v warn" data-i18n="dppV6">16% · 검토 중</span></div>
+      <div class="dpp-row"><span class="k" data-i18n="dppK7">적합성</span><span class="v ok">Reg. (EU) 2023/1542</span></div>
+      <div class="dpp-foot" data-i18n="dppFoot">본 레코드는 KHBCC 데이터 파이프라인 구조를 보여주기 위한 예시입니다.</div>
+    </div>
+  </div>
+
+  <div class="rail">
+    <div><b>250+</b><span data-i18n="stat1">KBIA 회원사 DB</span></div>
+    <div><b>5</b><span data-i18n="stat2">기능별 연구소</span></div>
+    <div><b>3</b><span data-i18n="stat3">운영 언어</span></div>
+    <div><b>2027.02</b><span data-i18n="stat4">DPP 시행</span></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow" data-i18n="aboutEyebrow">센터 소개</span>
+      <h2 data-i18n="aboutTitle">연구소가 아니라, 작동하는 센터입니다.</h2>
+      <p data-i18n="aboutBody">헝가리는 삼성SDI, SK온, CATL의 대규모 생산기지가 모인 유럽 배터리 거점입니다. 동시에 EU 배터리 규정(2023/1542)은 전 생애주기 규제 체계를 요구하고 있습니다. KHBCC는 헝가리의 산업 역량에 규제 대응 인프라를 더하기 위해 양국 정부 지원으로 설립된 협력 센터입니다. 시험 검증, 데이터 추적, 환경 진단, 기업 매칭, 인력 양성을 하나의 조직 안에서 함께 수행합니다.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <span class="host" data-i18n="a1h">규제 대응</span>
+        <h3 data-i18n="a1t">배터리 여권 준비</h3>
+        <p data-i18n="a1b">셀·모듈·팩 단위 시험 항목을 배터리 여권 데이터 항목에 매핑하고, 기업이 실제로 제출할 수 있는 형태의 데이터 파이프라인을 설계합니다.</p>
+      </div>
+      <div class="card">
+        <span class="host" data-i18n="a2h">산업 연결</span>
+        <h3 data-i18n="a2t">검증된 기업 간 매칭</h3>
+        <p data-i18n="a2b">양국 협회의 회원 네트워크를 기반으로 기업을 검증하고, 역량과 수요를 분석해 실질적인 협력으로 이어질 만남만 주선합니다.</p>
+      </div>
+      <div class="card">
+        <span class="host" data-i18n="a3h">정책 채널</span>
+        <h3 data-i18n="a3t">양방향 소통</h3>
+        <p data-i18n="a3b">EU 규제 동향을 기업에 전달하고, 현지 인허가 등 기업의 애로사항을 취합해 양국 부처에 전달합니다.</p>
+      </div>
+      <div class="card">
+        <span class="host" data-i18n="a4h">인력 양성</span>
+        <h3 data-i18n="a4t">공동 학위·교육</h3>
+        <p data-i18n="a4b">연세대–BME 복수학위 협정을 축으로 배터리 진단·데이터 분야의 양국 공동 교육 과정을 운영합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LABS -->
+<section id="labs" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow" data-i18n="labsEyebrow">기능별 연구소</span>
+      <h2 data-i18n="labsTitle">두 개의 축, 다섯 개의 연구소</h2>
+      <p data-i18n="labsBody">연구 속도로 움직이는 기술 부문과, 산업 속도로 움직이는 협력 부문을 분리해 운영합니다. 다만 산출물은 서로 연결됩니다. R&amp;D에서 나온 규제 분석이 곧바로 기업 자문 자료와 교육 과정에 투입됩니다.</p>
+    </div>
+
+    <div class="pillar">
+      <div class="pillar-label"><span data-i18n="p1">공동 연구개발 부문</span><i data-i18n="p1n">헝가리 현지 기관과 공동 운영</i></div>
+      <div class="cards">
+        <div class="card">
+          <span class="host">ZalaZONE · BME</span>
+          <h3 data-i18n="l1t">성능 검사 연구소</h3>
+          <p data-i18n="l1b">배터리 안전성 검증, 사용후 배터리 재사용 시험, EU 인증 기준 정합성 확인. 물리 시험 설비와 디지털 트윈 시뮬레이션을 함께 운용합니다.</p>
+        </div>
+        <div class="card">
+          <span class="host">BME</span>
+          <h3 data-i18n="l2t">배터리 데이터 분석 연구소</h3>
+          <p data-i18n="l2b">BMS 운영 데이터를 수집·저장·분석하는 클라우드 인프라. AI 기반 건전성(SoH) 추정과 잔존수명 예측으로 배터리 여권 보고 요건에 대응합니다.</p>
+        </div>
+        <div class="card">
+          <span class="host">ELTE</span>
+          <h3 data-i18n="l3t">환경·보건·안전 연구소</h3>
+          <p data-i18n="l3b">전해질 화학, 유해물질 분석, 폐기 단계 영향 평가. 에너지·탄소·수자원·대기오염물질을 포함한 전 생애주기 환경영향 항목을 다룹니다.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pillar">
+      <div class="pillar-label"><span data-i18n="p2">한국 협력 부문</span><i data-i18n="p2n">기업 대응 · 신속 지원</i></div>
+      <div class="cards">
+        <div class="card">
+          <span class="host">KBIA · HUBA · KOTRA · HIPA</span>
+          <h3 data-i18n="l4t">경제협력 연구소</h3>
+          <p data-i18n="l4b">회원사 데이터베이스 운영, B2B 매칭, 현지 진출 기업 애로사항 처리, 정책 협의 채널. 플랫폼의 일상 업무가 여기서 이뤄집니다.</p>
+        </div>
+        <div class="card">
+          <span class="host" data-i18n="l5h">연세대 · BME</span>
+          <h3 data-i18n="l5t">학술교류 연구소</h3>
+          <p data-i18n="l5b">복수학위 프로그램, 연구자 교류, 산업 인력 재교육. 양국의 배터리 전문 인력 기반을 함께 키웁니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLATFORM -->
+<section id="platform">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow" data-i18n="platEyebrow">3개국어 플랫폼 · B2B 매칭</span>
+      <h2 data-i18n="platTitle">연락처 목록이 아니라, 큐레이션입니다.</h2>
+      <p data-i18n="platBody">기업을 무작위로 연결하지 않습니다. 등록부터 만남까지 네 단계를 거치고, 각 단계마다 걸러집니다. 제한된 시간 안에 성과를 내야 하는 대면 매칭 행사에서는 이 절차를 특히 엄격하게 적용합니다.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <b>01</b>
+        <h3 data-i18n="s1t">기본 자격 검증</h3>
+        <p data-i18n="s1b">KBIA·HUBA 회원 네트워크를 기준으로 사업 실재성, 재무 안정성, 배터리 밸류체인 내 활동 여부를 확인합니다. 유령 기업은 등록 단계에서 걸러집니다.</p>
+      </div>
+      <div class="step">
+        <b>02</b>
+        <h3 data-i18n="s2t">역량·수요 심층 분석</h3>
+        <p data-i18n="s2b">합작 투자인지, 기술 공동개발인지, 현지 유통망 확보인지, 규제 대응 솔루션인지. 기업이 실제로 원하는 것을 확인해 기업 프로파일을 작성합니다.</p>
+      </div>
+      <div class="step">
+        <b>03</b>
+        <h3 data-i18n="s3t">3대 핵심 가치 기반 선발</h3>
+        <p data-i18n="s3b">매출 규모가 아니라 기술적·경제적·환경적 가치를 기준으로 고잠재 매칭 대상 기업 리스트를 선정합니다.</p>
+      </div>
+      <div class="step">
+        <b>04</b>
+        <h3 data-i18n="s4t">맞춤형 사전 큐레이션</h3>
+        <p data-i18n="s4b">행사 전에 추천 미팅 목록과 상대 기업 브리핑을 전달합니다. 현장에서 명함을 교환하는 대신, 도착하기 전에 대화가 시작됩니다.</p>
+      </div>
+    </div>
+
+    <div class="values">
+      <div class="value">
+        <span class="tag" data-i18n="v1t">기술적 가치</span>
+        <p data-i18n="v1b">밸류체인 기여도와 기술 상용화 수준(TRL). 헝가리 현지 파트너와 공동 R&amp;D가 가능하거나 생산라인에 즉시 도입 가능한 수준인지 평가합니다.</p>
+      </div>
+      <div class="value">
+        <span class="tag" data-i18n="v2t">경제적 가치</span>
+        <p data-i18n="v2b">실제 계약, 투자, 합작으로 이어질 개연성. 양국 시장에서의 사업 지속 가능성을 함께 봅니다.</p>
+      </div>
+      <div class="value">
+        <span class="tag" data-i18n="v3t">환경적 가치</span>
+        <p data-i18n="v3b">재활용·재사용 기여도와 EU 지속가능성 기준 부합 여부. 배터리 여권 항목으로 환산 가능한 실적이 있는지 확인합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GOVERNANCE -->
+<section id="governance" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow" data-i18n="govEyebrow">거버넌스</span>
+      <h2 data-i18n="govTitle">전략과 일상 운영을 분리합니다.</h2>
+      <p data-i18n="govBody">정부 감독과 프로젝트 단위 실행을 함께 담기 위한 3단계 구조입니다. 방향 설정은 위에서, 산업계 요구사항 반영은 아래에서 즉시 이뤄집니다.</p>
+    </div>
+    <div class="gov">
+      <div class="gov-layer">
+        <span class="lvl" data-i18n="g1l">1층 · 의사결정</span>
+        <div>
+          <h3 data-i18n="g1t">이사회</h3>
+          <p data-i18n="g1b">KDI, 한국배터리산업협회(KBIA), 주헝가리 한국대사관, 헝가리 국가경제부(MNE), 헝가리배터리협회(HUBA)가 참여하는 최고 의사결정 기구.</p>
+        </div>
+      </div>
+      <div class="gov-layer">
+        <span class="lvl" data-i18n="g2l">2층 · 총괄</span>
+        <div>
+          <h3 data-i18n="g2t">센터장 · 산업자문위원회(IAB)</h3>
+          <p data-i18n="g2b">센터장이 실무를 총괄하고, 산업자문위원회가 양국 기업의 현장 수요를 운영에 직접 반영합니다.</p>
+        </div>
+      </div>
+      <div class="gov-layer">
+        <span class="lvl" data-i18n="g3l">3층 · 집행</span>
+        <div>
+          <h3 data-i18n="g3t">3대 집행본부</h3>
+          <p data-i18n="g3b">행정지원본부, 국제협력본부, 연구개발본부. 행정지원은 헝가리 현지 행정 실무 지식이 필요한 영역으로 HUBA가 초기 운영을 지원합니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section id="partners">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow" data-i18n="parEyebrow">파트너</span>
+      <h2 data-i18n="parTitle">센터는 작습니다. 뒤에 선 기관들이 크죠.</h2>
+      <p data-i18n="parBody">KHBCC의 활동이 신뢰를 얻는 이유는 규모가 아니라, 각 활동 뒤에 서 있는 기관 네트워크입니다.</p>
+    </div>
+
+    <div class="org-group">
+      <span class="eyebrow" data-i18n="og1">정부 · 공공기관</span>
+      <div class="orgs">
+        <div class="org"><b>MOEF</b><span data-i18n="o1">대한민국 기획재정부</span></div>
+        <div class="org"><b>KDI</b><span data-i18n="o2">한국개발연구원</span></div>
+        <div class="org"><b>MNE</b><span data-i18n="o3">헝가리 국가경제부</span></div>
+        <div class="org"><b>KOTRA</b><span data-i18n="o4">부다페스트 무역관</span></div>
+        <div class="org"><b>HIPA</b><span data-i18n="o5">헝가리 투자청</span></div>
+      </div>
+    </div>
+
+    <div class="org-group">
+      <span class="eyebrow" data-i18n="og2">산업 협회</span>
+      <div class="orgs">
+        <div class="org"><b>KBIA</b><span data-i18n="o6">한국배터리산업협회</span></div>
+        <div class="org"><b>HUBA</b><span data-i18n="o7">헝가리배터리협회</span></div>
+      </div>
+    </div>
+
+    <div class="org-group">
+      <span class="eyebrow" data-i18n="og3">연구 · 교육 기관</span>
+      <div class="orgs">
+        <div class="org"><b data-i18n="o8b">연세대학교</b><span data-i18n="o8">주관 연구기관</span></div>
+        <div class="org"><b>BME</b><span data-i18n="o9">부다페스트 공과대학</span></div>
+        <div class="org"><b>ELTE</b><span data-i18n="o10">외트뵈시 로란드 대학</span></div>
+        <div class="org"><b>ZalaZONE</b><span data-i18n="o11">시험 주행 시설</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow" data-i18n="conEyebrow">문의</span>
+      <h2 data-i18n="conTitle">협력 문의를 기다립니다.</h2>
+      <p data-i18n="conBody">헝가리 진출을 검토 중인 한국 기업, 한국 파트너를 찾는 헝가리 기업, 공동 연구를 제안하려는 연구기관 모두 환영합니다.</p>
+    </div>
+    <div class="cgrid">
+      <div>
+        <span class="eyebrow" data-i18n="c1">기업 등록 · B2B 매칭</span>
+        <a href="mailto:platform@khbcc.org">platform@khbcc.org</a>
+      </div>
+      <div>
+        <span class="eyebrow" data-i18n="c2">연구 협력</span>
+        <a href="mailto:research@khbcc.org">research@khbcc.org</a>
+      </div>
+      <div>
+        <span class="eyebrow" data-i18n="c3">한국 사무국</span>
+        <p data-i18n="c3b">연세대학교 전기전자공학부, 서울</p>
+      </div>
+      <div>
+        <span class="eyebrow" data-i18n="c4">헝가리 사무국</span>
+        <p data-i18n="c4b">HUBA 본부, 부다페스트</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span data-i18n="f1">KHBCC — 한국·헝가리 배터리 협력 연구센터</span>
+  <span data-i18n="f2">EIPP 4차년도 · 기획재정부 · KDI 지원</span>
+</footer>
+
+<script>
+const I18N = {
+  ko:{}, // ko is the markup default
+  en:{
+    nav1:"About", nav2:"Laboratories", nav3:"B2B Platform", nav4:"Governance", nav5:"Partners", nav6:"Contact",
+    heroEyebrow:"Korea–Hungary Battery Cooperation Research Center",
+    heroTitle:"The EU Battery Passport becomes mandatory in <em>February 2027</em>.",
+    heroLede:"KHBCC connects Korean and Hungarian battery firms to the testing, data, and regulatory work that compliance requires — in three languages, on one platform.",
+    ctaJoin:"Register your firm", ctaLearn:"What we do",
+    dppTitle:"Digital Battery Passport · sample record", dppLive:"Verified",
+    dppK1:"Battery ID", dppK2:"Chemistry", dppK3:"Nominal capacity", dppK4:"State of health",
+    dppK5:"Carbon footprint", dppK6:"Recycled content", dppV6:"16% · under review", dppK7:"Conformity",
+    dppFoot:"Illustrative record showing the structure of the KHBCC data pipeline.",
+    stat1:"KBIA member database", stat2:"Functional laboratories", stat3:"Working languages", stat4:"DPP in force",
+    aboutEyebrow:"About", aboutTitle:"Not a research institute. A working center.",
+    aboutBody:"Hungary has become Europe's battery manufacturing base, with large-scale plants from Samsung SDI, SK On, and CATL. At the same time, EU Battery Regulation 2023/1542 imposes a full lifecycle compliance regime. KHBCC exists to add regulatory infrastructure to Hungary's industrial capacity. Testing, data traceability, environmental diagnostics, firm matching, and workforce training happen inside one organization.",
+    a1h:"Compliance", a1t:"Battery Passport readiness",
+    a1b:"We map cell, module, and pack test items to Battery Passport data fields, and design a data pipeline that firms can actually file against.",
+    a2h:"Industry", a2t:"Verified firm-to-firm matching",
+    a2b:"Firms are verified against both associations' member networks, then profiled by capability and need, so only meetings with real potential get arranged.",
+    a3h:"Policy", a3t:"A two-way channel",
+    a3b:"We pass EU regulatory developments down to firms, and carry firms' problems — permitting, licensing, local procedure — up to both governments.",
+    a4h:"People", a4t:"Joint degrees and training",
+    a4b:"Built around the Yonsei–BME dual-degree agreement, with joint coursework in battery diagnostics and data analysis.",
+    labsEyebrow:"Functional laboratories", labsTitle:"Two divisions, five laboratories",
+    labsBody:"The technical side moves at research speed; the cooperation side moves at industry speed, so we run them separately. Their outputs stay connected: regulatory analysis from R&amp;D feeds directly into firm advisory material and coursework.",
+    p1:"Joint R&amp;D Division", p1n:"Operated with Hungarian host institutions",
+    l1t:"Competency Test Lab",
+    l1b:"Battery safety verification, second-life testing, and alignment with EU certification standards — physical test infrastructure alongside digital twin simulation.",
+    l2t:"Battery Data Analysis Lab",
+    l2b:"Cloud infrastructure to collect, store, and analyze BMS operating data. AI-based state-of-health estimation and remaining-life prediction feed Battery Passport reporting.",
+    l3t:"Environment, Health &amp; Safety Lab",
+    l3b:"Electrolyte chemistry, hazardous materials analysis, and end-of-life impact — covering energy, carbon, water, wastewater, and air pollutant categories across the lifecycle.",
+    p2:"Korea Cooperation Division", p2n:"Firm-facing · fast response",
+    l4t:"Economic Cooperation Lab",
+    l4b:"Runs the member database, B2B matching, on-the-ground problem-solving for Korean firms in Hungary, and the policy consultation channel. This is where the platform's daily work happens.",
+    l5h:"Yonsei · BME", l5t:"Academic Exchange Lab",
+    l5b:"Dual-degree programs, researcher exchange, and industry retraining — building the specialist workforce both countries need.",
+    platEyebrow:"Trilingual platform · B2B matching", platTitle:"Not a contact list. A curated one.",
+    platBody:"We don't connect firms at random. Registration to meeting runs through four stages, and each one filters. The process is applied most strictly ahead of in-person matching events, where results have to come out of a limited window.",
+    s1t:"Basic qualification & verification",
+    s1b:"Business existence, financial stability, and demonstrable activity in the battery value chain, checked against the KBIA and HUBA member networks. Shell entries are filtered at registration.",
+    s2t:"Capability & needs profiling",
+    s2b:"Joint venture, joint technology development, local distribution, or a compliance solution — we establish what a firm actually wants before matching, and record it as a firm profile.",
+    s3t:"Screening on three core values",
+    s3b:"The high-potential shortlist is selected on technical, economic, and environmental value — not on revenue or headcount.",
+    s4t:"Curated pre-matching",
+    s4b:"Firms receive a suggested meeting list and counterpart briefings before the event. The conversation starts before anyone arrives.",
+    v1t:"Technical value",
+    v1b:"Value chain contribution and technology readiness level. We look for capability that supports joint R&amp;D with a Hungarian partner, or that can enter a production line immediately.",
+    v2t:"Economic value",
+    v2b:"Likelihood of converting into a contract, investment, or joint venture — and whether the business is sustainable in both markets.",
+    v3t:"Environmental value",
+    v3b:"Contribution to reuse and recycling, and fit with EU sustainability criteria. We check for results that translate into Battery Passport fields.",
+    govEyebrow:"Governance", govTitle:"Strategy and daily operation, kept apart.",
+    govBody:"A three-layer structure that holds government oversight and project-level execution together. Direction is set at the top; industry requirements reach operations without delay.",
+    g1l:"Layer 1 · Decision", g1t:"Board of Directors",
+    g1b:"The top decision-making body, with KDI, the Korea Battery Industry Association (KBIA), the Korean Embassy in Hungary, the Hungarian Ministry for National Economy (MNE), and the Hungarian Battery Association (HUBA).",
+    g2l:"Layer 2 · Direction", g2t:"Center Director · Industry Advisory Board",
+    g2b:"The Director runs operations; the Industry Advisory Board carries requirements from firms in both countries straight into how the center works.",
+    g3l:"Layer 3 · Execution", g3t:"Three headquarters",
+    g3b:"Administrative Support, International Cooperation, and R&amp;D. HUBA supports administrative operations during the pilot period, where local knowledge of Hungarian procedure is essential.",
+    parEyebrow:"Partners", parTitle:"The center is small. The institutions behind it are not.",
+    parBody:"What makes KHBCC's work credible isn't its size — it's the network of institutions standing behind each activity.",
+    og1:"Government & public agencies",
+    o1:"Ministry of Economy and Finance, Korea", o2:"Korea Development Institute",
+    o3:"Ministry for National Economy, Hungary", o4:"Budapest office", o5:"Hungarian Investment Promotion Agency",
+    og2:"Industry associations",
+    o6:"Korea Battery Industry Association", o7:"Hungarian Battery Association",
+    og3:"Research & academic institutions",
+    o8b:"Yonsei University", o8:"Lead research institution",
+    o9:"Budapest University of Technology and Economics", o10:"Eötvös Loránd University", o11:"Proving ground",
+    conEyebrow:"Contact", conTitle:"Get in touch.",
+    conBody:"Korean firms considering Hungary, Hungarian firms looking for Korean partners, and research institutions proposing joint work are all welcome.",
+    c1:"Firm registration · B2B matching", c2:"Research collaboration",
+    c3:"Korea secretariat", c3b:"School of Electrical &amp; Electronic Engineering, Yonsei University, Seoul",
+    c4:"Hungary secretariat", c4b:"HUBA headquarters, Budapest",
+    f1:"KHBCC — Korea–Hungary Battery Cooperation Research Center",
+    f2:"EIPP 4th phase · Supported by MOEF and KDI"
+  },
+  hu:{
+    nav1:"A központról", nav2:"Laborok", nav3:"B2B platform", nav4:"Irányítás", nav5:"Partnerek", nav6:"Kapcsolat",
+    heroEyebrow:"Koreai–Magyar Akkumulátoripari Együttműködési Kutatóközpont",
+    heroTitle:"Az EU akkumulátor-útlevél <em>2027 februárjától</em> kötelező.",
+    heroLede:"A KHBCC összeköti a koreai és magyar akkumulátoripari cégeket a megfeleléshez szükséges vizsgálati, adatkezelési és szabályozási munkával — három nyelven, egyetlen platformon.",
+    ctaJoin:"Cégregisztráció", ctaLearn:"Amit csinálunk",
+    dppTitle:"Digitális akkumulátor-útlevél · mintarekord", dppLive:"Ellenőrizve",
+    dppK1:"Akkumulátor-azonosító", dppK2:"Kémiai összetétel", dppK3:"Névleges kapacitás", dppK4:"Állapot (SoH)",
+    dppK5:"Szénlábnyom", dppK6:"Újrahasznosított tartalom", dppV6:"16% · felülvizsgálat alatt", dppK7:"Megfelelőség",
+    dppFoot:"Szemléltető rekord, amely a KHBCC adatfolyamának felépítését mutatja be.",
+    stat1:"KBIA tagvállalati adatbázis", stat2:"Funkcionális labor", stat3:"Munkanyelv", stat4:"DPP hatályba lép",
+    aboutEyebrow:"A központról", aboutTitle:"Nem kutatóintézet. Működő központ.",
+    aboutBody:"Magyarország Európa akkumulátorgyártási bázisává vált, a Samsung SDI, az SK On és a CATL nagyüzemeivel. Ezzel egyidejűleg az EU 2023/1542 rendelete teljes életciklusra kiterjedő megfelelési rendszert ír elő. A KHBCC azért jött létre, hogy szabályozási infrastruktúrát adjon Magyarország ipari kapacitása mellé. A vizsgálat, az adatnyomonkövetés, a környezeti diagnosztika, a cégek összekapcsolása és a szakemberképzés egyetlen szervezeten belül zajlik.",
+    a1h:"Megfelelés", a1t:"Felkészülés az akkumulátor-útlevélre",
+    a1b:"A cella-, modul- és csomagszintű vizsgálati tételeket az akkumulátor-útlevél adatmezőire képezzük le, és olyan adatfolyamot tervezünk, amellyel a cégek ténylegesen tudnak jelentést tenni.",
+    a2h:"Ipar", a2t:"Ellenőrzött cégek közötti párosítás",
+    a2b:"A cégeket mindkét szövetség tagi hálózatával vetjük össze, majd képesség és igény szerint profilozzuk, így csak valós potenciállal bíró találkozók jönnek létre.",
+    a3h:"Szakpolitika", a3t:"Kétirányú csatorna",
+    a3b:"Az uniós szabályozási fejleményeket eljuttatjuk a cégekhez, a cégek problémáit — engedélyezés, helyi eljárások — pedig mindkét kormányhoz.",
+    a4h:"Emberek", a4t:"Közös képzés és diploma",
+    a4b:"A Yonsei–BME kettős diplomás megállapodásra épül, közös kurzusokkal az akkumulátor-diagnosztika és adatelemzés területén.",
+    labsEyebrow:"Funkcionális laborok", labsTitle:"Két divízió, öt labor",
+    labsBody:"A technikai oldal kutatási ütemben, az együttműködési oldal ipari ütemben halad, ezért külön működtetjük őket. Az eredmények mégis összekapcsolódnak: a K+F szabályozási elemzései közvetlenül a cégeknek szóló tanácsadási anyagokba és a képzésbe kerülnek.",
+    p1:"Közös K+F divízió", p1n:"Magyar partnerintézményekkel közösen",
+    l1t:"Teljesítményvizsgáló labor",
+    l1b:"Akkumulátor-biztonsági ellenőrzés, második életciklusú vizsgálatok és uniós tanúsítási megfelelés — fizikai vizsgálati infrastruktúra digitális iker szimulációval együtt.",
+    l2t:"Akkumulátoradat-elemző labor",
+    l2b:"Felhőalapú infrastruktúra a BMS üzemi adatok gyűjtésére, tárolására és elemzésére. MI-alapú állapotbecslés és hátralévő élettartam-előrejelzés az útlevél-jelentéshez.",
+    l3t:"Környezetvédelmi, egészségügyi és biztonsági labor",
+    l3b:"Elektrolitkémia, veszélyesanyag-elemzés és életciklus végi hatásvizsgálat — energia, szén-dioxid, vízhasználat, szennyvíz és légszennyezők szerint.",
+    p2:"Koreai együttműködési divízió", p2n:"Cégeknek · gyors reagálás",
+    l4t:"Gazdasági együttműködési labor",
+    l4b:"Működteti a tagvállalati adatbázist, a B2B párosítást, a Magyarországon működő koreai cégek problémáinak kezelését és a szakpolitikai konzultációs csatornát. A platform napi munkája itt zajlik.",
+    l5h:"Yonsei · BME", l5t:"Akadémiai csereprogram-labor",
+    l5b:"Kettős diplomás programok, kutatócsere és ipari továbbképzés — a két ország szakembergárdájának közös építése.",
+    platEyebrow:"Háromnyelvű platform · B2B párosítás", platTitle:"Nem címlista. Kurátorált lista.",
+    platBody:"Nem véletlenszerűen kapcsolunk össze cégeket. A regisztrációtól a találkozóig négy szakasz vezet, és mindegyik szűr. A folyamatot a személyes párosítási eseményekre készülve alkalmazzuk a legszigorúbban, ahol korlátozott idő alatt kell eredményt hozni.",
+    s1t:"Alapszintű minősítés és ellenőrzés",
+    s1b:"Működő vállalkozás, pénzügyi stabilitás és igazolható tevékenység az akkumulátoripari értékláncban — a KBIA és a HUBA tagi hálózatához mérve. A fedőcégek már a regisztrációnál kiesnek.",
+    s2t:"Képesség- és igényprofilozás",
+    s2b:"Vegyesvállalat, közös technológiafejlesztés, helyi értékesítési hálózat vagy megfelelési megoldás — a párosítás előtt tisztázzuk, mit akar valójában a cég, és cégprofilban rögzítjük.",
+    s3t:"Szűrés három alapérték szerint",
+    s3b:"A nagy potenciálú rövidlistát műszaki, gazdasági és környezeti érték alapján állítjuk össze — nem árbevétel vagy létszám szerint.",
+    s4t:"Kurátorált előzetes párosítás",
+    s4b:"A cégek az esemény előtt megkapják a javasolt találkozók listáját és a partnerekről szóló tájékoztatót. A beszélgetés még az érkezés előtt elkezdődik.",
+    v1t:"Műszaki érték",
+    v1b:"Értéklánc-hozzájárulás és technológiai érettségi szint. Olyan képességet keresünk, amely közös K+F-et tesz lehetővé magyar partnerrel, vagy azonnal beépíthető egy gyártósorba.",
+    v2t:"Gazdasági érték",
+    v2b:"Mekkora eséllyel válik szerződéssé, befektetéssé vagy vegyesvállalattá — és fenntartható-e az üzlet mindkét piacon.",
+    v3t:"Környezeti érték",
+    v3b:"Hozzájárulás az újrahasználathoz és újrahasznosításhoz, illetve illeszkedés az uniós fenntarthatósági kritériumokhoz. Olyan eredményeket keresünk, amelyek útlevél-adatmezőkre válthatók.",
+    govEyebrow:"Irányítás", govTitle:"A stratégia és a napi működés elkülönül.",
+    govBody:"Háromszintű felépítés, amely együtt tartja a kormányzati felügyeletet és a projektszintű végrehajtást. Az irány felül dől el; az ipari igények késedelem nélkül érnek le a működésbe.",
+    g1l:"1. szint · Döntés", g1t:"Igazgatótanács",
+    g1b:"A legfőbb döntéshozó testület: KDI, Koreai Akkumulátoripari Szövetség (KBIA), Korea magyarországi nagykövetsége, Nemzetgazdasági Minisztérium (NGM) és a Magyar Akkumulátor Szövetség (HUBA).",
+    g2l:"2. szint · Vezetés", g2t:"Központvezető · Ipari tanácsadó testület",
+    g2b:"A központvezető irányítja a működést; az ipari tanácsadó testület a két ország cégeinek igényeit közvetlenül becsatornázza.",
+    g3l:"3. szint · Végrehajtás", g3t:"Három végrehajtó egység",
+    g3b:"Adminisztratív támogatás, nemzetközi együttműködés és K+F. A pilot időszakban a HUBA támogatja az adminisztratív működést, ahol a magyar eljárásrend helyi ismerete elengedhetetlen.",
+    parEyebrow:"Partnerek", parTitle:"A központ kicsi. A mögötte álló intézmények nem.",
+    parBody:"A KHBCC munkáját nem a mérete teszi hitelessé, hanem az az intézményi hálózat, amely minden tevékenysége mögött ott áll.",
+    og1:"Kormányzat és közintézmények",
+    o1:"Koreai Gazdasági és Pénzügyminisztérium", o2:"Korea Development Institute",
+    o3:"Nemzetgazdasági Minisztérium", o4:"Budapesti iroda", o5:"Nemzeti Befektetési Ügynökség",
+    og2:"Ipari szövetségek",
+    o6:"Koreai Akkumulátoripari Szövetség", o7:"Magyar Akkumulátor Szövetség",
+    og3:"Kutatási és oktatási intézmények",
+    o8b:"Yonsei Egyetem", o8:"Vezető kutatóintézmény",
+    o9:"Budapesti Műszaki és Gazdaságtudományi Egyetem", o10:"Eötvös Loránd Tudományegyetem", o11:"Járműipari tesztpálya",
+    conEyebrow:"Kapcsolat", conTitle:"Vegye fel velünk a kapcsolatot.",
+    conBody:"Várjuk a Magyarországot fontolgató koreai cégeket, a koreai partnert kereső magyar cégeket és a közös munkát javasló kutatóintézeteket.",
+    c1:"Cégregisztráció · B2B párosítás", c2:"Kutatási együttműködés",
+    c3:"Koreai titkárság", c3b:"Yonsei Egyetem, Villamosmérnöki Kar, Szöul",
+    c4:"Magyar titkárság", c4b:"HUBA központ, Budapest",
+    f1:"KHBCC — Koreai–Magyar Akkumulátoripari Együttműködési Kutatóközpont",
+    f2:"EIPP 4. szakasz · A MOEF és a KDI támogatásával"
+  }
+};
+
+// capture the Korean defaults straight from the markup
+document.querySelectorAll('[data-i18n]').forEach(el=>{
+  I18N.ko[el.dataset.i18n] = el.innerHTML;
+});
+
+function setLang(lang){
+  const dict = I18N[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const v = dict[el.dataset.i18n];
+    if(v !== undefined) el.innerHTML = v;
+  });
+  document.documentElement.lang = lang;
+  document.querySelectorAll('.lang button').forEach(b=>{
+    b.setAttribute('aria-pressed', String(b.dataset.lang === lang));
+  });
+}
+
+document.querySelectorAll('.lang button').forEach(btn=>{
+  btn.addEventListener('click',()=>setLang(btn.dataset.lang));
+});
+
+// SoH gauge fills once on load
+window.addEventListener('load',()=>{
+  setTimeout(()=>{
+    document.getElementById('sohBar').style.width = '92.4%';
+    document.getElementById('sohVal').textContent = '92.4%';
+  },350);
+});
+</script>
+</body>
+</html>
