@@ -72,20 +72,23 @@ nav a.on{color:var(--ink);border-bottom-color:var(--red)}
 .btn-ghost:hover{border-color:var(--paper-2)}
 
 /* DPP record card */
-.dpp{background:var(--ink-2);border:1px solid var(--line-dark);border-radius:4px;font-family:var(--mono);font-size:12px;overflow:hidden}
-.dpp-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 14px;border-bottom:1px solid var(--line-dark);background:#131A3E}
-.dpp-head .t{font-size:10px;letter-spacing:.13em;color:#8E99C4;text-transform:uppercase}
-.dpp-head .live{font-size:10px;letter-spacing:.09em;color:#6DBE8A}
+.dpp{background:#FAFAFB;border:1px solid #C2C7D4;border-radius:4px;font-family:var(--mono);font-size:12px;overflow:hidden}
+.dpp-art{background:#E8EBF0;border-bottom:1px solid #C2C7D4;padding:14px 16px}
+.dpp-art svg{width:100%;height:auto;display:block}
+.dpp-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 14px;border-bottom:1px solid #D3D6DE;background:#F1F2F5}
+.dpp-head .t{font-size:10px;letter-spacing:.13em;color:var(--steel);text-transform:uppercase}
+.dpp-head .live{font-size:10px;letter-spacing:.09em;color:#2F7A48}
 .dot{width:7px;height:7px;border-radius:50%;background:var(--green);display:inline-block;margin-right:6px;vertical-align:middle}
-.dpp-row{display:flex;justify-content:space-between;gap:14px;padding:9px 14px;border-bottom:1px solid rgba(255,255,255,.05)}
+.dpp-row{display:flex;justify-content:space-between;gap:14px;padding:9px 14px;border-bottom:1px solid #E6E8ED}
 .dpp-row:last-of-type{border-bottom:0}
-.dpp-row .k{color:#7E88B4;font-size:11px}
-.dpp-row .v{color:#DDE2EE;text-align:right;font-weight:500}
-.dpp-row .v.ok{color:#6DBE8A}
-.dpp-row .v.warn{color:#D9A93A}
-.gauge{height:4px;background:#2B3563;border-radius:2px;margin:0 14px 14px;overflow:hidden}
+.dpp-row .k{color:var(--steel);font-size:11px}
+.dpp-row .v{color:var(--ink);text-align:right;font-weight:500}
+.dpp-row .v.ok{color:#2F7A48}
+.dpp-row .v.warn{color:#9A7310}
+.gauge{height:4px;background:#DDE0E7;border-radius:2px;margin:0 14px 14px;overflow:hidden}
 .gauge i{display:block;height:100%;background:var(--green);width:0;transition:width 1.3s cubic-bezier(.2,.7,.3,1)}
-.dpp-foot{padding:10px 14px;font-size:10px;letter-spacing:.05em;color:#6C769F;border-top:1px solid var(--line-dark);background:#0B1029}
+.dpp-foot{padding:10px 14px;font-size:10px;letter-spacing:.05em;color:var(--steel);border-top:1px solid #D3D6DE;background:#F1F2F5}
+.logo-txt{font-family:var(--display);font-weight:700;font-size:21px;color:#EC1C24;letter-spacing:-.01em}
 
 /* indicator rail — two items only */
 .rail{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line-dark);max-width:1280px;margin:clamp(34px,5vw,56px) auto 0;position:relative;z-index:1}
@@ -110,6 +113,19 @@ section{padding:clamp(50px,6.5vw,86px) var(--pad)}
 .card .host{font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;color:var(--red);text-transform:uppercase;display:block;margin-bottom:9px}
 .card h3{margin-bottom:8px}
 .card p{font-size:14.5px;color:var(--steel);line-height:1.62}
+
+/* diagrams */
+.fig{margin:0 0 40px;padding:26px 22px;background:#fff;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.fig svg{width:100%;height:auto;display:block}
+.d-ln{stroke:#9BA3B4;stroke-width:1;fill:none}
+.d-hd{font-family:var(--display);font-size:16px;font-weight:600;fill:#FAFAFB;letter-spacing:.02em}
+.d-div{font-family:var(--display);font-size:14px;font-weight:600;fill:var(--ink)}
+.d-tag{font-family:var(--mono);font-size:10px;letter-spacing:.08em;fill:var(--steel)}
+.d-ti{font-family:var(--display);font-size:16px;font-weight:600;fill:var(--ink)}
+.d-bd{font-family:var(--body);font-size:13px;fill:var(--steel)}
+.d-num{font-family:var(--mono);font-size:13px;font-weight:500;fill:var(--red);letter-spacing:.08em}
+.d-out{font-family:var(--mono);font-size:12.5px;fill:var(--ink)}
+.d-out-on{font-family:var(--mono);font-size:12.5px;fill:#FAFAFB}
 
 .pillar{margin-bottom:40px}
 .pillar:last-child{margin-bottom:0}
@@ -168,6 +184,10 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
   .gov-layer{grid-template-columns:1fr;gap:7px}
   nav{display:none}
   .bar{gap:12px}
+  .fig{display:none}
+}
+@media (min-width:901px){
+  .pillar,.steps{display:none}
 }
 @media (max-width:520px){
   .mark .wm{font-size:17px}
@@ -194,6 +214,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
       <a href="#platform" data-i18n="nav3">기업 매칭</a>
       <a href="#governance" data-i18n="nav4">운영 체계</a>
       <a href="#partners" data-i18n="nav5">참여 기관</a>
+      <a href="apply.html" data-i18n="nav8">기업 등록</a>
       <a href="news.html" data-i18n="nav6">활동 기록</a>
       <a href="#contact" data-i18n="nav7">문의</a>
     </nav>
@@ -212,12 +233,37 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
       <h1 data-i18n="heroTitle">EU 배터리 규정 대응을 위한 양국 공동 연구센터</h1>
       <p class="lede" data-i18n="heroLede">KHBCC는 배터리 성능 시험, 사용 데이터 분석, 환경영향 평가, 기업 간 협력 지원을 한 조직 안에서 수행합니다. 한국어·영어·헝가리어로 운영합니다.</p>
       <div class="cta-row">
-        <a href="#platform" class="btn btn-primary" data-i18n="ctaJoin">기업 등록 문의</a>
+        <a href="apply.html" class="btn btn-primary" data-i18n="ctaJoin">기업 등록 신청</a>
         <a href="news.html" class="btn btn-ghost" data-i18n="ctaNews">활동 기록 보기</a>
       </div>
     </div>
 
     <div class="dpp" aria-label="Digital Battery Passport sample record">
+      <div class="dpp-art">
+        <svg viewBox="0 0 340 96" role="img" aria-labelledby="dppArtT">
+          <title id="dppArtT" data-i18n="dppArtT">전기버스와 배터리 팩</title>
+          <!-- EV bus -->
+          <rect x="10" y="26" width="122" height="42" rx="7" fill="#0E1430"/>
+          <rect x="18" y="33" width="30" height="17" rx="3" fill="#8FA8C8"/>
+          <rect x="54" y="33" width="26" height="17" rx="3" fill="#8FA8C8"/>
+          <rect x="86" y="33" width="26" height="17" rx="3" fill="#8FA8C8"/>
+          <rect x="116" y="33" width="12" height="17" rx="3" fill="#8FA8C8"/>
+          <rect x="10" y="55" width="122" height="4" fill="#D81018"/>
+          <circle cx="38" cy="70" r="8" fill="#2B3563"/><circle cx="38" cy="70" r="3.4" fill="#C2C7D4"/>
+          <circle cx="106" cy="70" r="8" fill="#2B3563"/><circle cx="106" cy="70" r="3.4" fill="#C2C7D4"/>
+          <path d="M136 47 L150 47 M144 41 L150 47 L144 53" fill="none" stroke="#3E8F57" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- battery pack, module stack -->
+          <rect x="160" y="20" width="150" height="56" rx="5" fill="none" stroke="#0E1430" stroke-width="2"/>
+          <rect x="310" y="38" width="7" height="20" rx="2" fill="#0E1430"/>
+          <rect x="168" y="28" width="18" height="40" rx="2" fill="#3E8F57"/>
+          <rect x="190" y="28" width="18" height="40" rx="2" fill="#3E8F57"/>
+          <rect x="212" y="28" width="18" height="40" rx="2" fill="#3E8F57"/>
+          <rect x="234" y="28" width="18" height="40" rx="2" fill="#3E8F57"/>
+          <rect x="256" y="28" width="18" height="40" rx="2" fill="#C2C7D4"/>
+          <rect x="278" y="28" width="18" height="40" rx="2" fill="#C2C7D4"/>
+          <path d="M228 36 L219 49 L226 49 L221 61 L233 46 L226 46 Z" fill="#FAFAFB"/>
+        </svg>
+      </div>
       <div class="dpp-head">
         <span class="t" data-i18n="dppTitle">디지털 배터리 여권 · 예시 레코드</span>
         <span class="live"><span class="dot"></span><span data-i18n="dppLive">검증됨</span></span>
@@ -243,7 +289,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
     <div>
       <b>2027.02</b>
       <span class="lab" data-i18n="stat2">배터리 여권 시행</span>
-      <p class="note" data-i18n="stat2n">EU 시장에 출시되는 전기차 배터리와 2kWh 초과 산업용 배터리에 디지털 배터리 여권이 의무 적용됩니다.</p>
+      <p class="note" data-i18n="stat2n">EU 시장에 출시되는 전기차 배터리, 경량 운송수단(LMT) 배터리, 2kWh 초과 산업용 배터리에 디지털 배터리 여권이 의무 적용됩니다. (2027년 2월 18일)</p>
     </div>
   </div>
 </div>
@@ -290,11 +336,86 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
       <p data-i18n="labsBody">기술 부문은 연구 속도로, 협력 부문은 산업 속도로 움직이기 때문에 두 부문을 나누어 운영합니다. 다만 산출물은 서로 이어집니다. 연구개발 부문의 규제 분석 결과가 기업 자문 자료와 교육 과정에 그대로 쓰입니다.</p>
     </div>
 
+    <figure class="fig" aria-labelledby="figLabsT">
+      <svg viewBox="0 0 1120 440" role="img" aria-labelledby="figLabsT">
+        <title id="figLabsT" data-i18n="figLabsT">KHBCC 5개 기능 연구소 구성</title>
+
+        <rect x="470" y="12" width="180" height="40" rx="3" fill="#0E1430"/>
+        <text x="560" y="37" text-anchor="middle" class="d-hd">KHBCC</text>
+
+        <path d="M560 52 L560 74 M340 74 L890 74 M340 74 L340 96 M890 74 L890 96" class="d-ln"/>
+
+        <rect x="20" y="96" width="640" height="32" rx="3" fill="#E4E7EE" stroke="#C2C7D4"/>
+        <text x="340" y="117" text-anchor="middle" class="d-div" data-i18n="figP1">공동 연구개발 부문</text>
+
+        <rect x="680" y="96" width="420" height="32" rx="3" fill="#E4E7EE" stroke="#C2C7D4"/>
+        <text x="890" y="117" text-anchor="middle" class="d-div" data-i18n="figP2">한국·헝가리 협력 부문</text>
+
+        <path d="M340 128 L340 146 M120 146 L560 146 M120 146 L120 166 M340 146 L340 166 M560 146 L560 166" class="d-ln"/>
+        <path d="M890 128 L890 146 M780 146 L1000 146 M780 146 L780 166 M1000 146 L1000 166" class="d-ln"/>
+
+        <g>
+          <rect x="20" y="166" width="200" height="238" rx="4" fill="#FFFFFF" stroke="#C2C7D4"/>
+          <rect x="20" y="166" width="200" height="4" fill="#D81018"/>
+          <text x="38" y="192" class="d-tag">SUB-TOPIC 3 · BME</text>
+          <text x="38" y="216" class="d-ti" data-i18n="figL1a">성능 검사</text>
+          <text x="38" y="236" class="d-ti" data-i18n="figL1b">연구소</text>
+          <text x="38" y="268" class="d-bd" data-i18n="figL1c">사용후 배터리 성능 평가</text>
+          <text x="38" y="292" class="d-bd" data-i18n="figL1d">잔존 수명 산정</text>
+          <text x="38" y="316" class="d-bd" data-i18n="figL1e">신규 기술 기준 개발</text>
+        </g>
+
+        <g>
+          <rect x="240" y="166" width="200" height="238" rx="4" fill="#FFFFFF" stroke="#C2C7D4"/>
+          <rect x="240" y="166" width="200" height="4" fill="#D81018"/>
+          <text x="258" y="192" class="d-tag">SUB-TOPIC 2 · BME</text>
+          <text x="258" y="216" class="d-ti" data-i18n="figL2a">배터리 여권·데이터</text>
+          <text x="258" y="236" class="d-ti" data-i18n="figL2b">분석 연구소</text>
+          <text x="258" y="268" class="d-bd" data-i18n="figL2c">사용 데이터 분석 거점</text>
+          <text x="258" y="292" class="d-bd" data-i18n="figL2d">양국 데이터 교류</text>
+          <text x="258" y="316" class="d-bd" data-i18n="figL2e">재활용 공정 연구</text>
+        </g>
+
+        <g>
+          <rect x="460" y="166" width="200" height="238" rx="4" fill="#FFFFFF" stroke="#C2C7D4"/>
+          <rect x="460" y="166" width="200" height="4" fill="#D81018"/>
+          <text x="478" y="192" class="d-tag">SUB-TOPIC 4 · ELTE</text>
+          <text x="478" y="216" class="d-ti" data-i18n="figL3a">환경·안전</text>
+          <text x="478" y="236" class="d-ti" data-i18n="figL3b">연구소</text>
+          <text x="478" y="268" class="d-bd" data-i18n="figL3c">폐기물 추적</text>
+          <text x="478" y="292" class="d-bd" data-i18n="figL3d">규제 준수 확인</text>
+          <text x="478" y="316" class="d-bd" data-i18n="figL3e">안전 기준 수립</text>
+        </g>
+
+        <g>
+          <rect x="680" y="166" width="200" height="238" rx="4" fill="#FFFFFF" stroke="#C2C7D4"/>
+          <rect x="680" y="166" width="200" height="4" fill="#0E1430"/>
+          <text x="698" y="192" class="d-tag">SUB-TOPIC 1 · KBIA·HUBA</text>
+          <text x="698" y="216" class="d-ti" data-i18n="figL4a">사업 개발</text>
+          <text x="698" y="236" class="d-ti" data-i18n="figL4b">연구소</text>
+          <text x="698" y="268" class="d-bd" data-i18n="figL4c">B2B 매칭·회원사 지원</text>
+          <text x="698" y="292" class="d-bd" data-i18n="figL4d">인터배터리 네트워킹</text>
+          <text x="698" y="316" class="d-bd" data-i18n="figL4e">EU Horizon 컨소시엄</text>
+        </g>
+
+        <g>
+          <rect x="900" y="166" width="200" height="238" rx="4" fill="#FFFFFF" stroke="#C2C7D4"/>
+          <rect x="900" y="166" width="200" height="4" fill="#0E1430"/>
+          <text x="918" y="192" class="d-tag">SUB-TOPIC 1 · YONSEI·BME</text>
+          <text x="918" y="216" class="d-ti" data-i18n="figL5a">교육 협력</text>
+          <text x="918" y="236" class="d-ti" data-i18n="figL5b">연구소</text>
+          <text x="918" y="268" class="d-bd" data-i18n="figL5c">학술 교류 프로그램</text>
+          <text x="918" y="292" class="d-bd" data-i18n="figL5d">복수학위 운영</text>
+          <text x="918" y="316" class="d-bd" data-i18n="figL5e">현직 인력 재교육</text>
+        </g>
+      </svg>
+    </figure>
+
     <div class="pillar">
       <div class="pillar-label"><span data-i18n="p1">공동 연구개발 부문</span><i data-i18n="p1n">헝가리 현지 기관과 공동 운영</i></div>
       <div class="cards">
         <div class="card">
-          <span class="host">ZalaZONE · BME</span>
+          <span class="host">BME</span>
           <h3 data-i18n="l1t">성능 검사 연구소</h3>
           <p data-i18n="l1b">사용후 배터리의 성능을 평가하고 잔존 수명을 산정합니다. 시험 결과를 바탕으로 새로운 기술 기준을 개발하는 것도 이 연구소의 과제입니다.</p>
         </div>
@@ -312,7 +433,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
     </div>
 
     <div class="pillar">
-      <div class="pillar-label"><span data-i18n="p2">한국 협력 부문</span><i data-i18n="p2n">기업 대응 · 신속 지원</i></div>
+      <div class="pillar-label"><span data-i18n="p2">한국·헝가리 협력 부문</span><i data-i18n="p2n">기업 대응 · 신속 지원</i></div>
       <div class="cards">
         <div class="card">
           <span class="host">KBIA · HUBA · KOTRA</span>
@@ -337,6 +458,61 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
       <h2 data-i18n="platTitle">기업 매칭은 네 단계를 거칩니다</h2>
       <p data-i18n="platBody">등록한 기업을 무작위로 연결하지 않습니다. KBIA와 HUBA의 회원사 데이터베이스를 기준으로 검증한 뒤, 역량과 수요를 파악하고 선별해 사전에 미팅을 구성합니다. 시간이 제한된 대면 매칭 행사에서는 이 절차를 특히 엄격하게 적용합니다.</p>
     </div>
+
+    <figure class="fig" aria-labelledby="figB2bT">
+      <svg viewBox="0 0 1120 340" role="img" aria-labelledby="figB2bT">
+        <title id="figB2bT" data-i18n="figB2bT">B2B 매칭 4단계 절차</title>
+
+        <rect x="20" y="14" width="1080" height="36" rx="3" fill="#0E1430"/>
+        <text x="560" y="37" text-anchor="middle" class="d-hd" data-i18n="figDb">KBIA · HUBA 회원사 데이터베이스</text>
+
+        <path d="M155 50 L155 76 M425 50 L425 76 M695 50 L695 76 M965 50 L965 76" class="d-ln"/>
+
+        <g>
+          <rect x="20" y="76" width="270" height="150" rx="4" fill="#FFFFFF" stroke="#C2C7D4"/>
+          <rect x="20" y="76" width="270" height="4" fill="#D81018"/>
+          <text x="40" y="104" class="d-num">01</text>
+          <text x="40" y="130" class="d-ti" data-i18n="figS1t">자격 검증</text>
+          <text x="40" y="160" class="d-bd" data-i18n="figS1a">사업 실재성 확인</text>
+          <text x="40" y="184" class="d-bd" data-i18n="figS1b">밸류체인 내 역할 확인</text>
+        </g>
+        <g>
+          <rect x="290" y="76" width="270" height="150" rx="4" fill="#FFFFFF" stroke="#C2C7D4"/>
+          <rect x="290" y="76" width="270" height="4" fill="#D81018"/>
+          <text x="310" y="104" class="d-num">02</text>
+          <text x="310" y="130" class="d-ti" data-i18n="figS2t">역량·수요 분석</text>
+          <text x="310" y="160" class="d-bd" data-i18n="figS2a">기술 성숙도·생산 역량 평가</text>
+          <text x="310" y="184" class="d-bd" data-i18n="figS2b">협력 수요 파악</text>
+        </g>
+        <g>
+          <rect x="560" y="76" width="270" height="150" rx="4" fill="#FFFFFF" stroke="#C2C7D4"/>
+          <rect x="560" y="76" width="270" height="4" fill="#D81018"/>
+          <text x="580" y="104" class="d-num">03</text>
+          <text x="580" y="130" class="d-ti" data-i18n="figS3t">3대 가치 선별</text>
+          <text x="580" y="160" class="d-bd" data-i18n="figS3a">기술적 가치 · 경제적 영향</text>
+          <text x="580" y="184" class="d-bd" data-i18n="figS3b">환경적 지속가능성</text>
+        </g>
+        <g>
+          <rect x="830" y="76" width="270" height="150" rx="4" fill="#FFFFFF" stroke="#C2C7D4"/>
+          <rect x="830" y="76" width="270" height="4" fill="#D81018"/>
+          <text x="850" y="104" class="d-num">04</text>
+          <text x="850" y="130" class="d-ti" data-i18n="figS4t">사전 큐레이션</text>
+          <text x="850" y="160" class="d-bd" data-i18n="figS4a">추천 미팅 일정 전달</text>
+          <text x="850" y="184" class="d-bd" data-i18n="figS4b">상대 기업 정보 제공</text>
+        </g>
+
+        <path d="M155 226 L155 250 M425 226 L425 250 M695 226 L695 250 M965 226 L965 250" class="d-ln"/>
+
+        <rect x="20" y="250" width="270" height="34" rx="3" fill="#E4E7EE" stroke="#C2C7D4"/>
+        <text x="155" y="271" text-anchor="middle" class="d-out" data-i18n="figO1">검증된 파트너 풀</text>
+        <rect x="290" y="250" width="270" height="34" rx="3" fill="#E4E7EE" stroke="#C2C7D4"/>
+        <text x="425" y="271" text-anchor="middle" class="d-out" data-i18n="figO2">기업 프로파일</text>
+        <rect x="560" y="250" width="270" height="34" rx="3" fill="#E4E7EE" stroke="#C2C7D4"/>
+        <text x="695" y="271" text-anchor="middle" class="d-out" data-i18n="figO3">큐레이션 리스트</text>
+        <rect x="830" y="250" width="270" height="34" rx="3" fill="#0E1430"/>
+        <text x="965" y="271" text-anchor="middle" class="d-out-on" data-i18n="figO4">실질적 B2B 미팅</text>
+      </svg>
+    </figure>
 
     <div class="steps">
       <div class="step">
@@ -440,6 +616,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
         <div class="logo-card"><img src="assets/kbia.png" alt="KBIA"></div>
         <div class="logo-card"><img src="assets/huba.png" alt="Hungarian Battery Association"></div>
         <div class="logo-card"><img src="assets/samsung-sdi.png" alt="Samsung SDI"></div>
+        <div class="logo-card"><span class="logo-txt">SK On</span></div>
       </div>
     </div>
 
@@ -451,7 +628,6 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
       </div>
       <div class="orgs" style="margin-top:10px">
         <div class="org"><b data-i18n="o4">연세대학교</b><span data-i18n="o4s">주관 연구기관</span></div>
-        <div class="org">ZalaZONE<span data-i18n="o5">시험 주행 시설</span></div>
         <div class="org">HUN-REN<span data-i18n="o6">헝가리 연구 네트워크</span></div>
       </div>
     </div>
@@ -469,15 +645,11 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
     <div class="cgrid">
       <div>
         <span class="eyebrow" data-i18n="c1">기업 등록 · 매칭</span>
-        <a href="mailto:platform@khbcc.org">platform@khbcc.org</a>
+        <a href="apply.html" data-i18n="c1b">등록 신청서 작성</a>
       </div>
       <div>
         <span class="eyebrow" data-i18n="c2">연구 협력</span>
         <a href="mailto:research@khbcc.org">research@khbcc.org</a>
-      </div>
-      <div>
-        <span class="eyebrow" data-i18n="c3">한국 사무국</span>
-        <p data-i18n="c3b">연세대학교 전기전자공학부, 서울</p>
       </div>
       <div>
         <span class="eyebrow" data-i18n="c4">헝가리 사무국</span>
@@ -489,7 +661,6 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
 
 <footer>
   <span data-i18n="f1">KHBCC — 한국·헝가리 배터리 협력 연구센터</span>
-  <span data-i18n="f2">2025/26 EIPP · 기획재정부 · KDI 지원</span>
 </footer>
 
 <script src="i18n.js"></script>

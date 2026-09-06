@@ -1,0 +1,93 @@
+# ============================================================
+# KHBCC 관리자 화면 설정 파일
+#
+# ★ 아래 backend 부분은 DecapBridge에서 사이트를 등록하면
+#   자동으로 만들어주는 내용으로 통째로 바꿔야 합니다.
+#   그 전까지는 로그인이 되지 않습니다.
+# ============================================================
+
+backend:
+  name: git-gateway
+  repo: hlinak3014/khbcc
+  branch: main
+  # ↓ 이 두 줄의 주소는 DecapBridge 화면에 나오는 값으로 바꾸세요
+  identity_url: https://auth.decapbridge.com/sites/BRIDGE_SITE_ID
+  gateway_url: https://gateway.decapbridge.com
+  commit_messages:
+    create: 'Create {{collection}} "{{slug}}"'
+    update: 'Update {{collection}} "{{slug}}"'
+    delete: 'Delete {{collection}} "{{slug}}"'
+    uploadMedia: 'Upload "{{path}}"'
+    deleteMedia: 'Delete "{{path}}"'
+
+locale: ko
+publish_mode: simple
+
+media_folder: "assets/news"
+public_folder: "assets/news"
+
+collections:
+  - name: news
+    label: 활동 기록
+    files:
+      - name: items
+        label: 활동 기록 목록
+        file: news.json
+        description: 새 소식을 추가하거나 기존 내용을 고칩니다. 저장하면 1~2분 뒤 사이트에 반영됩니다.
+        fields:
+          - name: items
+            label: 소식
+            label_singular: 소식
+            widget: list
+            summary: "{{fields.date}} · {{fields.ko.title}}"
+            collapsed: true
+            fields:
+              - name: date
+                label: 날짜
+                widget: datetime
+                date_format: YYYY-MM-DD
+                time_format: false
+                format: YYYY-MM-DD
+                hint: 이 날짜로 연도가 나뉘고 순서가 정해집니다.
+
+              - name: place
+                label: 장소
+                widget: string
+                required: false
+                hint: "예 - 부다페스트 · BME (비워도 됩니다)"
+
+              - name: image
+                label: 사진
+                widget: image
+                required: false
+                allow_multiple: false
+                media_folder: "../assets/news"
+                public_folder: "assets/news"
+                hint: 사진을 끌어다 놓거나 눌러서 올리세요. 없으면 비워둡니다.
+
+              - name: link
+                label: 관련 링크
+                widget: string
+                required: false
+                hint: "기사나 보도자료 주소가 있으면 넣으세요. https:// 로 시작해야 합니다."
+
+              - name: ko
+                label: 한국어
+                widget: object
+                fields:
+                  - { name: title, label: 제목, widget: string }
+                  - { name: body, label: 내용, widget: text }
+
+              - name: en
+                label: English
+                widget: object
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: body, label: Body, widget: text }
+
+              - name: hu
+                label: Magyar
+                widget: object
+                fields:
+                  - { name: title, label: Cím, widget: string }
+                  - { name: body, label: Szöveg, widget: text }
