@@ -33,7 +33,9 @@ header{position:sticky;top:0;z-index:50;background:rgba(241,242,245,.9);backdrop
 .bar{display:flex;align-items:center;gap:18px;padding:11px var(--pad)}
 .mark{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
 .mark img{height:32px;width:auto}
-.mark .wm{font-family:var(--display);font-weight:700;font-size:19px;color:var(--ink)}
+.mark .wmbox{display:flex;flex-direction:column;gap:1px;line-height:1.1}
+.mark .wm{font-family:var(--display);font-weight:700;font-size:19px;letter-spacing:.01em;color:var(--ink);line-height:1.1}
+.mark .wmsub{font-family:var(--mono);font-size:9.5px;letter-spacing:.03em;color:var(--steel);white-space:nowrap}
 nav{display:flex;gap:20px;margin-left:auto;align-items:center}
 nav a{font-family:var(--mono);font-size:12px;color:var(--steel);text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap}
 nav a:hover,nav a.on{color:var(--ink);border-bottom-color:var(--red)}
@@ -89,6 +91,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
 
 @media (max-width:760px){
   nav{display:none}
+  .mark .wmsub{display:none}
   .page-head::after{display:none}
   .grid{grid-template-columns:1fr}
 }
@@ -101,7 +104,10 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
   <div class="bar">
     <a href="index.html" class="mark">
       <img src="assets/khbcc-logo.png" alt="KHBCC">
-      <span class="wm">KHBCC</span>
+      <span class="wmbox">
+        <span class="wm">KHBCC</span>
+        <span class="wmsub">Korea&#8211;Hungary Battery Cooperation Center</span>
+      </span>
     </a>
     <nav>
       <a href="index.html#about" data-i18n="nav1">센터 소개</a>
@@ -140,11 +146,11 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
         <legend data-i18n="ap_s1">기업 정보</legend>
         <div class="grid">
           <div class="f">
-            <label for="company" data-i18n="ap_company">회사명<span class="req">*</span></label>
+            <label for="company"><span data-i18n="ap_company">회사명</span><span class="req">*</span></label>
             <input type="text" id="company" name="company" required autocomplete="organization">
           </div>
           <div class="f">
-            <label for="country" data-i18n="ap_country">소재 국가<span class="req">*</span></label>
+            <label for="country"><span data-i18n="ap_country">소재 국가</span><span class="req">*</span></label>
             <select id="country" name="country" required>
               <option value="" data-i18n="ap_choose">선택하세요</option>
               <option value="KR" data-i18n="ap_kr">대한민국</option>
@@ -167,7 +173,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
             </select>
           </div>
           <div class="f wide">
-            <label data-i18n="ap_chain">배터리 밸류체인 내 역할<span class="req">*</span></label>
+            <label><span data-i18n="ap_chain">배터리 밸류체인 내 역할</span><span class="req">*</span></label>
             <div class="checks" id="chainBox">
               <label><input type="checkbox" name="chain" value="소재·원료"><span data-i18n="ap_c1">소재·원료</span></label>
               <label><input type="checkbox" name="chain" value="셀·모듈·팩"><span data-i18n="ap_c2">셀·모듈·팩</span></label>
@@ -185,7 +191,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
         <legend data-i18n="ap_s2">담당자</legend>
         <div class="grid">
           <div class="f">
-            <label for="name" data-i18n="ap_name">이름<span class="req">*</span></label>
+            <label for="name"><span data-i18n="ap_name">이름</span><span class="req">*</span></label>
             <input type="text" id="name" name="name" required autocomplete="name">
           </div>
           <div class="f">
@@ -193,7 +199,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
             <input type="text" id="position" name="position">
           </div>
           <div class="f">
-            <label for="email" data-i18n="ap_email">이메일<span class="req">*</span></label>
+            <label for="email"><span data-i18n="ap_email">이메일</span><span class="req">*</span></label>
             <input type="email" id="email" name="email" required autocomplete="email">
           </div>
           <div class="f">
@@ -207,7 +213,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
         <legend data-i18n="ap_s3">협력 수요</legend>
         <div class="grid">
           <div class="f wide">
-            <label data-i18n="ap_interest">찾고 있는 협력 형태<span class="req">*</span></label>
+            <label><span data-i18n="ap_interest">찾고 있는 협력 형태</span><span class="req">*</span></label>
             <div class="checks" id="interestBox">
               <label><input type="checkbox" name="interest" value="합작 투자"><span data-i18n="ap_i1">합작 투자</span></label>
               <label><input type="checkbox" name="interest" value="기술 공동개발"><span data-i18n="ap_i2">기술 공동개발</span></label>
@@ -237,7 +243,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
             </select>
           </div>
           <div class="f wide">
-            <label for="message" data-i18n="ap_message">문의 내용<span class="req">*</span></label>
+            <label for="message"><span data-i18n="ap_message">문의 내용</span><span class="req">*</span></label>
             <textarea id="message" name="message" required></textarea>
             <span class="hint" data-i18n="ap_mhint">주요 제품과 기술, 찾고 계신 파트너의 조건을 구체적으로 적어주실수록 매칭 정확도가 높아집니다.</span>
           </div>

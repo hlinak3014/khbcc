@@ -45,7 +45,9 @@ header{position:sticky;top:0;z-index:50;background:rgba(241,242,245,.9);backdrop
 .bar{display:flex;align-items:center;gap:18px;padding:11px var(--pad)}
 .mark{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
 .mark img{height:32px;width:auto}
-.mark .wm{font-family:var(--display);font-weight:700;font-size:19px;letter-spacing:.01em;color:var(--ink)}
+.mark .wmbox{display:flex;flex-direction:column;gap:1px;line-height:1.1}
+.mark .wm{font-family:var(--display);font-weight:700;font-size:19px;letter-spacing:.01em;color:var(--ink);line-height:1.1}
+.mark .wmsub{font-family:var(--mono);font-size:9.5px;letter-spacing:.03em;color:var(--steel);white-space:nowrap}
 nav{display:flex;gap:20px;margin-left:auto;align-items:center}
 nav a{font-family:var(--mono);font-size:12px;color:var(--steel);text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap}
 nav a:hover{color:var(--ink);border-bottom-color:var(--red)}
@@ -124,6 +126,8 @@ section{padding:clamp(50px,6.5vw,86px) var(--pad)}
 .d-ti{font-family:var(--display);font-size:16px;font-weight:600;fill:var(--ink)}
 .d-bd{font-family:var(--body);font-size:13px;fill:var(--steel)}
 .d-num{font-family:var(--mono);font-size:13px;font-weight:500;fill:var(--red);letter-spacing:.08em}
+.d-stepnum{font-family:var(--mono);font-size:13px;font-weight:600;fill:#FFFFFF;letter-spacing:.1em}
+.vicon{width:34px;height:34px;object-fit:contain;margin-bottom:10px;opacity:.85}
 .d-out{font-family:var(--mono);font-size:12.5px;fill:var(--ink)}
 .d-out-on{font-family:var(--mono);font-size:12.5px;fill:#FAFAFB}
 
@@ -140,9 +144,9 @@ section{padding:clamp(50px,6.5vw,86px) var(--pad)}
 .values{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--line);margin-top:34px;border:1px solid var(--line)}
 .value{background:var(--paper-2);padding:19px}
 .value .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;display:inline-block;padding:3px 8px;border-radius:2px;margin-bottom:10px;color:#fff}
-.value:nth-child(1) .tag{background:var(--ink)}
-.value:nth-child(2) .tag{background:var(--red)}
-.value:nth-child(3) .tag{background:var(--green)}
+.value:nth-child(1) .tag{background:#2E75B6}
+.value:nth-child(2) .tag{background:#ED7D31}
+.value:nth-child(3) .tag{background:#70AD47}
 .value p{font-size:14px;color:var(--steel)}
 
 .gov{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
@@ -191,6 +195,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
 }
 @media (max-width:520px){
   .mark .wm{font-size:17px}
+  .mark .wmsub{display:none}
   .mark img{height:28px}
   .lang button{padding:6px 7px;font-size:10px}
 }
@@ -206,7 +211,10 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
   <div class="bar">
     <a href="index.html" class="mark">
       <img src="assets/khbcc-logo.png" alt="KHBCC">
-      <span class="wm">KHBCC</span>
+      <span class="wmbox">
+        <span class="wm">KHBCC</span>
+        <span class="wmsub">Korea&#8211;Hungary Battery Cooperation Center</span>
+      </span>
     </a>
     <nav>
       <a href="#about" data-i18n="nav1">센터 소개</a>
@@ -337,76 +345,75 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
     </div>
 
     <figure class="fig" aria-labelledby="figLabsT">
-      <svg viewBox="0 0 1120 440" role="img" aria-labelledby="figLabsT">
+      <svg viewBox="0 0 1120 466" role="img" aria-labelledby="figLabsT">
         <title id="figLabsT" data-i18n="figLabsT">KHBCC 5개 기능 연구소 구성</title>
 
-        <rect x="470" y="12" width="180" height="40" rx="3" fill="#0E1430"/>
-        <text x="560" y="37" text-anchor="middle" class="d-hd">KHBCC</text>
+        <image href="assets/khbcc-logo.png" x="536" y="6" width="48" height="48"/>
+        <path d="M560 56 L560 78 M340 78 L890 78 M340 78 L340 100 M890 78 L890 100" class="d-ln"/>
 
-        <path d="M560 52 L560 74 M340 74 L890 74 M340 74 L340 96 M890 74 L890 96" class="d-ln"/>
+        <rect x="20" y="100" width="640" height="32" rx="3" fill="#E4E7EE" stroke="#C2C7D4"/>
+        <text x="340" y="121" text-anchor="middle" class="d-div" data-i18n="figP1">공동 연구개발 부문</text>
 
-        <rect x="20" y="96" width="640" height="32" rx="3" fill="#E4E7EE" stroke="#C2C7D4"/>
-        <text x="340" y="117" text-anchor="middle" class="d-div" data-i18n="figP1">공동 연구개발 부문</text>
+        <rect x="680" y="100" width="420" height="32" rx="3" fill="#E4E7EE" stroke="#C2C7D4"/>
+        <text x="890" y="121" text-anchor="middle" class="d-div" data-i18n="figP2">한국·헝가리 협력 부문</text>
 
-        <rect x="680" y="96" width="420" height="32" rx="3" fill="#E4E7EE" stroke="#C2C7D4"/>
-        <text x="890" y="117" text-anchor="middle" class="d-div" data-i18n="figP2">한국·헝가리 협력 부문</text>
-
-        <path d="M340 128 L340 146 M120 146 L560 146 M120 146 L120 166 M340 146 L340 166 M560 146 L560 166" class="d-ln"/>
-        <path d="M890 128 L890 146 M780 146 L1000 146 M780 146 L780 166 M1000 146 L1000 166" class="d-ln"/>
+        <path d="M340 132 L340 152 M120 152 L560 152 M120 152 L120 188 M340 152 L340 188 M560 152 L560 188" class="d-ln"/>
+        <path d="M890 132 L890 152 M780 152 L1000 152 M780 152 L780 188 M1000 152 L1000 188" class="d-ln"/>
 
         <g>
-          <rect x="20" y="166" width="200" height="238" rx="4" fill="#FFFFFF" stroke="#C2C7D4"/>
-          <rect x="20" y="166" width="200" height="4" fill="#D81018"/>
-          <text x="38" y="192" class="d-tag">SUB-TOPIC 3 · BME</text>
-          <text x="38" y="216" class="d-ti" data-i18n="figL1a">성능 검사</text>
-          <text x="38" y="236" class="d-ti" data-i18n="figL1b">연구소</text>
-          <text x="38" y="268" class="d-bd" data-i18n="figL1c">사용후 배터리 성능 평가</text>
-          <text x="38" y="292" class="d-bd" data-i18n="figL1d">잔존 수명 산정</text>
-          <text x="38" y="316" class="d-bd" data-i18n="figL1e">신규 기술 기준 개발</text>
+          <rect x="20" y="188" width="200" height="252" rx="4" fill="#FFFFFF" stroke="#C2C7D4"/>
+          <rect x="20" y="188" width="200" height="66" fill="#F4B081"/>
+          <image href="assets/icons/icon-test.png" x="98" y="198" width="44" height="44"/>
+          <text x="38" y="274" class="d-tag">SUB-TOPIC 3 · BME</text>
+          <text x="38" y="298" class="d-ti" data-i18n="figL1a">성능 검사</text>
+          <text x="38" y="318" class="d-ti" data-i18n="figL1b">연구소</text>
+          <text x="38" y="350" class="d-bd" data-i18n="figL1c">사용후 배터리 성능 평가</text>
+          <text x="38" y="374" class="d-bd" data-i18n="figL1d">잔존 수명 산정</text>
+          <text x="38" y="398" class="d-bd" data-i18n="figL1e">신규 기술 기준 개발</text>
         </g>
-
         <g>
-          <rect x="240" y="166" width="200" height="238" rx="4" fill="#FFFFFF" stroke="#C2C7D4"/>
-          <rect x="240" y="166" width="200" height="4" fill="#D81018"/>
-          <text x="258" y="192" class="d-tag">SUB-TOPIC 2 · BME</text>
-          <text x="258" y="216" class="d-ti" data-i18n="figL2a">배터리 여권·데이터</text>
-          <text x="258" y="236" class="d-ti" data-i18n="figL2b">분석 연구소</text>
-          <text x="258" y="268" class="d-bd" data-i18n="figL2c">사용 데이터 분석 거점</text>
-          <text x="258" y="292" class="d-bd" data-i18n="figL2d">양국 데이터 교류</text>
-          <text x="258" y="316" class="d-bd" data-i18n="figL2e">재활용 공정 연구</text>
+          <rect x="240" y="188" width="200" height="252" rx="4" fill="#FFFFFF" stroke="#C2C7D4"/>
+          <rect x="240" y="188" width="200" height="66" fill="#FFD966"/>
+          <image href="assets/icons/icon-data.png" x="318" y="198" width="44" height="44"/>
+          <text x="258" y="274" class="d-tag">SUB-TOPIC 2 · BME</text>
+          <text x="258" y="298" class="d-ti" data-i18n="figL2a">배터리 여권·데이터</text>
+          <text x="258" y="318" class="d-ti" data-i18n="figL2b">분석 연구소</text>
+          <text x="258" y="350" class="d-bd" data-i18n="figL2c">사용 데이터 분석 거점</text>
+          <text x="258" y="374" class="d-bd" data-i18n="figL2d">양국 데이터 교류</text>
+          <text x="258" y="398" class="d-bd" data-i18n="figL2e">재활용 공정 연구</text>
         </g>
-
         <g>
-          <rect x="460" y="166" width="200" height="238" rx="4" fill="#FFFFFF" stroke="#C2C7D4"/>
-          <rect x="460" y="166" width="200" height="4" fill="#D81018"/>
-          <text x="478" y="192" class="d-tag">SUB-TOPIC 4 · ELTE</text>
-          <text x="478" y="216" class="d-ti" data-i18n="figL3a">환경·안전</text>
-          <text x="478" y="236" class="d-ti" data-i18n="figL3b">연구소</text>
-          <text x="478" y="268" class="d-bd" data-i18n="figL3c">폐기물 추적</text>
-          <text x="478" y="292" class="d-bd" data-i18n="figL3d">규제 준수 확인</text>
-          <text x="478" y="316" class="d-bd" data-i18n="figL3e">안전 기준 수립</text>
+          <rect x="460" y="188" width="200" height="252" rx="4" fill="#FFFFFF" stroke="#C2C7D4"/>
+          <rect x="460" y="188" width="200" height="66" fill="#70AD47"/>
+          <image href="assets/icons/icon-env.png" x="538" y="198" width="44" height="44"/>
+          <text x="478" y="274" class="d-tag">SUB-TOPIC 4 · ELTE</text>
+          <text x="478" y="298" class="d-ti" data-i18n="figL3a">환경·안전</text>
+          <text x="478" y="318" class="d-ti" data-i18n="figL3b">연구소</text>
+          <text x="478" y="350" class="d-bd" data-i18n="figL3c">폐기물 추적</text>
+          <text x="478" y="374" class="d-bd" data-i18n="figL3d">규제 준수 확인</text>
+          <text x="478" y="398" class="d-bd" data-i18n="figL3e">안전 기준 수립</text>
         </g>
-
         <g>
-          <rect x="680" y="166" width="200" height="238" rx="4" fill="#FFFFFF" stroke="#C2C7D4"/>
-          <rect x="680" y="166" width="200" height="4" fill="#0E1430"/>
-          <text x="698" y="192" class="d-tag">SUB-TOPIC 1 · KBIA·HUBA</text>
-          <text x="698" y="216" class="d-ti" data-i18n="figL4a">사업 개발</text>
-          <text x="698" y="236" class="d-ti" data-i18n="figL4b">연구소</text>
-          <text x="698" y="268" class="d-bd" data-i18n="figL4c">B2B 매칭·회원사 지원</text>
-          <text x="698" y="292" class="d-bd" data-i18n="figL4d">인터배터리 네트워킹</text>
-          <text x="698" y="316" class="d-bd" data-i18n="figL4e">EU Horizon 컨소시엄</text>
+          <rect x="680" y="188" width="200" height="252" rx="4" fill="#FFFFFF" stroke="#C2C7D4"/>
+          <rect x="680" y="188" width="200" height="66" fill="#8E7CC3"/>
+          <image href="assets/icons/icon-business.png" x="758" y="198" width="44" height="44"/>
+          <text x="698" y="274" class="d-tag">SUB-TOPIC 1 · KBIA·HUBA</text>
+          <text x="698" y="298" class="d-ti" data-i18n="figL4a">사업 개발</text>
+          <text x="698" y="318" class="d-ti" data-i18n="figL4b">연구소</text>
+          <text x="698" y="350" class="d-bd" data-i18n="figL4c">B2B 매칭·회원사 지원</text>
+          <text x="698" y="374" class="d-bd" data-i18n="figL4d">인터배터리 네트워킹</text>
+          <text x="698" y="398" class="d-bd" data-i18n="figL4e">EU Horizon 컨소시엄</text>
         </g>
-
         <g>
-          <rect x="900" y="166" width="200" height="238" rx="4" fill="#FFFFFF" stroke="#C2C7D4"/>
-          <rect x="900" y="166" width="200" height="4" fill="#0E1430"/>
-          <text x="918" y="192" class="d-tag">SUB-TOPIC 1 · YONSEI·BME</text>
-          <text x="918" y="216" class="d-ti" data-i18n="figL5a">교육 협력</text>
-          <text x="918" y="236" class="d-ti" data-i18n="figL5b">연구소</text>
-          <text x="918" y="268" class="d-bd" data-i18n="figL5c">학술 교류 프로그램</text>
-          <text x="918" y="292" class="d-bd" data-i18n="figL5d">복수학위 운영</text>
-          <text x="918" y="316" class="d-bd" data-i18n="figL5e">현직 인력 재교육</text>
+          <rect x="900" y="188" width="200" height="252" rx="4" fill="#FFFFFF" stroke="#C2C7D4"/>
+          <rect x="900" y="188" width="200" height="66" fill="#9CC2E5"/>
+          <image href="assets/icons/icon-education.png" x="978" y="198" width="44" height="44"/>
+          <text x="918" y="274" class="d-tag">SUB-TOPIC 1 · YONSEI·BME</text>
+          <text x="918" y="298" class="d-ti" data-i18n="figL5a">교육 협력</text>
+          <text x="918" y="318" class="d-ti" data-i18n="figL5b">연구소</text>
+          <text x="918" y="350" class="d-bd" data-i18n="figL5c">학술 교류 프로그램</text>
+          <text x="918" y="374" class="d-bd" data-i18n="figL5d">복수학위 운영</text>
+          <text x="918" y="398" class="d-bd" data-i18n="figL5e">현직 인력 재교육</text>
         </g>
       </svg>
     </figure>
@@ -460,57 +467,61 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
     </div>
 
     <figure class="fig" aria-labelledby="figB2bT">
-      <svg viewBox="0 0 1120 340" role="img" aria-labelledby="figB2bT">
+      <svg viewBox="0 0 1120 300" role="img" aria-labelledby="figB2bT">
         <title id="figB2bT" data-i18n="figB2bT">B2B 매칭 4단계 절차</title>
 
         <rect x="20" y="14" width="1080" height="36" rx="3" fill="#0E1430"/>
         <text x="560" y="37" text-anchor="middle" class="d-hd" data-i18n="figDb">KBIA · HUBA 회원사 데이터베이스</text>
-
-        <path d="M155 50 L155 76 M425 50 L425 76 M695 50 L695 76 M965 50 L965 76" class="d-ln"/>
+        <path d="M155 50 L155 70 M425 50 L425 70 M695 50 L695 70 M965 50 L965 70" class="d-ln"/>
 
         <g>
-          <rect x="20" y="76" width="270" height="150" rx="4" fill="#FFFFFF" stroke="#C2C7D4"/>
-          <rect x="20" y="76" width="270" height="4" fill="#D81018"/>
-          <text x="40" y="104" class="d-num">01</text>
-          <text x="40" y="130" class="d-ti" data-i18n="figS1t">자격 검증</text>
-          <text x="40" y="160" class="d-bd" data-i18n="figS1a">사업 실재성 확인</text>
-          <text x="40" y="184" class="d-bd" data-i18n="figS1b">밸류체인 내 역할 확인</text>
+          <rect x="20" y="76" width="270" height="150" rx="4" fill="#FFFFFF" stroke="#2E75B6" stroke-width="1.5"/>
+          <rect x="20" y="76" width="270" height="30" rx="4" fill="#2E75B6"/>
+          <rect x="20" y="98" width="270" height="8" fill="#2E75B6"/>
+          <text x="36" y="96" class="d-stepnum">01</text>
+          <text x="36" y="136" class="d-ti" data-i18n="figS1t">자격 검증</text>
+          <text x="36" y="168" class="d-bd" data-i18n="figS1a">사업 실재성 확인</text>
+          <text x="36" y="192" class="d-bd" data-i18n="figS1b">밸류체인 내 역할 확인</text>
         </g>
-        <g>
-          <rect x="290" y="76" width="270" height="150" rx="4" fill="#FFFFFF" stroke="#C2C7D4"/>
-          <rect x="290" y="76" width="270" height="4" fill="#D81018"/>
-          <text x="310" y="104" class="d-num">02</text>
-          <text x="310" y="130" class="d-ti" data-i18n="figS2t">역량·수요 분석</text>
-          <text x="310" y="160" class="d-bd" data-i18n="figS2a">기술 성숙도·생산 역량 평가</text>
-          <text x="310" y="184" class="d-bd" data-i18n="figS2b">협력 수요 파악</text>
-        </g>
-        <g>
-          <rect x="560" y="76" width="270" height="150" rx="4" fill="#FFFFFF" stroke="#C2C7D4"/>
-          <rect x="560" y="76" width="270" height="4" fill="#D81018"/>
-          <text x="580" y="104" class="d-num">03</text>
-          <text x="580" y="130" class="d-ti" data-i18n="figS3t">3대 가치 선별</text>
-          <text x="580" y="160" class="d-bd" data-i18n="figS3a">기술적 가치 · 경제적 영향</text>
-          <text x="580" y="184" class="d-bd" data-i18n="figS3b">환경적 지속가능성</text>
-        </g>
-        <g>
-          <rect x="830" y="76" width="270" height="150" rx="4" fill="#FFFFFF" stroke="#C2C7D4"/>
-          <rect x="830" y="76" width="270" height="4" fill="#D81018"/>
-          <text x="850" y="104" class="d-num">04</text>
-          <text x="850" y="130" class="d-ti" data-i18n="figS4t">사전 큐레이션</text>
-          <text x="850" y="160" class="d-bd" data-i18n="figS4a">추천 미팅 일정 전달</text>
-          <text x="850" y="184" class="d-bd" data-i18n="figS4b">상대 기업 정보 제공</text>
-        </g>
-
-        <path d="M155 226 L155 250 M425 226 L425 250 M695 226 L695 250 M965 226 L965 250" class="d-ln"/>
-
-        <rect x="20" y="250" width="270" height="34" rx="3" fill="#E4E7EE" stroke="#C2C7D4"/>
+        <path d="M155 226 L155 248 M149 242 L155 248 L161 242" fill="none" stroke="#2E75B6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="20" y="250" width="270" height="34" rx="3" fill="#BDD7EE" stroke="#2E75B6"/>
         <text x="155" y="271" text-anchor="middle" class="d-out" data-i18n="figO1">검증된 파트너 풀</text>
-        <rect x="290" y="250" width="270" height="34" rx="3" fill="#E4E7EE" stroke="#C2C7D4"/>
+        <g>
+          <rect x="290" y="76" width="270" height="150" rx="4" fill="#FFFFFF" stroke="#ED7D31" stroke-width="1.5"/>
+          <rect x="290" y="76" width="270" height="30" rx="4" fill="#ED7D31"/>
+          <rect x="290" y="98" width="270" height="8" fill="#ED7D31"/>
+          <text x="306" y="96" class="d-stepnum">02</text>
+          <text x="306" y="136" class="d-ti" data-i18n="figS2t">역량·수요 분석</text>
+          <text x="306" y="168" class="d-bd" data-i18n="figS2a">기술 성숙도·생산 역량 평가</text>
+          <text x="306" y="192" class="d-bd" data-i18n="figS2b">협력 수요 파악</text>
+        </g>
+        <path d="M425 226 L425 248 M419 242 L425 248 L431 242" fill="none" stroke="#ED7D31" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="290" y="250" width="270" height="34" rx="3" fill="#F8CBAD" stroke="#ED7D31"/>
         <text x="425" y="271" text-anchor="middle" class="d-out" data-i18n="figO2">기업 프로파일</text>
-        <rect x="560" y="250" width="270" height="34" rx="3" fill="#E4E7EE" stroke="#C2C7D4"/>
+        <g>
+          <rect x="560" y="76" width="270" height="150" rx="4" fill="#FFFFFF" stroke="#70AD47" stroke-width="1.5"/>
+          <rect x="560" y="76" width="270" height="30" rx="4" fill="#70AD47"/>
+          <rect x="560" y="98" width="270" height="8" fill="#70AD47"/>
+          <text x="576" y="96" class="d-stepnum">03</text>
+          <text x="576" y="136" class="d-ti" data-i18n="figS3t">3대 가치 선별</text>
+          <text x="576" y="168" class="d-bd" data-i18n="figS3a">기술적 가치 · 경제적 영향</text>
+          <text x="576" y="192" class="d-bd" data-i18n="figS3b">환경적 지속가능성</text>
+        </g>
+        <path d="M695 226 L695 248 M689 242 L695 248 L701 242" fill="none" stroke="#70AD47" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="560" y="250" width="270" height="34" rx="3" fill="#C5E0B4" stroke="#70AD47"/>
         <text x="695" y="271" text-anchor="middle" class="d-out" data-i18n="figO3">큐레이션 리스트</text>
-        <rect x="830" y="250" width="270" height="34" rx="3" fill="#0E1430"/>
-        <text x="965" y="271" text-anchor="middle" class="d-out-on" data-i18n="figO4">실질적 B2B 미팅</text>
+        <g>
+          <rect x="830" y="76" width="270" height="150" rx="4" fill="#FFFFFF" stroke="#7030A0" stroke-width="1.5"/>
+          <rect x="830" y="76" width="270" height="30" rx="4" fill="#7030A0"/>
+          <rect x="830" y="98" width="270" height="8" fill="#7030A0"/>
+          <text x="846" y="96" class="d-stepnum">04</text>
+          <text x="846" y="136" class="d-ti" data-i18n="figS4t">사전 큐레이션</text>
+          <text x="846" y="168" class="d-bd" data-i18n="figS4a">추천 미팅 일정 전달</text>
+          <text x="846" y="192" class="d-bd" data-i18n="figS4b">상대 기업 정보 제공</text>
+        </g>
+        <path d="M965 226 L965 248 M959 242 L965 248 L971 242" fill="none" stroke="#7030A0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="830" y="250" width="270" height="34" rx="3" fill="#DDC4E2" stroke="#7030A0"/>
+        <text x="965" y="271" text-anchor="middle" class="d-out" data-i18n="figO4">실질적 B2B 미팅</text>
       </svg>
     </figure>
 
@@ -539,15 +550,15 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
 
     <div class="values">
       <div class="value">
-        <span class="tag" data-i18n="v1t">기술적 가치</span>
+        <img class="vicon" src="assets/icons/icon-technical.png" alt=""><span class="tag" data-i18n="v1t">기술적 가치</span>
         <p data-i18n="v1b">밸류체인 기여도와 기술 성숙도. 헝가리 현지 파트너와 공동 연구가 가능하거나 생산라인에 바로 적용할 수 있는 수준인지 확인합니다.</p>
       </div>
       <div class="value">
-        <span class="tag" data-i18n="v2t">경제적 영향</span>
+        <img class="vicon" src="assets/icons/icon-economic.png" alt=""><span class="tag" data-i18n="v2t">경제적 영향</span>
         <p data-i18n="v2b">공급망에 실제로 편입될 수 있는지, 계약과 투자로 이어질 가능성이 있는지를 봅니다.</p>
       </div>
       <div class="value">
-        <span class="tag" data-i18n="v3t">환경적 지속가능성</span>
+        <img class="vicon" src="assets/icons/icon-sustain.png" alt=""><span class="tag" data-i18n="v3t">환경적 지속가능성</span>
         <p data-i18n="v3b">배터리 여권 대응 준비 상태와 순환경제 기여도. 재사용·재활용 관련 실적이 있는지 확인합니다.</p>
       </div>
     </div>

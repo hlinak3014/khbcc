@@ -13,11 +13,11 @@ var I18N = {
     /* --- 공통 --- */
     nav1:"About", nav2:"Research units", nav3:"Firm matching", nav4:"Organization",
     nav5:"Partners", nav6:"Activities", nav7:"Contact",
-    f1:"KHBCC — Korea–Hungary Battery Cooperation Research Center",
+    f1:"KHBCC — Korea–Hungary Battery Cooperation Center",
     f2:"2025/26 EIPP · Supported by MOEF and KDI",
 
     /* --- 히어로 --- */
-    heroEyebrow:"Korea–Hungary Battery Cooperation Research Center",
+    heroEyebrow:"Korea–Hungary Battery Cooperation Center",
     heroTitle:"A joint research center for EU battery regulation compliance",
     heroLede:"KHBCC brings battery performance testing, usage data analysis, environmental assessment, and industry cooperation together in one organization. We work in Korean, English, and Hungarian.",
     ctaJoin:"Register your firm", ctaNews:"See our activities",
@@ -164,11 +164,11 @@ var I18N = {
     /* --- közös --- */
     nav1:"A központról", nav2:"Kutatási egységek", nav3:"Cégpárosítás", nav4:"Szervezet",
     nav5:"Partnerek", nav6:"Tevékenységek", nav7:"Kapcsolat",
-    f1:"KHBCC — Koreai–Magyar Akkumulátoripari Együttműködési Kutatóközpont",
+    f1:"KHBCC — Koreai–Magyar Akkumulátoripari Együttműködési Központ",
     f2:"2025/26 EIPP · A MOEF és a KDI támogatásával",
 
     /* --- fejléc --- */
-    heroEyebrow:"Koreai–Magyar Akkumulátoripari Együttműködési Kutatóközpont",
+    heroEyebrow:"Koreai–Magyar Akkumulátoripari Együttműködési Központ",
     heroTitle:"Közös kutatóközpont az uniós akkumulátorszabályozásnak való megfeleléshez",
     heroLede:"A KHBCC egyetlen szervezetben egyesíti az akkumulátorok teljesítményvizsgálatát, a használati adatok elemzését, a környezeti értékelést és az ipari együttműködés támogatását. Koreai, angol és magyar nyelven dolgozunk.",
     ctaJoin:"Cégregisztráció", ctaNews:"Tevékenységeink",
