@@ -59,7 +59,9 @@ hlinak3014.github.io/khbcc/admin
 ## 파일 구성
 
 ```
-index.html        메인 페이지 (한국어 문구가 여기 들어 있음)
+index.html        메인 페이지 (설립 배경, 연구진, 연구 조직, 기업 매칭, 운영 체계, 참여 기관)
+research.html     연구 내용 페이지
+apply.html        기업 등록 신청 페이지
 news.html         활동 기록 페이지 (틀만 있음)
 news.json         ★ 활동 기록 내용. 편집 화면이 이 파일을 고칩니다
 i18n.js           영어·헝가리어 번역문
