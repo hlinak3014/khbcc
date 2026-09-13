@@ -70,8 +70,9 @@ nav{display:flex;gap:4px;margin-left:auto;align-items:center}
   background:url('assets/khbcc-logo.png') center/contain no-repeat;opacity:.08;pointer-events:none}
 .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,60px);align-items:start;max-width:1280px;margin:0 auto;position:relative;z-index:1}
 .hero .eyebrow{color:#8E99C4}
-.hero h1{font-size:clamp(28px,4.6vw,50px);margin:16px 0 18px;max-width:17ch}
-.hero p.lede{font-size:clamp(15px,1.5vw,17px);color:#B9C1DC;max-width:50ch}
+.hero h1{font-size:clamp(34px,5.4vw,62px);margin:14px 0 14px;max-width:16ch;line-height:1.1}
+.hero p.hero-sub{font-size:clamp(16px,1.9vw,22px);color:#D5DBEC;max-width:34ch;font-weight:500;line-height:1.4;margin-bottom:16px}
+.hero p.lede{font-size:clamp(14px,1.35vw,15.5px);color:#9AA5C6;max-width:48ch}
 .cta-row{display:flex;flex-wrap:wrap;gap:11px;margin-top:26px}
 .btn{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:12px 19px;border-radius:2px;display:inline-block;transition:.15s}
 .btn-primary{background:var(--red);color:#fff;border:1.5px solid var(--red)}
@@ -123,20 +124,19 @@ section{padding:clamp(50px,6.5vw,86px) var(--pad)}
 .card p{font-size:14.5px;color:var(--steel);line-height:1.62}
 
 /* people */
-.pe-lead{display:grid;grid-template-columns:290px 1fr;gap:30px;background:#fff;border:1px solid var(--line);border-radius:4px;padding:26px;margin-bottom:26px}
-.pe-lead-l h3{font-size:24px;margin:9px 0 5px}
-.pe-aff{font-size:14px;color:var(--steel)}
-.pe-lead-r p{font-size:15px;color:var(--steel);line-height:1.68}
-.pe-link{display:inline-block;margin-top:13px;font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;color:var(--ink);text-decoration:none;border-bottom:1.5px solid var(--red);padding-bottom:2px}
-.pe-link:hover{color:var(--red)}
-.pe-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.pe-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
 .pe-card{background:#fff;padding:22px 20px;display:flex;flex-direction:column}
 .pe-num{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--red);display:block;margin-bottom:10px}
 .pe-card h3{margin-bottom:9px}
-.pe-card>p{font-size:14.5px;color:var(--steel);line-height:1.6;flex:1}
-.pe-orgs{display:grid;grid-template-columns:auto 1fr;gap:6px 11px;margin-top:16px;padding-top:14px;border-top:1px solid var(--line);align-items:baseline}
-.pe-side{font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:var(--steel);text-transform:uppercase}
-.pe-org{font-size:13.5px;color:var(--ink);line-height:1.45}
+.pe-card>p{font-size:14.5px;color:var(--steel);line-height:1.6;flex:1 0 auto;min-height:7.2em}
+.pe-people{display:flex;flex-direction:column;gap:14px;margin-top:16px;padding-top:14px;border-top:1px solid var(--line);min-height:11em}
+.pe-p{display:flex;flex-direction:column;gap:3px}
+.pe-p b{font-size:14.5px;font-weight:600;color:var(--ink);line-height:1.3}
+.pe-p .pe-tbd{color:var(--steel);font-weight:400;font-style:italic}
+.pe-aff2{font-size:12.5px;color:var(--steel);line-height:1.4}
+.pe-orgs{display:flex;flex-direction:column;gap:5px;margin-top:auto;padding-top:12px;border-top:1px solid var(--line)}
+.pe-side{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;color:var(--steel);text-transform:uppercase}
+.pe-org{font-size:12.5px;color:var(--steel);line-height:1.45}
 .pe-note{margin-top:20px;font-size:14px;color:var(--steel)}
 .pe-note a{color:var(--ink);border-bottom:1.5px solid var(--red);text-decoration:none;padding-bottom:1px}
 
@@ -254,7 +254,6 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
   .rail div{border-right:0;border-bottom:1px solid var(--line-dark);padding-left:0}
   .rail div:last-child{border-bottom:0}
   .gov-layer{grid-template-columns:1fr;gap:7px}
-  .pe-lead{grid-template-columns:1fr;gap:18px}
   nav{display:none}
   .bar{gap:12px}
   .fig{display:none}
@@ -314,8 +313,8 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
     </nav>
     <div class="lang" role="group" aria-label="Language">
       <button data-lang="ko" aria-pressed="true">KO</button>
-      <button data-lang="en" aria-pressed="false">EN</button>
       <button data-lang="hu" aria-pressed="false">HU</button>
+      <button data-lang="en" aria-pressed="false">EN</button>
     </div>
   </div>
 </header>
@@ -323,9 +322,10 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
 <div class="hero" id="top">
   <div class="hero-grid">
     <div>
-      <span class="eyebrow" data-i18n="heroEyebrow">한국–헝가리 배터리 협력 연구센터</span>
-      <h1 data-i18n="heroTitle">EU 배터리 규정 대응을 위한 양국 공동 연구센터</h1>
-      <p class="lede" data-i18n="heroLede">KHBCC는 배터리 성능 시험, 사용 데이터 분석, 환경영향 평가, 기업 간 협력 지원을 한 조직 안에서 수행합니다. 한국어·영어·헝가리어로 운영합니다.</p>
+      <span class="eyebrow" data-i18n="heroEyebrow">Korea–Hungary Battery Cooperation Center</span>
+      <h1 data-i18n="heroTitle">한국–헝가리<br>배터리 협력센터</h1>
+      <p class="hero-sub" data-i18n="heroSub">EU 배터리 규정 대응을 위한 양국 공동 연구센터</p>
+      <p class="lede" data-i18n="heroLede">배터리 성능 시험, 사용 데이터 분석, 환경영향 평가, 기업 간 협력 지원을 한 조직 안에서 수행합니다. 한국어·헝가리어·영어로 운영합니다.</p>
       <div class="cta-row">
         <a href="apply.html" class="btn btn-primary" data-i18n="ctaJoin">기업 등록 신청</a>
         <a href="research.html" class="btn btn-ghost" data-i18n="ctaResearch">연구 내용 보기</a>
@@ -430,66 +430,95 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
       <p data-i18n="peBody">KHBCC는 단일 시설이 아니라 양국 기관이 각자의 강점 분야를 맡는 분산형 협력 모델로 운영됩니다. 아래는 연구 영역별 담당 기관과 책임 범위입니다.</p>
     </div>
 
-    <div class="pe-lead">
-      <div class="pe-lead-l">
-        <span class="eyebrow" data-i18n="peLeadTag">총괄 연구책임자</span>
-        <h3>Yong-June Shin</h3>
-        <p class="pe-aff" data-i18n="peLeadAff">연세대학교 전기전자공학부 교수</p>
-      </div>
-      <div class="pe-lead-r">
-        <p data-i18n="peLeadBio">EIPP 사업 전 기간의 연구책임자로 센터 설립과 운영 체계 수립을 총괄합니다. 2025년 9월부터 12월까지 부다페스트 공과대학에서 안식년을 보내며 현지 기관과의 협력 관계를 구축했고, 연세대–BME 복수학위 협정 체결과 BME 객원교수 임명으로 이어졌습니다. AI 기반 배터리 상태 진단이 주 연구 분야입니다.</p>
-        <a class="pe-link" href="https://www.hu-ba.hu/en/interview-with-korean-professor-dr-yong-june-shin-on-hungarian-korean-professional-cooperation/" target="_blank" rel="noopener" data-i18n="peLeadLink">HUBA 인터뷰 보기 &rarr;</a>
-      </div>
-    </div>
-
     <div class="pe-grid">
       <article class="pe-card">
         <span class="pe-num">01</span>
         <h3 data-i18n="pe1t">제도 기반 구축</h3>
         <p data-i18n="pe1b">센터의 거버넌스 구조, 법적 지위, 재정 모델을 설계하고 3개국어 플랫폼과 기업 매칭 체계를 운영합니다.</p>
+        <div class="pe-people">
+          <div class="pe-p">
+            <span class="pe-side" data-i18n="pe_kr">한국</span>
+            <b>Yong-June Shin</b>
+            <span class="pe-aff2" data-i18n="pe1krA">연세대학교 전기전자공학부 교수</span>
+          </div>
+          <div class="pe-p">
+            <span class="pe-side" data-i18n="pe_hu">헝가리</span>
+            <b>Péter Kaderják</b>
+            <span class="pe-aff2" data-i18n="pe1huA">헝가리배터리협회(HUBA) 전무이사</span>
+          </div>
+        </div>
         <div class="pe-orgs">
-          <span class="pe-side" data-i18n="pe_kr">한국</span>
-          <span class="pe-org" data-i18n="pe1kr">연세대학교 · KDI · KBIA · KOTRA</span>
-          <span class="pe-side" data-i18n="pe_hu">헝가리</span>
-          <span class="pe-org" data-i18n="pe1hu">HUBA · 국가경제부(MNE)</span>
+          <span class="pe-side" data-i18n="pe_org">참여 기관</span>
+          <span class="pe-org" data-i18n="pe1org">연세대학교 · KDI · KBIA · KOTRA / HUBA · 국가경제부(MNE)</span>
         </div>
       </article>
 
       <article class="pe-card">
         <span class="pe-num">02</span>
         <h3 data-i18n="pe2t">성능 시험·검증</h3>
-        <p data-i18n="pe2b">EU 배터리 여권이 요구하는 데이터 항목을 실제 측정 가능한 시험 요건으로 바꾸고, 감사 대응이 가능한 검증 체계를 설계합니다.</p>
+        <p data-i18n="pe2b">EU 배터리 여권이 요구하는 데이터 항목을 실제 측정 가능한 시험 요건으로 바꾸고, 감사 대응이 가능한 검증 체계를 설계합니다. 2026년에는 사용후 배터리 모듈 단위 시험으로 확장합니다.</p>
+        <div class="pe-people">
+          <div class="pe-p">
+            <span class="pe-side" data-i18n="pe_kr">한국</span>
+            <b>Seon Hyeog Kim</b>
+            <span class="pe-aff2" data-i18n="pe2krA">공주대학교 조교수</span>
+          </div>
+          <div class="pe-p">
+            <span class="pe-side" data-i18n="pe_hu">헝가리</span>
+            <b>Gergely Lagler</b>
+            <span class="pe-aff2" data-i18n="pe2huA">HUBA 연구 프로젝트 리더</span>
+          </div>
+        </div>
         <div class="pe-orgs">
-          <span class="pe-side" data-i18n="pe_kr">한국</span>
-          <span class="pe-org" data-i18n="pe2kr">연세대학교</span>
-          <span class="pe-side" data-i18n="pe_hu">헝가리</span>
-          <span class="pe-org" data-i18n="pe2hu">BME</span>
+          <span class="pe-side" data-i18n="pe_org">참여 기관</span>
+          <span class="pe-org" data-i18n="pe2org">공주대학교 · HUBA · BME</span>
         </div>
       </article>
 
       <article class="pe-card">
         <span class="pe-num">03</span>
         <h3 data-i18n="pe3t">배터리 여권·데이터 분석</h3>
-        <p data-i18n="pe3b">배터리 생애주기 데이터를 수집·통합하고, AI로 건전성과 잔존 수명을 추정합니다. 공급망 위험과 원자재 가격 시나리오 분석도 담당합니다.</p>
+        <p data-i18n="pe3b">배터리 사용 데이터를 AI로 분석해 건전성과 잔존 수명을 예측합니다. 헝가리 측은 전기버스 배터리 시스템의 데이터 기반 최적화를 함께 수행합니다.</p>
+        <div class="pe-people">
+          <div class="pe-p">
+            <span class="pe-side" data-i18n="pe_kr">한국</span>
+            <b>Gu Young Kwon</b>
+            <span class="pe-aff2" data-i18n="pe3krA">공주대학교 조교수</span>
+          </div>
+          <div class="pe-p">
+            <span class="pe-side" data-i18n="pe_hu">헝가리</span>
+            <b>Péter Szilassy</b>
+            <span class="pe-aff2" data-i18n="pe3huA">HUBA 전기모빌리티 분과장 · 연구 프로젝트 리더</span>
+          </div>
+        </div>
         <div class="pe-orgs">
-          <span class="pe-side" data-i18n="pe_kr">한국</span>
-          <span class="pe-org" data-i18n="pe3kr">공주대학교</span>
-          <span class="pe-side" data-i18n="pe_hu">헝가리</span>
-          <span class="pe-org" data-i18n="pe3hu">BME</span>
+          <span class="pe-side" data-i18n="pe_org">참여 기관</span>
+          <span class="pe-org" data-i18n="pe3org">공주대학교 · HUBA · BME</span>
         </div>
       </article>
 
       <article class="pe-card">
         <span class="pe-num">04</span>
-        <h3 data-i18n="pe4t">환경·안전</h3>
-        <p data-i18n="pe4b">배터리 제조와 재활용 시설의 환경 영향을 측정하고, 전 생애주기 평가와 오염물질 저감, 안전 기준 수립을 수행합니다.</p>
+        <h3 data-i18n="pe4t">환경 영향 평가·순환경제</h3>
+        <p data-i18n="pe4b">배터리 산업의 환경 영향을 평가하고 순환경제 체계를 연구합니다. 오염물질 저감, 전과정평가, 안전 기준 수립을 포함합니다.</p>
+        <div class="pe-people">
+          <div class="pe-p">
+            <span class="pe-side" data-i18n="pe_kr">한국</span>
+            <b>Seoni Kim</b>
+            <span class="pe-aff2" data-i18n="pe4krA">이화여자대학교 조교수</span>
+          </div>
+          <div class="pe-p">
+            <span class="pe-side" data-i18n="pe_hu">헝가리</span>
+            <b>Győző Láng</b>
+            <span class="pe-aff2" data-i18n="pe4huA">HUBA 환경보건안전 분과장</span>
+          </div>
+        </div>
         <div class="pe-orgs">
-          <span class="pe-side" data-i18n="pe_kr">한국</span>
-          <span class="pe-org" data-i18n="pe4kr">이화여자대학교</span>
-          <span class="pe-side" data-i18n="pe_hu">헝가리</span>
-          <span class="pe-org" data-i18n="pe4hu">ELTE · HUN-REN</span>
+          <span class="pe-side" data-i18n="pe_org">참여 기관</span>
+          <span class="pe-org" data-i18n="pe4org">이화여자대학교 · HUBA · ELTE · HUN-REN</span>
         </div>
       </article>
+
     </div>
 
     <p class="pe-note" data-i18n="peNote">각 연구 영역의 세부 내용은 <a href="research.html">연구 내용</a> 페이지에서 볼 수 있습니다.</p>
