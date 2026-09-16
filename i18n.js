@@ -610,3 +610,26 @@ var I18N = {
     n_ph3:"Működés", n_ph3d:"EIPP 2026 · A KHBCC intézményi és működési keretének kialakítása"
   }
 };
+
+/* 활동 기록의 장소 이름. 왼쪽(한국어)을 각 언어로 옮깁니다.
+   news.json 에 새로운 장소를 쓰면 여기에도 한 줄 추가하세요. 없으면 한국어가 그대로 나옵니다. */
+var PLACES = {
+  hu: {
+    '군산': 'Gunsan',
+    '부다페스트': 'Budapest',
+    '부다페스트 · BME': 'Budapest · BME',
+    '부다페스트 · ELTE': 'Budapest · ELTE',
+    '서울': 'Szöul',
+    '서울 · 연세대학교': 'Szöul · Yonsei Egyetem',
+    '제주': 'Csedzsu'
+  },
+  en: {
+    '군산': 'Gunsan',
+    '부다페스트': 'Budapest',
+    '부다페스트 · BME': 'Budapest · BME',
+    '부다페스트 · ELTE': 'Budapest · ELTE',
+    '서울': 'Seoul',
+    '서울 · 연세대학교': 'Seoul · Yonsei University',
+    '제주': 'Jeju'
+  }
+};

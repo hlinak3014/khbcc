@@ -82,8 +82,17 @@ nav{display:flex;gap:4px;margin-left:auto;align-items:center}
 
 /* DPP record card */
 .hero-shot{margin:0;border-radius:4px;overflow:hidden;border:1px solid #2B3563;background:#18204A}
-.hero-shot img{width:100%;height:auto;display:block}
-.hero-shot figcaption{font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:#8E99C4;padding:10px 13px;border-top:1px solid #2B3563}
+.hs-frame{display:block;position:relative;aspect-ratio:3/2;overflow:hidden;background:#18204A;text-decoration:none}
+.hs-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .9s ease}
+.hs-frame img.on{opacity:1}
+.hs-frame::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(14,20,48,.35),transparent 42%);pointer-events:none}
+.hero-shot figcaption{padding:11px 13px;border-top:1px solid #2B3563;display:flex;align-items:center;gap:10px;min-height:42px}
+.hs-when{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;color:#F0A8AC;flex-shrink:0}
+.hs-title{font-size:12.5px;color:#B9C1DC;line-height:1.35;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.hs-dots{margin-left:auto;display:flex;gap:5px;flex-shrink:0}
+.hs-dots i{width:5px;height:5px;border-radius:50%;background:#3D4880;display:block;transition:background .3s}
+.hs-dots i.on{background:#F0A8AC}
+@media (prefers-reduced-motion:reduce){ .hs-frame img{transition:none} }
 .logo-txt{font-family:var(--display);font-weight:700;font-size:21px;color:#EC1C24;letter-spacing:-.01em}
 
 /* indicator rail — two items only */
@@ -322,9 +331,16 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
       </div>
     </div>
 
-    <figure class="hero-shot">
-      <img src="assets/news/2026-08-26-interim-workshop.jpg" alt="" loading="eager">
-      <figcaption data-i18n="heroShot">2026년 8월 · 부다페스트 중간보고 워크숍</figcaption>
+    <figure class="hero-shot" id="heroShot">
+      <a class="hs-frame" href="news.html" id="hsLink">
+        <img id="hsA" src="assets/news/2026-08-26-interim-workshop.jpg" alt="" loading="eager">
+        <img id="hsB" alt="" aria-hidden="true">
+      </a>
+      <figcaption>
+        <span class="hs-when" id="hsWhen"></span>
+        <span class="hs-title" id="hsTitle" data-i18n="heroShot">2026년 8월 · 부다페스트 중간보고 워크숍</span>
+        <span class="hs-dots" id="hsDots" aria-hidden="true"></span>
+      </figcaption>
     </figure>
   </div>
 
@@ -743,6 +759,78 @@ document.addEventListener('click',function(){
 document.addEventListener('keydown',function(e){
   if(e.key==='Escape') document.querySelectorAll('.nv').forEach(function(n){ n.classList.remove('open'); n.querySelector('.nv-t').setAttribute('aria-expanded','false'); });
 });
+
+/* ---- 히어로 슬라이드쇼 : 활동 기록에서 사진을 가져와 순환 ---- */
+(function(){
+  var SLIDES=[], idx=0, timer=null, showingA=true;
+  var INTERVAL = 12000;               // 사진이 바뀌는 간격 (밀리초). 12000 = 12초
+  var MAX = 6;                        // 순환에 쓸 최근 사진 개수
+
+  var MONTHS={
+    ko:['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+    hu:['jan.','febr.','márc.','ápr.','máj.','jún.','júl.','aug.','szept.','okt.','nov.','dec.'],
+    en:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+  };
+  function fmt(iso,lang){
+    var p=iso.split('-'), y=p[0], m=+p[1];
+    var mo=(MONTHS[lang]||MONTHS.ko)[m-1];
+    if(lang==='ko') return y+'년 '+mo;
+    if(lang==='hu') return y+'. '+mo;
+    return mo+' '+y;
+  }
+  function lang(){
+    var l=document.documentElement.lang;
+    return (l==='hu'||l==='en')?l:'ko';
+  }
+  function paint(){
+    if(!SLIDES.length) return;
+    var s=SLIDES[idx], L=lang();
+    var t=(s[L]&&s[L].title)||(s.ko&&s.ko.title)||'';
+    var when=document.getElementById('hsWhen'), title=document.getElementById('hsTitle');
+    if(when) when.textContent=fmt(s.date,L);
+    if(title) title.textContent=t;
+    var dots=document.getElementById('hsDots');
+    if(dots) for(var i=0;i<dots.children.length;i++)
+      dots.children[i].className = (i===idx?'on':'');
+  }
+  function show(i){
+    idx=i; 
+    var a=document.getElementById('hsA'), b=document.getElementById('hsB');
+    var incoming = showingA ? b : a, outgoing = showingA ? a : b;
+    incoming.onload=function(){
+      incoming.classList.add('on'); outgoing.classList.remove('on'); showingA=!showingA; paint();
+    };
+    incoming.src = SLIDES[idx].image;
+    if(incoming.complete) incoming.onload();
+  }
+  function next(){ show((idx+1)%SLIDES.length); }
+
+  fetch('news.json?v='+Date.now())
+    .then(function(r){ return r.ok?r.json():null; })
+    .then(function(d){
+      if(!d||!d.items) return;
+      SLIDES = d.items.filter(function(n){ return n.image; })
+                      .sort(function(x,y){ return x.date<y.date?1:-1; })
+                      .slice(0,MAX);
+      if(!SLIDES.length) return;
+      var dots=document.getElementById('hsDots');
+      if(dots){ dots.innerHTML=''; SLIDES.forEach(function(){ dots.appendChild(document.createElement('i')); }); }
+      var a=document.getElementById('hsA');
+      a.src=SLIDES[0].image; a.classList.add('on'); showingA=true; idx=0; paint();
+      var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if(!still && SLIDES.length>1) timer=setInterval(next, INTERVAL);
+      document.addEventListener('visibilitychange', function(){
+        if(document.hidden){ clearInterval(timer); timer=null; }
+        else if(!timer && !still && SLIDES.length>1) timer=setInterval(next, INTERVAL);
+      });
+    })
+    .catch(function(){});
+
+  // 언어 전환 시 제목도 함께 갱신
+  document.querySelectorAll('.lang button').forEach(function(btn){
+    btn.addEventListener('click', function(){ setTimeout(paint, 60); });
+  });
+})();
 </script>
 </body>
 </html>
