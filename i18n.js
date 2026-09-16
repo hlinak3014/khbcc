@@ -34,16 +34,18 @@ var I18N = {
     stat2n:"A digital battery passport becomes mandatory for EV batteries, light means of transport (LMT) batteries, and industrial batteries above 2 kWh placed on the EU market. (18 February 2027)",
 
     /* --- 센터 소개 --- */
+    a1h:"Industry", a1t:"Matching firms in both countries",
+    a1b:"Firms are verified through the KBIA and HUBA member networks, then assessed for capability and cooperation needs so that only meetings with real prospects are arranged.",
+    a2h:"Education", a2t:"Joint degrees and training",
+    a2b:"Built around the Yonsei\u2013BME dual-degree agreement signed in December 2025, covering student exchange, short-term fellowships, and industrial internships.",
+    a3h:"Compliance", a3t:"Battery Passport preparation",
+    a3b:"We map cell, module, and pack test items onto Battery Passport data fields, and design a data structure that firms can actually file against.",
+    a4h:"Policy", a4t:"A channel in both directions",
+    a4b:"We pass EU regulatory developments on to firms, and collect the problems firms encounter \u2014 permitting and licensing among them \u2014 for the ministries on both sides.",
+    a5h:"Environment", a5t:"Environmental compliance",
+    a5b:"We measure pollutants arising from battery manufacturing and recycling, and support compliance with EU environmental rules through lifecycle assessment and safety protocols.",
     aboutEyebrow:"About", aboutTitle:"What KHBCC does",
     aboutBody:"Hungary now hosts large battery plants operated by Samsung SDI, SK On, and CATL. At the same time, EU Battery Regulation 2023/1542 requires compliance across the entire lifecycle, from production through disposal. KHBCC was established with support from both governments to connect the two. Testing, data traceability, environmental assessment, industry cooperation, and workforce development are handled within a single organization.",
-    a1h:"Compliance", a1t:"Battery Passport preparation",
-    a1b:"We map cell, module, and pack test items onto Battery Passport data fields, and design a data structure that firms can actually file against.",
-    a2h:"Industry", a2t:"Matching firms in both countries",
-    a2b:"Firms are verified through the KBIA and HUBA member networks, then assessed for capability and cooperation needs so that only meetings with real prospects are arranged.",
-    a3h:"Policy", a3t:"A channel in both directions",
-    a3b:"We pass EU regulatory developments on to firms, and collect the problems firms encounter — permitting and licensing among them — for the ministries on both sides.",
-    a4h:"Education", a4t:"Joint degrees and training",
-    a4b:"Built around the Yonsei–BME dual-degree agreement signed in December 2025, covering student exchange, short-term fellowships, and industrial internships.",
 
     /* --- 연구 조직 --- */
     labsEyebrow:"Research units", labsTitle:"Two divisions, five functional units",
@@ -335,16 +337,18 @@ var I18N = {
     stat2n:"A digitális akkumulátor-útlevél kötelezővé válik az uniós piacra kerülő elektromos jármű-akkumulátorokra, a könnyű járművek (LMT) akkumulátoraira és a 2 kWh feletti ipari akkumulátorokra. (2027. február 18.)",
 
     /* --- a központról --- */
+    a1h:"Ipar", a1t:"A két ország cégeinek összekapcsolása",
+    a1b:"A cégeket a KBIA és a HUBA tagi hálózatán keresztül ellenőrizzük, majd felmérjük képességeiket és együttműködési igényeiket, hogy csak valós kilátásokkal bíró találkozók jöjjenek létre.",
+    a2h:"Oktatás", a2t:"Közös képzés és diploma",
+    a2b:"A 2025 decemberében aláírt Yonsei–BME kettős diplomás megállapodásra épül, hallgatói cserével, rövid távú ösztöndíjakkal és ipari gyakorlatokkal.",
+    a3h:"Megfelelés", a3t:"Felkészülés az akkumulátor-útlevélre",
+    a3b:"A cella-, modul- és csomagszintű vizsgálati tételeket az akkumulátor-útlevél adatmezőire képezzük le, és olyan adatszerkezetet tervezünk, amellyel a cégek ténylegesen tudnak adatot szolgáltatni.",
+    a4h:"Szakpolitika", a4t:"Kétirányú csatorna",
+    a4b:"Az uniós szabályozási fejleményeket továbbadjuk a cégeknek, a cégek nehézségeit — köztük az engedélyezési kérdéseket — pedig összegyűjtjük mindkét ország minisztériumai számára.",
+    a5h:"Környezet", a5t:"Környezeti megfelelés",
+    a5b:"Mérjük az akkumulátorgyártásból és -újrahasznosításból származó szennyezőanyagokat, és életciklus-értékeléssel, valamint biztonsági előírásokkal támogatjuk az uniós környezetvédelmi szabályoknak való megfelelést.",
     aboutEyebrow:"A központról", aboutTitle:"Mivel foglalkozik a KHBCC",
     aboutBody:"Magyarországon ma a Samsung SDI, az SK On és a CATL nagy akkumulátorgyárai működnek. Ezzel egyidejűleg az Európai Unió 2023/1542 rendelete a gyártástól a hulladékkezelésig a teljes életciklusra kiterjedő megfelelést ír elő. A KHBCC a két ország kormányának támogatásával jött létre, hogy összekapcsolja ezt a kettőt. A vizsgálat, az adatnyomonkövetés, a környezeti értékelés, az ipari együttműködés és a szakemberképzés egyetlen szervezeten belül zajlik.",
-    a1h:"Megfelelés", a1t:"Felkészülés az akkumulátor-útlevélre",
-    a1b:"A cella-, modul- és csomagszintű vizsgálati tételeket az akkumulátor-útlevél adatmezőire képezzük le, és olyan adatszerkezetet tervezünk, amellyel a cégek ténylegesen tudnak adatot szolgáltatni.",
-    a2h:"Ipar", a2t:"A két ország cégeinek összekapcsolása",
-    a2b:"A cégeket a KBIA és a HUBA tagi hálózatán keresztül ellenőrizzük, majd felmérjük képességeiket és együttműködési igényeiket, hogy csak valós kilátásokkal bíró találkozók jöjjenek létre.",
-    a3h:"Szakpolitika", a3t:"Kétirányú csatorna",
-    a3b:"Az uniós szabályozási fejleményeket továbbadjuk a cégeknek, a cégek nehézségeit — köztük az engedélyezési kérdéseket — pedig összegyűjtjük mindkét ország minisztériumai számára.",
-    a4h:"Oktatás", a4t:"Közös képzés és diploma",
-    a4b:"A 2025 decemberében aláírt Yonsei–BME kettős diplomás megállapodásra épül, hallgatói cserével, rövid távú ösztöndíjakkal és ipari gyakorlatokkal.",
 
     /* --- kutatási egységek --- */
     labsEyebrow:"Kutatási egységek", labsTitle:"Két divízió, öt funkcionális egység",
