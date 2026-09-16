@@ -81,22 +81,9 @@ nav{display:flex;gap:4px;margin-left:auto;align-items:center}
 .btn-ghost:hover{border-color:var(--paper-2)}
 
 /* DPP record card */
-.dpp{background:#FAFAFB;border:1px solid #C2C7D4;border-radius:4px;font-family:var(--mono);font-size:12px;overflow:hidden}
-.dpp-art{background:#E8EBF0;border-bottom:1px solid #C2C7D4;padding:14px 16px}
-.dpp-art svg{width:100%;height:auto;display:block}
-.dpp-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 14px;border-bottom:1px solid #D3D6DE;background:#F1F2F5}
-.dpp-head .t{font-size:10px;letter-spacing:.13em;color:var(--steel);text-transform:uppercase}
-.dpp-head .live{font-size:10px;letter-spacing:.09em;color:#2F7A48}
-.dot{width:7px;height:7px;border-radius:50%;background:var(--green);display:inline-block;margin-right:6px;vertical-align:middle}
-.dpp-row{display:flex;justify-content:space-between;gap:14px;padding:9px 14px;border-bottom:1px solid #E6E8ED}
-.dpp-row:last-of-type{border-bottom:0}
-.dpp-row .k{color:var(--steel);font-size:11px}
-.dpp-row .v{color:var(--ink);text-align:right;font-weight:500}
-.dpp-row .v.ok{color:#2F7A48}
-.dpp-row .v.warn{color:#9A7310}
-.gauge{height:4px;background:#DDE0E7;border-radius:2px;margin:0 14px 14px;overflow:hidden}
-.gauge i{display:block;height:100%;background:var(--green);width:0;transition:width 1.3s cubic-bezier(.2,.7,.3,1)}
-.dpp-foot{padding:10px 14px;font-size:10px;letter-spacing:.05em;color:var(--steel);border-top:1px solid #D3D6DE;background:#F1F2F5}
+.hero-shot{margin:0;border-radius:4px;overflow:hidden;border:1px solid #2B3563;background:#18204A}
+.hero-shot img{width:100%;height:auto;display:block}
+.hero-shot figcaption{font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:#8E99C4;padding:10px 13px;border-top:1px solid #2B3563}
 .logo-txt{font-family:var(--display);font-weight:700;font-size:21px;color:#EC1C24;letter-spacing:-.01em}
 
 /* indicator rail — two items only */
@@ -148,8 +135,8 @@ section{padding:clamp(50px,6.5vw,86px) var(--pad)}
 /* --- 5개 연구소 --- */
 .lg-top{display:flex;justify-content:center}
 .lg-top img{height:52px;width:auto}
-.lg-wrap{display:grid;grid-template-columns:3fr 2fr;gap:24px;position:relative;padding-top:40px}
-.lg-wrap::before{content:'';position:absolute;top:20px;left:30%;right:20%;border-top:1px solid var(--dline)}
+.lg-wrap{display:grid;grid-template-columns:2fr 3fr;gap:24px;position:relative;padding-top:40px}
+.lg-wrap::before{content:'';position:absolute;top:20px;left:20%;right:30%;border-top:1px solid var(--dline)}
 .lg-wrap::after{content:'';position:absolute;top:0;left:50%;width:1px;height:20px;background:var(--dline)}
 .lg-group{position:relative}
 .lg-group::before{content:'';position:absolute;top:-20px;left:50%;width:1px;height:20px;background:var(--dline)}
@@ -158,11 +145,14 @@ section{padding:clamp(50px,6.5vw,86px) var(--pad)}
 .lg-grid{display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr));gap:16px;position:relative;padding-top:40px}
 .lg-grid::before{content:'';position:absolute;top:20px;left:calc(50% / var(--n));right:calc(50% / var(--n));border-top:1px solid var(--dline)}
 .lg-grid::after{content:'';position:absolute;top:0;left:50%;width:1px;height:20px;background:var(--dline)}
-.lg-card{position:relative;border:1px solid #C2C7D4;border-radius:4px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.lg-card{position:relative;border:1px solid #C2C7D4;border-radius:4px;overflow:hidden;background:#fff;display:flex;flex-direction:column;text-decoration:none;color:inherit;transition:border-color .15s,box-shadow .15s,transform .15s}
+.lg-card:hover{border-color:var(--ink);box-shadow:0 4px 14px rgba(14,20,48,.1);transform:translateY(-2px)}
+.lg-card:hover .lg-more{color:var(--red)}
+.lg-more{display:block;margin-top:auto;padding-top:12px;font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:var(--steel)}
 .lg-card::before{content:'';position:absolute;top:-20px;left:50%;width:1px;height:20px;background:var(--dline)}
 .lg-ico{height:64px;display:flex;align-items:center;justify-content:center}
 .lg-ico img{height:34px;width:auto}
-.lg-body{padding:14px 16px 16px}
+.lg-body{padding:14px 16px 16px;display:flex;flex-direction:column;flex:1}
 .lg-tag{font-family:var(--mono);font-size:10px;letter-spacing:.07em;color:var(--steel);display:block;margin-bottom:8px;overflow-wrap:anywhere}
 .lg-body h4{font-family:var(--display);font-size:15.5px;font-weight:600;line-height:1.3;letter-spacing:-.01em;margin-bottom:11px;overflow-wrap:anywhere;hyphens:auto}
 .lg-body ul{list-style:none;display:flex;flex-direction:column;gap:5px}
@@ -289,7 +279,6 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
         <button class="nv-t" aria-expanded="false" data-i18n="nav1">센터 소개</button>
         <div class="nv-m">
           <a href="#about" data-i18n="sub1a">설립 배경</a>
-          <a href="#people" data-i18n="sub1b">연구진</a>
           <a href="#governance" data-i18n="sub1c">운영 체계</a>
           <a href="#partners" data-i18n="sub1d">참여 기관</a>
         </div>
@@ -299,6 +288,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
         <div class="nv-m">
           <a href="#labs" data-i18n="sub2a">5개 연구소</a>
           <a href="research.html" data-i18n="sub2b">연구 내용</a>
+          <a href="people.html" data-i18n="sub2c">연구진</a>
         </div>
       </div>
       <div class="nv">
@@ -332,46 +322,10 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
       </div>
     </div>
 
-    <div class="dpp" aria-label="Digital Battery Passport sample record">
-      <div class="dpp-art">
-        <svg viewBox="0 0 340 96" role="img" aria-labelledby="dppArtT">
-          <title id="dppArtT" data-i18n="dppArtT">전기버스와 배터리 팩</title>
-          <!-- EV bus -->
-          <rect x="10" y="26" width="122" height="42" rx="7" fill="#0E1430"/>
-          <rect x="18" y="33" width="30" height="17" rx="3" fill="#8FA8C8"/>
-          <rect x="54" y="33" width="26" height="17" rx="3" fill="#8FA8C8"/>
-          <rect x="86" y="33" width="26" height="17" rx="3" fill="#8FA8C8"/>
-          <rect x="116" y="33" width="12" height="17" rx="3" fill="#8FA8C8"/>
-          <rect x="10" y="55" width="122" height="4" fill="#D81018"/>
-          <circle cx="38" cy="70" r="8" fill="#2B3563"/><circle cx="38" cy="70" r="3.4" fill="#C2C7D4"/>
-          <circle cx="106" cy="70" r="8" fill="#2B3563"/><circle cx="106" cy="70" r="3.4" fill="#C2C7D4"/>
-          <path d="M136 47 L150 47 M144 41 L150 47 L144 53" fill="none" stroke="#3E8F57" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-          <!-- battery pack, module stack -->
-          <rect x="160" y="20" width="150" height="56" rx="5" fill="none" stroke="#0E1430" stroke-width="2"/>
-          <rect x="310" y="38" width="7" height="20" rx="2" fill="#0E1430"/>
-          <rect x="168" y="28" width="18" height="40" rx="2" fill="#3E8F57"/>
-          <rect x="190" y="28" width="18" height="40" rx="2" fill="#3E8F57"/>
-          <rect x="212" y="28" width="18" height="40" rx="2" fill="#3E8F57"/>
-          <rect x="234" y="28" width="18" height="40" rx="2" fill="#3E8F57"/>
-          <rect x="256" y="28" width="18" height="40" rx="2" fill="#C2C7D4"/>
-          <rect x="278" y="28" width="18" height="40" rx="2" fill="#C2C7D4"/>
-          <path d="M228 36 L219 49 L226 49 L221 61 L233 46 L226 46 Z" fill="#FAFAFB"/>
-        </svg>
-      </div>
-      <div class="dpp-head">
-        <span class="t" data-i18n="dppTitle">디지털 배터리 여권 · 예시 레코드</span>
-        <span class="live"><span class="dot"></span><span data-i18n="dppLive">검증됨</span></span>
-      </div>
-      <div class="dpp-row"><span class="k" data-i18n="dppK1">배터리 ID</span><span class="v">HU-2027-0042</span></div>
-      <div class="dpp-row"><span class="k" data-i18n="dppK2">화학 조성</span><span class="v">NMC 811</span></div>
-      <div class="dpp-row"><span class="k" data-i18n="dppK3">정격 용량</span><span class="v">78.4 kWh</span></div>
-      <div class="dpp-row"><span class="k" data-i18n="dppK4">건전성 (SoH)</span><span class="v ok" id="sohVal">—</span></div>
-      <div class="gauge"><i id="sohBar"></i></div>
-      <div class="dpp-row"><span class="k" data-i18n="dppK5">탄소발자국</span><span class="v">61.2 kg CO₂e/kWh</span></div>
-      <div class="dpp-row"><span class="k" data-i18n="dppK6">재활용 원료 함량</span><span class="v warn" data-i18n="dppV6">16% · 검토 중</span></div>
-      <div class="dpp-row"><span class="k" data-i18n="dppK7">적합성</span><span class="v ok">Reg. (EU) 2023/1542</span></div>
-      <div class="dpp-foot" data-i18n="dppFoot">KHBCC 데이터 파이프라인이 산출하게 될 항목을 보여주는 예시입니다.</div>
-    </div>
+    <figure class="hero-shot">
+      <img src="assets/news/2026-08-26-interim-workshop.jpg" alt="" loading="eager">
+      <figcaption data-i18n="heroShot">2026년 8월 · 부다페스트 중간보고 워크숍</figcaption>
+    </figure>
   </div>
 
   <div class="rail">
@@ -421,107 +375,37 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
   </div>
 </section>
 
-<!-- PEOPLE -->
-<section id="people">
+<!-- GOVERNANCE -->
+<section id="governance" class="alt">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow" data-i18n="peEyebrow">연구진</span>
-      <h2 data-i18n="peTitle">누가 무엇을 맡고 있는가</h2>
-      <p data-i18n="peBody">KHBCC는 단일 시설이 아니라 양국 기관이 각자의 강점 분야를 맡는 분산형 협력 모델로 운영됩니다. 아래는 연구 영역별 담당 기관과 책임 범위입니다.</p>
+      <span class="eyebrow" data-i18n="govEyebrow">운영 체계</span>
+      <h2 data-i18n="govTitle">조직 구성</h2>
+      <p data-i18n="govBody">정부 감독과 프로젝트 단위 실행을 함께 담기 위해 3단계로 구성했습니다. 전략 방향은 이사회에서 정하고, 산업계 요구는 자문위원회를 통해 운영에 곧바로 반영됩니다.</p>
     </div>
-
-    <div class="pe-grid">
-      <article class="pe-card">
-        <span class="pe-num">01</span>
-        <h3 data-i18n="pe1t">제도 기반 구축</h3>
-        <p data-i18n="pe1b">센터의 거버넌스 구조, 법적 지위, 재정 모델을 설계하고 3개국어 플랫폼과 기업 매칭 체계를 운영합니다.</p>
-        <div class="pe-people">
-          <div class="pe-p">
-            <span class="pe-side" data-i18n="pe_kr">한국</span>
-            <b>Yong-June Shin</b>
-            <span class="pe-aff2" data-i18n="pe1krA">연세대학교 전기전자공학부 교수</span>
-          </div>
-          <div class="pe-p">
-            <span class="pe-side" data-i18n="pe_hu">헝가리</span>
-            <b>Péter Kaderják</b>
-            <span class="pe-aff2" data-i18n="pe1huA">헝가리배터리협회(HUBA) 전무이사</span>
-          </div>
+    <div class="gov">
+      <div class="gov-layer">
+        <span class="lvl" data-i18n="g1l">1단계 · 의사결정</span>
+        <div>
+          <h3 data-i18n="g1t">이사회</h3>
+          <p data-i18n="g1b">KDI, 주헝가리 한국대사관, KOTRA, 한국배터리산업협회(KBIA), 헝가리배터리협회(HUBA) 등이 참여하는 최고 의사결정 기구입니다.</p>
         </div>
-        <div class="pe-orgs">
-          <span class="pe-side" data-i18n="pe_org">참여 기관</span>
-          <span class="pe-org" data-i18n="pe1org">연세대학교 · KDI · KBIA · KOTRA / HUBA · 국가경제부(MNE)</span>
+      </div>
+      <div class="gov-layer">
+        <span class="lvl" data-i18n="g2l">2단계 · 총괄</span>
+        <div>
+          <h3 data-i18n="g2t">센터장 · 산업자문위원회</h3>
+          <p data-i18n="g2b">센터장이 실무를 총괄하고, 산업자문위원회(IAB)가 양국 기업의 현장 수요를 운영에 반영합니다.</p>
         </div>
-      </article>
-
-      <article class="pe-card">
-        <span class="pe-num">02</span>
-        <h3 data-i18n="pe2t">성능 시험·검증</h3>
-        <p data-i18n="pe2b">EU 배터리 여권이 요구하는 데이터 항목을 실제 측정 가능한 시험 요건으로 바꾸고, 감사 대응이 가능한 검증 체계를 설계합니다. 2026년에는 사용후 배터리 모듈 단위 시험으로 확장합니다.</p>
-        <div class="pe-people">
-          <div class="pe-p">
-            <span class="pe-side" data-i18n="pe_kr">한국</span>
-            <b>Seon Hyeog Kim</b>
-            <span class="pe-aff2" data-i18n="pe2krA">공주대학교 조교수</span>
-          </div>
-          <div class="pe-p">
-            <span class="pe-side" data-i18n="pe_hu">헝가리</span>
-            <b>Gergely Lagler</b>
-            <span class="pe-aff2" data-i18n="pe2huA">HUBA 연구 프로젝트 리더</span>
-          </div>
+      </div>
+      <div class="gov-layer">
+        <span class="lvl" data-i18n="g3l">3단계 · 집행</span>
+        <div>
+          <h3 data-i18n="g3t">3인 부센터장 체제</h3>
+          <p data-i18n="g3b">행정, 국제협력, 연구개발을 각각 담당하는 부센터장을 두고 그 아래 5개 연구소를 배치합니다. 행정 부문에는 법무·재무팀, 인사팀, 언어지원·홍보팀을 둡니다.</p>
         </div>
-        <div class="pe-orgs">
-          <span class="pe-side" data-i18n="pe_org">참여 기관</span>
-          <span class="pe-org" data-i18n="pe2org">공주대학교 · HUBA · BME</span>
-        </div>
-      </article>
-
-      <article class="pe-card">
-        <span class="pe-num">03</span>
-        <h3 data-i18n="pe3t">배터리 여권·데이터 분석</h3>
-        <p data-i18n="pe3b">배터리 사용 데이터를 AI로 분석해 건전성과 잔존 수명을 예측합니다. 헝가리 측은 전기버스 배터리 시스템의 데이터 기반 최적화를 함께 수행합니다.</p>
-        <div class="pe-people">
-          <div class="pe-p">
-            <span class="pe-side" data-i18n="pe_kr">한국</span>
-            <b>Gu Young Kwon</b>
-            <span class="pe-aff2" data-i18n="pe3krA">공주대학교 조교수</span>
-          </div>
-          <div class="pe-p">
-            <span class="pe-side" data-i18n="pe_hu">헝가리</span>
-            <b>Péter Szilassy</b>
-            <span class="pe-aff2" data-i18n="pe3huA">HUBA 전기모빌리티 분과장 · 연구 프로젝트 리더</span>
-          </div>
-        </div>
-        <div class="pe-orgs">
-          <span class="pe-side" data-i18n="pe_org">참여 기관</span>
-          <span class="pe-org" data-i18n="pe3org">공주대학교 · HUBA · BME</span>
-        </div>
-      </article>
-
-      <article class="pe-card">
-        <span class="pe-num">04</span>
-        <h3 data-i18n="pe4t">환경 영향 평가·순환경제</h3>
-        <p data-i18n="pe4b">배터리 산업의 환경 영향을 평가하고 순환경제 체계를 연구합니다. 오염물질 저감, 전과정평가, 안전 기준 수립을 포함합니다.</p>
-        <div class="pe-people">
-          <div class="pe-p">
-            <span class="pe-side" data-i18n="pe_kr">한국</span>
-            <b>Seoni Kim</b>
-            <span class="pe-aff2" data-i18n="pe4krA">이화여자대학교 조교수</span>
-          </div>
-          <div class="pe-p">
-            <span class="pe-side" data-i18n="pe_hu">헝가리</span>
-            <b>Győző Láng</b>
-            <span class="pe-aff2" data-i18n="pe4huA">HUBA 환경보건안전 분과장</span>
-          </div>
-        </div>
-        <div class="pe-orgs">
-          <span class="pe-side" data-i18n="pe_org">참여 기관</span>
-          <span class="pe-org" data-i18n="pe4org">이화여자대학교 · HUBA · ELTE · HUN-REN</span>
-        </div>
-      </article>
-
+      </div>
     </div>
-
-    <p class="pe-note" data-i18n="peNote">각 연구 영역의 세부 내용은 <a href="research.html">연구 내용</a> 페이지에서 볼 수 있습니다.</p>
   </div>
 </section>
 
@@ -538,51 +422,10 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
       <figcaption class="sr-only" id="figLabsT" data-i18n="figLabsT">KHBCC 5개 기능 연구소 구성</figcaption>
       <div class="lg-top"><img src="assets/khbcc-logo.png" alt="KHBCC"></div>
       <div class="lg-wrap">
-        <div class="lg-group" style="--n:3">
-          <div class="lg-bar" data-i18n="figP1">공동 연구개발 부문</div>
-          <div class="lg-grid">
-            <article class="lg-card">
-              <div class="lg-ico" style="background:#F4B081"><img src="assets/icons/icon-test.png" alt=""></div>
-              <div class="lg-body">
-                <span class="lg-tag" data-i18n="lgT1">BME</span>
-                <h4><span data-i18n="figL1a">성능 검사</span> <span data-i18n="figL1b">연구소</span></h4>
-                <ul>
-                  <li data-i18n="figL1c">사용후 배터리 성능 평가</li>
-                  <li data-i18n="figL1d">잔존 수명 산정</li>
-                  <li data-i18n="figL1e">신규 기술 기준 개발</li>
-                </ul>
-              </div>
-            </article>
-            <article class="lg-card">
-              <div class="lg-ico" style="background:#FFD966"><img src="assets/icons/icon-data.png" alt=""></div>
-              <div class="lg-body">
-                <span class="lg-tag" data-i18n="lgT2">BME · 공주대</span>
-                <h4><span data-i18n="figL2a">배터리 여권·데이터</span> <span data-i18n="figL2b">분석 연구소</span></h4>
-                <ul>
-                  <li data-i18n="figL2c">사용 데이터 분석 거점</li>
-                  <li data-i18n="figL2d">양국 데이터 교류</li>
-                  <li data-i18n="figL2e">재활용 공정 연구</li>
-                </ul>
-              </div>
-            </article>
-            <article class="lg-card">
-              <div class="lg-ico" style="background:#70AD47"><img src="assets/icons/icon-env.png" alt=""></div>
-              <div class="lg-body">
-                <span class="lg-tag" data-i18n="lgT3">ELTE · HUN-REN · 이화여대</span>
-                <h4><span data-i18n="figL3a">환경·안전</span> <span data-i18n="figL3b">연구소</span></h4>
-                <ul>
-                  <li data-i18n="figL3c">폐기물 추적</li>
-                  <li data-i18n="figL3d">규제 준수 확인</li>
-                  <li data-i18n="figL3e">안전 기준 수립</li>
-                </ul>
-              </div>
-            </article>
-          </div>
-        </div>
         <div class="lg-group" style="--n:2">
           <div class="lg-bar" data-i18n="figP2">한국·헝가리 협력 부문</div>
           <div class="lg-grid">
-            <article class="lg-card">
+            <a class="lg-card" href="research.html#r1">
               <div class="lg-ico" style="background:#8E7CC3"><img src="assets/icons/icon-business.png" alt=""></div>
               <div class="lg-body">
                 <span class="lg-tag" data-i18n="lgT4">KBIA · HUBA · KOTRA</span>
@@ -592,9 +435,10 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
                   <li data-i18n="figL4d">인터배터리 네트워킹</li>
                   <li data-i18n="figL4e">EU Horizon 컨소시엄</li>
                 </ul>
+                <span class="lg-more" data-i18n="lgMore">연구 내용 보기 &rarr;</span>
               </div>
-            </article>
-            <article class="lg-card">
+            </a>
+            <a class="lg-card" href="research.html#r1">
               <div class="lg-ico" style="background:#9CC2E5"><img src="assets/icons/icon-education.png" alt=""></div>
               <div class="lg-body">
                 <span class="lg-tag" data-i18n="lgT5">연세대 · BME</span>
@@ -604,8 +448,53 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
                   <li data-i18n="figL5d">복수학위 운영</li>
                   <li data-i18n="figL5e">현직 인력 재교육</li>
                 </ul>
+                <span class="lg-more" data-i18n="lgMore">연구 내용 보기 &rarr;</span>
               </div>
-            </article>
+            </a>
+          </div>
+        </div>
+        <div class="lg-group" style="--n:3">
+          <div class="lg-bar" data-i18n="figP1">공동 연구개발 부문</div>
+          <div class="lg-grid">
+            <a class="lg-card" href="research.html#r2">
+              <div class="lg-ico" style="background:#F4B081"><img src="assets/icons/icon-test.png" alt=""></div>
+              <div class="lg-body">
+                <span class="lg-tag" data-i18n="lgT1">BME</span>
+                <h4><span data-i18n="figL1a">성능 검사</span> <span data-i18n="figL1b">연구소</span></h4>
+                <ul>
+                  <li data-i18n="figL1c">사용후 배터리 성능 평가</li>
+                  <li data-i18n="figL1d">잔존 수명 산정</li>
+                  <li data-i18n="figL1e">신규 기술 기준 개발</li>
+                </ul>
+                <span class="lg-more" data-i18n="lgMore">연구 내용 보기 &rarr;</span>
+              </div>
+            </a>
+            <a class="lg-card" href="research.html#r3">
+              <div class="lg-ico" style="background:#FFD966"><img src="assets/icons/icon-data.png" alt=""></div>
+              <div class="lg-body">
+                <span class="lg-tag" data-i18n="lgT2">BME · 공주대</span>
+                <h4><span data-i18n="figL2a">배터리 여권·데이터</span> <span data-i18n="figL2b">분석 연구소</span></h4>
+                <ul>
+                  <li data-i18n="figL2c">사용 데이터 분석 거점</li>
+                  <li data-i18n="figL2d">양국 데이터 교류</li>
+                  <li data-i18n="figL2e">재활용 공정 연구</li>
+                </ul>
+                <span class="lg-more" data-i18n="lgMore">연구 내용 보기 &rarr;</span>
+              </div>
+            </a>
+            <a class="lg-card" href="research.html#r4">
+              <div class="lg-ico" style="background:#70AD47"><img src="assets/icons/icon-env.png" alt=""></div>
+              <div class="lg-body">
+                <span class="lg-tag" data-i18n="lgT3">ELTE · HUN-REN · 이화여대</span>
+                <h4><span data-i18n="figL3a">환경·안전</span> <span data-i18n="figL3b">연구소</span></h4>
+                <ul>
+                  <li data-i18n="figL3c">폐기물 추적</li>
+                  <li data-i18n="figL3d">규제 준수 확인</li>
+                  <li data-i18n="figL3e">안전 기준 수립</li>
+                </ul>
+                <span class="lg-more" data-i18n="lgMore">연구 내용 보기 &rarr;</span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -750,40 +639,6 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
   </div>
 </section>
 
-<!-- GOVERNANCE -->
-<section id="governance" class="alt">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow" data-i18n="govEyebrow">운영 체계</span>
-      <h2 data-i18n="govTitle">조직 구성</h2>
-      <p data-i18n="govBody">정부 감독과 프로젝트 단위 실행을 함께 담기 위해 3단계로 구성했습니다. 전략 방향은 이사회에서 정하고, 산업계 요구는 자문위원회를 통해 운영에 곧바로 반영됩니다.</p>
-    </div>
-    <div class="gov">
-      <div class="gov-layer">
-        <span class="lvl" data-i18n="g1l">1단계 · 의사결정</span>
-        <div>
-          <h3 data-i18n="g1t">이사회</h3>
-          <p data-i18n="g1b">KDI, 주헝가리 한국대사관, KOTRA, 한국배터리산업협회(KBIA), 헝가리배터리협회(HUBA) 등이 참여하는 최고 의사결정 기구입니다.</p>
-        </div>
-      </div>
-      <div class="gov-layer">
-        <span class="lvl" data-i18n="g2l">2단계 · 총괄</span>
-        <div>
-          <h3 data-i18n="g2t">센터장 · 산업자문위원회</h3>
-          <p data-i18n="g2b">센터장이 실무를 총괄하고, 산업자문위원회(IAB)가 양국 기업의 현장 수요를 운영에 반영합니다.</p>
-        </div>
-      </div>
-      <div class="gov-layer">
-        <span class="lvl" data-i18n="g3l">3단계 · 집행</span>
-        <div>
-          <h3 data-i18n="g3t">3인 부센터장 체제</h3>
-          <p data-i18n="g3b">행정, 국제협력, 연구개발을 각각 담당하는 부센터장을 두고 그 아래 5개 연구소를 배치합니다. 행정 부문에는 법무·재무팀, 인사팀, 언어지원·홍보팀을 둡니다.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- PARTNERS -->
 <section id="partners">
   <div class="wrap">
@@ -807,12 +662,10 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
     </div>
 
     <div class="org-group">
-      <span class="eyebrow" data-i18n="og2">산업 협회 · 기업</span>
+      <span class="eyebrow" data-i18n="og2">산업 협회</span>
       <div class="logos">
         <div class="logo-card"><img src="assets/kbia.png" alt="KBIA"></div>
         <div class="logo-card"><img src="assets/huba.png" alt="Hungarian Battery Association"></div>
-        <div class="logo-card"><img src="assets/samsung-sdi.png" alt="Samsung SDI"></div>
-        <div class="logo-card"><span class="logo-txt">SK On</span></div>
       </div>
     </div>
 
@@ -874,13 +727,7 @@ function setLang(lang){
 document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
 try{ const s=localStorage.getItem('khbcc-lang'); if(s&&I18N[s]) setLang(s); }catch(e){}
 
-window.addEventListener('load',()=>{
-  setTimeout(()=>{
-    const bar=document.getElementById('sohBar'), val=document.getElementById('sohVal');
-    if(bar) bar.style.width='92.4%';
-    if(val) val.textContent='92.4%';
-  },320);
-});
+
 
 document.querySelectorAll('.nv-t').forEach(function(btn){
   btn.addEventListener('click',function(e){

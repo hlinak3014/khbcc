@@ -49,8 +49,9 @@ hlinak3014.github.io/khbcc/admin
 ## 파일 구성
 
 ```
-index.html        메인 페이지 (설립 배경, 연구진, 연구 조직, 기업 매칭, 운영 체계, 참여 기관)
+index.html        메인 페이지 (설립 배경 → 운영 체계 → 5개 연구소 → 기업 매칭 → 참여 기관 → 문의)
 research.html     연구 내용 페이지
+people.html       연구진 페이지
 apply.html        기업 등록 신청 페이지
 news.html         활동 기록 페이지 (틀만 있음)
 news.json         ★ 활동 기록 내용. 편집 화면이 이 파일을 고칩니다
@@ -59,7 +60,9 @@ admin/            편집 화면
   index.html
   config.yml      ★ 편집 화면 설정
 assets/           로고 이미지
+assets/icons/     도식 아이콘
 assets/news/      활동 기록 사진
+assets/people/    ★ 연구진 사진 (아래 참고)
 ```
 
 ## 문구 고치기 (개발자용)
@@ -78,7 +81,30 @@ GitHub Pages. 저장소 Settings → Pages → Branch를 `main` 으로 지정하
 ## 남은 작업
 
 - [ ] DecapBridge 연결 (관리자 화면을 실제 저장 모드로 전환)
+- [ ] 연구진 사진 8장 추가 (아래 참고)
 - [ ] 헝가리어 원어민 감수 (HUBA 경유 권장)
 - [ ] 연락처 이메일 확정 (현재 `@khbcc.org` 임시 주소)
 - [ ] MNE 면담·ELTE 면담·2026년 워크숍 사진 추가
 - [ ] 도메인 확정 및 연결
+
+---
+
+## 연구진 사진 넣기
+
+`assets/people/` 폴더에 아래 이름으로 사진을 올리면 자동으로 표시됩니다.
+사진이 없으면 이름 이니셜이 대신 나옵니다.
+
+```
+shin-yong-june.jpg      Yong-June Shin
+kaderjak-peter.jpg      Péter Kaderják
+kim-seon-hyeog.jpg      Seon Hyeog Kim
+lagler-gergely.jpg      Gergely Lagler
+kwon-gu-young.jpg       Gu Young Kwon
+szilassy-peter.jpg      Péter Szilassy
+kim-seoni.jpg           Seoni Kim
+lang-gyozo.jpg          Győző Láng
+```
+
+- 파일 이름을 정확히 맞춰야 합니다. 대소문자도 구분됩니다.
+- 세로로 긴 인물 사진(가로:세로 = 4:5 정도)이 가장 잘 맞습니다.
+- 가로 500픽셀 내외면 충분합니다. 너무 큰 파일은 사이트가 느려집니다.
