@@ -78,16 +78,16 @@
       "image": "assets/news/2025-11-06-battery-days.jpg",
       "link": "",
       "ko": {
-        "title": "Hungarian Battery Days 참가",
-        "body": "헝가리배터리협회가 주최한 Hungarian Battery Days에 참가했습니다. 헝가리 배터리 업계 관계자들에게 KHBCC의 설립 취지와 운영 계획을 소개하고 협력 기업을 발굴했습니다."
+        "title": "KHBCC 공식 출범 — Hungarian Battery Week",
+        "body": "헝가리 배터리 위크에서 KHBCC가 공식 출범했습니다. HUBA와 국가경제부, BME, ELTE를 비롯한 파트너 대학·기업이 참석했으며, 센터가 기획 단계를 마치고 운영 단계로 들어섰음을 공표했습니다."
       },
       "en": {
-        "title": "Hungarian Battery Days",
-        "body": "We took part in Hungarian Battery Days, hosted by the Hungarian Battery Association. We introduced the purpose and operating plan of KHBCC to the Hungarian battery industry and identified prospective partner firms."
+        "title": "Official launch of KHBCC at Hungarian Battery Week",
+        "body": "KHBCC was formally launched at Hungarian Battery Week. HUBA, the Ministry for National Economy, BME, ELTE, and partner universities and companies attended the announcement that the center had moved from planning into its operational phase."
       },
       "hu": {
-        "title": "Hungarian Battery Days",
-        "body": "Részt vettünk a Magyar Akkumulátor Szövetség által rendezett Hungarian Battery Days eseményen. Bemutattuk a KHBCC célját és működési tervét a magyar akkumulátoriparnak, és lehetséges partnercégeket azonosítottunk."
+        "title": "A KHBCC hivatalos indulása a Hungarian Battery Week rendezvényen",
+        "body": "A KHBCC hivatalosan elindult a Hungarian Battery Week keretében. A HUBA, a Nemzetgazdasági Minisztérium, a BME, az ELTE, valamint partneregyetemek és -vállalatok jelenlétében jelentették be, hogy a központ a tervezési szakaszból működési szakaszba lépett."
       }
     },
     {
@@ -114,8 +114,8 @@
       "image": "assets/news/2025-09-sabbatical-interview.jpg",
       "link": "https://www.hu-ba.hu/en/interview-with-korean-professor-dr-yong-june-shin-on-hungarian-korean-professional-cooperation/",
       "ko": {
-        "title": "연구책임자 BME 안식년 (9월–12월)",
-        "body": "연구책임자가 2025년 9월부터 12월까지 BME에서 안식년을 보냈습니다. 현지에 머물며 헝가리 기관들과의 협력 관계를 다졌고, 12월에는 헝가리배터리협회 공식 홈페이지에 양국 전문가 협력에 관한 인터뷰가 실렸습니다."
+        "title": "연구책임자 BME 연구년 (9월–12월)",
+        "body": "연구책임자가 2025년 9월부터 12월까지 BME에서 연구년을 보냈습니다. 현지에 머물며 헝가리 기관들과의 협력 관계를 다졌고, 12월에는 헝가리배터리협회 공식 홈페이지에 양국 전문가 협력에 관한 인터뷰가 실렸습니다."
       },
       "en": {
         "title": "Principal investigator's sabbatical at BME (September–December)",
@@ -168,17 +168,18 @@
       "image": "assets/news/2025-05-27-exhibition.jpg",
       "link": "",
       "ko": {
-        "title": "전시회 「선구적 헝가리인들의 요람, 부다페스트」",
-        "body": "연세대학교에서 헝가리 출신 노벨상 수상자들을 소개하는 전시회를 열고, 주한 헝가리 대사의 특별 강연을 진행했습니다. 양국 학술 교류의 저변을 넓히는 자리였습니다."
+        "title": "전시회 「부다페스트, 노벨상 15인의 요람」",
+        "body": "연세대학교에서 나흘간 헝가리 출신 노벨상 수상자 15인을 소개하는 전시회를 열었습니다. 주한 헝가리 대사의 기조 강연이 함께 진행되었고, 주한 헝가리 대사관과 공동으로 주최했습니다."
       },
       "en": {
-        "title": "Exhibition: Budapest, cradle of visionary Hungarians",
-        "body": "An exhibition introducing Hungarian Nobel laureates was held at Yonsei University, accompanied by a special lecture from the Hungarian Ambassador to Korea. The event broadened the base for academic exchange between the two countries."
+        "title": "Exhibition: Budapest, Hungary — Cradle of 15 Nobel Laureates",
+        "body": "A four-day exhibition at Yonsei University introduced the fifteen Hungarian Nobel laureates in the sciences, held in cooperation with the Embassy of Hungary in Korea and opened with a keynote address by the Ambassador."
       },
       "hu": {
-        "title": "Kiállítás: Budapest, a nagy magyar gondolkodók bölcsője",
-        "body": "A Yonsei Egyetemen kiállítás nyílt a magyar Nobel-díjasokról, amelyet Magyarország koreai nagykövetének külön előadása kísért. Az esemény szélesítette a két ország közötti akadémiai csere alapjait."
-      }
+        "title": "Kiállítás: Budapest — tizenöt Nobel-díjas bölcsője",
+        "body": "A Yonsei Egyetemen négynapos kiállítás mutatta be a tizenöt magyar természettudományos Nobel-díjast, Magyarország koreai nagykövetségével együttműködésben, a nagykövet nyitóbeszédével."
+      },
+      "image2": "assets/news/2025-05-27-nobel-poster.jpg"
     },
     {
       "date": "2025-01-24",

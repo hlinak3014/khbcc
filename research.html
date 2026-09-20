@@ -75,6 +75,9 @@ main{padding:clamp(34px,5vw,56px) var(--pad) clamp(56px,7vw,88px)}
 .rs-head h2{font-size:clamp(21px,2.8vw,28px);margin-bottom:11px;overflow-wrap:anywhere}
 .rs-head .who{font-family:var(--mono);font-size:11.5px;color:var(--steel);letter-spacing:.02em;overflow-wrap:anywhere}
 .rs>p{font-size:15.5px;color:var(--steel);line-height:1.7;margin-bottom:18px;max-width:74ch;overflow-wrap:anywhere}
+.rfig{margin:20px 0 24px;border:1px solid var(--line);border-radius:4px;overflow:hidden;background:#fff}
+.rfig img{width:100%;height:auto;display:block}
+.rfig figcaption{font-size:12.5px;color:var(--steel);line-height:1.5;padding:11px 14px;border-top:1px solid var(--line);background:var(--paper-2)}
 .rs h3{font-size:17px;margin:26px 0 10px;overflow-wrap:anywhere}
 .rs h3:first-of-type{margin-top:20px}
 .rs ul{list-style:none;display:flex;flex-direction:column;gap:9px;margin:12px 0 18px}
@@ -173,7 +176,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
     <nav class="toc" aria-label="목차">
       <a href="#r1" data-i18n="rT1">제도 기반 구축</a>
       <a href="#r2" data-i18n="rT2">성능 시험·검증</a>
-      <a href="#r3" data-i18n="rT3">AI 상태 진단</a>
+      <a href="#r3" data-i18n="rT3">AI 데이터 분석</a>
       <a href="#r4" data-i18n="rT4">환경·안전</a>
       <a href="#r5" data-i18n="rT5">연세대 파일럿</a>
     </nav>
@@ -185,6 +188,10 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
         <span class="who" data-i18n="r1w">연세대학교 · KDI · KBIA · KOTRA / HUBA · 국가경제부(MNE)</span>
       </div>
       <p data-i18n="r1p1">센터가 사업 기간이 끝난 뒤에도 존속하려면 법적 지위와 재원이 필요합니다. 이 영역은 그 조건을 만드는 연구입니다. 거버넌스 구조, 설립 형태, 재정 모델을 설계하고 양국 정부와 협의합니다.</p>
+            <figure class="rfig">
+        <img src="assets/figures/fig-phase4.jpg" alt="" loading="lazy">
+        <figcaption data-i18n="capPhase4">4차년도 거버넌스 구조와 장기 지속가능성 방안 (2025/26 중간보고회 발표자료)</figcaption>
+      </figure>
       <h3 data-i18n="r1h1">설립 형태 검토</h3>
       <p data-i18n="r1p2">헝가리 국가경제부와의 협의를 거쳐 세 가지 안을 비교하고 있습니다. 각 안은 설립 속도, 자율성, EU 자금 접근성에서 서로 다른 결과를 낳습니다.</p>
       <div class="rtab-wrap"><table class="rtab">
@@ -203,6 +210,10 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
       </ul>
       <h3 data-i18n="r1h3">3개국어 플랫폼과 기업 매칭</h3>
       <p data-i18n="r1p3">본 웹사이트가 그 산출물입니다. 회원사 데이터베이스를 기반으로 자격 검증부터 사전 큐레이션까지 4단계 매칭 절차를 설계했습니다.</p>
+      <figure class="rfig">
+        <img src="assets/figures/fig-platform.jpg" alt="" loading="lazy">
+        <figcaption data-i18n="capPlatform">3개국어 온라인 플랫폼의 메뉴 구성안</figcaption>
+      </figure>
     </section>
 
     <section class="rs" id="r2">
@@ -212,6 +223,10 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
         <span class="who" data-i18n="r2w">공주대학교 / HUBA · BME</span>
       </div>
       <p data-i18n="r2p1">EU 배터리 규정은 무엇을 공개하라고만 정할 뿐, 그것을 어떻게 측정하고 증명할지는 정해주지 않습니다. 이 영역은 그 간극을 메웁니다. 규정 부속서 XIII의 데이터 항목을 실제로 시험할 수 있고 기계가 읽을 수 있는 요건으로 바꾸는 작업입니다.</p>
+            <figure class="rfig">
+        <img src="assets/figures/fig-lifecycle.jpg" alt="" loading="lazy">
+        <figcaption data-i18n="capLife">생애주기 데이터 기반 진단에서 재사용·재활용으로 이어지는 사용후 배터리 처리 기준</figcaption>
+      </figure>
       <h3 data-i18n="r2h1">4축 연구 방법론</h3>
       <p data-i18n="r2p2">법 조문에서 출발해 구현 가능한 검증 구조에 이르는 순서로 설계했습니다. 각 축의 결과가 다음 축의 입력이 됩니다.</p>
       <ul>
@@ -235,11 +250,15 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
     <section class="rs" id="r3">
       <div class="rs-head">
         <span class="rs-num">03</span>
-        <h2 data-i18n="r3t">AI 기반 배터리 상태 진단</h2>
+        <h2 data-i18n="r3t">AI 기반 배터리 데이터 분석·수명 예측</h2>
         <span class="who" data-i18n="r3w">공주대학교 / HUBA · BME</span>
       </div>
       <p data-i18n="r3p1">실험실 시험은 정확하지만 느리고 비쌉니다. 현장에 있는 모든 배터리에 적용할 수 없습니다. 이 영역은 배터리 관리 시스템(BMS)이 평소에 수집하는 전압·전류·온도 데이터만으로 배터리 상태를 추정하는 방법을 연구합니다.</p>
       <p data-i18n="r3p2">리튬이온 배터리는 여러 열화 기구가 얽혀 진행됩니다. 고체전해질계면(SEI) 성장은 가용 리튬을 소모하고 내부저항을 높이며, 활물질 손실은 용량을 줄이고, 저온이나 급속 충전에서는 리튬 석출이 일어나 용량 감소와 안전 위험을 동시에 키웁니다. 밖에서 관측되는 신호는 이 숨은 과정들의 합이므로, 상태 추정은 본질적으로 역문제입니다. 데이터 기반 방법이 유효한 이유가 여기 있습니다.</p>
+            <figure class="rfig">
+        <img src="assets/figures/fig-roles.jpg" alt="" loading="lazy">
+        <figcaption data-i18n="capRoles">세부주제별 양국 기관 역할 분담</figcaption>
+      </figure>
       <h3 data-i18n="r3h1">건전성(SOH) 추정</h3>
       <div class="rtab-wrap"><table class="rtab">
         <thead><tr><th data-i18n="r3c1">계열</th><th data-i18n="r3c2">원리</th><th data-i18n="r3c3">한계</th></tr></thead>
@@ -276,10 +295,14 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
     <section class="rs" id="r4">
       <div class="rs-head">
         <span class="rs-num">04</span>
-        <h2 data-i18n="r4t">환경·보건·안전 연구</h2>
+        <h2 data-i18n="r4t">환경 영향 평가와 순환경제</h2>
         <span class="who" data-i18n="r4w">이화여자대학교 / HUBA · ELTE · HUN-REN</span>
       </div>
       <p data-i18n="r4p1">배터리 제조와 재활용 과정에서 나오는 오염물질을 측정하고 줄이는 연구입니다. 환경보건안전연구단(EPHSU)이 두 개 세부 조직과 하나의 지원 그룹으로 구성됩니다.</p>
+            <figure class="rfig">
+        <img src="assets/figures/fig-education.jpg" alt="" loading="lazy">
+        <figcaption data-i18n="capEdu">대학·산업 연계 교육 프로그램 구성</figcaption>
+      </figure>
       <h3 data-i18n="r4h1">모니터링·평가 조직</h3>
       <ul>
         <li data-i18n="r4l1"><b>모니터링·분석 그룹</b> — 배터리 산업에서 중요한 오염물질(NMP, 불화수소, 중금속, 과불화화합물)을 규정하고 우선순위를 매깁니다. 현장 측정과 정밀 화학 분석, 시간·위치 기반 오염 모델링을 수행합니다</li>
@@ -316,7 +339,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
 </main>
 
 <footer>
-  <span data-i18n="f1">KHBCC — 한국–헝가리 배터리 협력 연구센터</span>
+  <span data-i18n="f1">KHBCC — 한국–헝가리 배터리 협력센터</span>
 </footer>
 
 <script src="i18n.js"></script>

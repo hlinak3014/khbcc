@@ -69,6 +69,9 @@ main{padding:clamp(34px,5vw,56px) var(--pad) clamp(56px,7vw,88px)}
 .pr-head h2{font-size:clamp(19px,2.4vw,25px);margin-bottom:9px}
 .pr-head p{font-size:14.5px;color:var(--steel);line-height:1.6;max-width:72ch}
 
+.pr-trio{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.pr-s{background:#fff;padding:20px}
+.pr-s b{display:block;font-family:var(--display);font-size:17px;font-weight:700;margin-bottom:5px}
 .pr-pair{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
 .pr{background:#fff;padding:22px;display:grid;grid-template-columns:96px 1fr;gap:20px;align-items:start}
 .pr-photo{width:96px;height:120px;border-radius:3px;overflow:hidden;background:#E4E7EE;position:relative;flex-shrink:0}
@@ -160,6 +163,33 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
 <main>
   <div class="wrap">
 
+      <section class="pr-block" id="p0">
+        <div class="pr-head">
+          <span class="pr-num">00</span>
+          <div>
+            <h2 data-i18n="p0t">사업 총괄</h2>
+            <p data-i18n="p0d">경제혁신 파트너십 프로그램(EIPP)의 기획과 관리는 한국개발연구원 국제개발협력센터가 맡고, 사업 수행은 연세대학교가 담당합니다.</p>
+          </div>
+        </div>
+        <div class="pr-trio">
+          <div class="pr-s">
+            <span class="pr-side" data-i18n="p0r1">사업 총괄</span>
+            <b>Jungwook Kim</b>
+            <span class="pr-aff2" data-i18n="p0a1">한국개발연구원 국제개발협력센터 소장</span>
+          </div>
+          <div class="pr-s">
+            <span class="pr-side" data-i18n="p0r2">사업 관리</span>
+            <b>Song Chang Hong</b>
+            <span class="pr-aff2" data-i18n="p0a2">한국개발연구원 국제개발협력센터 실장</span>
+          </div>
+          <div class="pr-s">
+            <span class="pr-side" data-i18n="p0r3">사업 담당</span>
+            <b>Seoyeong Bak</b>
+            <span class="pr-aff2" data-i18n="p0a3">한국개발연구원 국제개발협력센터 연구원</span>
+          </div>
+        </div>
+      </section>
+
       <section class="pr-block" id="p1">
         <div class="pr-head">
           <span class="pr-num">01</span>
@@ -178,7 +208,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
               <span class="pr-side" data-i18n="pr_kr">한국 측</span>
               <h3>Yong-June Shin</h3>
               <p class="pr-aff" data-i18n="p1krA">연세대학교 교수</p>
-              <p class="pr-bio" data-i18n="p1krB">EIPP 사업 전 기간의 연구책임자로 센터 설립과 운영 체계 수립을 총괄합니다. 2025년 BME 안식년을 계기로 연세대–BME 복수학위 협정과 객원교수 임명이 이뤄졌습니다.</p>
+              <p class="pr-bio" data-i18n="p1krB">EIPP 사업 전 기간의 연구책임자로 센터 설립과 운영 체계 수립을 총괄합니다. 2025년 BME 연구년을 계기로 연세대–BME 복수학위 협정과 객원교수 임명이 이뤄졌습니다.</p>
             </div>
           </div>
           <div class="pr">
@@ -311,7 +341,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
 </main>
 
 <footer>
-  <span data-i18n="f1">KHBCC — 한국–헝가리 배터리 협력 연구센터</span>
+  <span data-i18n="f1">KHBCC — 한국–헝가리 배터리 협력센터</span>
 </footer>
 
 <script src="i18n.js"></script>

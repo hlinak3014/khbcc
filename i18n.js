@@ -14,7 +14,7 @@ var I18N = {
     nav1:"About", nav2:"Research units", nav3:"Firm matching", nav4:"Organization",
     nav5:"Partners", nav6:"Activities", nav7:"Contact",
     f1:"KHBCC — Korea–Hungary Battery Cooperation Center",
-    f2:"2025/26 EIPP · Supported by MOEF and KDI",
+    f2:"2025/26 EIPP · Supported by MOFE and KDI",
 
     /* --- 히어로 --- */
     heroEyebrow:"Korea–Hungary Battery Cooperation Center",
@@ -50,7 +50,7 @@ var I18N = {
     parBody:"Government, industry, and universities take part from each side. The center is the platform that connects them.",
     c1:"Companies", c1b:"Register your firm &rarr;",
     aboutEyebrow:"About", aboutTitle:"What KHBCC does",
-    aboutBody:"Hungary now hosts large battery plants operated by Samsung SDI, SK On, and CATL. At the same time, EU Battery Regulation 2023/1542 requires compliance across the entire lifecycle, from production through disposal. KHBCC was established with support from both governments to connect the two. Testing, data traceability, environmental assessment, industry cooperation, and workforce development are handled within a single organization.",
+    aboutBody:"Hungary now hosts large battery plants operated by Samsung SDI, SK On, and CATL. At the same time, EU Battery Regulation 2023/1542 requires compliance across the entire lifecycle, from production through disposal. KHBCC was established with support from both governments to connect the two, and was formally launched at Hungarian Battery Week in November 2025. Testing, data traceability, environmental assessment, industry cooperation, and workforce development are handled within a single organization.",
 
     /* --- 연구 조직 --- */
     labsEyebrow:"Research units", labsTitle:"Two divisions, five functional units",
@@ -93,7 +93,7 @@ var I18N = {
     /* --- 참여 기관 --- */
     parEyebrow:"Partners", parTitle:"Participating institutions",
     og1:"Government and public agencies",
-    o1:"Ministry of Economy and Finance, Korea", o2:"Budapest office", o3:"Hungarian Investment Promotion Agency",
+    o1:"Ministry of Finance and Economy, Korea", o2:"Budapest office", o3:"Hungarian Investment Promotion Agency",
     og2:"Industry associations and firms",
     og3:"Universities and research institutions",
     o4:"Yonsei University", o4s:"Lead research institution",
@@ -204,6 +204,15 @@ var I18N = {
     c5:"Students and universities", c5d:"Ask about academic exchange and education programs.",
     critEyebrow:"Selection criteria", critTitle:"What we look for",
     critBody:"Matching candidates are selected on three values rather than revenue. These are the criteria applied when your registration is reviewed.",
+    capPhase4:"Governance structure and long-term sustainability plan for the fourth year (2025/26 interim report presentation)",
+    capLife:"Standards for used batteries, from lifecycle data-based diagnosis through reuse to recycling",
+    capRoles:"Division of roles between institutions in the two countries, by sub-topic",
+    capEdu:"Structure of the university-industry education programs",
+    capPlatform:"Proposed menu structure of the trilingual online platform",
+    p0t:"Program management", p0d:"The Economic Innovation Partnership Program (EIPP) is planned and managed by the Center for International Development at the Korea Development Institute, with Yonsei University as the implementing institution.",
+    p0r1:"Project Director", p0a1:"Executive Director, Center for International Development, KDI",
+    p0r2:"Project Manager", p0a2:"Director, Center for International Development, KDI",
+    p0r3:"Project Officer", p0a3:"Research Associate, Center for International Development, KDI",
     peEyebrow:"Research team", peTitle:"Who does what",
     peBody:"KHBCC operates as a decentralized partnership rather than a single consolidated facility, with institutions in both countries taking on the areas that match their established strengths. The four research areas and their responsible institutions are set out below.", peLeadAff:"Professor, School of Electrical and Electronic Engineering, Yonsei University",
     pe_kr:"Korea", pe_hu:"Hungary", pe1hu:"HUBA · Ministry for National Economy", pe2hu:"BME", pe3hu:"BME", pe4hu:"ELTE · HUN-REN",
@@ -211,7 +220,7 @@ var I18N = {
 
     rEyebrow:"Research", rTitle:"What we research",
     rLede:"KHBCC's research concentrates on how to actually measure and evidence what EU Battery Regulation 2023/1542 requires. The work divides into four areas, each carried out jointly by institutions in both countries.",
-    rT1:"Institutional foundation", rT2:"Testing and verification", rT3:"AI state estimation", rT4:"Environment and safety", rT5:"Yonsei pilot",
+    rT1:"Institutional foundation", rT2:"Testing and verification", rT3:"AI data analytics", rT4:"Environment and safety", rT5:"Yonsei pilot",
 
     r1t:"Institutional foundation and a sustainable operating framework",
     r1w:"Yonsei University · KDI · KBIA · KOTRA / HUBA · Ministry for National Economy",
@@ -245,7 +254,7 @@ var I18N = {
     r2l7:"<b>Insulation test</b> \u2014 results are recorded in a battery condition monitoring system to maintain traceability and support audit processes",
     r2call:"<b>KHBCC is not a battery passport issuer.</b> By defining itself as a testing and verification data hub, the center avoids overlap with the EU notified body system and concentrates on the layer of data quality, methodology, and inter-laboratory comparison \u2014 the layer where bilateral coordination produces the largest gain.",
 
-    r3t:"AI-based battery state estimation",
+    r3t:"AI-based battery data analytics and lifetime prediction",
     r3w:"Kongju National University / HUBA · BME",
     r3p1:"Laboratory testing is accurate but slow and expensive, and cannot be applied to every battery in the field. This area of work studies how to estimate battery condition from the voltage, current, and temperature data that a battery management system already collects during normal operation.",
     r3p2:"A lithium-ion cell degrades through several coupled mechanisms. Growth of the solid-electrolyte interphase consumes cyclable lithium and raises internal resistance; loss of active material reduces capacity; and under cold or fast-charging conditions lithium plating accelerates both capacity fade and safety risk. The externally observable signals reflect the combined effect of these hidden processes, which makes state estimation an inverse problem \u2014 and a natural target for data-driven methods.",
@@ -271,7 +280,7 @@ var I18N = {
     r3h5:"Transfer learning and domain adaptation",
     r3p6:"Laboratory data is clean but scarce; field data is abundant but noisy. Transfer learning carries knowledge from a data-rich domain to a data-scarce one to bridge that gap. Evaluating candidate methods on public datasets first means that when local data becomes available, only the adaptation step remains rather than the entire modelling effort.",
 
-    r4t:"Environmental, health and safety research",
+    r4t:"Environmental impact assessment and circular economy",
     r4w:"Ewha Womans University / HUBA · ELTE · HUN-REN",
     r4p1:"This work measures and reduces the pollutants arising from battery manufacturing and recycling. The Environmental, Public Health and Safety Unit comprises two research sub-units and one support group.",
     r4h1:"Monitoring and assessment sub-unit",
@@ -332,7 +341,7 @@ var I18N = {
     nav1:"A központról", nav2:"Kutatási egységek", nav3:"Cégpárosítás", nav4:"Szervezet",
     nav5:"Partnerek", nav6:"Tevékenységek", nav7:"Kapcsolat",
     f1:"KHBCC — Koreai–Magyar Akkumulátoripari Együttműködési Központ",
-    f2:"2025/26 EIPP · A MOEF és a KDI támogatásával",
+    f2:"2025/26 EIPP · A MOFE és a KDI támogatásával",
 
     /* --- fejléc --- */
     heroEyebrow:"Korea–Hungary Battery Cooperation Center",
@@ -368,7 +377,7 @@ var I18N = {
     parBody:"Mindkét oldalról részt vesz a kormányzat, az ipar és az egyetemek. A központ az őket összekötő platform.",
     c1:"Cégek", c1b:"Cégregisztráció &rarr;",
     aboutEyebrow:"A központról", aboutTitle:"Mivel foglalkozik a KHBCC",
-    aboutBody:"Magyarországon ma a Samsung SDI, az SK On és a CATL nagy akkumulátorgyárai működnek. Ezzel egyidejűleg az Európai Unió 2023/1542 rendelete a gyártástól a hulladékkezelésig a teljes életciklusra kiterjedő megfelelést ír elő. A KHBCC a két ország kormányának támogatásával jött létre, hogy összekapcsolja ezt a kettőt. A vizsgálat, az adatnyomonkövetés, a környezeti értékelés, az ipari együttműködés és a szakemberképzés egyetlen szervezeten belül zajlik.",
+    aboutBody:"Magyarországon ma a Samsung SDI, az SK On és a CATL nagy akkumulátorgyárai működnek. Ezzel egyidejűleg az Európai Unió 2023/1542 rendelete a gyártástól a hulladékkezelésig a teljes életciklusra kiterjedő megfelelést ír elő. A KHBCC a két ország kormányának támogatásával jött létre, hogy összekapcsolja ezt a kettőt, és 2025 novemberében, a Hungarian Battery Week keretében hivatalosan is elindult. A vizsgálat, az adatnyomonkövetés, a környezeti értékelés, az ipari együttműködés és a szakemberképzés egyetlen szervezeten belül zajlik.",
 
     /* --- kutatási egységek --- */
     labsEyebrow:"Kutatási egységek", labsTitle:"Két divízió, öt funkcionális egység",
@@ -411,7 +420,7 @@ var I18N = {
     /* --- partnerek --- */
     parEyebrow:"Partnerek", parTitle:"Közreműködő intézmények",
     og1:"Kormányzat és közintézmények",
-    o1:"Koreai Gazdasági és Pénzügyminisztérium", o2:"Budapesti iroda", o3:"Nemzeti Befektetési Ügynökség",
+    o1:"Koreai Pénzügyi és Gazdasági Minisztérium", o2:"Budapesti iroda", o3:"Nemzeti Befektetési Ügynökség",
     og2:"Ipari szövetségek és vállalatok",
     og3:"Egyetemek és kutatóintézetek",
     o4:"Yonsei Egyetem", o4s:"Vezető kutatóintézmény",
@@ -522,6 +531,15 @@ var I18N = {
     c5:"Hallgatók és egyetemek", c5d:"Érdeklődés akadémiai csereprogramokról és képzésekről.",
     critEyebrow:"Kiválasztási szempontok", critTitle:"Mit nézünk",
     critBody:"A párosítási jelölteket nem árbevétel, hanem három érték alapján választjuk ki. Ezek a szempontok érvényesek a regisztráció elbírálásakor.",
+    capPhase4:"A negyedik év irányítási szerkezete és hosszú távú fenntarthatósági terve (2025/26 félidős beszámoló)",
+    capLife:"A használt akkumulátorokra vonatkozó szabványok az életciklusadatokon alapuló diagnosztikától az újrahasználaton át az újrahasznosításig",
+    capRoles:"A két ország intézményei közötti feladatmegosztás altémánként",
+    capEdu:"Az egyetemi–ipari képzési programok felépítése",
+    capPlatform:"A háromnyelvű online platform javasolt menüszerkezete",
+    p0t:"Programirányítás", p0d:"A Gazdasági Innovációs Partnerségi Programot (EIPP) a Korea Development Institute Nemzetközi Fejlesztési Központja tervezi és irányítja, a végrehajtó intézmény a Yonsei Egyetem.",
+    p0r1:"Projektigazgató", p0a1:"Ügyvezető igazgató, Nemzetközi Fejlesztési Központ, KDI",
+    p0r2:"Projektvezető", p0a2:"Igazgató, Nemzetközi Fejlesztési Központ, KDI",
+    p0r3:"Projektfelelős", p0a3:"Kutatási munkatárs, Nemzetközi Fejlesztési Központ, KDI",
     peEyebrow:"Kutat\u00f3csoport", peTitle:"Ki mit v\u00e9gez",
     peBody:"A KHBCC nem egyetlen \u00f6sszevont l\u00e9tes\u00edtm\u00e9nyk\u00e9nt, hanem decentraliz\u00e1lt partners\u00e9gk\u00e9nt m\u0171k\u00f6dik: mindk\u00e9t orsz\u00e1g int\u00e9zm\u00e9nyei azokat a ter\u00fcleteket viszik, amelyeken er\u0151sek. Az al\u00e1bbiakban a n\u00e9gy kutat\u00e1si ter\u00fclet \u00e9s a fel\u0151l\u00fck felel\u0151s int\u00e9zm\u00e9nyek szerepelnek.", peLeadAff:"Egyetemi tan\u00e1r, Villamosm\u00e9rn\u00f6ki \u00e9s Elektronikai Kar, Yonsei Egyetem",
     pe_kr:"Korea", pe_hu:"Magyarorsz\u00e1g", pe1hu:"HUBA · Nemzetgazdas\u00e1gi Miniszt\u00e9rium", pe2hu:"BME", pe3hu:"BME", pe4hu:"ELTE · HUN-REN",
@@ -529,7 +547,7 @@ var I18N = {
 
     rEyebrow:"Kutat\u00e1s", rTitle:"Mit kutatunk",
     rLede:"A KHBCC kutat\u00e1sa arra \u00f6sszpontos\u00edt, hogyan lehet t\u00e9nylegesen m\u00e9rni \u00e9s igazolni azt, amit az EU 2023/1542 akkumul\u00e1torrendelete el\u0151\u00edr. A munka n\u00e9gy ter\u00fcletre oszlik, mindegyiket a k\u00e9t orsz\u00e1g int\u00e9zm\u00e9nyei k\u00f6z\u00f6sen v\u00e9gzik.",
-    rT1:"Int\u00e9zm\u00e9nyi alapok", rT2:"Vizsg\u00e1lat \u00e9s ellen\u0151rz\u00e9s", rT3:"MI-alap\u00fa \u00e1llapotbecsl\u00e9s", rT4:"K\u00f6rnyezet \u00e9s biztons\u00e1g", rT5:"Yonsei pilot",
+    rT1:"Intézményi alapok", rT2:"Vizsgálat és ellenőrzés", rT3:"MI-adatelemzés", rT4:"Környezet és biztonság", rT5:"Yonsei pilot",
 
     r1t:"Int\u00e9zm\u00e9nyi alapok \u00e9s fenntarthat\u00f3 m\u0171k\u00f6d\u00e9si keret",
     r1w:"Yonsei Egyetem · KDI · KBIA · KOTRA / HUBA · Nemzetgazdas\u00e1gi Miniszt\u00e9rium",
@@ -563,7 +581,7 @@ var I18N = {
     r2l7:"<b>Szigetel\u00e9svizsg\u00e1lat</b> \u2014 az eredm\u00e9nyeket akkumul\u00e1tor\u00e1llapot-fel\u00fcgyeleti rendszerben r\u00f6gz\u00edtik a nyomonk\u00f6vethet\u0151s\u00e9g \u00e9s az auditálhat\u00f3s\u00e1g \u00e9rdek\u00e9ben",
     r2call:"<b>A KHBCC nem akkumul\u00e1tor-\u00fatlev\u00e9l kibocs\u00e1t\u00f3ja.</b> Azzal, hogy vizsg\u00e1lati \u00e9s ellen\u0151rz\u00e9si adatk\u00f6zpontk\u00e9nt hat\u00e1rozza meg mag\u00e1t, elker\u00fcli az uni\u00f3s bejelentett szervezeti rendszerrel val\u00f3 \u00e1tfed\u00e9st, \u00e9s az adatmin\u0151s\u00e9g, a m\u00f3dszertan \u00e9s a laborat\u00f3riumok k\u00f6z\u00f6tti \u00f6sszehasonl\u00edt\u00e1s r\u00e9teg\u00e9re \u00f6sszpontos\u00edt \u2014 arra, ahol a k\u00e9toldal\u00fa egy\u00fcttm\u0171k\u00f6d\u00e9s a legnagyobb hasznot hozza.",
 
-    r3t:"Mesters\u00e9ges intelligenci\u00e1n alapul\u00f3 \u00e1llapotbecsl\u00e9s",
+    r3t:"MI-alapú akkumulátoradat-elemzés és élettartam-előrejelzés",
     r3w:"Kongju Nemzeti Egyetem / HUBA · BME",
     r3p1:"A laborat\u00f3riumi vizsg\u00e1lat pontos, de lass\u00fa \u00e9s dr\u00e1ga, \u00e9s nem alkalmazhat\u00f3 minden \u00fczemel\u0151 akkumul\u00e1torra. Ez a munkater\u00fclet azt kutatja, hogyan lehet az akkumul\u00e1tor \u00e1llapot\u00e1t megbecs\u00fclni azokb\u00f3l a fesz\u00fclts\u00e9g-, \u00e1ram- \u00e9s h\u0151m\u00e9rs\u00e9kletadatokb\u00f3l, amelyeket az akkumul\u00e1torkezel\u0151 rendszer amúgy is gy\u0171jt.",
     r3p2:"A lítiumion-cella t\u00f6bb, egym\u00e1shoz kapcsol\u00f3d\u00f3 mechanizmus mentén degrad\u00e1l\u00f3dik. A szil\u00e1rd elektrolit-interf\u00e1zis n\u00f6veked\u00e9se elfogyasztja a ciklizálhat\u00f3 l\u00edtiumot \u00e9s n\u00f6veli a bels\u0151 ellen\u00e1ll\u00e1st; az akt\u00edv anyag vesztes\u00e9ge cs\u00f6kkenti a kapacit\u00e1st; hidegben vagy gyorst\u00f6lt\u00e9sn\u00e9l pedig a l\u00edtiumkiv\u00e1l\u00e1s egyszerre gyors\u00edtja a kapacit\u00e1svesztést \u00e9s n\u00f6veli a biztons\u00e1gi kock\u00e1zatot. A k\u00edv\u00fclr\u0151l m\u00e9rhet\u0151 jelek e rejtett folyamatok egy\u00fcttes hat\u00e1s\u00e1t t\u00fckr\u00f6zik, ez\u00e9rt az \u00e1llapotbecsl\u00e9s inverz probl\u00e9ma \u2014 \u00e9s ez\u00e9rt term\u00e9szetes c\u00e9lpontja az adatvez\u00e9relt m\u00f3dszereknek.",
@@ -589,7 +607,7 @@ var I18N = {
     r3h5:"Transzfertanul\u00e1s \u00e9s dom\u00e9nadapt\u00e1ci\u00f3",
     r3p6:"A laborat\u00f3riumi adat tiszta, de kev\u00e9s; az \u00fczemi adat b\u0151s\u00e9ges, de zajos. A transzfertanul\u00e1s adatgazdag ter\u00fcletr\u0151l visz \u00e1t tud\u00e1st adatszeg\u00e9ny ter\u00fcletre, \u00e9s \u00edgy h\u00eddalja \u00e1t ezt a r\u00e9st. Ha a m\u00f3dszereket el\u0151bb nyilv\u00e1nos adathalmazokon \u00e9rt\u00e9kelj\u00fck, akkor a helyi adat meg\u00e9rkez\u00e9sekor m\u00e1r csak az adapt\u00e1ci\u00f3s l\u00e9p\u00e9s marad h\u00e1tra, nem a teljes modellez\u00e9s.",
 
-    r4t:"K\u00f6rnyezetv\u00e9delmi, eg\u00e9szs\u00e9g\u00fcgyi \u00e9s biztons\u00e1gi kutat\u00e1s",
+    r4t:"Környezeti hatásvizsgálat és körforgásos gazdaság",
     r4w:"Ewha Womans Egyetem / HUBA · ELTE · HUN-REN",
     r4p1:"Ez a munka az akkumul\u00e1torgy\u00e1rt\u00e1sb\u00f3l \u00e9s -\u00fajrahasznos\u00edt\u00e1sb\u00f3l sz\u00e1rmaz\u00f3 szennyez\u0151anyagokat m\u00e9ri \u00e9s cs\u00f6kkenti. A k\u00f6rnyezetv\u00e9delmi, k\u00f6zeg\u00e9szs\u00e9g\u00fcgyi \u00e9s biztons\u00e1gi egys\u00e9g k\u00e9t kutat\u00e1si alegys\u00e9gb\u0151l \u00e9s egy t\u00e1mogat\u00f3 csoportb\u00f3l \u00e1ll.",
     r4h1:"Monitoring \u00e9s \u00e9rt\u00e9kel\u00e9si alegys\u00e9g",
