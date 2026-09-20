@@ -96,7 +96,7 @@ nav{display:flex;gap:4px;margin-left:auto;align-items:center}
 .logo-txt{font-family:var(--display);font-weight:700;font-size:21px;color:#EC1C24;letter-spacing:-.01em}
 
 /* indicator rail — two items only */
-.rail{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line-dark);max-width:1280px;margin:clamp(34px,5vw,56px) auto 0;position:relative;z-index:1}
+.rail{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line-dark);max-width:1280px;margin:clamp(34px,5vw,56px) auto 0;position:relative;z-index:1}
 .rail div{padding:22px 26px 26px;border-right:1px solid var(--line-dark)}
 .rail div:first-child{padding-left:0}
 .rail div:last-child{border-right:0}
@@ -114,7 +114,9 @@ section{padding:clamp(50px,6.5vw,86px) var(--pad)}
 
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;background:var(--line)}
 @media (min-width:1240px){ #about .cards{grid-template-columns:repeat(5,minmax(0,1fr))} }
-.card{background:var(--paper);padding:23px 21px}
+.card{background:var(--paper);padding:23px 21px;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:background .15s}
+#about .card:hover{background:#fff}
+#about .card:hover h3{color:var(--red)}
 .alt .card{background:var(--paper-2)}
 .card .host{font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;color:var(--red);text-transform:uppercase;display:block;margin-bottom:9px}
 .a-ico{width:46px;height:46px;border-radius:4px;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
@@ -197,6 +199,9 @@ section{padding:clamp(50px,6.5vw,86px) var(--pad)}
 .pillar-label{font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink);border-bottom:1.5px solid var(--ink);padding-bottom:8px;margin-bottom:20px;display:flex;justify-content:space-between;align-items:baseline;gap:12px}
 .pillar-label i{font-style:normal;color:var(--steel);font-size:10px;letter-spacing:.05em;text-align:right}
 
+.plat-cta{margin-top:28px}
+.plat-cta .btn-ghost{color:var(--ink);border-color:var(--line)}
+.plat-cta .btn-ghost:hover{border-color:var(--ink)}
 .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(228px,1fr));gap:24px}
 .step{border-top:2px solid var(--ink);padding-top:15px}
 .step b{font-family:var(--mono);font-size:11px;letter-spacing:.09em;color:var(--red);display:block;margin-bottom:9px}
@@ -216,6 +221,44 @@ section{padding:clamp(50px,6.5vw,86px) var(--pad)}
 .gov-layer h3{margin-bottom:6px}
 .gov-layer p{font-size:14.5px;color:var(--steel)}
 
+/* team teaser */
+.tm-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.tm{background:var(--paper-2);padding:16px 14px 18px;text-decoration:none;color:inherit;text-align:center;transition:background .15s}
+.tm:hover{background:#fff}
+.tm:hover b{color:var(--red)}
+.tm img{width:74px;height:92px;object-fit:cover;border-radius:3px;margin:0 auto 11px;background:#E4E7EE}
+.tm b{display:block;font-family:var(--display);font-size:13.5px;font-weight:600;line-height:1.3;margin-bottom:4px}
+.tm span{font-size:11.5px;color:var(--steel);line-height:1.35}
+.tm-more{display:inline-block;margin-top:20px;font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--ink);text-decoration:none;border-bottom:1.5px solid var(--red);padding-bottom:2px}
+.tm-more:hover{color:var(--red)}
+/* activities teaser */
+.ac-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.ac{background:#fff;border:1px solid var(--line);border-radius:4px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:border-color .15s,transform .15s}
+.ac:hover{border-color:var(--ink);transform:translateY(-2px)}
+.ac .shot{aspect-ratio:3/2;background:#E4E7EE;overflow:hidden}
+.ac .shot img{width:100%;height:100%;object-fit:cover;display:block}
+.ac .txt{padding:15px 16px 18px}
+.ac .when{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;color:var(--red);display:block;margin-bottom:7px}
+.ac h4{font-family:var(--display);font-size:15.5px;font-weight:600;line-height:1.35;margin-bottom:6px}
+.ac p{font-size:13.5px;color:var(--steel);line-height:1.55;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+/* partners bridge */
+.bridge{display:grid;grid-template-columns:1fr auto 1fr;gap:clamp(18px,3vw,34px);align-items:start}
+.side{background:#fff;border:1px solid var(--line);border-radius:4px;padding:22px}
+.side-head{display:flex;align-items:center;gap:10px;padding-bottom:13px;margin-bottom:16px;border-bottom:2px solid var(--ink)}
+.flag{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.08em;color:#fff;background:#0E1430;padding:4px 8px;border-radius:2px}
+.flag.hu{background:#3E8F57}
+.side-name{font-family:var(--display);font-size:17px;font-weight:700}
+.tier{margin-bottom:18px}
+.tier:last-child{margin-bottom:0}
+.tier-l{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--steel);display:block;margin-bottom:9px}
+.hub{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;padding-top:58px;min-width:150px}
+.hub img{width:130px;height:auto}
+.hub span{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;color:var(--steel);text-align:center}
+.hub::before,.hub::after{content:'';display:block;width:1px;height:0}
+@media (max-width:1100px){
+  .bridge{grid-template-columns:1fr}
+  .hub{padding-top:0;order:-1;margin-bottom:6px}
+}
 /* partners with logos */
 .org-group{margin-bottom:30px}
 .org-group>.eyebrow{margin-bottom:14px}
@@ -235,7 +278,9 @@ section{padding:clamp(50px,6.5vw,86px) var(--pad)}
 .cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:24px;margin-top:32px}
 .cgrid div{border-top:1px solid var(--line-dark);padding-top:14px}
 .cgrid .eyebrow{margin-bottom:7px}
-.cgrid a,.cgrid p{color:var(--paper-2);font-size:15px;text-decoration:none;display:block}
+.cgrid a{color:var(--paper-2);font-size:14.5px;text-decoration:none;display:block;border-bottom:1.5px solid transparent;width:fit-content}
+.cgrid a:hover{border-bottom-color:#F0A8AC}
+.cgrid .cg-d{color:#9AA5C6;font-size:13.5px;line-height:1.5;margin-bottom:9px}
 .cgrid a:hover{color:#F0A8AC}
 
 footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(--mono);font-size:11px;letter-spacing:.03em;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
@@ -325,12 +370,12 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
   <div class="hero-grid">
     <div>
       <span class="eyebrow" data-i18n="heroEyebrow">Korea–Hungary Battery Cooperation Center</span>
-      <h1 data-i18n="heroTitle">한국–헝가리<br>배터리 협력센터</h1>
-      <p class="hero-sub" data-i18n="heroSub">EU 배터리 규정 대응을 위한 양국 공동 연구센터</p>
-      <p class="lede" data-i18n="heroLede">배터리 성능 시험, 사용 데이터 분석, 환경영향 평가, 기업 간 협력 지원을 한 조직 안에서 수행합니다. 한국어·헝가리어·영어로 운영합니다.</p>
+      <h1 data-i18n="heroTitle">한국–헝가리<br>배터리 협력 연구센터</h1>
+      <p class="hero-sub" data-i18n="heroSub">연구와 산업, 교육과 정책을 잇는 양국 공동 플랫폼</p>
+      <p class="lede" data-i18n="heroLede">배터리 성능 시험과 인증, 데이터 분석과 EU 규제 대응, 기업 협력과 인재 양성을 하나의 조직 안에서 연결합니다. 한국어·헝가리어·영어로 운영합니다.</p>
       <div class="cta-row">
-        <a href="apply.html" class="btn btn-primary" data-i18n="ctaJoin">기업 등록 신청</a>
-        <a href="research.html" class="btn btn-ghost" data-i18n="ctaResearch">연구 내용 보기</a>
+        <a href="research.html" class="btn btn-primary" data-i18n="ctaExplore">센터 살펴보기</a>
+        <a href="apply.html" class="btn btn-ghost" data-i18n="ctaPartner">협력 문의하기</a>
       </div>
     </div>
 
@@ -349,14 +394,19 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
 
   <div class="rail">
     <div>
-      <b>250+</b>
-      <span class="lab" data-i18n="stat1">KBIA 회원사</span>
-      <p class="note" data-i18n="stat1n">한국배터리산업협회 회원사를 기반으로 회원 데이터베이스를 구축하고, 헝가리 진출 기업을 추가로 등록하고 있습니다.</p>
+      <b>2</b>
+      <span class="lab" data-i18n="stat0">개국 공동 운영</span>
+      <p class="note" data-i18n="stat0n">한국과 헝가리의 정부·산업계·대학이 함께 참여하는 양국 공동 연구센터입니다.</p>
+    </div>
+    <div>
+      <b>5</b>
+      <span class="lab" data-i18n="stat1">개 기능 연구소</span>
+      <p class="note" data-i18n="stat1n">공동 연구개발 부문 3개, 한국·헝가리 협력 부문 2개로 구성됩니다.</p>
     </div>
     <div>
       <b>2027.02</b>
       <span class="lab" data-i18n="stat2">배터리 여권 시행</span>
-      <p class="note" data-i18n="stat2n">EU 시장에 출시되는 전기차 배터리, 경량 운송수단(LMT) 배터리, 2kWh 초과 산업용 배터리에 디지털 배터리 여권이 의무 적용됩니다. (2027년 2월 18일)</p>
+      <p class="note" data-i18n="stat2n">EU 시장에 출시되는 전기차, 경량 운송수단(LMT), 2kWh 초과 산업용 배터리에 디지털 배터리 여권이 의무 적용됩니다.</p>
     </div>
   </div>
 </div>
@@ -370,36 +420,36 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
       <p data-i18n="aboutBody">헝가리에는 삼성SDI, SK온, CATL의 대규모 배터리 생산기지가 들어서 있습니다. 동시에 EU 배터리 규정(2023/1542)은 생산부터 폐기까지 전 생애주기에 걸친 규제 대응을 요구하고 있습니다. KHBCC는 이 두 가지를 잇기 위해 한국과 헝가리 정부의 지원으로 설립된 공동 연구센터입니다. 시험 검증, 데이터 추적, 환경 진단, 기업 협력, 인력 양성을 하나의 조직 안에서 함께 다룹니다.</p>
     </div>
     <div class="cards">
-      <div class="card">
-        <div class="a-ico" style="background:#8E7CC3"><img src="assets/icons/icon-business.png" alt=""></div>
-        <span class="host" data-i18n="a1h">기업 협력</span>
-        <h3 data-i18n="a1t">양국 기업 매칭</h3>
-        <p data-i18n="a1b">KBIA와 HUBA의 회원 네트워크로 기업을 검증한 뒤, 역량과 협력 수요를 분석해 성사 가능성이 있는 만남을 주선합니다.</p>
-      </div>
-      <div class="card">
-        <div class="a-ico" style="background:#9CC2E5"><img src="assets/icons/icon-education.png" alt=""></div>
-        <span class="host" data-i18n="a2h">인력 양성</span>
-        <h3 data-i18n="a2t">공동 학위와 교육</h3>
-        <p data-i18n="a2b">2025년 12월 체결된 연세대–BME 복수학위 협정을 축으로 학생 교류, 단기 펠로십, 산업체 인턴십을 운영합니다.</p>
-      </div>
-      <div class="card">
+      <a class="card" href="research.html#r2">
         <div class="a-ico" style="background:#F4B081"><img src="assets/icons/icon-test.png" alt=""></div>
-        <span class="host" data-i18n="a3h">규제 대응</span>
-        <h3 data-i18n="a3t">배터리 여권 준비</h3>
-        <p data-i18n="a3b">셀·모듈·팩 단위 시험 항목을 배터리 여권 데이터 항목에 대응시키고, 기업이 실제로 제출할 수 있는 형태의 데이터 체계를 설계합니다.</p>
-      </div>
-      <div class="card">
+        <span class="host" data-i18n="a1h">연구·시험</span>
+        <h3 data-i18n="a1t">성능 평가와 시험 검증</h3>
+        <p data-i18n="a1b">배터리 성능을 평가하고 사용후 배터리의 잔존 수명을 진단합니다. 시험 결과를 바탕으로 새로운 기술 기준을 만듭니다.</p>
+      </a>
+      <a class="card" href="research.html#r3">
         <div class="a-ico" style="background:#FFD966"><img src="assets/icons/icon-data.png" alt=""></div>
-        <span class="host" data-i18n="a4h">정책 지원</span>
-        <h3 data-i18n="a4t">양방향 소통 창구</h3>
-        <p data-i18n="a4b">EU 규제 동향을 기업에 전달하고, 현지 인허가를 비롯한 기업의 애로사항을 취합해 양국 부처에 전달합니다.</p>
-      </div>
-      <div class="card">
+        <span class="host" data-i18n="a2h">데이터·규제</span>
+        <h3 data-i18n="a2t">배터리 여권과 데이터 분석</h3>
+        <p data-i18n="a2b">배터리 생애주기 데이터를 수집·분석하고, EU 배터리 규정이 요구하는 공시 항목에 대응할 수 있는 데이터 체계를 설계합니다.</p>
+      </a>
+      <a class="card" href="#platform">
+        <div class="a-ico" style="background:#8E7CC3"><img src="assets/icons/icon-business.png" alt=""></div>
+        <span class="host" data-i18n="a3h">산업 협력</span>
+        <h3 data-i18n="a3t">양국 기업 협력</h3>
+        <p data-i18n="a3b">한국과 헝가리 기업을 검증해 연결하고, 공동 연구개발과 EU Horizon 컨소시엄 구성을 지원합니다.</p>
+      </a>
+      <a class="card" href="research.html#r1">
+        <div class="a-ico" style="background:#9CC2E5"><img src="assets/icons/icon-education.png" alt=""></div>
+        <span class="host" data-i18n="a4h">교육·인재</span>
+        <h3 data-i18n="a4t">대학 간 교육 협력</h3>
+        <p data-i18n="a4b">연세대–BME 협정을 축으로 학생 교류와 공동 지도를 운영하고, 산업 현직 인력의 재교육 과정을 마련합니다.</p>
+      </a>
+      <a class="card" href="research.html#r4">
         <div class="a-ico" style="background:#70AD47"><img src="assets/icons/icon-env.png" alt=""></div>
-        <span class="host" data-i18n="a5h">환경·안전</span>
-        <h3 data-i18n="a5t">환경규제 대응</h3>
-        <p data-i18n="a5b">배터리 제조와 재활용 과정의 오염물질을 측정하고, 전과정평가와 안전 기준 수립으로 EU 환경 규제 대응을 지원합니다.</p>
-      </div>
+        <span class="host" data-i18n="a5h">정책·지속가능성</span>
+        <h3 data-i18n="a5t">정책 지원과 환경·안전</h3>
+        <p data-i18n="a5b">EU 규제 동향을 기업에 전달하고 애로사항을 양국 부처에 전달합니다. 환경영향 평가와 배터리 안전 기준 수립을 함께 수행합니다.</p>
+      </a>
     </div>
   </div>
 </section>
@@ -410,7 +460,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
     <div class="sec-head">
       <span class="eyebrow" data-i18n="govEyebrow">운영 체계</span>
       <h2 data-i18n="govTitle">조직 구성</h2>
-      <p data-i18n="govBody">정부 감독과 프로젝트 단위 실행을 함께 담기 위해 3단계로 구성했습니다. 전략 방향은 이사회에서 정하고, 산업계 요구는 자문위원회를 통해 운영에 곧바로 반영됩니다.</p>
+      <p data-i18n="govBody">KHBCC는 공동 연구개발과 한국·헝가리 협력이라는 두 축으로 움직입니다. 연구 성과가 산업 협력과 교육, 정책 지원으로 곧바로 이어지도록 설계했습니다.</p>
     </div>
     <div class="gov">
       <div class="gov-layer">
@@ -574,7 +624,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
     <div class="sec-head">
       <span class="eyebrow" data-i18n="platEyebrow">3개국어 플랫폼 · 기업 매칭</span>
       <h2 data-i18n="platTitle">기업 매칭은 네 단계를 거칩니다</h2>
-      <p data-i18n="platBody">등록한 기업을 무작위로 연결하지 않습니다. KBIA와 HUBA의 회원사 데이터베이스를 기준으로 검증한 뒤, 역량과 수요를 파악하고 선별해 사전에 미팅을 구성합니다. 시간이 제한된 대면 매칭 행사에서는 이 절차를 특히 엄격하게 적용합니다.</p>
+      <p data-i18n="platBody">검증된 기업에서 출발해 실제 성과가 나오는 미팅까지, 네 단계를 거쳐 연결합니다.</p>
     </div>
 
     <figure class="fig" aria-labelledby="figB2bT">
@@ -585,7 +635,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
             <article class="bp-card">
               <div class="bp-num">01</div>
               <div class="bp-body">
-                <h4 data-i18n="figS1t">자격 검증</h4>
+                <h4 data-i18n="figS1t">확인</h4>
                 <ul><li data-i18n="figS1a">사업 실재성 확인</li><li data-i18n="figS1b">밸류체인 내 역할 확인</li></ul>
               </div>
             </article>
@@ -596,7 +646,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
             <article class="bp-card">
               <div class="bp-num">02</div>
               <div class="bp-body">
-                <h4 data-i18n="figS2t">역량·수요 분석</h4>
+                <h4 data-i18n="figS2t">분석</h4>
                 <ul><li data-i18n="figS2a">기술 성숙도·생산 역량 평가</li><li data-i18n="figS2b">협력 수요 파악</li></ul>
               </div>
             </article>
@@ -607,7 +657,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
             <article class="bp-card">
               <div class="bp-num">03</div>
               <div class="bp-body">
-                <h4 data-i18n="figS3t">3대 가치 선별</h4>
+                <h4 data-i18n="figS3t">선별</h4>
                 <ul><li data-i18n="figS3a">기술적 가치 · 경제적 영향</li><li data-i18n="figS3b">환경적 지속가능성</li></ul>
               </div>
             </article>
@@ -618,7 +668,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
             <article class="bp-card">
               <div class="bp-num">04</div>
               <div class="bp-body">
-                <h4 data-i18n="figS4t">사전 큐레이션</h4>
+                <h4 data-i18n="figS4t">연결</h4>
                 <ul><li data-i18n="figS4a">추천 미팅 일정 전달</li><li data-i18n="figS4b">상대 기업 정보 제공</li></ul>
               </div>
             </article>
@@ -628,43 +678,34 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
       </div>
     </figure>
 
+    <div class="cta-row plat-cta">
+      <a href="apply.html" class="btn btn-primary" data-i18n="ctaJoin">기업 등록 신청</a>
+      <a href="apply.html#criteria" class="btn btn-ghost" data-i18n="ctaCriteria">선별 기준 보기</a>
+    </div>
+
     <div class="steps">
       <div class="step">
         <b>01</b>
-        <h3 data-i18n="s1t">자격 검증</h3>
+        <h3 data-i18n="s1t">확인</h3>
         <p data-i18n="s1b">KBIA·HUBA 회원사 데이터베이스를 기준으로 사업 실재성과 배터리 밸류체인 내 역할을 확인합니다. 이 단계를 통과한 기업만 협력 대상 풀에 들어갑니다.</p>
       </div>
       <div class="step">
         <b>02</b>
-        <h3 data-i18n="s2t">역량·수요 분석</h3>
+        <h3 data-i18n="s2t">분석</h3>
         <p data-i18n="s2b">기술 성숙도(TRL)와 생산 역량을 평가하고, 합작 투자·유통망 확보·규제 대응 등 어떤 협력을 원하는지 파악해 기업 프로파일을 작성합니다.</p>
       </div>
       <div class="step">
         <b>03</b>
-        <h3 data-i18n="s3t">3대 가치 기준 선별</h3>
+        <h3 data-i18n="s3t">선별</h3>
         <p data-i18n="s3b">기술적 가치, 경제적 영향, 환경적 지속가능성 세 가지를 기준으로 매칭 대상 기업 리스트를 추립니다.</p>
       </div>
       <div class="step">
         <b>04</b>
-        <h3 data-i18n="s4t">사전 큐레이션</h3>
+        <h3 data-i18n="s4t">연결</h3>
         <p data-i18n="s4b">행사 전에 추천 미팅 일정과 상대 기업 정보를 전달합니다. 참가 기업은 도착 시점에 이미 논의할 내용을 갖고 있게 됩니다.</p>
       </div>
     </div>
 
-    <div class="values">
-      <div class="value">
-        <img class="vicon" src="assets/icons/icon-technical.png" alt=""><span class="tag" data-i18n="v1t">기술적 가치</span>
-        <p data-i18n="v1b">밸류체인 기여도와 기술 성숙도. 헝가리 현지 파트너와 공동 연구가 가능하거나 생산라인에 바로 적용할 수 있는 수준인지 확인합니다.</p>
-      </div>
-      <div class="value">
-        <img class="vicon" src="assets/icons/icon-economic.png" alt=""><span class="tag" data-i18n="v2t">경제적 영향</span>
-        <p data-i18n="v2b">공급망에 실제로 편입될 수 있는지, 계약과 투자로 이어질 가능성이 있는지를 봅니다.</p>
-      </div>
-      <div class="value">
-        <img class="vicon" src="assets/icons/icon-sustain.png" alt=""><span class="tag" data-i18n="v3t">환경적 지속가능성</span>
-        <p data-i18n="v3b">배터리 여권 대응 준비 상태와 순환경제 기여도. 재사용·재활용 관련 실적이 있는지 확인합니다.</p>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -673,42 +714,146 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
   <div class="wrap">
     <div class="sec-head">
       <span class="eyebrow" data-i18n="parEyebrow">참여 기관</span>
-      <h2 data-i18n="parTitle">함께하는 기관</h2>
-      <p data-i18n="parBody">센터의 활동은 각 분야를 맡은 기관들의 참여로 이뤄집니다. 양국 정부 부처, 산업 협회, 대학과 연구기관이 역할을 나누어 맡고 있습니다.</p>
+      <h2 data-i18n="parTitle">양국이 함께 만드는 센터</h2>
+      <p data-i18n="parBody">정부와 산업계, 대학이 양국에서 각각 참여합니다. 센터는 그 사이를 잇는 공동 플랫폼입니다.</p>
     </div>
 
-    <div class="org-group">
-      <span class="eyebrow" data-i18n="og1">정부 · 공공기관</span>
-      <div class="logos">
-        <div class="logo-card"><img src="assets/kdi.png" alt="KDI"></div>
-        <div class="logo-card"><img src="assets/mne.png" alt="Ministry for National Economy"></div>
+    <div class="bridge">
+      <div class="side">
+        <div class="side-head">
+          <span class="flag">KR</span>
+          <span class="side-name" data-i18n="sideKR">대한민국</span>
+        </div>
+        <div class="tier">
+          <span class="tier-l" data-i18n="tierGov">정부·공공기관</span>
+          <div class="logos">
+            <div class="logo-card"><img src="assets/kdi.png" alt="KDI"></div>
+          </div>
+          <div class="orgs">
+            <div class="org">MOEF<span data-i18n="o1">기획재정부</span></div>
+            <div class="org">KOTRA<span data-i18n="o2">부다페스트 무역관</span></div>
+          </div>
+        </div>
+        <div class="tier">
+          <span class="tier-l" data-i18n="tierInd">산업 협회</span>
+          <div class="logos">
+            <div class="logo-card"><img src="assets/kbia.png" alt="KBIA"></div>
+          </div>
+        </div>
+        <div class="tier">
+          <span class="tier-l" data-i18n="tierUni">대학·연구기관</span>
+          <div class="orgs">
+            <div class="org"><b data-i18n="o4">연세대학교</b><span data-i18n="o4s">주관 기관</span></div>
+            <div class="org" data-i18n="oKongju">공주대학교</div>
+            <div class="org" data-i18n="oEwha">이화여자대학교</div>
+          </div>
+        </div>
       </div>
-      <div class="orgs" style="margin-top:10px">
-        <div class="org">MOEF<span data-i18n="o1">대한민국 기획재정부</span></div>
-        <div class="org">KOTRA<span data-i18n="o2">부다페스트 무역관</span></div>
-        <div class="org">HIPA<span data-i18n="o3">헝가리 투자청</span></div>
-      </div>
-    </div>
 
-    <div class="org-group">
-      <span class="eyebrow" data-i18n="og2">산업 협회</span>
-      <div class="logos">
-        <div class="logo-card"><img src="assets/kbia.png" alt="KBIA"></div>
-        <div class="logo-card"><img src="assets/huba.png" alt="Hungarian Battery Association"></div>
+      <div class="hub">
+        <img src="assets/khbcc-logo.png?v=2" alt="KHBCC">
+        <span data-i18n="hubLabel">공동 협력 플랫폼</span>
       </div>
-    </div>
 
-    <div class="org-group">
-      <span class="eyebrow" data-i18n="og3">대학 · 연구기관</span>
-      <div class="logos">
-        <div class="logo-card"><img src="assets/bme.png" alt="BME"></div>
-        <div class="logo-card"><img src="assets/elte.png" alt="ELTE"></div>
-      </div>
-      <div class="orgs" style="margin-top:10px">
-        <div class="org"><b data-i18n="o4">연세대학교</b><span data-i18n="o4s">주관 연구기관</span></div>
-        <div class="org">HUN-REN<span data-i18n="o6">헝가리 연구 네트워크</span></div>
+      <div class="side">
+        <div class="side-head">
+          <span class="flag hu">HU</span>
+          <span class="side-name" data-i18n="sideHU">헝가리</span>
+        </div>
+        <div class="tier">
+          <span class="tier-l" data-i18n="tierGov">정부·공공기관</span>
+          <div class="logos">
+            <div class="logo-card"><img src="assets/mne.png" alt="Ministry for National Economy"></div>
+          </div>
+          <div class="orgs">
+            <div class="org">HIPA<span data-i18n="o3">헝가리 투자청</span></div>
+          </div>
+        </div>
+        <div class="tier">
+          <span class="tier-l" data-i18n="tierInd">산업 협회</span>
+          <div class="logos">
+            <div class="logo-card"><img src="assets/huba.png" alt="Hungarian Battery Association"></div>
+          </div>
+        </div>
+        <div class="tier">
+          <span class="tier-l" data-i18n="tierUni">대학·연구기관</span>
+          <div class="logos">
+            <div class="logo-card"><img src="assets/bme.png" alt="BME"></div>
+            <div class="logo-card"><img src="assets/elte.png" alt="ELTE"></div>
+          </div>
+          <div class="orgs">
+            <div class="org">HUN-REN<span data-i18n="o6">헝가리 연구 네트워크</span></div>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow" data-i18n="tmEyebrow">연구진</span>
+      <h2 data-i18n="tmTitle">누구와 이야기하면 되는가</h2>
+      <p data-i18n="tmBody">네 개 세부주제마다 한국과 헝가리에서 각각 한 명씩 책임자를 두고 짝을 이뤄 연구를 진행합니다.</p>
+    </div>
+    <div class="tm-grid">
+        <a class="tm" href="people.html">
+          <img src="assets/people/shin-yong-june.jpg" alt="" loading="lazy">
+          <b>Yong-June Shin</b>
+          <span data-i18n="tp1">연세대학교</span>
+        </a>
+        <a class="tm" href="people.html">
+          <img src="assets/people/kaderjak-peter.jpg" alt="" loading="lazy">
+          <b>Péter Kaderják</b>
+          <span data-i18n="tp2">HUBA</span>
+        </a>
+        <a class="tm" href="people.html">
+          <img src="assets/people/kim-seon-hyeog.jpg" alt="" loading="lazy">
+          <b>Seon Hyeog Kim</b>
+          <span data-i18n="tp3">공주대학교</span>
+        </a>
+        <a class="tm" href="people.html">
+          <img src="assets/people/lagler-gergely.jpg" alt="" loading="lazy">
+          <b>Gergely Lagler</b>
+          <span data-i18n="tp4">HUBA</span>
+        </a>
+        <a class="tm" href="people.html">
+          <img src="assets/people/kwon-gu-young.jpg" alt="" loading="lazy">
+          <b>Gu Young Kwon</b>
+          <span data-i18n="tp5">공주대학교</span>
+        </a>
+        <a class="tm" href="people.html">
+          <img src="assets/people/szilassy-peter.jpg" alt="" loading="lazy">
+          <b>Péter Szilassy</b>
+          <span data-i18n="tp6">HUBA</span>
+        </a>
+        <a class="tm" href="people.html">
+          <img src="assets/people/kim-seoni.jpg" alt="" loading="lazy">
+          <b>Seoni Kim</b>
+          <span data-i18n="tp7">이화여자대학교</span>
+        </a>
+        <a class="tm" href="people.html">
+          <img src="assets/people/lang-gyozo.jpg" alt="" loading="lazy">
+          <b>Győző Láng</b>
+          <span data-i18n="tp8">HUBA</span>
+        </a>
+    </div>
+    <a class="tm-more" href="people.html" data-i18n="tmMore">연구진 전체 보기 &rarr;</a>
+  </div>
+</section>
+
+<!-- ACTIVITIES -->
+<section id="activities">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow" data-i18n="acEyebrow">최근 활동</span>
+      <h2 data-i18n="acTitle">센터는 이미 움직이고 있습니다</h2>
+      <p data-i18n="acBody">2024년부터 이어온 회의와 협정, 행사 기록입니다.</p>
+    </div>
+    <div class="ac-grid" id="acGrid"></div>
+    <a class="tm-more" href="news.html" data-i18n="acMore">활동 기록 전체 보기 &rarr;</a>
   </div>
 </section>
 
@@ -722,23 +867,31 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
     </div>
     <div class="cgrid">
       <div>
-        <span class="eyebrow" data-i18n="c1">기업 등록 · 매칭</span>
-        <a href="apply.html" data-i18n="c1b">등록 신청서 작성</a>
+        <span class="eyebrow" data-i18n="c1">기업</span>
+        <p class="cg-d" data-i18n="c1d">한국과 헝가리에서 기술·사업 파트너를 찾습니다.</p>
+        <a href="apply.html" data-i18n="c1b">기업 등록 신청 &rarr;</a>
       </div>
       <div>
-        <span class="eyebrow" data-i18n="c2">연구 협력</span>
+        <span class="eyebrow" data-i18n="c2">연구기관</span>
+        <p class="cg-d" data-i18n="c2d">양국 공동 연구와 EU Horizon 협력을 제안합니다.</p>
         <a href="mailto:research@khbcc.org">research@khbcc.org</a>
       </div>
       <div>
+        <span class="eyebrow" data-i18n="c5">학생·대학</span>
+        <p class="cg-d" data-i18n="c5d">학술 교류와 교육 프로그램을 문의합니다.</p>
+        <a href="mailto:education@khbcc.org">education@khbcc.org</a>
+      </div>
+      <div>
         <span class="eyebrow" data-i18n="c4">헝가리 사무국</span>
-        <p data-i18n="c4b">HUBA 본부, 부다페스트</p>
+        <p class="cg-d" data-i18n="c4b">HUBA 본부, 부다페스트</p>
+        <a href="mailto:platform@khbcc.org">platform@khbcc.org</a>
       </div>
     </div>
   </div>
 </section>
 
 <footer>
-  <span data-i18n="f1">KHBCC — 한국·헝가리 배터리 협력 연구센터</span>
+  <span data-i18n="f1">KHBCC — 한국–헝가리 배터리 협력 연구센터</span>
 </footer>
 
 <script src="i18n.js"></script>
@@ -842,6 +995,42 @@ document.addEventListener('keydown',function(e){
   // 언어 전환 시 제목도 함께 갱신
   document.querySelectorAll('.lang button').forEach(function(btn){
     btn.addEventListener('click', function(){ setTimeout(paint, 60); });
+  });
+})();
+
+/* ---- 최근 활동 3건 ---- */
+(function(){
+  var MONTHS={
+    ko:['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+    hu:['jan.','febr.','márc.','ápr.','máj.','jún.','júl.','aug.','szept.','okt.','nov.','dec.'],
+    en:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+  };
+  var ITEMS=[];
+  function lang(){ var l=document.documentElement.lang; return (l==='hu'||l==='en')?l:'ko'; }
+  function fmt(iso,L){ var p=iso.split('-'), mo=MONTHS[L][+p[1]-1];
+    if(L==='ko') return p[0]+'년 '+mo; if(L==='hu') return p[0]+'. '+mo; return mo+' '+p[0]; }
+  function esc(t){ return String(t||'').replace(/[<>&]/g,function(c){return {'<':'&lt;','>':'&gt;','&':'&amp;'}[c];}); }
+  function render(){
+    var box=document.getElementById('acGrid'); if(!box||!ITEMS.length) return;
+    var L=lang(), out='';
+    ITEMS.forEach(function(n){
+      var c=n[L]&&n[L].title ? n[L] : n.ko;
+      out+='<a class="ac" href="news.html">';
+      if(n.image) out+='<div class="shot"><img src="'+esc(n.image)+'" alt="" loading="lazy"></div>';
+      out+='<div class="txt"><span class="when">'+esc(fmt(n.date,L))+'</span>'
+         + '<h4>'+esc(c.title)+'</h4><p>'+esc(c.body)+'</p></div></a>';
+    });
+    box.innerHTML=out;
+  }
+  fetch('news.json?v='+Date.now()).then(function(r){return r.ok?r.json():null;})
+    .then(function(d){
+      if(!d||!d.items) return;
+      ITEMS=d.items.filter(function(n){return n.image;})
+                   .sort(function(x,y){return x.date<y.date?1:-1;}).slice(0,3);
+      render();
+    }).catch(function(){});
+  document.querySelectorAll('.lang button').forEach(function(b){
+    b.addEventListener('click',function(){ setTimeout(render,70); });
   });
 })();
 </script>
