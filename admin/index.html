@@ -16,7 +16,10 @@
   }
   #adm-bar .tag{background:#D81018;padding:3px 8px;border-radius:2px;font-size:11px;letter-spacing:.06em;flex-shrink:0}
   #adm-bar .msg{opacity:.85;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  #adm-bar .who{opacity:.55;font-size:12px;margin-left:auto;flex-shrink:0;white-space:nowrap}
+  #adm-bar .who{opacity:.55;font-size:12px;flex-shrink:0;white-space:nowrap}
+  #adm-dl{font:600 12px/1 -apple-system,BlinkMacSystemFont,"Noto Sans KR",sans-serif;background:#fff;color:#0E1430;border:0;border-radius:3px;padding:7px 12px;cursor:pointer;margin-left:auto;flex-shrink:0}
+  #adm-dl:hover{background:#F0A8AC}
+  #adm-dl .n{display:inline-block;background:#D81018;color:#fff;border-radius:9px;padding:1px 6px;margin-left:6px;font-size:11px}
   #adm-lang{display:flex;border:1px solid rgba(255,255,255,.4);border-radius:3px;overflow:hidden;flex-shrink:0}
   #adm-lang button{
     font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.07em;
@@ -36,6 +39,7 @@
 <div id="adm-bar">
   <span class="tag" id="adm-tag">PREVIEW</span>
   <span class="msg" id="adm-msg"></span>
+  <button id="adm-dl" type="button">수정본 내려받기</button>
   <span class="who">hlinak3014@gmail.com</span>
   <div id="adm-lang" role="group" aria-label="Interface language">
     <button data-l="ko" aria-pressed="false">KO</button>
@@ -182,10 +186,65 @@ document.querySelectorAll('#adm-lang button').forEach(function(btn){
   });
 });
 
+
+var ORIG = {};
+var DL_TXT = {
+  ko:{btn:'수정본 내려받기', none:'바뀐 내용이 없습니다.\n\n문구를 고친 뒤 오른쪽 위 [게시] → [지금 게시]를 눌러야 수정본이 만들어집니다.', done:'파일을 내려받았습니다.\n\n압축을 풀어 나온 파일을 GitHub 저장소 첫 화면에 그대로 올리면 사이트에 반영됩니다.', leave:'내려받지 않은 수정 내용이 있습니다. 나가면 사라집니다.'},
+  hu:{btn:'Módosítások letöltése', none:'Nincs módosítás.\n\nSzerkesztés után kattintson a jobb felső [Közzététel] → [Közzététel most] gombra.', done:'A fájl letöltve.\n\nCsomagolja ki, és töltse fel a tartalmát a GitHub-tároló gyökerébe.', leave:'Letöltetlen módosítások vannak. Kilépéskor elvesznek.'},
+  en:{btn:'Download edits', none:'No changes yet.\n\nAfter editing, click [Publish] → [Publish now] at the top right to create the edited version.', done:'File downloaded.\n\nUnzip it and upload its contents to the root of the GitHub repository.', leave:'You have edits that have not been downloaded. They will be lost if you leave.'}
+};
+function dlT(){ return DL_TXT[currentLang()] || DL_TXT.en; }
+function repoGet(path){
+  var node = window.repoFiles; var parts = path.split('/');
+  for (var i=0;i<parts.length;i++){ if(!node) return null; node = node[parts[i]]; }
+  return node && typeof node.content === 'string' ? node.content : (node && node.content ? String(node.content) : null);
+}
+function changedFiles(){
+  var out = [];
+  Object.keys(ORIG).forEach(function(p){
+    var now = repoGet(p);
+    if (now !== null && now !== ORIG[p]) out.push({ path:p, content: now });
+  });
+  return out;
+}
+function paintDl(){
+  var b=document.getElementById('adm-dl'); if(!b) return;
+  var n=changedFiles().length;
+  b.innerHTML = dlT().btn + (n ? '<span class="n">'+n+'</span>' : '');
+}
+setInterval(paintDl, 1500);
+window.addEventListener('beforeunload', function(e){
+  if (changedFiles().length){ e.preventDefault(); e.returnValue = dlT().leave; return dlT().leave; }
+});
+document.getElementById('adm-dl').addEventListener('click', function(){
+  var files = changedFiles();
+  if (!files.length){ alert(dlT().none); return; }
+  function go(){
+    var zip = new JSZip();
+    files.forEach(function(f){
+      var txt = f.content;
+      try { txt = JSON.stringify(JSON.parse(txt), null, 2) + '\n'; } catch(e){}
+      zip.file(f.path, txt);
+    });
+    var d = new Date(), stamp = d.getFullYear()+String(d.getMonth()+1).padStart(2,'0')+String(d.getDate()).padStart(2,'0')+'-'+String(d.getHours()).padStart(2,'0')+String(d.getMinutes()).padStart(2,'0');
+    zip.generateAsync({type:'blob'}).then(function(blob){
+      var a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='khbcc-edits-'+stamp+'.zip';
+      document.body.appendChild(a); a.click(); a.remove();
+      files.forEach(function(f){ ORIG[f.path]=f.content; });
+      paintDl(); setTimeout(function(){ alert(dlT().done); }, 300);
+    });
+  }
+  if (window.JSZip) go();
+  else { var sc=document.createElement('script'); sc.src='https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js'; sc.onload=go; document.head.appendChild(sc); }
+});
+
 function boot(repoFiles){
   var lang = currentLang();
   paintBanner(lang);
   window.repoFiles = repoFiles || {};
+  if (repoFiles && repoFiles['news.json']) ORIG['news.json'] = repoFiles['news.json'].content;
+  if (repoFiles && repoFiles.content) Object.keys(repoFiles.content).forEach(function(k){ ORIG['content/'+k] = repoFiles.content[k].content; });
+  setTimeout(paintDl, 50);
   CMS.init({
     config: {
       backend: USE_REAL
