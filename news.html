@@ -90,9 +90,10 @@ main{padding:24px var(--pad) clamp(56px,7vw,90px)}
 .entry .what h3{font-size:18.5px;margin-bottom:8px}
 .entry .what p{font-size:15px;color:var(--steel);max-width:72ch}
 .entry .shots{margin-top:14px;max-width:520px}
-.entry .shots.two{display:grid;grid-template-columns:1.45fr 1fr;gap:10px;max-width:640px;align-items:start}
+.entry .shots.two{display:flex;gap:10px;max-width:680px;align-items:flex-start}
+.entry .shots.two .shot{flex:1 1 0;min-width:0}
 .entry .shot{border:1px solid var(--line);border-radius:3px;overflow:hidden;background:#fff}
-.entry .shot img{width:100%;height:auto}
+.entry .shot img{width:100%;height:auto;display:block}
 .entry .more{display:inline-block;margin-top:12px;font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;color:var(--ink);text-decoration:none;border-bottom:1.5px solid var(--red);padding-bottom:2px}
 .entry .more:hover{color:var(--red)}
 .empty{padding:40px 0;color:var(--steel);font-size:15px}
@@ -118,6 +119,21 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
   .entry .when .place{display:inline;margin-left:10px;margin-top:0}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+/* page-head wallpaper — language dependent */
+.page-head{background:#0B1029}
+.page-head::after{display:none}
+.hbg{position:absolute;inset:0;z-index:0;overflow:hidden}
+.hbg i{position:absolute;inset:0;background-size:cover;background-position:center 40%;opacity:0}
+.hbg::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,13,36,.93) 0%,rgba(9,13,36,.80) 45%,rgba(9,13,36,.55) 100%)}
+html[lang="ko"] .hbg-a{background-image:url('assets/hero/budapest-chainbridge.jpg');opacity:1}
+html[lang="hu"] .hbg-a{background-image:url('assets/hero/seoul.jpg');opacity:1}
+html[lang="hu"].no-seoul .hbg-a{background-image:url('assets/hero/budapest-panorama.jpg')}
+html[lang="en"] .hbg-a{background-image:url('assets/hero/budapest-chainbridge.jpg');opacity:1;-webkit-mask-image:linear-gradient(90deg,#000 40%,transparent 62%);mask-image:linear-gradient(90deg,#000 40%,transparent 62%)}
+html[lang="en"] .hbg-b{background-image:url('assets/hero/seoul.jpg');opacity:1;-webkit-mask-image:linear-gradient(90deg,transparent 38%,#000 60%);mask-image:linear-gradient(90deg,transparent 38%,#000 60%)}
+html[lang="en"].no-seoul .hbg-a{-webkit-mask-image:none;mask-image:none;background-image:url('assets/hero/budapest-panorama.jpg')}
+html[lang="en"].no-seoul .hbg-b{opacity:0}
+footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
 </style>
 </head>
 <body>
@@ -146,6 +162,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
           <a href="index.html#labs" data-i18n="sub2a">5개 연구소</a>
           <a href="research.html" data-i18n="sub2b">연구 내용</a>
           <a href="people.html" data-i18n="sub2c">연구진</a>
+          <a href="reports.html" data-i18n="sub2d">보고서</a>
         </div>
       </div>
       <div class="nv">
@@ -167,6 +184,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
 </header>
 
 <div class="page-head">
+  <div class="hbg"><i class="hbg-a"></i><i class="hbg-b"></i></div>
   <div class="wrap">
     <span class="eyebrow" data-i18n="n_eyebrow">활동 기록</span>
     <h1 data-i18n="n_title">2024년부터 지금까지</h1>
@@ -201,6 +219,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
 <footer>
   <span data-i18n="f1">KHBCC — 한국–헝가리 배터리 협력센터</span>
   <span data-i18n="f2">2025/26 EIPP · 재정경제부 · KDI 지원</span>
+  <span class="ver">v2026.09.22-c</span>
 </footer>
 
 <script src="i18n.js"></script>
@@ -294,6 +313,10 @@ function renderTimeline(){
   });
   out+='</div>';
   host.innerHTML=out;
+  host.querySelectorAll('.shots.two img').forEach(function(img){
+    function fit(){ if(img.naturalWidth) img.parentNode.style.flexGrow = (img.naturalWidth/img.naturalHeight).toFixed(4); }
+    if(img.complete) fit(); else img.addEventListener('load', fit);
+  });
 }
 
 function setLang(lang){
@@ -340,6 +363,8 @@ document.addEventListener('click',function(){
 document.addEventListener('keydown',function(e){
   if(e.key==='Escape') document.querySelectorAll('.nv').forEach(function(n){ n.classList.remove('open'); n.querySelector('.nv-t').setAttribute('aria-expanded','false'); });
 });
+
+(function(){ var t=new Image(); t.onerror=function(){ document.documentElement.classList.add('no-seoul'); }; t.src='assets/hero/seoul.jpg'; })();
 </script>
 </body>
 </html>

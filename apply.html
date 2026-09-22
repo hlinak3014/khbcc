@@ -125,6 +125,21 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
   .grid{grid-template-columns:1fr}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+/* page-head wallpaper — language dependent */
+.page-head{background:#0B1029}
+.page-head::after{display:none}
+.hbg{position:absolute;inset:0;z-index:0;overflow:hidden}
+.hbg i{position:absolute;inset:0;background-size:cover;background-position:center 40%;opacity:0}
+.hbg::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,13,36,.93) 0%,rgba(9,13,36,.80) 45%,rgba(9,13,36,.55) 100%)}
+html[lang="ko"] .hbg-a{background-image:url('assets/hero/budapest-chainbridge.jpg');opacity:1}
+html[lang="hu"] .hbg-a{background-image:url('assets/hero/seoul.jpg');opacity:1}
+html[lang="hu"].no-seoul .hbg-a{background-image:url('assets/hero/budapest-panorama.jpg')}
+html[lang="en"] .hbg-a{background-image:url('assets/hero/budapest-chainbridge.jpg');opacity:1;-webkit-mask-image:linear-gradient(90deg,#000 40%,transparent 62%);mask-image:linear-gradient(90deg,#000 40%,transparent 62%)}
+html[lang="en"] .hbg-b{background-image:url('assets/hero/seoul.jpg');opacity:1;-webkit-mask-image:linear-gradient(90deg,transparent 38%,#000 60%);mask-image:linear-gradient(90deg,transparent 38%,#000 60%)}
+html[lang="en"].no-seoul .hbg-a{-webkit-mask-image:none;mask-image:none;background-image:url('assets/hero/budapest-panorama.jpg')}
+html[lang="en"].no-seoul .hbg-b{opacity:0}
+footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
 </style>
 </head>
 <body>
@@ -153,6 +168,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
           <a href="index.html#labs" data-i18n="sub2a">5개 연구소</a>
           <a href="research.html" data-i18n="sub2b">연구 내용</a>
           <a href="people.html" data-i18n="sub2c">연구진</a>
+          <a href="reports.html" data-i18n="sub2d">보고서</a>
         </div>
       </div>
       <div class="nv">
@@ -174,6 +190,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
 </header>
 
 <div class="page-head">
+  <div class="hbg"><i class="hbg-a"></i><i class="hbg-b"></i></div>
   <div class="wrap">
     <span class="eyebrow" data-i18n="ap_eyebrow">기업 등록 신청</span>
     <h1 data-i18n="ap_title">회원사 데이터베이스 등록</h1>
@@ -333,6 +350,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
 
 <footer>
   <span data-i18n="f1">KHBCC — 한국–헝가리 배터리 협력센터</span>
+  <span class="ver">v2026.09.22-c</span>
 </footer>
 
 <script src="i18n.js"></script>
@@ -431,6 +449,8 @@ document.addEventListener('click',function(){
 document.addEventListener('keydown',function(e){
   if(e.key==='Escape') document.querySelectorAll('.nv').forEach(function(n){ n.classList.remove('open'); n.querySelector('.nv-t').setAttribute('aria-expanded','false'); });
 });
+
+(function(){ var t=new Image(); t.onerror=function(){ document.documentElement.classList.add('no-seoul'); }; t.src='assets/hero/seoul.jpg'; })();
 </script>
 </body>
 </html>

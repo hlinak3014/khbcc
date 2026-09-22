@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>연구진 | KHBCC</title>
-<meta name="description" content="KHBCC 세부주제별 한국·헝가리 연구진 소개.">
+<title>보고서 | KHBCC</title>
+<meta name="description" content="한–헝가리 경제혁신 파트너십 프로그램(EIPP) 배터리 분야 정책자문 보고서.">
 <link rel="icon" href="assets/khbcc-mark.png?v=2">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -106,6 +106,20 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
 
+.rp-list{display:flex;flex-direction:column;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.rp{background:#fff;display:grid;grid-template-columns:110px 1fr auto;gap:20px;align-items:center;padding:20px 22px}
+.rp-y{font-family:var(--mono);font-size:13px;font-weight:600;color:var(--ink)}
+.rp-y span{display:block;font-size:10px;letter-spacing:.08em;color:var(--steel);font-weight:400;margin-top:3px;text-transform:uppercase}
+.rp h3{font-size:16px;line-height:1.4;margin:0;overflow-wrap:anywhere}
+.rp .rp-org{font-size:12.5px;color:var(--steel);margin-top:5px}
+.rp-a{font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;text-decoration:none;white-space:nowrap;padding:9px 14px;border:1.5px solid var(--ink);border-radius:2px;color:var(--ink)}
+.rp-a:hover{background:var(--ink);color:#fff}
+.rp-a.soft{border-color:var(--line);color:var(--steel)}
+.rp-search{margin-top:26px;padding:20px 22px;background:#fff;border:1px solid var(--line);border-left:3px solid var(--red);border-radius:3px}
+.rp-search p{font-size:14px;color:var(--steel);margin-bottom:12px;max-width:none}
+.rp-search code{font-family:var(--mono);background:#EDEFF4;padding:2px 7px;border-radius:2px;color:var(--ink)}
+@media (max-width:700px){ .rp{grid-template-columns:1fr;gap:10px} }
+
 /* page-head wallpaper — language dependent */
 .page-head{background:#0B1029}
 .page-head::after{display:none}
@@ -147,8 +161,8 @@ footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
         <div class="nv-m">
           <a href="index.html#labs" data-i18n="sub2a">5개 연구소</a>
           <a href="research.html" data-i18n="sub2b">연구 내용</a>
-          <a href="people.html" class="cur" data-i18n="sub2c">연구진</a>
-          <a href="reports.html" data-i18n="sub2d">보고서</a>
+          <a href="people.html" data-i18n="sub2c">연구진</a>
+          <a href="reports.html" class="cur" data-i18n="sub2d">보고서</a>
         </div>
       </div>
       <div class="nv">
@@ -172,185 +186,19 @@ footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
 <div class="page-head">
   <div class="hbg"><i class="hbg-a"></i><i class="hbg-b"></i></div>
   <div class="wrap">
-    <span class="eyebrow" data-i18n="prEyebrow">연구진</span>
-    <h1 data-i18n="prTitle">세부주제별 양국 연구진</h1>
-    <p data-i18n="prLede">네 개 세부주제마다 한국과 헝가리에서 각각 한 명씩 책임자를 두고 짝을 이뤄 연구를 진행합니다. 양측이 같은 주제를 서로 다른 각도에서 맡습니다.</p>
+    <span class="eyebrow" data-i18n="rpEyebrow">보고서</span>
+    <h1 data-i18n="rpTitle">정책자문 보고서</h1>
+    <p data-i18n="rpLede">KHBCC는 한–헝가리 경제혁신 파트너십 프로그램(EIPP)의 4개년 정책자문 사업에서 출발했습니다. 각 연도의 최종보고서는 한국개발연구원(KDI) EIPP 누리집에서 볼 수 있습니다.</p>
   </div>
 </div>
 
 <main>
   <div class="wrap">
+    <div class="rp-list" id="rpList"></div>
 
-      <section class="pr-block" id="p0">
-        <div class="pr-head">
-          <span class="pr-num">00</span>
-          <div>
-            <h2 data-i18n="p0t">사업 총괄</h2>
-            <p data-i18n="p0d">경제혁신 파트너십 프로그램(EIPP)의 기획과 관리는 한국개발연구원 국제개발협력센터가 맡고, 사업 수행은 연세대학교가 담당합니다.</p>
-          </div>
-        </div>
-        <div class="pr-pair pr-one">
-          <div class="pr">
-            <div class="pr-photo" data-initials="SH">
-              <img src="assets/people/hong-song-chang.jpg" alt="" loading="lazy"
-                   onerror="this.style.display='none';this.parentNode.classList.add('noimg')">
-            </div>
-            <div class="pr-txt">
-              <span class="pr-side" data-i18n="p0r2">사업 관리</span>
-              <h3>Song Chang Hong</h3>
-              <p class="pr-aff" data-i18n="p0a2">한국개발연구원 국제개발협력센터 실장</p>
-              <p class="pr-bio" data-i18n="p0b2">한국개발연구원 국제개발협력센터에서 한–헝가리 경제혁신 파트너십 프로그램의 사업 관리를 맡고 있습니다.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="pr-block" id="p1">
-        <div class="pr-head">
-          <span class="pr-num">01</span>
-          <div>
-            <h2 data-i18n="p1t">제도 기반 구축</h2>
-            <p data-i18n="p1d">센터의 거버넌스 구조와 법적 지위, 재정 모델을 설계하고 3개국어 플랫폼과 기업 매칭 체계를 운영합니다.</p>
-          </div>
-        </div>
-        <div class="pr-pair">
-          <div class="pr">
-            <div class="pr-photo" data-initials="YS">
-              <img src="assets/people/shin-yong-june.jpg" alt="" loading="lazy"
-                   onerror="this.style.display='none';this.parentNode.classList.add('noimg')">
-            </div>
-            <div class="pr-txt">
-              <span class="pr-side" data-i18n="pr_kr">한국 측</span>
-              <h3>Yong-June Shin</h3>
-              <p class="pr-aff" data-i18n="p1krA">연세대학교 교수</p>
-              <p class="pr-bio" data-i18n="p1krB">EIPP 사업 전 기간의 연구책임자로 센터 설립과 운영 체계 수립을 총괄합니다. 2025년 BME 연구년을 계기로 연세대–BME 복수학위 협정과 초청교수 임명이 이뤄졌습니다.</p>
-            </div>
-          </div>
-          <div class="pr">
-            <div class="pr-photo" data-initials="PK">
-              <img src="assets/people/kaderjak-peter.jpg" alt="" loading="lazy"
-                   onerror="this.style.display='none';this.parentNode.classList.add('noimg')">
-            </div>
-            <div class="pr-txt">
-              <span class="pr-side" data-i18n="pr_hu">헝가리 측</span>
-              <h3>Péter Kaderják</h3>
-              <p class="pr-aff" data-i18n="p1huA">헝가리배터리협회(HUBA) 전무이사</p>
-              <p class="pr-bio" data-i18n="p1huB">헝가리 배터리 산업계를 대표해 센터의 전략 방향과 정부 협의를 이끕니다. HUBA는 KHBCC 이사회 구성 기관이자 시범 기간 행정 운영을 지원합니다.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="pr-block" id="p2">
-        <div class="pr-head">
-          <span class="pr-num">02</span>
-          <div>
-            <h2 data-i18n="p2t">배터리 여권 요구사항 분석·성능 시험 검증</h2>
-            <p data-i18n="p2d">EU 배터리 여권이 요구하는 데이터 항목을 실제 측정 가능한 시험 요건으로 바꾸고, 감사 대응이 가능한 검증 체계를 설계합니다.</p>
-          </div>
-        </div>
-        <div class="pr-pair">
-          <div class="pr">
-            <div class="pr-photo" data-initials="SK">
-              <img src="assets/people/kim-seon-hyeog.jpg" alt="" loading="lazy"
-                   onerror="this.style.display='none';this.parentNode.classList.add('noimg')">
-            </div>
-            <div class="pr-txt">
-              <span class="pr-side" data-i18n="pr_kr">한국 측</span>
-              <h3>Seon Hyeog Kim</h3>
-              <p class="pr-aff" data-i18n="p2krA">공주대학교 조교수</p>
-              <p class="pr-bio" data-i18n="p2krB">EU 배터리 규정 부속서 XIII의 데이터 항목을 시험 가능한 요건으로 변환하는 작업을 맡고 있습니다. 국제 표준과 국내 기준의 대응 관계를 정리하고 성능시험검증단위(PTVU)의 구성을 설계합니다.</p>
-            </div>
-          </div>
-          <div class="pr">
-            <div class="pr-photo" data-initials="GL">
-              <img src="assets/people/lagler-gergely.jpg" alt="" loading="lazy"
-                   onerror="this.style.display='none';this.parentNode.classList.add('noimg')">
-            </div>
-            <div class="pr-txt">
-              <span class="pr-side" data-i18n="pr_hu">헝가리 측</span>
-              <h3>Gergely Lagler</h3>
-              <p class="pr-aff" data-i18n="p2huA">HUBA 연구 프로젝트 리더</p>
-              <p class="pr-bio" data-i18n="p2huB">헝가리 현지 시험 인프라를 기반으로 사용후 배터리의 모듈 단위 시험을 담당합니다. 2026년에는 시험 범위를 셀에서 모듈로 확장합니다.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="pr-block" id="p3">
-        <div class="pr-head">
-          <span class="pr-num">03</span>
-          <div>
-            <h2 data-i18n="p3t">AI 기반 데이터 분석·수명 예측</h2>
-            <p data-i18n="p3d">배터리 사용 데이터를 AI로 분석해 건전성을 추정하고 잔존 수명을 예측합니다. 전기버스 등 실제 운행 데이터를 확보해 모델을 검증합니다.</p>
-          </div>
-        </div>
-        <div class="pr-pair">
-          <div class="pr">
-            <div class="pr-photo" data-initials="GK">
-              <img src="assets/people/kwon-gu-young.jpg" alt="" loading="lazy"
-                   onerror="this.style.display='none';this.parentNode.classList.add('noimg')">
-            </div>
-            <div class="pr-txt">
-              <span class="pr-side" data-i18n="pr_kr">한국 측</span>
-              <h3>Gu Young Kwon</h3>
-              <p class="pr-aff" data-i18n="p3krA">공주대학교 조교수</p>
-              <p class="pr-bio" data-i18n="p3krB">배터리 관리 시스템이 수집하는 전압·전류·온도 데이터만으로 건전성을 추정하고 잔존 수명을 예측하는 AI 모델을 연구합니다. 불확실성 정량화와 전이학습이 주요 주제입니다.</p>
-            </div>
-          </div>
-          <div class="pr">
-            <div class="pr-photo" data-initials="PS">
-              <img src="assets/people/szilassy-peter.jpg" alt="" loading="lazy"
-                   onerror="this.style.display='none';this.parentNode.classList.add('noimg')">
-            </div>
-            <div class="pr-txt">
-              <span class="pr-side" data-i18n="pr_hu">헝가리 측</span>
-              <h3>Péter Szilassy</h3>
-              <p class="pr-aff" data-i18n="p3huA">HUBA 전기모빌리티 분과장 · 연구 프로젝트 리더</p>
-              <p class="pr-bio" data-i18n="p3huB">전기버스 배터리 시스템의 운영 데이터를 기반으로 한 최적화를 담당합니다. 실제 운행 데이터를 확보해 모델 검증에 활용합니다.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="pr-block" id="p4">
-        <div class="pr-head">
-          <span class="pr-num">04</span>
-          <div>
-            <h2 data-i18n="p4t">환경 영향 평가·순환경제</h2>
-            <p data-i18n="p4d">배터리 제조와 재활용 과정의 환경 영향을 측정하고, 오염물질 저감과 순환경제 체계를 연구합니다.</p>
-          </div>
-        </div>
-        <div class="pr-pair">
-          <div class="pr">
-            <div class="pr-photo" data-initials="SK">
-              <img src="assets/people/kim-seoni.jpg" alt="" loading="lazy"
-                   onerror="this.style.display='none';this.parentNode.classList.add('noimg')">
-            </div>
-            <div class="pr-txt">
-              <span class="pr-side" data-i18n="pr_kr">한국 측</span>
-              <h3>Seoni Kim</h3>
-              <p class="pr-aff" data-i18n="p4krA">이화여자대학교 조교수</p>
-              <p class="pr-bio" data-i18n="p4krB">배터리 산업의 주요 오염물질을 규정하고 전과정평가로 환경 영향을 정량화합니다. 저화학 습식제련과 양극재 직접 재활용 기술을 함께 다룹니다.</p>
-            </div>
-          </div>
-          <div class="pr">
-            <div class="pr-photo" data-initials="GL">
-              <img src="assets/people/lang-gyozo.jpg" alt="" loading="lazy"
-                   onerror="this.style.display='none';this.parentNode.classList.add('noimg')">
-            </div>
-            <div class="pr-txt">
-              <span class="pr-side" data-i18n="pr_hu">헝가리 측</span>
-              <h3>Győző Láng</h3>
-              <p class="pr-aff" data-i18n="p4huA">HUBA 환경보건안전 분과장</p>
-              <p class="pr-bio" data-i18n="p4huB">헝가리 현지 배터리 시설의 환경·보건·안전 기준 수립을 담당합니다. 전기화학 분야 연구를 바탕으로 친환경 재활용 공정을 연구합니다.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    <div class="pr-note">
-      <p data-i18n="prNote">각 세부주제의 연구 내용은 <a href="research.html">연구 내용</a> 페이지에서 자세히 볼 수 있습니다.</p>
+    <div class="rp-search">
+      <p data-i18n="rpSearch">EIPP 누리집의 발간물 목록에서 <code>Korea-Hungary</code> 로 검색하면 이 사업의 보고서만 모아 볼 수 있습니다.</p>
+      <a class="rp-a" id="rpListLink" href="https://eipp.or.kr/publication/list" target="_blank" rel="noopener" data-i18n="rpGo">EIPP 발간물 목록 열기 &rarr;</a>
     </div>
   </div>
 </main>
@@ -359,7 +207,6 @@ footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
   <span data-i18n="f1">KHBCC — 한국–헝가리 배터리 협력센터</span>
   <span class="ver">v2026.09.22-c</span>
 </footer>
-
 <script src="i18n.js"></script>
 <script>
 document.querySelectorAll('[data-i18n]').forEach(function(el){ I18N.ko[el.dataset.i18n]=el.innerHTML; });
@@ -399,6 +246,32 @@ document.querySelectorAll('.pr-photo').forEach(function(box){
   var img=box.querySelector('img');
   if(!img || !img.getAttribute('src')) box.classList.add('noimg');
 });
+
+/* 보고서 목록 */
+(function(){
+  var DATA=null;
+  function L(){ var l=document.documentElement.lang; return (l==='hu'||l==='en')?l:'ko'; }
+  var TXT={ko:{ph:'차년도',open:'보고서 보기',list:'목록에서 찾기',org:'한국개발연구원(KDI) · 연세대학교'},
+           hu:{ph:'. év',open:'Jelentés',list:'Keresés a listában',org:'Korea Development Institute (KDI) · Yonsei Egyetem'},
+           en:{ph:'Year ',open:'Open report',list:'Find in list',org:'Korea Development Institute (KDI) · Yonsei University'}};
+  function esc(t){return String(t||'').replace(/[<>&"]/g,function(c){return {'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c];});}
+  function render(){
+    if(!DATA) return;
+    var l=L(), t=TXT[l], out='';
+    DATA.items.forEach(function(r){
+      var ph = l==='en' ? t.ph+r.phase : (l==='hu' ? r.phase+t.ph : r.phase+t.ph);
+      var link = r.url ? '<a class="rp-a" href="'+esc(r.url)+'" target="_blank" rel="noopener">'+t.open+' &rarr;</a>'
+                       : '<a class="rp-a soft" href="'+esc(DATA.listUrl)+'" target="_blank" rel="noopener">'+t.list+' &rarr;</a>';
+      out+='<div class="rp"><div class="rp-y">'+esc(r.year)+'<span>'+esc(ph)+'</span></div>'
+          +'<div><h3>'+esc(r[l]||r.ko)+'</h3><div class="rp-org">'+t.org+'</div></div>'+link+'</div>';
+    });
+    document.getElementById('rpList').innerHTML=out;
+    var ll=document.getElementById('rpListLink'); if(ll) ll.href=DATA.listUrl;
+  }
+  fetch('reports.json?v='+Date.now()).then(function(r){return r.ok?r.json():null;})
+    .then(function(d){ DATA=d; render(); }).catch(function(){});
+  document.querySelectorAll('.lang button').forEach(function(b){ b.addEventListener('click',function(){ setTimeout(render,60); }); });
+})();
 
 (function(){ var t=new Image(); t.onerror=function(){ document.documentElement.classList.add('no-seoul'); }; t.src='assets/hero/seoul.jpg'; })();
 </script>

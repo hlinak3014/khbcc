@@ -81,9 +81,43 @@ nav{display:flex;gap:4px;margin-left:auto;align-items:center}
 .btn-ghost:hover{border-color:var(--paper-2)}
 
 /* DPP record card */
+/* hero wallpaper — language dependent */
+.hero{background:#0B1029}
+.hbg{position:absolute;inset:0;z-index:0;overflow:hidden}
+.hbg i{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity .8s ease}
+.hbg::after{content:'';position:absolute;inset:0;
+  background:linear-gradient(90deg,rgba(9,13,36,.92) 0%,rgba(9,13,36,.78) 38%,rgba(9,13,36,.38) 72%,rgba(9,13,36,.25) 100%),
+             linear-gradient(0deg,rgba(9,13,36,.85) 0%,rgba(9,13,36,0) 32%)}
+html[lang="ko"] .hbg-a{background-image:url('assets/hero/budapest-parliament.jpg');opacity:1}
+html[lang="hu"] .hbg-a{background-image:url('assets/hero/seoul.jpg');opacity:1}
+html[lang="hu"].no-seoul .hbg-a{background-image:url('assets/hero/budapest-chainbridge.jpg')}
+html[lang="en"] .hbg-a{background-image:url('assets/hero/budapest-parliament.jpg');opacity:1;
+  -webkit-mask-image:linear-gradient(90deg,#000 0%,#000 42%,transparent 62%);mask-image:linear-gradient(90deg,#000 0%,#000 42%,transparent 62%)}
+html[lang="en"] .hbg-b{background-image:url('assets/hero/seoul.jpg');opacity:1;
+  -webkit-mask-image:linear-gradient(90deg,transparent 38%,#000 58%);mask-image:linear-gradient(90deg,transparent 38%,#000 58%)}
+html[lang="en"].no-seoul .hbg-a{-webkit-mask-image:none;mask-image:none;background-image:url('assets/hero/budapest-panorama.jpg')}
+html[lang="en"].no-seoul .hbg-b{opacity:0}
+.hero::after{display:none}
+.hero-grid{grid-template-columns:1fr;min-height:clamp(380px,48vh,560px);align-content:center}
+.hero-grid > div{max-width:640px}
+.hero .rail{border-top-color:rgba(255,255,255,.18)}
+.hero .rail div{border-right-color:rgba(255,255,255,.18)}
+
+/* spotlight band */
+.spot{padding-top:clamp(44px,6vw,72px);padding-bottom:clamp(44px,6vw,72px)}
+.spot-in{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,4vw,52px);align-items:center}
+.spot-txt h2{margin:11px 0 12px}
+.spot-txt p{color:var(--steel);margin-bottom:18px}
+.spot .hero-shot{border-color:var(--line);background:#fff}
+.spot .hero-shot figcaption{border-top-color:var(--line)}
+.spot .hs-title{color:var(--ink)}
+.spot .hs-when{color:var(--red)}
+.spot .hs-dots i{background:#C2C7D4}
+.spot .hs-dots i.on{background:var(--red)}
+@media (max-width:1100px){ .spot-in{grid-template-columns:1fr} }
 .hero-shot{margin:0;border-radius:4px;overflow:hidden;border:1px solid #2B3563;background:#18204A}
 .hs-frame{display:block;position:relative;aspect-ratio:3/2;overflow:hidden;background:#18204A;text-decoration:none}
-.hs-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .9s ease}
+.hs-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 38%;opacity:0;transition:opacity .9s ease}
 .hs-frame img.on{opacity:1}
 .hs-frame::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(14,20,48,.35),transparent 42%);pointer-events:none}
 .hero-shot figcaption{padding:11px 13px;border-top:1px solid #2B3563;display:flex;align-items:center;gap:10px;min-height:42px}
@@ -141,6 +175,43 @@ section{padding:clamp(50px,6.5vw,86px) var(--pad)}
 .pe-note{margin-top:20px;font-size:14px;color:var(--steel)}
 .pe-note a{color:var(--ink);border-bottom:1.5px solid var(--red);text-decoration:none;padding-bottom:1px}
 
+/* governance diagram (Figure 2-8) */
+.gv{margin:0;background:#fff;border:1px solid var(--line);border-radius:4px;padding:clamp(20px,3vw,32px)}
+.gv-box{border-radius:4px;padding:11px 14px;text-align:center;position:relative}
+.gv-box b{display:block;font-family:var(--display);font-size:15px;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
+.gv-box span{display:block;font-size:12px;line-height:1.4;overflow-wrap:anywhere}
+.gv-l1{display:flex;justify-content:center}
+.gv-board{background:var(--ink);color:#fff;min-width:min(420px,100%)}
+.gv-board span{color:#B9C1DC;margin-top:4px}
+.gv-l2{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:0;margin:26px 0 30px;position:relative}
+.gv-l1::after{content:'';display:block}
+.gv-l2 .gv-dir{grid-column:2;background:#18204A;color:#fff;min-width:170px}
+.gv-l2 .gv-iab{grid-column:3;justify-self:start;margin-left:34px;background:#FFF4CC;border:1px solid #E8C95C;color:var(--ink)}
+.gv-l2 .gv-iab::before{content:'';position:absolute;right:100%;top:50%;width:34px;border-top:1.5px dashed #B99A3A}
+.gv-l2::before{content:'';position:absolute;left:50%;top:-26px;height:26px;border-left:1.5px solid var(--dline)}
+.gv-l2::after{content:'';position:absolute;left:50%;bottom:-30px;height:30px;border-left:1.5px solid var(--dline)}
+.gv-l3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;position:relative;padding-top:22px}
+.gv-l3::before{content:'';position:absolute;top:0;left:16.66%;right:16.66%;border-top:1.5px solid var(--dline)}
+.gv-col{position:relative;display:flex;flex-direction:column}
+.gv-col::before{content:'';position:absolute;left:50%;top:-22px;height:22px;border-left:1.5px solid var(--dline)}
+.gv-ad{color:#fff}
+.gv-ad span{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;opacity:.8;margin-bottom:3px}
+.gv-ad.a1{background:#4A5578}
+.gv-ad.a2{background:#6B5AA6}
+.gv-ad.a3{background:#2F7A48}
+.gv-sub{margin-top:12px;border:1px solid var(--line);border-radius:4px;padding:10px;display:flex;flex-direction:column;gap:7px;background:var(--paper-2);flex:1}
+.gv-div{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;color:var(--steel);text-align:center;padding:2px 0 4px;border-bottom:1px solid var(--line);margin-bottom:2px;overflow-wrap:anywhere}
+.gv-item{background:#fff;border:1px solid #C2C7D4;border-left-width:4px;border-radius:3px;padding:8px 10px;font-size:13px;font-weight:500;color:var(--ink);line-height:1.35;overflow-wrap:anywhere}
+.gv-item.u-bd{border-left-color:#8E7CC3}.gv-item.u-ed{border-left-color:#9CC2E5}
+.gv-item.u-ct{border-left-color:#F4B081}.gv-item.u-bp{border-left-color:#FFD966}.gv-item.u-es{border-left-color:#70AD47}
+.gv-src{font-family:var(--mono);font-size:10.5px;color:var(--steel);margin-top:18px;text-align:right;max-width:none}
+@media (max-width:900px){
+  .gv-l3{grid-template-columns:1fr;padding-top:0}
+  .gv-l3::before,.gv-col::before{display:none}
+  .gv-l2{grid-template-columns:1fr;gap:12px;margin:18px 0}
+  .gv-l2 .gv-dir,.gv-l2 .gv-iab{grid-column:1;justify-self:center;margin-left:0}
+  .gv-l2 .gv-iab::before,.gv-l2::before,.gv-l2::after{display:none}
+}
 /* diagrams */
 .fig{margin:0 0 40px;padding:28px 24px;background:#fff;border:1px solid var(--line);border-radius:4px}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
@@ -318,6 +389,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
   *{animation:none!important;transition:none!important}
   html{scroll-behavior:auto}
 }
+footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
 </style>
 </head>
 <body>
@@ -346,6 +418,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
           <a href="#labs" data-i18n="sub2a">5개 연구소</a>
           <a href="research.html" data-i18n="sub2b">연구 내용</a>
           <a href="people.html" data-i18n="sub2c">연구진</a>
+          <a href="reports.html" data-i18n="sub2d">보고서</a>
         </div>
       </div>
       <div class="nv">
@@ -367,6 +440,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
 </header>
 
 <div class="hero" id="top">
+  <div class="hbg"><i class="hbg-a"></i><i class="hbg-b"></i></div>
   <div class="hero-grid">
     <div>
       <span class="eyebrow" data-i18n="heroEyebrow">Korea–Hungary Battery Cooperation Center</span>
@@ -379,17 +453,6 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
       </div>
     </div>
 
-    <figure class="hero-shot" id="heroShot">
-      <a class="hs-frame" href="news.html" id="hsLink">
-        <img id="hsA" src="assets/news/2026-08-26-interim-workshop.jpg" alt="" loading="eager">
-        <img id="hsB" alt="" aria-hidden="true">
-      </a>
-      <figcaption>
-        <span class="hs-when" id="hsWhen"></span>
-        <span class="hs-title" id="hsTitle" data-i18n="heroShot">2026년 8월 · 부다페스트 중간보고 워크숍</span>
-        <span class="hs-dots" id="hsDots" aria-hidden="true"></span>
-      </figcaption>
-    </figure>
   </div>
 
   <div class="rail">
@@ -411,80 +474,27 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
   </div>
 </div>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow" data-i18n="aboutEyebrow">센터 소개</span>
-      <h2 data-i18n="aboutTitle">KHBCC가 하는 일</h2>
-      <p data-i18n="aboutBody">헝가리에는 삼성SDI, SK온, CATL의 대규모 배터리 생산기지가 들어서 있습니다. 동시에 EU 배터리 규정(2023/1542)은 생산부터 폐기까지 전 생애주기에 걸친 규제 대응을 요구하고 있습니다. KHBCC는 이 두 가지를 잇기 위해 한국과 헝가리 정부의 지원으로 설립되었으며, 2025년 11월 헝가리 배터리 위크에서 공식 출범했습니다. 시험 검증, 데이터 추적, 환경 진단, 기업 협력, 인력 양성을 하나의 조직 안에서 함께 다룹니다.</p>
-    </div>
-    <div class="cards">
-      <a class="card" href="research.html#r2">
-        <div class="a-ico" style="background:#F4B081"><img src="assets/icons/icon-test.png" alt=""></div>
-        <span class="host" data-i18n="a1h">연구·시험</span>
-        <h3 data-i18n="a1t">성능 평가와 시험 검증</h3>
-        <p data-i18n="a1b">배터리 성능을 평가하고 사용후 배터리의 잔존 수명을 진단합니다. 시험 결과를 바탕으로 새로운 기술 기준을 만듭니다.</p>
-      </a>
-      <a class="card" href="research.html#r3">
-        <div class="a-ico" style="background:#FFD966"><img src="assets/icons/icon-data.png" alt=""></div>
-        <span class="host" data-i18n="a2h">데이터·규제</span>
-        <h3 data-i18n="a2t">배터리 여권과 데이터 분석</h3>
-        <p data-i18n="a2b">배터리 생애주기 데이터를 수집·분석하고, EU 배터리 규정이 요구하는 공시 항목에 대응할 수 있는 데이터 체계를 설계합니다.</p>
-      </a>
-      <a class="card" href="#platform">
-        <div class="a-ico" style="background:#8E7CC3"><img src="assets/icons/icon-business.png" alt=""></div>
-        <span class="host" data-i18n="a3h">산업 협력</span>
-        <h3 data-i18n="a3t">양국 기업 협력</h3>
-        <p data-i18n="a3b">한국과 헝가리 기업을 검증해 연결하고, 공동 연구개발과 EU Horizon 컨소시엄 구성을 지원합니다.</p>
-      </a>
-      <a class="card" href="research.html#r1">
-        <div class="a-ico" style="background:#9CC2E5"><img src="assets/icons/icon-education.png" alt=""></div>
-        <span class="host" data-i18n="a4h">교육·인재</span>
-        <h3 data-i18n="a4t">대학 간 교육 협력</h3>
-        <p data-i18n="a4b">연세대–BME 협정을 축으로 학생 교류와 공동 지도를 운영하고, 산업 현직 인력의 재교육 과정을 마련합니다.</p>
-      </a>
-      <a class="card" href="research.html#r4">
-        <div class="a-ico" style="background:#70AD47"><img src="assets/icons/icon-env.png" alt=""></div>
-        <span class="host" data-i18n="a5h">정책·지속가능성</span>
-        <h3 data-i18n="a5t">정책 지원과 환경·안전</h3>
-        <p data-i18n="a5b">EU 규제 동향을 기업에 전달하고 애로사항을 양국 부처에 전달합니다. 환경영향 평가와 배터리 안전 기준 수립을 함께 수행합니다.</p>
-      </a>
-    </div>
-  </div>
-</section>
 
-<!-- GOVERNANCE -->
-<section id="governance" class="alt">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow" data-i18n="govEyebrow">운영 체계</span>
-      <h2 data-i18n="govTitle">조직 구성</h2>
-      <p data-i18n="govBody">KHBCC는 공동 연구개발과 한국·헝가리 협력이라는 두 축으로 움직입니다. 연구 성과가 산업 협력과 교육, 정책 지원으로 곧바로 이어지도록 설계했습니다.</p>
+<!-- SPOTLIGHT -->
+<section id="spot" class="spot">
+  <div class="wrap spot-in">
+    <div class="spot-txt">
+      <span class="eyebrow" data-i18n="acEyebrow">최근 활동</span>
+      <h2 data-i18n="acTitle">센터는 이미 움직이고 있습니다</h2>
+      <p data-i18n="acBody">2024년부터 이어온 회의와 협정, 행사 기록입니다.</p>
+      <a class="tm-more" href="news.html" data-i18n="acMore">활동 기록 전체 보기 &rarr;</a>
     </div>
-    <div class="gov">
-      <div class="gov-layer">
-        <span class="lvl" data-i18n="g1l">1단계 · 의사결정</span>
-        <div>
-          <h3 data-i18n="g1t">이사회</h3>
-          <p data-i18n="g1b">KDI, 주헝가리 한국대사관, KOTRA, 한국배터리산업협회(KBIA), 헝가리배터리협회(HUBA) 등이 참여하는 최고 의사결정 기구입니다.</p>
-        </div>
-      </div>
-      <div class="gov-layer">
-        <span class="lvl" data-i18n="g2l">2단계 · 총괄</span>
-        <div>
-          <h3 data-i18n="g2t">센터장 · 산업자문위원회</h3>
-          <p data-i18n="g2b">센터장이 실무를 총괄하고, 산업자문위원회(IAB)가 양국 기업의 현장 수요를 운영에 반영합니다.</p>
-        </div>
-      </div>
-      <div class="gov-layer">
-        <span class="lvl" data-i18n="g3l">3단계 · 집행</span>
-        <div>
-          <h3 data-i18n="g3t">3인 부센터장 체제</h3>
-          <p data-i18n="g3b">행정, 국제협력, 연구개발을 각각 담당하는 부센터장을 두고 그 아래 5개 연구소를 배치합니다. 행정 부문에는 법무·재무팀, 인사팀, 언어지원·홍보팀을 둡니다.</p>
-        </div>
-      </div>
-    </div>
+    <figure class="hero-shot" id="heroShot">
+      <a class="hs-frame" href="news.html" id="hsLink">
+        <img id="hsA" src="assets/news/2026-08-26-interim-workshop.jpg" alt="" loading="eager">
+        <img id="hsB" alt="" aria-hidden="true">
+      </a>
+      <figcaption>
+        <span class="hs-when" id="hsWhen"></span>
+        <span class="hs-title" id="hsTitle" data-i18n="heroShot">2026년 8월 · 부다페스트 중간보고 워크숍</span>
+        <span class="hs-dots" id="hsDots" aria-hidden="true"></span>
+      </figcaption>
+    </figure>
   </div>
 </section>
 
@@ -615,6 +625,104 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow" data-i18n="aboutEyebrow">센터 소개</span>
+      <h2 data-i18n="aboutTitle">KHBCC가 하는 일</h2>
+      <p data-i18n="aboutBody">헝가리에는 삼성SDI, SK온, CATL의 대규모 배터리 생산기지가 들어서 있습니다. 동시에 EU 배터리 규정(2023/1542)은 생산부터 폐기까지 전 생애주기에 걸친 규제 대응을 요구하고 있습니다. KHBCC는 이 두 가지를 잇기 위해 한국과 헝가리 정부의 지원으로 설립되었으며, 2025년 11월 헝가리 배터리 위크에서 공식 출범했습니다. 시험 검증, 데이터 추적, 환경 진단, 기업 협력, 인력 양성을 하나의 조직 안에서 함께 다룹니다.</p>
+    </div>
+    <div class="cards">
+      <a class="card" href="research.html#r2">
+        <div class="a-ico" style="background:#F4B081"><img src="assets/icons/icon-test.png" alt=""></div>
+        <span class="host" data-i18n="a1h">연구·시험</span>
+        <h3 data-i18n="a1t">성능 평가와 시험 검증</h3>
+        <p data-i18n="a1b">배터리 성능을 평가하고 사용후 배터리의 잔존 수명을 진단합니다. 시험 결과를 바탕으로 새로운 기술 기준을 만듭니다.</p>
+      </a>
+      <a class="card" href="research.html#r3">
+        <div class="a-ico" style="background:#FFD966"><img src="assets/icons/icon-data.png" alt=""></div>
+        <span class="host" data-i18n="a2h">데이터·규제</span>
+        <h3 data-i18n="a2t">배터리 여권과 데이터 분석</h3>
+        <p data-i18n="a2b">배터리 생애주기 데이터를 수집·분석하고, EU 배터리 규정이 요구하는 공시 항목에 대응할 수 있는 데이터 체계를 설계합니다.</p>
+      </a>
+      <a class="card" href="#platform">
+        <div class="a-ico" style="background:#8E7CC3"><img src="assets/icons/icon-business.png" alt=""></div>
+        <span class="host" data-i18n="a3h">산업 협력</span>
+        <h3 data-i18n="a3t">양국 기업 협력</h3>
+        <p data-i18n="a3b">한국과 헝가리 기업을 검증해 연결하고, 공동 연구개발과 EU Horizon 컨소시엄 구성을 지원합니다.</p>
+      </a>
+      <a class="card" href="research.html#r1">
+        <div class="a-ico" style="background:#9CC2E5"><img src="assets/icons/icon-education.png" alt=""></div>
+        <span class="host" data-i18n="a4h">교육·인재</span>
+        <h3 data-i18n="a4t">대학 간 교육 협력</h3>
+        <p data-i18n="a4b">연세대–BME 협정을 축으로 학생 교류와 공동 지도를 운영하고, 산업 현직 인력의 재교육 과정을 마련합니다.</p>
+      </a>
+      <a class="card" href="research.html#r4">
+        <div class="a-ico" style="background:#70AD47"><img src="assets/icons/icon-env.png" alt=""></div>
+        <span class="host" data-i18n="a5h">정책·지속가능성</span>
+        <h3 data-i18n="a5t">정책 지원과 환경·안전</h3>
+        <p data-i18n="a5b">EU 규제 동향을 기업에 전달하고 애로사항을 양국 부처에 전달합니다. 환경영향 평가와 배터리 안전 기준 수립을 함께 수행합니다.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- GOVERNANCE -->
+<section id="governance" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow" data-i18n="govEyebrow">운영 체계</span>
+      <h2 data-i18n="govTitle">조직 구성</h2>
+      <p data-i18n="govBody">KHBCC는 공동 연구개발과 한국·헝가리 협력이라는 두 축으로 움직입니다. 연구 성과가 산업 협력과 교육, 정책 지원으로 곧바로 이어지도록 설계했습니다.</p>
+    </div>
+    <figure class="gv" aria-labelledby="gvCap">
+      <figcaption class="sr-only" id="gvCap" data-i18n="gvCap">KHBCC 운영 체계 (최종보고서 Figure 2-8)</figcaption>
+
+      <div class="gv-l1">
+        <div class="gv-box gv-board">
+          <b data-i18n="gvBoard">이사회</b>
+          <span data-i18n="gvBoardM">KDI · 주헝가리 한국대사관 · KOTRA · KBIA · HUBA</span>
+        </div>
+      </div>
+
+      <div class="gv-l2">
+        <div class="gv-box gv-dir"><b data-i18n="gvDir">센터장</b></div>
+        <div class="gv-box gv-iab"><b data-i18n="gvIAB">산업자문위원회</b></div>
+      </div>
+
+      <div class="gv-l3">
+        <div class="gv-col">
+          <div class="gv-box gv-ad a1"><span data-i18n="gvADl">부센터장</span><b data-i18n="gvAD1">행정</b></div>
+          <div class="gv-sub">
+            <div class="gv-item" data-i18n="gvT1">법무·재무 지원팀</div>
+            <div class="gv-item" data-i18n="gvT2">인사 지원팀</div>
+            <div class="gv-item" data-i18n="gvT3">언어 지원·홍보팀</div>
+          </div>
+        </div>
+        <div class="gv-col">
+          <div class="gv-box gv-ad a2"><span data-i18n="gvADl">부센터장</span><b data-i18n="gvAD2">국제협력</b></div>
+          <div class="gv-sub">
+            <div class="gv-div" data-i18n="figP2">한국·헝가리 협력 부문</div>
+            <div class="gv-item u-bd" data-i18n="gvU1">사업 개발 연구소</div>
+            <div class="gv-item u-ed" data-i18n="gvU2">교육 협력 연구소</div>
+          </div>
+        </div>
+        <div class="gv-col">
+          <div class="gv-box gv-ad a3"><span data-i18n="gvADl">부센터장</span><b data-i18n="gvAD3">연구개발</b></div>
+          <div class="gv-sub">
+            <div class="gv-div" data-i18n="figP1">공동 연구개발 부문</div>
+            <div class="gv-item u-ct" data-i18n="gvU3">성능 검사 연구소</div>
+            <div class="gv-item u-bp" data-i18n="gvU4">배터리 여권·데이터 분석 연구소</div>
+            <div class="gv-item u-es" data-i18n="gvU5">환경·안전 연구소</div>
+          </div>
+        </div>
+      </div>
+      <p class="gv-src" data-i18n="gvSrc">출처: 2025/26 EIPP 최종보고서, Figure 2-8</p>
+    </figure>
   </div>
 </section>
 
@@ -844,19 +952,6 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
   </div>
 </section>
 
-<!-- ACTIVITIES -->
-<section id="activities">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow" data-i18n="acEyebrow">최근 활동</span>
-      <h2 data-i18n="acTitle">센터는 이미 움직이고 있습니다</h2>
-      <p data-i18n="acBody">2024년부터 이어온 회의와 협정, 행사 기록입니다.</p>
-    </div>
-    <div class="ac-grid" id="acGrid"></div>
-    <a class="tm-more" href="news.html" data-i18n="acMore">활동 기록 전체 보기 &rarr;</a>
-  </div>
-</section>
-
 <!-- CONTACT -->
 <section id="contact" class="contact">
   <div class="wrap">
@@ -892,6 +987,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
 
 <footer>
   <span data-i18n="f1">KHBCC — 한국–헝가리 배터리 협력센터</span>
+  <span class="ver">v2026.09.22-c</span>
 </footer>
 
 <script src="i18n.js"></script>
@@ -1032,6 +1128,13 @@ document.addEventListener('keydown',function(e){
   document.querySelectorAll('.lang button').forEach(function(b){
     b.addEventListener('click',function(){ setTimeout(render,70); });
   });
+})();
+
+/* 서울 사진(라이선스본) 유무 확인 -> 없으면 대체 이미지 */
+(function(){
+  var t=new Image();
+  t.onerror=function(){ document.documentElement.classList.add('no-seoul'); };
+  t.src='assets/hero/seoul.jpg';
 })();
 </script>
 </body>

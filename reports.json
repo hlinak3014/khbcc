@@ -1,0 +1,33 @@
+{
+  "listUrl": "https://eipp.or.kr/publication/list",
+  "items": [
+    {
+      "year": "2025/26", "phase": "4",
+      "ko": "한국–헝가리 배터리 협력센터 제도 및 운영 체계 구축",
+      "en": "Establishing Institutional and Operational Framework of the Korea-Hungary Battery Cooperation Center (Year 4)",
+      "hu": "A koreai–magyar akkumulátoripari együttműködési központ intézményi és működési keretének kialakítása (4. év)",
+      "url": ""
+    },
+    {
+      "year": "2024/25", "phase": "3",
+      "ko": "한국–헝가리 배터리 협력연구센터 설립 및 시범 운영 계획",
+      "en": "Establishment and Pilot Operation Plan for Korea-Hungary Battery Cooperation Research Center (Year 3)",
+      "hu": "A koreai–magyar akkumulátoripari együttműködési kutatóközpont létrehozási és pilot működési terve (3. év)",
+      "url": ""
+    },
+    {
+      "year": "2023/24", "phase": "2",
+      "ko": "배터리 생애주기 관리 및 추적 체계 개발 (2차년도)",
+      "en": "Development of Battery Life Cycle Management and Traceability System (Year 2)",
+      "hu": "Akkumulátor-életciklus kezelési és nyomonkövetési rendszer kialakítása (2. év)",
+      "url": ""
+    },
+    {
+      "year": "2022/23", "phase": "1",
+      "ko": "배터리 생애주기 관리 및 추적 체계 개발 (1차년도)",
+      "en": "Development of Battery Life Cycle Management and Traceability System (Year 1)",
+      "hu": "Akkumulátor-életciklus kezelési és nyomonkövetési rendszer kialakítása (1. év)",
+      "url": "https://www.eipp.or.kr/project/reportDownload?bId=66"
+    }
+  ]
+}
