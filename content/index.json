@@ -1,0 +1,1055 @@
+{
+  "title": "메인 페이지",
+  "items": [
+    {
+      "key": "heroEyebrow",
+      "ko": "Korea–Hungary Battery Cooperation Center",
+      "hu": "Korea–Hungary Battery Cooperation Center",
+      "en": "Korea–Hungary Battery Cooperation Center"
+    },
+    {
+      "key": "heroTitle",
+      "ko": "한국–헝가리<br>배터리 협력센터",
+      "hu": "Koreai–Magyar<br>Akkumulátoripari Központ",
+      "en": "Korea–Hungary<br>Battery Cooperation Center"
+    },
+    {
+      "key": "heroSub",
+      "ko": "연구와 산업, 교육과 정책을 잇는 양국 공동 플랫폼",
+      "hu": "Kutatás, ipar, oktatás és szakpolitika összekapcsolása",
+      "en": "Connecting research, industry, education and policy"
+    },
+    {
+      "key": "heroLede",
+      "ko": "배터리 성능 시험과 인증, 데이터 분석과 EU 규제 대응, 기업 협력과 인재 양성을 하나의 조직 안에서 연결합니다. 한국어·헝가리어·영어로 운영합니다.",
+      "hu": "Akkumulátorok vizsgálata és tanúsítása, adatelemzés és uniós szabályozási megfelelés, ipari együttműködés és szakemberképzés — egyetlen szervezeten belül összekapcsolva. Koreai, magyar és angol nyelven dolgozunk.",
+      "en": "Battery testing and certification, data analytics and EU regulatory compliance, industry cooperation and talent development — connected within a single organization. We work in Korean, Hungarian, and English."
+    },
+    {
+      "key": "ctaExplore",
+      "ko": "센터 살펴보기",
+      "hu": "A központról",
+      "en": "Explore KHBCC"
+    },
+    {
+      "key": "ctaPartner",
+      "ko": "협력 문의하기",
+      "hu": "Együttműködés",
+      "en": "Partner with us"
+    },
+    {
+      "key": "stat0",
+      "ko": "개국 공동 운영",
+      "hu": "Ország",
+      "en": "Countries"
+    },
+    {
+      "key": "stat0n",
+      "ko": "한국과 헝가리의 정부·산업계·대학이 함께 참여하는 양국 공동 연구센터입니다.",
+      "hu": "Közös kutatóközpont, amelyben Korea és Magyarország kormányzata, ipara és egyetemei egyaránt részt vesznek.",
+      "en": "A joint research center in which government, industry, and universities from Korea and Hungary all take part."
+    },
+    {
+      "key": "stat1",
+      "ko": "개 기능 연구소",
+      "hu": "Funkcionális egység",
+      "en": "Functional institutes"
+    },
+    {
+      "key": "stat1n",
+      "ko": "공동 연구개발 부문 3개, 한국·헝가리 협력 부문 2개로 구성됩니다.",
+      "hu": "Három a közös K+F divízióban, kettő a koreai–magyar együttműködési divízióban.",
+      "en": "Three in the Joint R&D Division and two in the Korea–Hungary Cooperation Division."
+    },
+    {
+      "key": "stat2",
+      "ko": "배터리 여권 시행",
+      "hu": "Az akkumulátor-útlevél hatályba lép",
+      "en": "Battery Passport in force"
+    },
+    {
+      "key": "stat2n",
+      "ko": "EU 시장에 출시되는 전기차, 경량 운송수단(LMT), 2kWh 초과 산업용 배터리에 디지털 배터리 여권이 의무 적용됩니다.",
+      "hu": "A digitális akkumulátor-útlevél kötelezővé válik az uniós piacra kerülő elektromos jármű-akkumulátorokra, a könnyű járművek (LMT) akkumulátoraira és a 2 kWh feletti ipari akkumulátorokra. (2027. február 18.)",
+      "en": "A digital battery passport becomes mandatory for EV batteries, light means of transport (LMT) batteries, and industrial batteries above 2 kWh placed on the EU market. (18 February 2027)"
+    },
+    {
+      "key": "labsEyebrow",
+      "ko": "연구 조직",
+      "hu": "Kutatási egységek",
+      "en": "Research units"
+    },
+    {
+      "key": "labsTitle",
+      "ko": "2개 부문, 5개 기능 연구소",
+      "hu": "Két divízió, öt funkcionális egység",
+      "en": "Two divisions, five functional units"
+    },
+    {
+      "key": "labsBody",
+      "ko": "기술 부문은 연구 속도로, 협력 부문은 산업 속도로 움직이기 때문에 두 부문을 나누어 운영합니다. 다만 산출물은 서로 이어집니다. 연구개발 부문의 규제 분석 결과가 기업 자문 자료와 교육 과정에 그대로 쓰입니다.",
+      "hu": "A technikai oldal kutatási, az együttműködési oldal ipari ütemben halad, ezért a két divíziót külön működtetjük. Az eredmények mégis összekapcsolódnak: a K+F oldal szabályozási elemzései közvetlenül a cégeknek szóló tanácsadási anyagokba és a képzésbe kerülnek.",
+      "en": "The technical side works at research pace and the cooperation side at industry pace, so the two divisions are run separately. Their outputs stay connected: regulatory analysis from the R&amp;D side goes directly into advisory material for firms and into coursework."
+    },
+    {
+      "key": "figLabsT",
+      "ko": "KHBCC 5개 기능 연구소 구성",
+      "hu": "A KHBCC öt funkcionális egysége",
+      "en": "KHBCC five functional units"
+    },
+    {
+      "key": "figP2",
+      "ko": "한국·헝가리 협력 부문",
+      "hu": "Koreai–magyar együttműködési divízió",
+      "en": "Korea–Hungary collaboration division"
+    },
+    {
+      "key": "lgT4",
+      "ko": "KBIA · HUBA · KOTRA",
+      "hu": "KBIA · HUBA · KOTRA",
+      "en": "KBIA · HUBA · KOTRA"
+    },
+    {
+      "key": "figL4a",
+      "ko": "사업 개발",
+      "hu": "Üzletfejlesztési",
+      "en": "Business development"
+    },
+    {
+      "key": "figL4b",
+      "ko": "연구소",
+      "hu": "egység",
+      "en": "unit"
+    },
+    {
+      "key": "figL4c",
+      "ko": "B2B 매칭·회원사 지원",
+      "hu": "B2B párosítás, tagtámogatás",
+      "en": "B2B matching, member support"
+    },
+    {
+      "key": "figL4d",
+      "ko": "인터배터리 네트워킹",
+      "hu": "Kapcsolatépítés az InterBatteryn",
+      "en": "Networking via InterBattery"
+    },
+    {
+      "key": "figL4e",
+      "ko": "EU Horizon 컨소시엄",
+      "hu": "Horizont Európa konzorciumok",
+      "en": "EU Horizon consortium building"
+    },
+    {
+      "key": "lgMore",
+      "ko": "연구 내용 보기 →",
+      "hu": "A kutatás &rarr;",
+      "en": "See the research &rarr;"
+    },
+    {
+      "key": "lgT5",
+      "ko": "연세대 · BME",
+      "hu": "Yonsei Egyetem · BME",
+      "en": "Yonsei Univ. · BME"
+    },
+    {
+      "key": "figL5a",
+      "ko": "교육 협력",
+      "hu": "Oktatási együttműködési",
+      "en": "Education cooperation"
+    },
+    {
+      "key": "figL5b",
+      "ko": "연구소",
+      "hu": "egység",
+      "en": "unit"
+    },
+    {
+      "key": "figL5c",
+      "ko": "학술 교류 프로그램",
+      "hu": "Akadémiai csereprogramok",
+      "en": "Academic exchange programs"
+    },
+    {
+      "key": "figL5d",
+      "ko": "복수학위 운영",
+      "hu": "Kettős diploma működtetése",
+      "en": "Dual degree operation"
+    },
+    {
+      "key": "figL5e",
+      "ko": "현직 인력 재교육",
+      "hu": "Ipari dolgozók továbbképzése",
+      "en": "Retraining for industry staff"
+    },
+    {
+      "key": "figP1",
+      "ko": "공동 연구개발 부문",
+      "hu": "Közös kutatás-fejlesztési divízió",
+      "en": "Joint research and development division"
+    },
+    {
+      "key": "lgT1",
+      "ko": "공주대 · HUBA · BME",
+      "hu": "Kongju Nemzeti Egyetem · HUBA · BME",
+      "en": "Kongju Nat. Univ. · HUBA · BME"
+    },
+    {
+      "key": "figL1a",
+      "ko": "성능 검사",
+      "hu": "Teljesítményvizsgáló",
+      "en": "Competency test"
+    },
+    {
+      "key": "figL1b",
+      "ko": "연구소",
+      "hu": "egység",
+      "en": "unit"
+    },
+    {
+      "key": "figL1c",
+      "ko": "사용후 배터리 성능 평가",
+      "hu": "Használt akkumulátorok értékelése",
+      "en": "Evaluate used battery performance"
+    },
+    {
+      "key": "figL1d",
+      "ko": "잔존 수명 산정",
+      "hu": "Hátralévő élettartam becslése",
+      "en": "Assess remaining useful life"
+    },
+    {
+      "key": "figL1e",
+      "ko": "신규 기술 기준 개발",
+      "hu": "Új műszaki szabványok",
+      "en": "Develop new technical standards"
+    },
+    {
+      "key": "lgT2",
+      "ko": "공주대 · HUBA · BME",
+      "hu": "Kongju Nemzeti Egyetem · HUBA · BME",
+      "en": "Kongju Nat. Univ. · HUBA · BME"
+    },
+    {
+      "key": "figL2a",
+      "ko": "배터리 여권·데이터",
+      "hu": "Akkumulátor-útlevél és",
+      "en": "Battery passport and"
+    },
+    {
+      "key": "figL2b",
+      "ko": "분석 연구소",
+      "hu": "adatelemző egység",
+      "en": "data analysis unit"
+    },
+    {
+      "key": "figL2c",
+      "ko": "사용 데이터 분석 거점",
+      "hu": "Használati adatok központja",
+      "en": "Hub for usage data analysis"
+    },
+    {
+      "key": "figL2d",
+      "ko": "양국 데이터 교류",
+      "hu": "Adatcsere a két ország között",
+      "en": "Data exchange between countries"
+    },
+    {
+      "key": "figL2e",
+      "ko": "재활용 공정 연구",
+      "hu": "Újrahasznosítási kutatás",
+      "en": "Battery recycle process research"
+    },
+    {
+      "key": "lgT3",
+      "ko": "이화여대 · HUBA · ELTE · HUN-REN",
+      "hu": "Ewha Womans Egyetem · HUBA · ELTE · HUN-REN",
+      "en": "Ewha Womans Univ. · HUBA · ELTE · HUN-REN"
+    },
+    {
+      "key": "figL3a",
+      "ko": "환경·안전",
+      "hu": "Környezetvédelmi és",
+      "en": "Environmental and"
+    },
+    {
+      "key": "figL3b",
+      "ko": "연구소",
+      "hu": "biztonsági egység",
+      "en": "safety research unit"
+    },
+    {
+      "key": "figL3c",
+      "ko": "폐기물 추적",
+      "hu": "Hulladékkeletkezés nyomon követése",
+      "en": "Track waste generation"
+    },
+    {
+      "key": "figL3d",
+      "ko": "규제 준수 확인",
+      "hu": "Szabályozási megfelelés",
+      "en": "Ensure regulatory compliance"
+    },
+    {
+      "key": "figL3e",
+      "ko": "안전 기준 수립",
+      "hu": "Biztonsági előírások",
+      "en": "Enforce safety protocols"
+    },
+    {
+      "key": "p1",
+      "ko": "공동 연구개발 부문",
+      "hu": "Közös kutatás-fejlesztési divízió",
+      "en": "Joint Research and Development Division"
+    },
+    {
+      "key": "p1n",
+      "ko": "헝가리 현지 기관과 공동 운영",
+      "hu": "Magyar partnerintézményekkel közösen működtetve",
+      "en": "Operated with Hungarian host institutions"
+    },
+    {
+      "key": "l1t",
+      "ko": "성능 검사 연구소",
+      "hu": "Teljesítményvizsgáló egység",
+      "en": "Competency Test Unit"
+    },
+    {
+      "key": "l1b",
+      "ko": "사용후 배터리의 성능을 평가하고 잔존 수명을 산정합니다. 시험 결과를 바탕으로 새로운 기술 기준을 개발하는 것도 이 연구소의 과제입니다.",
+      "hu": "Értékeli a használt akkumulátorok teljesítményét és megállapítja hátralévő hasznos élettartamukat. Az eredményekből új műszaki szabványok kidolgozása is ide tartozik.",
+      "en": "Evaluates the performance of used batteries and assesses their remaining useful life. Developing new technical standards from those results is also part of this unit's work."
+    },
+    {
+      "key": "l2t",
+      "ko": "배터리 여권·데이터 분석 연구소",
+      "hu": "Akkumulátor-útlevél és adatelemző egység",
+      "en": "Battery Passport and Data Analysis Unit"
+    },
+    {
+      "key": "l2b",
+      "ko": "배터리 사용 데이터를 수집·분석하고 양국이 함께 활용하는 거점 역할을 합니다. 재활용 공정 연구도 함께 수행합니다.",
+      "hu": "Az akkumulátorok használati adatainak gyűjtésére és elemzésére szolgáló központ mindkét ország számára. Az újrahasznosítási eljárások kutatása is itt folyik.",
+      "en": "Serves as the hub for collecting and analyzing battery usage data for both countries. Research on battery recycling processes is carried out here as well."
+    },
+    {
+      "key": "l3t",
+      "ko": "환경·안전 연구소",
+      "hu": "Környezetvédelmi és biztonsági kutatóegység",
+      "en": "Environmental and Safety Research Unit"
+    },
+    {
+      "key": "l3b",
+      "ko": "폐기물 발생을 추적해 환경 부담을 줄이고 규제 준수 여부를 확인합니다. 취급 과정의 안전 기준을 마련하고 적용합니다.",
+      "hu": "Nyomon követi a hulladékot a környezeti terhelés csökkentése és a szabályozási megfelelés igazolása érdekében. Kidolgozza és érvényesíti a kezelési biztonsági előírásokat.",
+      "en": "Tracks waste to reduce environmental impact and to confirm regulatory compliance. Sets and enforces safety protocols for handling."
+    },
+    {
+      "key": "p2",
+      "ko": "한국·헝가리 협력 부문",
+      "hu": "Koreai–magyar együttműködési divízió",
+      "en": "Korea–Hungary Collaboration Division"
+    },
+    {
+      "key": "p2n",
+      "ko": "기업 대응 · 신속 지원",
+      "hu": "Cégeknek · gyors reagálás",
+      "en": "Firm-facing · rapid response"
+    },
+    {
+      "key": "l4t",
+      "ko": "사업 개발 연구소",
+      "hu": "Üzletfejlesztési egység",
+      "en": "Business Development Unit"
+    },
+    {
+      "key": "l4b",
+      "ko": "KBIA와 HUBA를 연결해 기업 매칭과 회원사 지원을 담당합니다. 인터배터리 등 전시회를 통한 네트워킹과 EU Horizon 컨소시엄 구성도 이곳에서 맡습니다.",
+      "hu": "Összehangolja a KBIA és a HUBA munkáját a cégpárosításban és a tagvállalatok támogatásában. Az InterBattery és más kiállítások nemzetközi kapcsolatépítése, valamint a Horizont Európa konzorciumok szervezése is ehhez az egységhez tartozik.",
+      "en": "Coordinates between KBIA and HUBA on firm matching and member support. Global networking through InterBattery and other exhibitions, and building EU Horizon consortia, also sit with this unit."
+    },
+    {
+      "key": "l5h",
+      "ko": "연세대 · BME",
+      "hu": "Yonsei · BME",
+      "en": "Yonsei · BME"
+    },
+    {
+      "key": "l5t",
+      "ko": "교육 협력 연구소",
+      "hu": "Oktatási együttműködési egység",
+      "en": "Education Cooperation Unit"
+    },
+    {
+      "key": "l5b",
+      "ko": "학술 교류 프로그램을 운영하고, 현직 인력의 직무 역량을 높이는 재교육 과정을 마련합니다.",
+      "hu": "Akadémiai csereprogramokat működtet, és továbbképzéseket dolgoz ki az iparágban már dolgozók készségeinek fejlesztésére.",
+      "en": "Runs academic exchange programs and develops retraining courses that build the skills of people already working in the industry."
+    },
+    {
+      "key": "aboutEyebrow",
+      "ko": "센터 소개",
+      "hu": "A központról",
+      "en": "About"
+    },
+    {
+      "key": "aboutTitle",
+      "ko": "KHBCC가 하는 일",
+      "hu": "Mivel foglalkozik a KHBCC",
+      "en": "What KHBCC does"
+    },
+    {
+      "key": "aboutBody",
+      "ko": "헝가리에는 삼성SDI, SK온, CATL의 대규모 배터리 생산기지가 들어서 있습니다. 동시에 EU 배터리 규정(2023/1542)은 생산부터 폐기까지 전 생애주기에 걸친 규제 대응을 요구하고 있습니다. KHBCC는 이 두 가지를 잇기 위해 한국과 헝가리 정부의 지원으로 설립되었으며, 2025년 11월 헝가리 배터리 위크에서 공식 출범했습니다. 시험 검증, 데이터 추적, 환경 진단, 기업 협력, 인력 양성을 하나의 조직 안에서 함께 다룹니다.",
+      "hu": "Magyarországon ma a Samsung SDI, az SK On és a CATL nagy akkumulátorgyárai működnek. Ezzel egyidejűleg az Európai Unió 2023/1542 rendelete a gyártástól a hulladékkezelésig a teljes életciklusra kiterjedő megfelelést ír elő. A KHBCC a két ország kormányának támogatásával jött létre, hogy összekapcsolja ezt a kettőt, és 2025 novemberében, a Hungarian Battery Week keretében hivatalosan is elindult. A vizsgálat, az adatnyomonkövetés, a környezeti értékelés, az ipari együttműködés és a szakemberképzés egyetlen szervezeten belül zajlik.",
+      "en": "Hungary now hosts large battery plants operated by Samsung SDI, SK On, and CATL. At the same time, EU Battery Regulation 2023/1542 requires compliance across the entire lifecycle, from production through disposal. KHBCC was established with support from both governments to connect the two, and was formally launched at Hungarian Battery Week in November 2025. Testing, data traceability, environmental assessment, industry cooperation, and workforce development are handled within a single organization."
+    },
+    {
+      "key": "a1h",
+      "ko": "연구·시험",
+      "hu": "Kutatás és vizsgálat",
+      "en": "Research and testing"
+    },
+    {
+      "key": "a1t",
+      "ko": "성능 평가와 시험 검증",
+      "hu": "Teljesítményértékelés és ellenőrzés",
+      "en": "Performance evaluation and verification"
+    },
+    {
+      "key": "a1b",
+      "ko": "배터리 성능을 평가하고 사용후 배터리의 잔존 수명을 진단합니다. 시험 결과를 바탕으로 새로운 기술 기준을 만듭니다.",
+      "hu": "Értékeljük az akkumulátorok teljesítményét, megállapítjuk a használt akkumulátorok hátralévő élettartamát, és az eredményekből új műszaki szabványokat dolgozunk ki.",
+      "en": "We evaluate battery performance and assess the remaining useful life of used batteries, and develop new technical standards from the results."
+    },
+    {
+      "key": "a2h",
+      "ko": "데이터·규제",
+      "hu": "Adatok és szabályozás",
+      "en": "Data and regulation"
+    },
+    {
+      "key": "a2t",
+      "ko": "배터리 여권과 데이터 분석",
+      "hu": "Akkumulátor-útlevél és adatelemzés",
+      "en": "Battery passport and data analytics"
+    },
+    {
+      "key": "a2b",
+      "ko": "배터리 생애주기 데이터를 수집·분석하고, EU 배터리 규정이 요구하는 공시 항목에 대응할 수 있는 데이터 체계를 설계합니다.",
+      "hu": "Gyűjtjük és elemezzük az akkumulátorok életciklus-adatait, és megtervezzük azokat az adatszerkezeteket, amelyekkel a cégek megfelelnek az uniós akkumulátorrendelet közzétételi előírásainak.",
+      "en": "We collect and analyze battery lifecycle data, and design the data structures firms need to meet the disclosure requirements of the EU Battery Regulation."
+    },
+    {
+      "key": "a3h",
+      "ko": "산업 협력",
+      "hu": "Ipari együttműködés",
+      "en": "Industry cooperation"
+    },
+    {
+      "key": "a3t",
+      "ko": "양국 기업 협력",
+      "hu": "A két ország cégeinek összekapcsolása",
+      "en": "Partnering firms across the two countries"
+    },
+    {
+      "key": "a3b",
+      "ko": "한국과 헝가리 기업을 검증해 연결하고, 공동 연구개발과 EU Horizon 컨소시엄 구성을 지원합니다.",
+      "hu": "Ellenőrizzük és összekapcsoljuk a koreai és magyar cégeket, és támogatjuk a közös K+F-et, valamint a Horizont Európa konzorciumok létrehozását.",
+      "en": "We verify and connect Korean and Hungarian firms, and support joint R&D and the formation of EU Horizon consortia."
+    },
+    {
+      "key": "a4h",
+      "ko": "교육·인재",
+      "hu": "Oktatás és tehetség",
+      "en": "Education and talent"
+    },
+    {
+      "key": "a4t",
+      "ko": "대학 간 교육 협력",
+      "hu": "Egyetemek közötti oktatási együttműködés",
+      "en": "University education partnerships"
+    },
+    {
+      "key": "a4b",
+      "ko": "연세대–BME 협정을 축으로 학생 교류와 공동 지도를 운영하고, 산업 현직 인력의 재교육 과정을 마련합니다.",
+      "hu": "A Yonsei–BME megállapodásra épülve hallgatói cserét és közös témavezetést működtetünk, és továbbképzéseket dolgozunk ki az iparágban már dolgozóknak.",
+      "en": "Built on the Yonsei–BME agreement, we run student exchange and co-supervision, and develop retraining courses for people already working in the industry."
+    },
+    {
+      "key": "a5h",
+      "ko": "정책·지속가능성",
+      "hu": "Szakpolitika és fenntarthatóság",
+      "en": "Policy and sustainability"
+    },
+    {
+      "key": "a5t",
+      "ko": "정책 지원과 환경·안전",
+      "hu": "Szakpolitikai támogatás, környezet és biztonság",
+      "en": "Policy support, environment and safety"
+    },
+    {
+      "key": "a5b",
+      "ko": "EU 규제 동향을 기업에 전달하고 애로사항을 양국 부처에 전달합니다. 환경영향 평가와 배터리 안전 기준 수립을 함께 수행합니다.",
+      "hu": "Továbbadjuk az uniós szabályozási fejleményeket a cégeknek, és eljuttatjuk gondjaikat mindkét ország minisztériumaihoz, a környezeti értékelés és az akkumulátor-biztonsági előírások mellett.",
+      "en": "We pass EU regulatory developments to firms and carry their concerns to the ministries on both sides, alongside environmental assessment and battery safety standards."
+    },
+    {
+      "key": "govEyebrow",
+      "ko": "운영 체계",
+      "hu": "Szervezet",
+      "en": "Organization"
+    },
+    {
+      "key": "govTitle",
+      "ko": "조직 구성",
+      "hu": "A központ felépítése",
+      "en": "How the center is structured"
+    },
+    {
+      "key": "govBody",
+      "ko": "KHBCC는 공동 연구개발과 한국·헝가리 협력이라는 두 축으로 움직입니다. 연구 성과가 산업 협력과 교육, 정책 지원으로 곧바로 이어지도록 설계했습니다.",
+      "hu": "A KHBCC két tengely mentén működik: közös kutatás-fejlesztés, valamint koreai–magyar együttműködés. A kutatási eredmények közvetlenül beépülnek az ipari együttműködésbe, az oktatásba és a szakpolitikai támogatásba.",
+      "en": "KHBCC runs on two axes: joint research and development, and Korea–Hungary cooperation. Research outcomes feed directly into industrial collaboration, education, and policy support."
+    },
+    {
+      "key": "gvCap",
+      "ko": "KHBCC 운영 체계 (최종보고서 Figure 2-8)",
+      "hu": "A KHBCC irányítási felépítése (zárójelentés, 2-8. ábra)",
+      "en": "KHBCC governance architecture (final report, Figure 2-8)"
+    },
+    {
+      "key": "gvBoard",
+      "ko": "이사회",
+      "hu": "Igazgatótanács",
+      "en": "Governing Board"
+    },
+    {
+      "key": "gvBoardM",
+      "ko": "KDI · 주헝가리 한국대사관 · KOTRA · KBIA · HUBA",
+      "hu": "KDI · Korea magyarországi nagykövetsége · KOTRA · KBIA · HUBA",
+      "en": "KDI · Korean Embassy in Hungary · KOTRA · KBIA · HUBA"
+    },
+    {
+      "key": "gvDir",
+      "ko": "센터장",
+      "hu": "Központvezető",
+      "en": "Center Director"
+    },
+    {
+      "key": "gvIAB",
+      "ko": "산업자문위원회",
+      "hu": "Ipari Tanácsadó Testület",
+      "en": "Industrial Advisory Board"
+    },
+    {
+      "key": "gvADl",
+      "ko": "부센터장",
+      "hu": "Igazgatóhelyettes",
+      "en": "Associate Director"
+    },
+    {
+      "key": "gvAD1",
+      "ko": "행정",
+      "hu": "Adminisztráció",
+      "en": "Administration"
+    },
+    {
+      "key": "gvT1",
+      "ko": "법무·재무 지원팀",
+      "hu": "Jogi és pénzügyi támogató csoport",
+      "en": "Legal and Finance Support Team"
+    },
+    {
+      "key": "gvT2",
+      "ko": "인사 지원팀",
+      "hu": "Humánerőforrás-támogató csoport",
+      "en": "Human Resources Support Team"
+    },
+    {
+      "key": "gvT3",
+      "ko": "언어 지원·홍보팀",
+      "hu": "Nyelvi támogatási és PR csoport",
+      "en": "Language Support and PR Team"
+    },
+    {
+      "key": "gvAD2",
+      "ko": "국제협력",
+      "hu": "Nemzetközi együttműködés",
+      "en": "International Collaboration"
+    },
+    {
+      "key": "gvU1",
+      "ko": "사업 개발 연구소",
+      "hu": "Üzletfejlesztési egység",
+      "en": "Business Development Unit"
+    },
+    {
+      "key": "gvU2",
+      "ko": "교육 협력 연구소",
+      "hu": "Oktatási együttműködési egység",
+      "en": "Education Cooperation Unit"
+    },
+    {
+      "key": "gvAD3",
+      "ko": "연구개발",
+      "hu": "Kutatás-fejlesztés",
+      "en": "Research and Development"
+    },
+    {
+      "key": "gvU3",
+      "ko": "성능 검사 연구소",
+      "hu": "Teljesítményvizsgáló egység",
+      "en": "Competency Test Unit"
+    },
+    {
+      "key": "gvU4",
+      "ko": "배터리 여권·데이터 분석 연구소",
+      "hu": "Akkumulátor-útlevél és adatelemző egység",
+      "en": "Battery Passport and Data Analysis Unit"
+    },
+    {
+      "key": "gvU5",
+      "ko": "환경·안전 연구소",
+      "hu": "Környezetvédelmi és biztonsági kutatóegység",
+      "en": "Environmental and Safety Research Unit"
+    },
+    {
+      "key": "gvSrc",
+      "ko": "출처: 2025/26 EIPP 최종보고서, Figure 2-8",
+      "hu": "Forrás: 2025/26 EIPP zárójelentés, 2-8. ábra",
+      "en": "Source: 2025/26 EIPP final report, Figure 2-8"
+    },
+    {
+      "key": "platEyebrow",
+      "ko": "3개국어 플랫폼 · 기업 매칭",
+      "hu": "Háromnyelvű platform · cégpárosítás",
+      "en": "Trilingual platform · firm matching"
+    },
+    {
+      "key": "platTitle",
+      "ko": "기업 매칭은 네 단계를 거칩니다",
+      "hu": "A párosítás négy szakaszból áll",
+      "en": "Matching runs through four stages"
+    },
+    {
+      "key": "platBody",
+      "ko": "검증된 기업에서 출발해 실제 성과가 나오는 미팅까지, 네 단계를 거쳐 연결합니다.",
+      "hu": "Az ellenőrzött partnerektől a kurátorált üzleti találkozókig, négy lépésben.",
+      "en": "From verified partners to curated business meetings, in four stages."
+    },
+    {
+      "key": "figB2bT",
+      "ko": "B2B 매칭 4단계 절차",
+      "hu": "Négylépcsős B2B párosítási folyamat",
+      "en": "Four-stage B2B matching process"
+    },
+    {
+      "key": "figDb",
+      "ko": "KBIA · HUBA 회원사 데이터베이스",
+      "hu": "KBIA és HUBA tagvállalati adatbázis",
+      "en": "KBIA and HUBA member company database"
+    },
+    {
+      "key": "figS1t",
+      "ko": "확인",
+      "hu": "Minősítés",
+      "en": "Qualification"
+    },
+    {
+      "key": "figS1a",
+      "ko": "사업 실재성 확인",
+      "hu": "Cégstátusz ellenőrzése",
+      "en": "Verify corporate status"
+    },
+    {
+      "key": "figS1b",
+      "ko": "밸류체인 내 역할 확인",
+      "hu": "Értéklánc-szerep igazolása",
+      "en": "Confirm value chain role"
+    },
+    {
+      "key": "figO1",
+      "ko": "검증된 파트너 풀",
+      "hu": "Ellenőrzött partnerkör",
+      "en": "Verified partner pool"
+    },
+    {
+      "key": "figS2t",
+      "ko": "분석",
+      "hu": "Képességfelmérés",
+      "en": "Capability profiling"
+    },
+    {
+      "key": "figS2a",
+      "ko": "기술 성숙도·생산 역량 평가",
+      "hu": "TRL és kapacitás értékelése",
+      "en": "Assess TRL and capacity"
+    },
+    {
+      "key": "figS2b",
+      "ko": "협력 수요 파악",
+      "hu": "Együttműködési igény feltárása",
+      "en": "Establish cooperation needs"
+    },
+    {
+      "key": "figO2",
+      "ko": "기업 프로파일",
+      "hu": "Részletes cégprofilok",
+      "en": "Detailed firm profiles"
+    },
+    {
+      "key": "figS3t",
+      "ko": "선별",
+      "hu": "Szűrés",
+      "en": "Screening"
+    },
+    {
+      "key": "figS3a",
+      "ko": "기술적 가치 · 경제적 영향",
+      "hu": "Műszaki érték, gazdasági hatás",
+      "en": "Technical value, economic impact"
+    },
+    {
+      "key": "figS3b",
+      "ko": "환경적 지속가능성",
+      "hu": "Környezeti fenntarthatóság",
+      "en": "Environmental sustainability"
+    },
+    {
+      "key": "figO3",
+      "ko": "큐레이션 리스트",
+      "hu": "Kurátorált partnerlista",
+      "en": "Curated partner list"
+    },
+    {
+      "key": "figS4t",
+      "ko": "연결",
+      "hu": "Előzetes párosítás",
+      "en": "Pre-matching"
+    },
+    {
+      "key": "figS4a",
+      "ko": "추천 미팅 일정 전달",
+      "hu": "Javasolt találkozók küldése",
+      "en": "Send suggested meetings"
+    },
+    {
+      "key": "figS4b",
+      "ko": "상대 기업 정보 제공",
+      "hu": "Partnertájékoztatók átadása",
+      "en": "Provide counterpart briefings"
+    },
+    {
+      "key": "figO4",
+      "ko": "실질적 B2B 미팅",
+      "hu": "Nagy hatású B2B találkozók",
+      "en": "High-impact B2B meetings"
+    },
+    {
+      "key": "ctaJoin",
+      "ko": "기업 등록 신청",
+      "hu": "Cégregisztráció",
+      "en": "Register your firm"
+    },
+    {
+      "key": "ctaCriteria",
+      "ko": "선별 기준 보기",
+      "hu": "Kiválasztási szempontok",
+      "en": "Selection criteria"
+    },
+    {
+      "key": "s1t",
+      "ko": "확인",
+      "hu": "Ellenőrzés",
+      "en": "Verify"
+    },
+    {
+      "key": "s1b",
+      "ko": "KBIA·HUBA 회원사 데이터베이스를 기준으로 사업 실재성과 배터리 밸류체인 내 역할을 확인합니다. 이 단계를 통과한 기업만 협력 대상 풀에 들어갑니다.",
+      "hu": "A cég működését és az akkumulátoripari értékláncban betöltött szerepét a KBIA és a HUBA tagvállalati adatbázisában ellenőrizzük. Csak az ezen a szakaszon átjutó cégek kerülnek a partnerkörbe.",
+      "en": "Corporate status and role in the battery value chain are confirmed against the KBIA and HUBA member databases. Only firms that clear this stage enter the partner pool."
+    },
+    {
+      "key": "s2t",
+      "ko": "분석",
+      "hu": "Profilozás",
+      "en": "Profile"
+    },
+    {
+      "key": "s2b",
+      "ko": "기술 성숙도(TRL)와 생산 역량을 평가하고, 합작 투자·유통망 확보·규제 대응 등 어떤 협력을 원하는지 파악해 기업 프로파일을 작성합니다.",
+      "hu": "Felmérjük a technológiai érettségi szintet és a gyártási kapacitást, és tisztázzuk, milyen együttműködést keres a cég — vegyesvállalatot, értékesítési hálózatot vagy szabályozási megfelelést —, majd cégprofilban rögzítjük.",
+      "en": "We assess technology readiness level and manufacturing capability, and establish what kind of cooperation the firm is after — joint venture, distribution, regulatory compliance — as a firm profile."
+    },
+    {
+      "key": "s3t",
+      "ko": "선별",
+      "hu": "Párosítás",
+      "en": "Match"
+    },
+    {
+      "key": "s3b",
+      "ko": "기술적 가치, 경제적 영향, 환경적 지속가능성 세 가지를 기준으로 매칭 대상 기업 리스트를 추립니다.",
+      "hu": "A rövidlistát három szempont alapján állítjuk össze: műszaki érték, gazdasági hatás és környezeti fenntarthatóság.",
+      "en": "The shortlist is drawn up against three criteria: technical value, economic impact, and environmental sustainability."
+    },
+    {
+      "key": "s4t",
+      "ko": "연결",
+      "hu": "Kapcsolat",
+      "en": "Connect"
+    },
+    {
+      "key": "s4b",
+      "ko": "행사 전에 추천 미팅 일정과 상대 기업 정보를 전달합니다. 참가 기업은 도착 시점에 이미 논의할 내용을 갖고 있게 됩니다.",
+      "hu": "A javasolt találkozók és a partnerekről szóló tájékoztatók az esemény előtt kimennek, így a részt vevő cégek konkrét témával érkeznek.",
+      "en": "Suggested meetings and counterpart information go out before the event, so participating firms arrive with something specific to discuss."
+    },
+    {
+      "key": "parEyebrow",
+      "ko": "참여 기관",
+      "hu": "Partnerek",
+      "en": "Partners"
+    },
+    {
+      "key": "parTitle",
+      "ko": "양국이 함께 만드는 센터",
+      "hu": "Közreműködő intézmények",
+      "en": "Participating institutions"
+    },
+    {
+      "key": "parBody",
+      "ko": "정부와 산업계, 대학이 양국에서 각각 참여합니다. 센터는 그 사이를 잇는 공동 플랫폼입니다.",
+      "hu": "Mindkét oldalról részt vesz a kormányzat, az ipar és az egyetemek. A központ az őket összekötő platform.",
+      "en": "Government, industry, and universities take part from each side. The center is the platform that connects them."
+    },
+    {
+      "key": "sideKR",
+      "ko": "대한민국",
+      "hu": "Korea",
+      "en": "Korea"
+    },
+    {
+      "key": "tierGov",
+      "ko": "정부·공공기관",
+      "hu": "Kormányzat és közintézmények",
+      "en": "Government and public agencies"
+    },
+    {
+      "key": "o1",
+      "ko": "재정경제부",
+      "hu": "Koreai Pénzügyi és Gazdasági Minisztérium",
+      "en": "Ministry of Finance and Economy, Korea"
+    },
+    {
+      "key": "o2",
+      "ko": "부다페스트 무역관",
+      "hu": "Budapesti iroda",
+      "en": "Budapest office"
+    },
+    {
+      "key": "tierInd",
+      "ko": "산업 협회",
+      "hu": "Ipari szövetség",
+      "en": "Industry association"
+    },
+    {
+      "key": "tierUni",
+      "ko": "대학·연구기관",
+      "hu": "Egyetemek és kutatóintézetek",
+      "en": "Universities and research institutes"
+    },
+    {
+      "key": "o4",
+      "ko": "연세대학교",
+      "hu": "Yonsei Egyetem",
+      "en": "Yonsei University"
+    },
+    {
+      "key": "o4s",
+      "ko": "주관 기관",
+      "hu": "Vezető kutatóintézmény",
+      "en": "Lead research institution"
+    },
+    {
+      "key": "oKongju",
+      "ko": "공주대학교",
+      "hu": "Kongju Nemzeti Egyetem",
+      "en": "Kongju National University"
+    },
+    {
+      "key": "oEwha",
+      "ko": "이화여자대학교",
+      "hu": "Ewha Womans Egyetem",
+      "en": "Ewha Womans University"
+    },
+    {
+      "key": "hubLabel",
+      "ko": "공동 협력 플랫폼",
+      "hu": "Közös együttműködési platform",
+      "en": "Joint cooperation platform"
+    },
+    {
+      "key": "sideHU",
+      "ko": "헝가리",
+      "hu": "Magyarország",
+      "en": "Hungary"
+    },
+    {
+      "key": "o3",
+      "ko": "헝가리 투자청",
+      "hu": "Nemzeti Befektetési Ügynökség",
+      "en": "Hungarian Investment Promotion Agency"
+    },
+    {
+      "key": "o6",
+      "ko": "헝가리 연구 네트워크",
+      "hu": "Magyar Kutatási Hálózat",
+      "en": "Hungarian Research Network"
+    },
+    {
+      "key": "tmEyebrow",
+      "ko": "연구진",
+      "hu": "Kutatócsoport",
+      "en": "Research team"
+    },
+    {
+      "key": "tmTitle",
+      "ko": "누구와 이야기하면 되는가",
+      "hu": "Kihez forduljon",
+      "en": "Who to talk to"
+    },
+    {
+      "key": "tmBody",
+      "ko": "네 개 세부주제마다 한국과 헝가리에서 각각 한 명씩 책임자를 두고 짝을 이뤄 연구를 진행합니다.",
+      "hu": "Mind a négy altémának egy koreai és egy magyar felelőse van, akik párban dolgoznak.",
+      "en": "Each of the four sub-topics has one lead in Korea and one in Hungary, working as a pair."
+    },
+    {
+      "key": "tp1",
+      "ko": "연세대학교",
+      "hu": "Yonsei Egyetem",
+      "en": "Yonsei University"
+    },
+    {
+      "key": "tp2",
+      "ko": "HUBA",
+      "hu": "HUBA",
+      "en": "HUBA"
+    },
+    {
+      "key": "tp3",
+      "ko": "공주대학교",
+      "hu": "Kongju Nemzeti Egyetem",
+      "en": "Kongju National University"
+    },
+    {
+      "key": "tp4",
+      "ko": "HUBA",
+      "hu": "HUBA",
+      "en": "HUBA"
+    },
+    {
+      "key": "tp5",
+      "ko": "공주대학교",
+      "hu": "Kongju Nemzeti Egyetem",
+      "en": "Kongju National University"
+    },
+    {
+      "key": "tp6",
+      "ko": "HUBA",
+      "hu": "HUBA",
+      "en": "HUBA"
+    },
+    {
+      "key": "tp7",
+      "ko": "이화여자대학교",
+      "hu": "Ewha Womans Egyetem",
+      "en": "Ewha Womans University"
+    },
+    {
+      "key": "tp8",
+      "ko": "HUBA",
+      "hu": "HUBA",
+      "en": "HUBA"
+    },
+    {
+      "key": "tmMore",
+      "ko": "연구진 전체 보기 →",
+      "hu": "A teljes csapat &rarr;",
+      "en": "See the full team &rarr;"
+    },
+    {
+      "key": "conEyebrow",
+      "ko": "문의",
+      "hu": "Kapcsolat",
+      "en": "Contact"
+    },
+    {
+      "key": "conTitle",
+      "ko": "연락처",
+      "hu": "Elérhetőségek",
+      "en": "Get in touch"
+    },
+    {
+      "key": "conBody",
+      "ko": "헝가리 진출을 검토 중인 한국 기업, 한국 파트너를 찾는 헝가리 기업, 공동 연구를 제안하는 연구기관의 문의를 받고 있습니다.",
+      "hu": "Várjuk a Magyarországot fontolgató koreai cégek, a koreai partnert kereső magyar cégek és a közös munkát javasló kutatóintézetek megkeresését.",
+      "en": "We welcome inquiries from Korean firms considering Hungary, Hungarian firms looking for Korean partners, and research institutions proposing joint work."
+    },
+    {
+      "key": "c1",
+      "ko": "기업",
+      "hu": "Cégregisztráció és párosítás",
+      "en": "Firm registration and matching"
+    },
+    {
+      "key": "c1d",
+      "ko": "한국과 헝가리에서 기술·사업 파트너를 찾습니다.",
+      "hu": "Technológiai és üzleti partnerek keresése Koreában és Magyarországon.",
+      "en": "Find technology and business partners in Korea and Hungary."
+    },
+    {
+      "key": "c1b",
+      "ko": "기업 등록 신청 →",
+      "hu": "Cégregisztráció &rarr;",
+      "en": "Register your firm &rarr;"
+    },
+    {
+      "key": "c2",
+      "ko": "연구기관",
+      "hu": "Kutatási együttműködés",
+      "en": "Research collaboration"
+    },
+    {
+      "key": "c2d",
+      "ko": "양국 공동 연구와 EU Horizon 협력을 제안합니다.",
+      "hu": "Kétoldalú K+F és Horizont Európa együttműködés kezdeményezése.",
+      "en": "Propose bilateral R&amp;D and EU Horizon collaborations."
+    },
+    {
+      "key": "c5",
+      "ko": "학생·대학",
+      "hu": "Hallgatók és egyetemek",
+      "en": "Students and universities"
+    },
+    {
+      "key": "c5d",
+      "ko": "학술 교류와 교육 프로그램을 문의합니다.",
+      "hu": "Érdeklődés akadémiai csereprogramokról és képzésekről.",
+      "en": "Ask about academic exchange and education programs."
+    },
+    {
+      "key": "c4",
+      "ko": "헝가리 사무국",
+      "hu": "Magyar titkárság",
+      "en": "Hungary secretariat"
+    },
+    {
+      "key": "c4b",
+      "ko": "HUBA 본부, 부다페스트",
+      "hu": "HUBA központ, Budapest",
+      "en": "HUBA headquarters, Budapest"
+    }
+  ]
+}

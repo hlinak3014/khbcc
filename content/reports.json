@@ -1,0 +1,35 @@
+{
+  "title": "보고서",
+  "items": [
+    {
+      "key": "rpEyebrow",
+      "ko": "보고서",
+      "hu": "Jelentések",
+      "en": "Reports"
+    },
+    {
+      "key": "rpTitle",
+      "ko": "정책자문 보고서",
+      "hu": "Szakpolitikai tanácsadói jelentések",
+      "en": "Policy consultation reports"
+    },
+    {
+      "key": "rpLede",
+      "ko": "KHBCC는 한–헝가리 경제혁신 파트너십 프로그램(EIPP)의 4개년 정책자문 사업에서 출발했습니다. 각 연도의 최종보고서는 한국개발연구원(KDI) EIPP 누리집에서 볼 수 있습니다.",
+      "hu": "A KHBCC a koreai–magyar Gazdasági Innovációs Partnerségi Program (EIPP) négyéves szakpolitikai tanácsadási projektjéből nőtt ki. Az egyes évek zárójelentései a KDI EIPP honlapján érhetők el.",
+      "en": "KHBCC grew out of a four-year policy consultation project under the Korea–Hungary Economic Innovation Partnership Program (EIPP). Each year's final report is available on the KDI EIPP website."
+    },
+    {
+      "key": "rpSearch",
+      "ko": "EIPP 누리집의 발간물 목록에서 <code>Korea-Hungary</code> 로 검색하면 이 사업의 보고서만 모아 볼 수 있습니다.",
+      "hu": "Az EIPP kiadványlistájában a <code>Korea-Hungary</code> kifejezésre keresve a projekt összes jelentése együtt látható.",
+      "en": "Search the EIPP publication list for <code>Korea-Hungary</code> to see this project's reports together."
+    },
+    {
+      "key": "rpGo",
+      "ko": "EIPP 발간물 목록 열기 →",
+      "hu": "Az EIPP kiadványlista megnyitása &rarr;",
+      "en": "Open the EIPP publication list &rarr;"
+    }
+  ]
+}

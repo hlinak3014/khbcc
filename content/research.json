@@ -1,0 +1,755 @@
+{
+  "title": "연구 내용",
+  "items": [
+    {
+      "key": "rEyebrow",
+      "ko": "연구 내용",
+      "hu": "Kutatás",
+      "en": "Research"
+    },
+    {
+      "key": "rTitle",
+      "ko": "무엇을 연구하는가",
+      "hu": "Mit kutatunk",
+      "en": "What we research"
+    },
+    {
+      "key": "rLede",
+      "ko": "KHBCC의 연구는 EU 배터리 규정(2023/1542)이 요구하는 것을 실제로 측정하고 증명하는 방법을 찾는 데 집중합니다. 네 개 영역으로 나뉘며, 각각 양국 기관이 함께 수행합니다.",
+      "hu": "A KHBCC kutatása arra összpontosít, hogyan lehet ténylegesen mérni és igazolni azt, amit az EU 2023/1542 akkumulátorrendelete előír. A munka négy területre oszlik, mindegyiket a két ország intézményei közösen végzik.",
+      "en": "KHBCC's research concentrates on how to actually measure and evidence what EU Battery Regulation 2023/1542 requires. The work divides into four areas, each carried out jointly by institutions in both countries."
+    },
+    {
+      "key": "rT1",
+      "ko": "제도 기반 구축",
+      "hu": "Intézményi alapok",
+      "en": "Institutional foundation"
+    },
+    {
+      "key": "rT2",
+      "ko": "성능 시험·검증",
+      "hu": "Vizsgálat és ellenőrzés",
+      "en": "Testing and verification"
+    },
+    {
+      "key": "rT3",
+      "ko": "AI 데이터 분석",
+      "hu": "MI-adatelemzés",
+      "en": "AI data analytics"
+    },
+    {
+      "key": "rT4",
+      "ko": "환경·안전",
+      "hu": "Környezet és biztonság",
+      "en": "Environment and safety"
+    },
+    {
+      "key": "figWait",
+      "ko": "그림 파일을 준비 중입니다",
+      "hu": "Az ábrafájl előkészítés alatt",
+      "en": "Figure file in preparation"
+    },
+    {
+      "key": "cap48",
+      "ko": "배터리 데이터 분석을 위한 다주체 거버넌스 체계",
+      "hu": "Többszereplős irányítási keret az akkumulátoradat-elemzéshez",
+      "en": "Multi-actor governance framework for battery data analytics"
+    },
+    {
+      "key": "src48",
+      "ko": "출처: 2025/26 EIPP 최종보고서 (2026)",
+      "hu": "Forrás: 2025/26 EIPP zárójelentés (2026)",
+      "en": "Source: 2025/26 EIPP final report (2026)"
+    },
+    {
+      "key": "r1t",
+      "ko": "제도 기반 구축과 지속 가능한 운영 체계",
+      "hu": "Intézményi alapok és fenntartható működési keret",
+      "en": "Institutional foundation and a sustainable operating framework"
+    },
+    {
+      "key": "r1w",
+      "ko": "연세대학교 · KDI · KBIA · KOTRA / HUBA · 국가경제부(MNE)",
+      "hu": "Yonsei Egyetem · KDI · KBIA · KOTRA / HUBA · Nemzetgazdasági Minisztérium",
+      "en": "Yonsei University · KDI · KBIA · KOTRA / HUBA · Ministry for National Economy"
+    },
+    {
+      "key": "r1p1",
+      "ko": "센터가 사업 기간이 끝난 뒤에도 존속하려면 법적 지위와 재원이 필요합니다. 이 영역은 그 조건을 만드는 연구입니다. 거버넌스 구조, 설립 형태, 재정 모델을 설계하고 양국 정부와 협의합니다.",
+      "hu": "Ahhoz, hogy a központ túlélje a projektidőszakot, jogi státuszra és forrásra van szüksége. Ez a munkaterület ezeket a feltételeket teremti meg: megtervezi az irányítási szerkezetet, a létrehozás formáját és a finanszírozási modellt, és egyeztet róluk mindkét kormánnyal.",
+      "en": "For the center to outlive the project period it needs legal standing and a source of funds. This area of work creates those conditions: designing the governance structure, the form of establishment, and the financing model, and negotiating them with both governments."
+    },
+    {
+      "key": "cap27",
+      "ko": "4차년도 추진 방향",
+      "hu": "A negyedik szakasz irányai",
+      "en": "Directions of the fourth phase"
+    },
+    {
+      "key": "src27",
+      "ko": "출처: 2025/26 EIPP 최종보고서 (2026)",
+      "hu": "Forrás: 2025/26 EIPP zárójelentés (2026)",
+      "en": "Source: 2025/26 EIPP final report (2026)"
+    },
+    {
+      "key": "r1h1",
+      "ko": "설립 형태 검토",
+      "hu": "A létrehozás lehetséges formái",
+      "en": "Options for establishment"
+    },
+    {
+      "key": "r1p2",
+      "ko": "헝가리 국가경제부와의 협의를 거쳐 세 가지 안을 비교하고 있습니다. 각 안은 설립 속도, 자율성, EU 자금 접근성에서 서로 다른 결과를 낳습니다.",
+      "hu": "A Nemzetgazdasági Minisztériummal folytatott egyeztetés nyomán három lehetőséget vetünk össze. Mindegyik más eredményt ad a létrehozás gyorsasága, az önállóság és az uniós forrásokhoz való hozzáférés szempontjából.",
+      "en": "Three options are being compared following consultation with the Hungarian Ministry for National Economy. Each produces a different outcome in terms of speed of establishment, autonomy, and access to EU funding."
+    },
+    {
+      "key": "r1c1",
+      "ko": "안",
+      "hu": "Lehetőség",
+      "en": "Option"
+    },
+    {
+      "key": "r1c2",
+      "ko": "내용",
+      "hu": "Forma",
+      "en": "Form"
+    },
+    {
+      "key": "r1c3",
+      "ko": "고려 사항",
+      "hu": "Mérlegelendő",
+      "en": "Consideration"
+    },
+    {
+      "key": "r1a1",
+      "ko": "A",
+      "hu": "A",
+      "en": "A"
+    },
+    {
+      "key": "r1a1c",
+      "ko": "HUBA 산하 조직으로 설립",
+      "hu": "A HUBA szervezeti egységeként",
+      "en": "Established as a unit within HUBA"
+    },
+    {
+      "key": "r1a1n",
+      "ko": "설립이 가장 빠르고 현지 행정 부담이 작음",
+      "hu": "A leggyorsabban létrehozható, a legkisebb helyi adminisztrációs teherrel",
+      "en": "Fastest to establish; least local administrative burden"
+    },
+    {
+      "key": "r1a2",
+      "ko": "B",
+      "hu": "B",
+      "en": "B"
+    },
+    {
+      "key": "r1a2c",
+      "ko": "한국 50% · HUBA 50% 공동 출자 법인",
+      "hu": "Vegyesvállalat, 50% koreai és 50% HUBA",
+      "en": "Joint venture, 50% Korean and 50% HUBA"
+    },
+    {
+      "key": "r1a2n",
+      "ko": "양국 지분이 대등해 의사결정이 균형적",
+      "hu": "Az egyenlő tulajdonrész kiegyensúlyozott döntéshozatalt ad",
+      "en": "Equal shareholding gives balanced decision-making"
+    },
+    {
+      "key": "r1a3",
+      "ko": "C",
+      "hu": "C",
+      "en": "C"
+    },
+    {
+      "key": "r1a3c",
+      "ko": "헝가리 법인 아래 독립 비영리 법인",
+      "hu": "Önálló nonprofit szervezet magyar jogi személy alatt",
+      "en": "Independent non-profit under a Hungarian entity"
+    },
+    {
+      "key": "r1a3n",
+      "ko": "EU 자금 신청에 유리하나 설립 절차가 김",
+      "hu": "Kedvező az uniós pályázatokhoz, de lassabban hozható létre",
+      "en": "Favourable for EU funding applications but slower to establish"
+    },
+    {
+      "key": "r1h2",
+      "ko": "재정 모델",
+      "hu": "Finanszírozási modell",
+      "en": "Financing model"
+    },
+    {
+      "key": "r1l1",
+      "ko": "<b>단기</b> — EIPP 후속 예산, 산업자문위원회 참여 회비, 헝가리 정부 지원",
+      "hu": "<b>Rövid táv</b> — követő EIPP költségvetés, az ipari tanácsadó testület tagsági díjai, magyar kormányzati támogatás",
+      "en": "<b>Short term</b> — follow-on EIPP budget, membership fees from the industrial advisory board, Hungarian government support"
+    },
+    {
+      "key": "r1l2",
+      "ko": "<b>중기</b> — EU 공동 재원, 배터리 여권 데이터 서비스 제공, KBIA·HUBA 회원사 대상 컨설팅",
+      "hu": "<b>Középtáv</b> — közös uniós források, akkumulátor-útlevél adatszolgáltatás, tanácsadás a KBIA és a HUBA tagvállalatainak",
+      "en": "<b>Medium term</b> — joint EU funding, battery passport data services, consulting for KBIA and HUBA member firms"
+    },
+    {
+      "key": "r1l3",
+      "ko": "<b>장기</b> — Horizon Europe 참여, 인증·규제 준수 모니터링 역량 확보",
+      "hu": "<b>Hosszú táv</b> — részvétel a Horizont Európában, tanúsítási és megfelelés-felügyeleti kapacitás kiépítése",
+      "en": "<b>Long term</b> — participation in Horizon Europe, capability in certification and regulatory compliance monitoring"
+    },
+    {
+      "key": "r1h3",
+      "ko": "3개국어 플랫폼과 기업 매칭",
+      "hu": "Háromnyelvű platform és cégpárosítás",
+      "en": "Trilingual platform and firm matching"
+    },
+    {
+      "key": "r1p3",
+      "ko": "본 웹사이트가 그 산출물입니다. 회원사 데이터베이스를 기반으로 자격 검증부터 사전 큐레이션까지 4단계 매칭 절차를 설계했습니다.",
+      "hu": "Ez a weboldal maga az eredmény. A tagvállalati adatbázisra épülve négylépcsős párosítási folyamatot valósít meg a minősítéstől a kurátorált előzetes párosításig.",
+      "en": "This website is that output. Built on the member company database, it implements a four-stage matching process running from qualification through to curated pre-matching."
+    },
+    {
+      "key": "r2t",
+      "ko": "EU 배터리 여권 대응 성능 시험·검증 체계",
+      "hu": "Az EU akkumulátor-útlevél követelményei, teljesítményvizsgálat és ellenőrzés",
+      "en": "EU Battery Passport requirements and performance testing and verification"
+    },
+    {
+      "key": "r2w",
+      "ko": "공주대학교 / HUBA · BME",
+      "hu": "Kongju Nemzeti Egyetem / HUBA · BME",
+      "en": "Kongju National University / HUBA · BME"
+    },
+    {
+      "key": "r2p1",
+      "ko": "EU 배터리 규정은 무엇을 공개해야 하는지는 정하지만, 그것을 어떻게 측정하고 증명할지는 정하지 않습니다. 이 연구는 배터리 성능에 관한 주장 하나하나를 식별된 배터리, 측정 조건, 검토 기록과 연결하는 성능 시험·검증 체계를 설계합니다.",
+      "hu": "Az uniós akkumulátorrendelet meghatározza, mit kell közzétenni, de azt nem, hogyan kell mérni vagy igazolni. Ez a munka olyan teljesítményvizsgálati és ellenőrzési keretet tervez, amely minden teljesítményre vonatkozó állítást egy azonosított akkumulátorhoz, a mérési körülményekhez és egy felülvizsgálati rekordhoz köt.",
+      "en": "The EU Battery Regulation specifies what must be disclosed, but not how it should be measured or evidenced. This work designs a performance testing and verification framework that links each performance claim to an identified battery, its measurement conditions, and a review record."
+    },
+    {
+      "key": "cap31",
+      "ko": "배터리 시편과 배터리 여권 적용 범위",
+      "hu": "Akkumulátor-próbatestek és az útlevél alkalmazhatósága",
+      "en": "Battery specimens and passport applicability"
+    },
+    {
+      "key": "src31",
+      "ko": "출처: 저자 작성(2026). Regulation (EU) 2023/1542 제1조 4항, 제3조, 제13조 6항, 제45조, 제77조 1항 기반의 개념도.",
+      "hu": "Forrás: Szerző (2026), a 2023/1542/EU rendelet 1. cikk (4), 3., 13. cikk (6), 45. és 77. cikk (1) bekezdése alapján. Fogalmi ábra.",
+      "en": "Source: Author (2026), based on Regulation (EU) 2023/1542, Articles 1(4), 3, 13(6), 45 and 77(1). Conceptual illustration."
+    },
+    {
+      "key": "r2h1",
+      "ko": "배터리 분류와 여권 적용 범위",
+      "hu": "Akkumulátorkategóriák és az útlevél hatálya",
+      "en": "Battery categories and the scope of the passport"
+    },
+    {
+      "key": "r2p2",
+      "ko": "2027년 2월 18일부터 규정 제77조 1항에 따라 시장에 출시되는 전기차 배터리, 경량 운송수단(LMT) 배터리, 2kWh를 초과하는 산업용 배터리에 여권이 적용됩니다. 2kWh 기준은 산업용 배터리에만 해당하며, 분류는 제3조의 정의와 의도된 용도를 따릅니다.",
+      "hu": "2027. február 18-tól a rendelet 77. cikk (1) bekezdése szerint az útlevél minden forgalomba hozott elektromos jármű-akkumulátorra, könnyű járművek (LMT) akkumulátorára és 2 kWh feletti ipari akkumulátorra vonatkozik. A 2 kWh-s küszöb csak az ipari akkumulátorokra érvényes; a besorolás a 3. cikk fogalommeghatározásait és a rendeltetésszerű felhasználást követi.",
+      "en": "From 18 February 2027, Article 77(1) of the Regulation applies the passport to each EV battery, each light means of transport (LMT) battery, and each industrial battery exceeding 2 kWh placed on the market. The 2 kWh threshold qualifies industrial batteries only; classification follows the Article 3 definitions and the intended application."
+    },
+    {
+      "key": "r2l1",
+      "ko": "<b>시편과 출시 제품의 구분</b> — 시험을 위해 차량에서 분리한 모듈이 곧바로 별도의 여권 대상 제품이 되지는 않습니다. 접수 기록에서 시편, 출시 제품, 각각의 식별자를 구분해야 합니다",
+      "hu": "<b>Próbatest és forgalomba hozott termék</b> — a vizsgálathoz járműből kiszerelt modul nem válik automatikusan külön útlevélköteles termékké. Az átvételi rekordnak meg kell különböztetnie a próbatestet, a forgalomba hozott terméket és azonosítóikat",
+      "en": "<b>Specimen versus marketed product</b> — a module removed from a vehicle for testing does not automatically become a separately marketed product requiring its own passport. The intake record should distinguish the specimen, the marketed product, and their identifiers"
+    },
+    {
+      "key": "r2l2",
+      "ko": "<b>용도 전환 시 재분류</b> — 전기차 배터리를 고정형 저장장치로 전환하면 분류와 성능·안전 요건이 달라질 수 있어, 전환 과정을 기록하고 결과 제품을 다시 평가해야 합니다",
+      "hu": "<b>Átsorolás rendeltetésváltáskor</b> — ha egy elektromos jármű-akkumulátort helyhez kötött tárolásra alakítanak át, megváltozhat a kategóriája és a teljesítményre, biztonságra vonatkozó követelmények, ezért az átalakítást dokumentálni, az új terméket pedig értékelni kell",
+      "en": "<b>Reclassification on repurposing</b> — repurposing an EV battery for stationary storage can change its category and its performance and safety requirements, so the transformation must be documented and the resulting product assessed"
+    },
+    {
+      "key": "r2l3",
+      "ko": "<b>QR과 여권의 차이</b> — 제13조 6항의 QR 정보 접근은 모든 배터리에 적용되지만 여권 적용 범위는 더 좁습니다. QR 스캔만으로 규제 대응이 끝났다고 볼 수 없습니다",
+      "hu": "<b>QR-kód és útlevél</b> — a 13. cikk (6) szerinti QR-alapú információhozzáférés minden akkumulátorra vonatkozik, az útlevél hatálya szűkebb. Egy sikeres QR-beolvasás önmagában nem igazolja a megfelelést",
+      "en": "<b>QR code versus passport</b> — Article 13(6) QR information access applies to all batteries, while passport coverage is narrower. A successful QR scan alone does not establish regulatory readiness"
+    },
+    {
+      "key": "r2h2",
+      "ko": "적용 일정",
+      "hu": "Alkalmazási határidők",
+      "en": "Application dates"
+    },
+    {
+      "key": "r2c1",
+      "ko": "날짜",
+      "hu": "Dátum",
+      "en": "Date"
+    },
+    {
+      "key": "r2c2",
+      "ko": "내용",
+      "hu": "Kötelezettség",
+      "en": "Obligation"
+    },
+    {
+      "key": "r2d1",
+      "ko": "규정 발효",
+      "hu": "A rendelet hatálybalépése",
+      "en": "Regulation enters into force"
+    },
+    {
+      "key": "r2d2",
+      "ko": "규정 일반 적용 (경과 규정 제외)",
+      "hu": "Általános alkalmazás (átmeneti rendelkezésekkel)",
+      "en": "General application (subject to transition provisions)"
+    },
+    {
+      "key": "r2d3",
+      "ko": "배터리 관리 시스템(BMS) 정보 요건 적용",
+      "hu": "Az akkumulátorkezelő rendszer (BMS) információs követelményei",
+      "en": "Battery management system (BMS) information requirements apply"
+    },
+    {
+      "key": "r2d4",
+      "ko": "대상 배터리 여권 의무 적용",
+      "hu": "Kötelező akkumulátor-útlevél a hatály alá tartozó akkumulátorokra",
+      "en": "Battery passport mandatory for covered batteries"
+    },
+    {
+      "key": "r2d5",
+      "ko": "공급망 실사 의무 적용 (Regulation (EU) 2025/1561로 2년 연기)",
+      "hu": "Ellátásilánc-átvilágítás (a 2025/1561/EU rendelet két évvel elhalasztotta)",
+      "en": "Supply-chain due diligence applies (postponed two years by Regulation (EU) 2025/1561)"
+    },
+    {
+      "key": "r2p3",
+      "ko": "탄소발자국과 재활용 원료 함량 요건은 별도의 방식으로 일정이 정해집니다. 정해진 날짜와 하위 법령 발효 후 경과 기간을 함께 따지므로, 요약 일정표의 날짜만으로 판단해서는 안 됩니다.",
+      "hu": "A szénlábnyomra és az újrahasznosított tartalomra vonatkozó követelmények eltérő ütemezést követnek: rögzített dátumokat kombinálnak a vonatkozó végrehajtási jogszabályok hatálybalépése utáni időszakokkal. Egy összefoglaló táblázat dátuma nem tekinthető a teljes feltételnek.",
+      "en": "Carbon-footprint and recycled-content requirements follow a different schedule, combining fixed dates with intervals after relevant secondary legislation enters into force. A date in a summary timetable should not be read as the whole condition."
+    },
+    {
+      "key": "r2h3",
+      "ko": "검증 구조",
+      "hu": "Ellenőrzési architektúra",
+      "en": "Verification architecture"
+    },
+    {
+      "key": "r2p4",
+      "ko": "같은 대상 식별자를 공유하는 세 종류의 기록을 분리해 관리합니다. 원본 기록을 공개하지 않고도, 승인된 결과가 그 근거와 연결된 상태를 유지할 수 있습니다.",
+      "hu": "Háromféle, közös objektumazonosítót használó rekordot külön kezelünk, így a jóváhagyott eredmény a mögöttes rekordok nyilvánossá tétele nélkül is kapcsolatban marad a bizonyítékaival.",
+      "en": "Three kinds of records share an object reference and are managed separately, so that an approved result stays linked to its evidence without the underlying records being made public."
+    },
+    {
+      "key": "r2l4",
+      "ko": "<b>시험 기록</b> — 측정값, 계측 장비 정보, 시료 이동·보관 이력",
+      "hu": "<b>Laboratóriumi rekord</b> — mért adatok, műszerinformációk és a minta őrzési eseményei",
+      "en": "<b>Laboratory record</b> — observations, instrument information, and custody events"
+    },
+    {
+      "key": "r2l5",
+      "ko": "<b>평가 기록</b> — 계산 과정, 불확도, 예외 사항, 판정 결론",
+      "hu": "<b>Értékelési rekord</b> — számítások, bizonytalanság, kivételek és következtetések",
+      "en": "<b>Assessment record</b> — calculations, uncertainty, exceptions, and conclusions"
+    },
+    {
+      "key": "r2l6",
+      "ko": "<b>교환 기록</b> — 승인된 값, 정의, 권한이 부여된 근거 참조",
+      "hu": "<b>Adatcsere-rekord</b> — jóváhagyott értékek, definíciók és engedélyezett bizonyíték-hivatkozások",
+      "en": "<b>Exchange record</b> — approved values, definitions, and authorized evidence references"
+    },
+    {
+      "key": "r2h4",
+      "ko": "사업자 책임과 KHBCC의 역할",
+      "hu": "A gazdasági szereplő felelőssége és a KHBCC szerepe",
+      "en": "Operator responsibility and the role of KHBCC"
+    },
+    {
+      "key": "r2p5",
+      "ko": "제77조 4항에 따라 여권 정보의 정확성과 최신성은 배터리를 시장에 출시하는 경제 사업자가 책임집니다. 재사용·용도 전환·재제조를 거친 배터리는 제77조 7항에 따라 원래 여권과 연결된 새 여권이 필요합니다.",
+      "hu": "A 77. cikk (4) bekezdése szerint az akkumulátort forgalomba hozó gazdasági szereplő felel az útlevéladatok pontosságáért és naprakészségéért. A 77. cikk (7) bekezdése szerint az újrahasználatra előkészített, átalakított vagy újragyártott akkumulátorhoz az eredetihez kapcsolódó új útlevél szükséges.",
+      "en": "Under Article 77(4), the economic operator placing a battery on the market is responsible for accurate and current passport information. Under Article 77(7), a battery that has been prepared for re-use, repurposed, or remanufactured requires a new passport linked to the original."
+    },
+    {
+      "key": "r2call",
+      "ko": "<b>KHBCC는 배터리 여권 발급기관이 아닙니다.</b> 연구에 참여한다고 해서 제조사의 책임이나 인증기관의 권한이 생기지 않습니다. KHBCC는 근거 자료의 생산과 교환을 지원하는 시험·검증 데이터 허브로서, 데이터 품질과 방법론, 실험실 간 비교라는 층위에 집중합니다.",
+      "hu": "<b>A KHBCC nem akkumulátor-útlevél kibocsátó.</b> A kutatásban való részvétel nem ruház rá gyártói felelősséget vagy bejelentett szervezeti jogkört. A KHBCC vizsgálati és ellenőrzési adatközpontként a bizonyítékok előállítását és cseréjét támogatja, az adatminőségre, a módszertanra és a laboratóriumok közötti összehasonlításra összpontosítva.",
+      "en": "<b>KHBCC is not a battery passport issuer.</b> Research participation confers neither a manufacturer's responsibility nor a notified body's authority. KHBCC supports the production and exchange of evidence as a testing and verification data hub, focusing on data quality, methodology, and inter-laboratory comparison."
+    },
+    {
+      "key": "refsT",
+      "ko": "참고문헌",
+      "hu": "Hivatkozások",
+      "en": "References"
+    },
+    {
+      "key": "refBase",
+      "ko": "2025/26 EIPP 최종보고서 제3장. 한국개발연구원·연세대학교 (2026).",
+      "hu": "2025/26 EIPP zárójelentés, 3. fejezet. Korea Development Institute és Yonsei Egyetem (2026).",
+      "en": "2025/26 EIPP final report, Chapter 3. Korea Development Institute and Yonsei University (2026)."
+    },
+    {
+      "key": "r3t",
+      "ko": "AI 기반 배터리 데이터 분석·수명 예측",
+      "hu": "MI-alapú akkumulátoradat-elemzés és élettartam-előrejelzés",
+      "en": "AI-based battery data analytics and lifetime prediction"
+    },
+    {
+      "key": "r3w",
+      "ko": "공주대학교 / HUBA · BME",
+      "hu": "Kongju Nemzeti Egyetem / HUBA · BME",
+      "en": "Kongju National University / HUBA · BME"
+    },
+    {
+      "key": "r3p1",
+      "ko": "실험실 시험은 정확하지만 느리고 비쌉니다. 현장에 있는 모든 배터리에 적용할 수 없습니다. 이 영역은 배터리 관리 시스템(BMS)이 평소에 수집하는 전압·전류·온도 데이터만으로 배터리 상태를 추정하는 방법을 연구합니다.",
+      "hu": "A laboratóriumi vizsgálat pontos, de lassú és drága, és nem alkalmazható minden üzemelő akkumulátorra. Ez a munkaterület azt kutatja, hogyan lehet az akkumulátor állapotát megbecsülni azokból a feszültség-, áram- és hőmérsékletadatokból, amelyeket az akkumulátorkezelő rendszer amúgy is gyűjt.",
+      "en": "Laboratory testing is accurate but slow and expensive, and cannot be applied to every battery in the field. This area of work studies how to estimate battery condition from the voltage, current, and temperature data that a battery management system already collects during normal operation."
+    },
+    {
+      "key": "r3p2",
+      "ko": "리튬이온 배터리는 여러 열화 기구가 얽혀 진행됩니다. 고체전해질계면(SEI) 성장은 가용 리튬을 소모하고 내부저항을 높이며, 활물질 손실은 용량을 줄이고, 저온이나 급속 충전에서는 리튬 석출이 일어나 용량 감소와 안전 위험을 동시에 키웁니다. 밖에서 관측되는 신호는 이 숨은 과정들의 합이므로, 상태 추정은 본질적으로 역문제입니다. 데이터 기반 방법이 유효한 이유가 여기 있습니다.",
+      "hu": "A lítiumion-cella több, egymáshoz kapcsolódó mechanizmus mentén degradálódik. A szilárd elektrolit-interfázis növekedése elfogyasztja a ciklizálható lítiumot és növeli a belső ellenállást; az aktív anyag vesztesége csökkenti a kapacitást; hidegben vagy gyorstöltésnél pedig a lítiumkiválás egyszerre gyorsítja a kapacitásvesztést és növeli a biztonsági kockázatot. A kívülről mérhető jelek e rejtett folyamatok együttes hatását tükrözik, ezért az állapotbecslés inverz probléma — és ezért természetes célpontja az adatvezérelt módszereknek.",
+      "en": "A lithium-ion cell degrades through several coupled mechanisms. Growth of the solid-electrolyte interphase consumes cyclable lithium and raises internal resistance; loss of active material reduces capacity; and under cold or fast-charging conditions lithium plating accelerates both capacity fade and safety risk. The externally observable signals reflect the combined effect of these hidden processes, which makes state estimation an inverse problem — and a natural target for data-driven methods."
+    },
+    {
+      "key": "cap43",
+      "ko": "배터리 여권을 공통 데이터 모델로 삼는 AI 기반 배터리 데이터 분석 체계",
+      "hu": "Javasolt MI-alapú akkumulátoradat-elemzési keret, amelynek közös adatmodellje az akkumulátor-útlevél",
+      "en": "Proposed AI-based battery data analytics framework, anchored to the battery passport as a common data model"
+    },
+    {
+      "key": "src43",
+      "ko": "출처: 2025/26 EIPP 최종보고서 (2026)",
+      "hu": "Forrás: 2025/26 EIPP zárójelentés (2026)",
+      "en": "Source: 2025/26 EIPP final report (2026)"
+    },
+    {
+      "key": "r3h1",
+      "ko": "건전성(SOH) 추정",
+      "hu": "Állapotbecslés (SOH)",
+      "en": "State of health estimation"
+    },
+    {
+      "key": "r3c1",
+      "ko": "계열",
+      "hu": "Család",
+      "en": "Family"
+    },
+    {
+      "key": "r3c2",
+      "ko": "원리",
+      "hu": "Elv",
+      "en": "Principle"
+    },
+    {
+      "key": "r3c3",
+      "ko": "한계",
+      "hu": "Korlát",
+      "en": "Limitation"
+    },
+    {
+      "key": "r3m1",
+      "ko": "직접 측정",
+      "hu": "Közvetlen mérés",
+      "en": "Direct measurement"
+    },
+    {
+      "key": "r3m1p",
+      "ko": "쿨롱 카운팅, 완전 충방전, 내부저항 측정",
+      "hu": "Coulomb-számlálás, teljes töltés-kisütés, belsőellenállás-mérés",
+      "en": "Coulomb counting, full charge/discharge, internal resistance measurement"
+    },
+    {
+      "key": "r3m1l",
+      "ko": "시간이 오래 걸리고 현장 적용이 어려움",
+      "hu": "Időigényes és üzemi környezetben nehezen alkalmazható",
+      "en": "Time-consuming and impractical in the field"
+    },
+    {
+      "key": "r3m2",
+      "ko": "모델 기반",
+      "hu": "Modellalapú",
+      "en": "Model-based"
+    },
+    {
+      "key": "r3m2p",
+      "ko": "등가회로·전기화학 모델의 파라미터 추정",
+      "hu": "Paraméterbecslés helyettesítő kapcsolási vagy elektrokémiai modelleken",
+      "en": "Parameter identification on equivalent-circuit or electrochemical models"
+    },
+    {
+      "key": "r3m2l",
+      "ko": "파라미터 변동과 운전 조건에 민감함",
+      "hu": "Érzékeny a paramétereltérésre és az üzemi körülményekre",
+      "en": "Sensitive to parameter drift and operating conditions"
+    },
+    {
+      "key": "r3m3",
+      "ko": "데이터 기반",
+      "hu": "Adatvezérelt",
+      "en": "Data-driven"
+    },
+    {
+      "key": "r3m3p",
+      "ko": "기계학습이 신호와 상태의 관계를 학습",
+      "hu": "A gépi tanulás megtanulja a jelek és az állapot kapcsolatát",
+      "en": "Machine learning learns the relationship between signals and condition"
+    },
+    {
+      "key": "r3m3l",
+      "ko": "데이터와 라벨이 필요하고 일반화가 과제",
+      "hu": "Adatot és címkéket igényel; az általánosítás kihívás",
+      "en": "Requires data and labels; generalisation is the challenge"
+    },
+    {
+      "key": "r3p3",
+      "ko": "데이터가 적고 해석 가능성이 중요하면 가우시안 과정 회귀나 서포트벡터 회귀 같은 고전적 기법이, 현장 데이터가 충분하면 합성곱·순환·트랜스포머 계열의 심층 모델이 유리합니다. 방법 선택이 데이터 가용성을 따라야 한다는 것이 실무적 결론입니다.",
+      "hu": "Ahol kevés az adat és fontos az értelmezhetőség, ott a klasszikus módszerek — Gauss-folyamat-regresszió, szupportvektor-regresszió — maradnak vonzóak; ahol elég üzemi adat gyűlik össze, ott a mély architektúrák teljesítenek jobban. A gyakorlati következtetés: a módszerválasztás kövesse az adat rendelkezésre állását.",
+      "en": "Where data is scarce and interpretability matters, classical methods such as Gaussian process regression and support-vector regression remain attractive; where sufficient field data exists, deep architectures — convolutional, recurrent, and transformer — perform better. The practical conclusion is that method selection should follow data availability."
+    },
+    {
+      "key": "r3h2",
+      "ko": "잔존 수명(RUL) 예측",
+      "hu": "Hátralévő élettartam előrejelzése",
+      "en": "Remaining useful life prediction"
+    },
+    {
+      "key": "r3p4",
+      "ko": "잔존 수명은 수명 종료 기준(자동차 1차 사용은 통상 정격 용량의 80%)에 도달하기까지 남은 시간이나 사이클 수입니다. 두 가지가 실무적으로 중요합니다.",
+      "hu": "A hátralévő hasznos élettartam az életciklus végét jelentő küszöbig — autóipari első felhasználásnál általában a névleges kapacitás 80%-a — hátralévő idő vagy ciklusszám. Két kérdés számít a gyakorlatban.",
+      "en": "Remaining useful life is the time or number of cycles left before an end-of-life threshold, conventionally 80% of nominal capacity for first-life automotive use. Two issues matter in practice."
+    },
+    {
+      "key": "cap45",
+      "ko": "1차·2차 수명 종료 기준, 잔존 수명, 2차 사용 구간을 보여주는 배터리 건전성 궤적 예시",
+      "hu": "Szemléltető akkumulátorállapot-görbe az első és második életciklus végi küszöbökkel, a hátralévő élettartammal és a második életciklus ablakával",
+      "en": "Illustrative battery health trajectory showing first- and second-life end-of-life thresholds, remaining useful life, and the second-life window"
+    },
+    {
+      "key": "src45",
+      "ko": "출처: 2025/26 EIPP 최종보고서 (2026)",
+      "hu": "Forrás: 2025/26 EIPP zárójelentés (2026)",
+      "en": "Source: 2025/26 EIPP final report (2026)"
+    },
+    {
+      "key": "r3l1",
+      "ko": "<b>조기 예측</b> — 초기 몇 사이클만으로 수명 종료를 예측할 수 있으면 선별과 분류를 일찍 결정할 수 있습니다. 다만 초기 신호는 최종 고장과 상관이 약해 어렵습니다",
+      "hu": "<b>Korai előrejelzés</b> — ha az életciklus vége már az első ciklusokból előre jelezhető, a válogatási döntések korán meghozhatók, de nehéz, mert a korai jelek gyengén korrelálnak a későbbi meghibásodással",
+      "en": "<b>Early prediction</b> — forecasting end-of-life from only the first cycles allows screening and binning decisions to be made early, but is difficult because early-life signals correlate weakly with eventual failure"
+    },
+    {
+      "key": "r3l2",
+      "ko": "<b>불확실성 정량화</b> — 신뢰구간 없는 점추정은 정비나 재사용 판단에 쓰기 어렵습니다. 보정된 불확실성을 함께 내놓는 방법이 선호됩니다",
+      "hu": "<b>Bizonytalanság kvantifikálása</b> — a konfidenciahatárok nélküli pontbecslés alig használható karbantartási vagy újrahasználási döntésekhez, ezért a kalibrált bizonytalanságot is közlő módszerek előnyösebbek",
+      "en": "<b>Uncertainty quantification</b> — a point estimate without confidence bounds is of limited use for maintenance or reuse decisions, so methods reporting calibrated uncertainty are preferred"
+    },
+    {
+      "key": "r3l3",
+      "ko": "<b>용량 회복 현상</b> — 휴지 후 용량이 일시적으로 회복되어 열화 곡선이 단조롭지 않게 나타납니다. 추세만 보는 예측기는 이를 잘 다루지 못해 분해 기반·혼합 모델이 쓰입니다",
+      "hu": "<b>Kapacitás-visszanyerés</b> — pihentetés után a kapacitás részben visszatér, így a degradációs görbe nem monoton; a pusztán trendalapú előrejelzők ezt rosszul kezelik, ezért terjedtek el a felbontásalapú és hibrid modellek",
+      "en": "<b>Capacity regeneration</b> — capacity partially recovers after rest, producing non-monotonic degradation curves that purely trend-based predictors handle poorly, which has motivated decomposition-based and hybrid models"
+    },
+    {
+      "key": "r3h3",
+      "ko": "고장 탐지와 이상 분석",
+      "hu": "Hibadetektálás és anomáliaelemzés",
+      "en": "Fault detection and anomaly analysis"
+    },
+    {
+      "key": "r3p5",
+      "ko": "내부 단락, 열 남용, 접속 불량, 셀 간 불균형이 방치되면 열폭주로 이어질 수 있습니다. 셀 전압처럼 흔히 확보되는 신호만으로 라벨 없이 작동하는 비지도 이상 탐지 기법이 조기 경보에 쓰입니다.",
+      "hu": "Észrevétlen belső rövidzárlat, hőterhelés, csatlakozási hiba vagy a cellák egyre nagyobb eltérése hőmegfutáshoz vezethet. A gyakran elérhető jeleken — például cellafeszültségen — címkék nélkül működő felügyelet nélküli anomáliadetektálás ad korai figyelmeztetést.",
+      "en": "Undetected internal short circuits, thermal abuse, connection faults, or progressive cell inconsistency can lead to thermal runaway. Unsupervised anomaly detection operating on commonly available signals such as cell voltage, without labels, is used to provide early warning."
+    },
+    {
+      "key": "r3h4",
+      "ko": "방법론 분류",
+      "hu": "Módszertani osztályozás",
+      "en": "Methodological taxonomy"
+    },
+    {
+      "key": "r3d1",
+      "ko": "접근",
+      "hu": "Megközelítés",
+      "en": "Approach"
+    },
+    {
+      "key": "r3d2",
+      "ko": "핵심 개념",
+      "hu": "Alapgondolat",
+      "en": "Core idea"
+    },
+    {
+      "key": "r3d3",
+      "ko": "장단점",
+      "hu": "Kompromisszum",
+      "en": "Trade-off"
+    },
+    {
+      "key": "r3x1",
+      "ko": "잔차 기반",
+      "hu": "Reziduális",
+      "en": "Residual-driven"
+    },
+    {
+      "key": "r3x1p",
+      "ko": "신호를 재구성해 오차로 이상을 판별",
+      "hu": "Jelek rekonstrukciója; a hiba jelzi az anomáliát",
+      "en": "Reconstruct signals; residual error flags anomalies"
+    },
+    {
+      "key": "r3x1l",
+      "ko": "적용이 쉬우나 해석이 어려움",
+      "hu": "Könnyen bevezethető; kevéssé értelmezhető",
+      "en": "Easy to deploy; low interpretability"
+    },
+    {
+      "key": "r3x2",
+      "ko": "특징 기반",
+      "hu": "Jellemzőalapú",
+      "en": "Feature-driven"
+    },
+    {
+      "key": "r3x2p",
+      "ko": "건전성 지표를 추출한 뒤 모델링",
+      "hu": "Állapotjelzők kinyerése, majd modellezés",
+      "en": "Extract health indicators, then model"
+    },
+    {
+      "key": "r3x2l",
+      "ko": "해석 가능하나 특징 설계에 좌우됨",
+      "hu": "Értelmezhető; a jellemzőtervezésen múlik",
+      "en": "Interpretable; depends on feature design"
+    },
+    {
+      "key": "r3x3",
+      "ko": "분포 기반",
+      "hu": "Eloszlásalapú",
+      "en": "Distribution-driven"
+    },
+    {
+      "key": "r3x3p",
+      "ko": "군집·분포 분석으로 정상과 이상을 분리",
+      "hu": "Klaszterezés és eloszláselemzés választja el a normálisat a rendellenestől",
+      "en": "Cluster and distribution analysis separates normal from abnormal"
+    },
+    {
+      "key": "r3x3l",
+      "ko": "라벨이 불필요하나 가정에 민감함",
+      "hu": "Címkementes; érzékeny a feltételezésekre",
+      "en": "Label-free; sensitive to assumptions"
+    },
+    {
+      "key": "r3x4",
+      "ko": "물리·지식 기반",
+      "hu": "Fizikaalapú",
+      "en": "Physics-driven"
+    },
+    {
+      "key": "r3x4p",
+      "ko": "물리 모델과 학습을 결합",
+      "hu": "Fizikai vagy szakterületi modellek és tanulás összekapcsolása",
+      "en": "Integrate physical or domain models with learning"
+    },
+    {
+      "key": "r3x4l",
+      "ko": "데이터 효율이 높으나 모델 의존적",
+      "hu": "Adathatékony; modellfüggő",
+      "en": "Data-efficient; model-dependent"
+    },
+    {
+      "key": "r3h5",
+      "ko": "전이학습과 도메인 적응",
+      "hu": "Transzfertanulás és doménadaptáció",
+      "en": "Transfer learning and domain adaptation"
+    },
+    {
+      "key": "r3p6",
+      "ko": "실험실 데이터는 깨끗하지만 적고, 현장 데이터는 많지만 지저분합니다. 이 간극을 넘기 위해 데이터가 풍부한 영역에서 학습한 지식을 부족한 영역으로 옮기는 전이학습을 씁니다. 공개 데이터셋으로 후보 방법을 먼저 평가해두면, 현지 데이터를 확보했을 때 전체를 새로 만들지 않고 적응 단계만 수행하면 됩니다.",
+      "hu": "A laboratóriumi adat tiszta, de kevés; az üzemi adat bőséges, de zajos. A transzfertanulás adatgazdag területről visz át tudást adatszegény területre, és így hídalja át ezt a rést. Ha a módszereket előbb nyilvános adathalmazokon értékeljük, akkor a helyi adat megérkezésekor már csak az adaptációs lépés marad hátra, nem a teljes modellezés.",
+      "en": "Laboratory data is clean but scarce; field data is abundant but noisy. Transfer learning carries knowledge from a data-rich domain to a data-scarce one to bridge that gap. Evaluating candidate methods on public datasets first means that when local data becomes available, only the adaptation step remains rather than the entire modelling effort."
+    },
+    {
+      "key": "r4t",
+      "ko": "환경 영향 평가와 순환경제",
+      "hu": "Környezeti hatásvizsgálat és körforgásos gazdaság",
+      "en": "Environmental impact assessment and circular economy"
+    },
+    {
+      "key": "r4w",
+      "ko": "이화여자대학교 / HUBA · ELTE · HUN-REN",
+      "hu": "Ewha Womans Egyetem / HUBA · ELTE · HUN-REN",
+      "en": "Ewha Womans University / HUBA · ELTE · HUN-REN"
+    },
+    {
+      "key": "r4p1",
+      "ko": "배터리 제조와 재활용 과정에서 나오는 오염물질을 측정하고 줄이는 연구입니다. 환경보건안전연구단(EPHSU)이 두 개 세부 조직과 하나의 지원 그룹으로 구성됩니다.",
+      "hu": "Ez a munka az akkumulátorgyártásból és -újrahasznosításból származó szennyezőanyagokat méri és csökkenti. A környezetvédelmi, közegészségügyi és biztonsági egység két kutatási alegységből és egy támogató csoportból áll.",
+      "en": "This work measures and reduces the pollutants arising from battery manufacturing and recycling. The Environmental, Public Health and Safety Unit comprises two research sub-units and one support group."
+    },
+    {
+      "key": "cap51",
+      "ko": "배터리 생애주기 전반의 환경 부하 지점",
+      "hu": "Környezeti terhelési pontok az akkumulátor életciklusa során",
+      "en": "Environmental pressure points across the battery life cycle"
+    },
+    {
+      "key": "src51",
+      "ko": "출처: 2025/26 EIPP 최종보고서 (2026)",
+      "hu": "Forrás: 2025/26 EIPP zárójelentés (2026)",
+      "en": "Source: 2025/26 EIPP final report (2026)"
+    },
+    {
+      "key": "r4h1",
+      "ko": "모니터링·평가 조직",
+      "hu": "Monitoring és értékelési alegység",
+      "en": "Monitoring and assessment sub-unit"
+    },
+    {
+      "key": "r4l1",
+      "ko": "<b>모니터링·분석 그룹</b> — 배터리 산업에서 중요한 오염물질(NMP, 불화수소, 중금속, 과불화화합물)을 규정하고 우선순위를 매깁니다. 현장 측정과 정밀 화학 분석, 시간·위치 기반 오염 모델링을 수행합니다",
+      "hu": "<b>Monitoring és analízis csoport</b> — azonosítja és rangsorolja az akkumulátoripar szempontjából legkritikusabb szennyezőket, köztük az NMP-t, a hidrogén-fluoridot, a nehézfémeket és a PFAS-vegyületeket. Helyszíni mérést, laboratóriumi pontosságú kémiai analízist és idő- és helyalapú szennyezésmodellezést végez",
+      "en": "<b>Monitoring and analytics group</b> — identifies and prioritises the pollutants most critical to the battery industry, including NMP, hydrogen fluoride, heavy metals, and PFAS. Carries out field monitoring, laboratory-grade chemical analysis, and time- and location-based pollution modelling"
+    },
+    {
+      "key": "r4l2",
+      "ko": "<b>전과정평가·위해성 그룹</b> — 전과정평가(LCA)로 환경 영향을 정량화하고, 독성 모델링과 노출 시나리오 분석으로 화학적·인체 위해성을 평가합니다",
+      "hu": "<b>LCA és kockázatértékelő csoport</b> — életciklus-értékeléssel kvantifikálja a környezeti hatást, és toxikológiai modellezéssel, valamint expozíciós forgatókönyvekkel értékeli a kémiai és egészségügyi kockázatot",
+      "en": "<b>LCA and risk assessment group</b> — quantifies environmental impact through lifecycle assessment, and assesses chemical and human health risk through toxicological modelling and exposure scenario analysis"
+    },
+    {
+      "key": "r4h2",
+      "ko": "지속가능 기술 개발 조직",
+      "hu": "Fenntartható technológiafejlesztési alegység",
+      "en": "Sustainable technology development sub-unit"
+    },
+    {
+      "key": "r4l3",
+      "ko": "<b>오염물질 제어 그룹</b> — 휘발성유기화합물 저감, 불화수소 세정, 고염도 폐수 처리 기술을 개발합니다",
+      "hu": "<b>Szennyezőanyag-szabályozó csoport</b> — VOC-csökkentő, hidrogén-fluorid-mosó és magas sótartalmú szennyvíz kezelésére szolgáló technológiákat fejleszt",
+      "en": "<b>Pollutant control group</b> — develops VOC abatement, hydrogen fluoride scrubbing, and high-salinity wastewater treatment technologies"
+    },
+    {
+      "key": "r4l4",
+      "ko": "<b>재활용 기술 그룹</b> — 저화학 습식제련, 양극재 직접 재활용, 차세대 배터리 소재 회수 전략을 연구합니다",
+      "hu": "<b>Újrahasznosítási technológiai csoport</b> — alacsony vegyszerigényű hidrometallurgiát, közvetlen katód-újrahasznosítást és a következő generációs akkumulátorok anyagvisszanyerési stratégiáit kutatja",
+      "en": "<b>Recycling technology group</b> — researches low-chemical hydrometallurgy, direct cathode recycling, and material recovery strategies for next-generation batteries"
+    },
+    {
+      "key": "r4call",
+      "ko": "<b>헝가리 자연과학연구센터와의 공동 과제를 준비하고 있습니다.</b> 친환경 전기화학적 침출과 탄소 소재 회수를 결합한 하이브리드 재활용 플랫폼입니다. 산화환원 보조 용해와 친환경 용매로 블랙매스에서 리튬·코발트·니켈을 선택적으로 추출하면서 2차 오염을 줄이고, 폐음극에서 흑연을 함께 회수해 전극 소재의 순환 고리를 닫는 것이 목표입니다.",
+      "hu": "<b>Közös projekt készül a Természettudományi Kutatóközponttal.</b> A téma egy hibrid újrahasznosítási platform, amely környezetbarát elektrokémiai kioldást köt össze szénalapú anyagok visszanyerésével. Redoxi-támogatott olddáás és zöld oldószerek szelektíven vonnák ki a lítiumot, kobaltot és nikkelt a fekete masszából, minimális másodlagos szennyezéssel, miközben a használt anódokból a grafit is visszanyerésre kerülne, bezárva az elektródaanyagok körét.",
+      "en": "<b>A joint project with the Research Centre for Natural Sciences in Hungary is in preparation.</b> It concerns a hybrid recycling platform combining eco-friendly electrochemical leaching with carbon material recovery. Redox-assisted dissolution and green solvents would selectively extract lithium, cobalt, and nickel from black mass while minimising secondary pollution, with graphite recovered in parallel from spent anodes to close the loop on electrode materials."
+    },
+    {
+      "key": "r4h3",
+      "ko": "규제·소통 지원 그룹",
+      "hu": "Szabályozási és kommunikációs támogató csoport",
+      "en": "Regulatory and communication support group"
+    },
+    {
+      "key": "r4p2",
+      "ko": "EU 배터리 규정과 REACH, 인허가 요건을 해석해 규제 준수를 지원합니다. LCA 보고서와 탄소발자국 공시 자료를 작성하고 배터리 여권에 필요한 데이터를 제공하며, 정부·지역사회·협력기관과의 소통을 담당합니다.",
+      "hu": "Értelmezi az uniós akkumulátorrendeletet, a REACH-et és az engedélyezési követelményeket a megfelelés támogatásához. LCA-jelentéseket és szénlábnyom-közléseket készít, biztosítja az akkumulátor-útlevélhez szükséges adatokat, és koordinálja a kapcsolattartást kormányzati szervekkel, helyi közösségekkel és partnerszervezetekkel.",
+      "en": "Interprets the EU Battery Regulation, REACH, and permitting requirements to support compliance. Prepares LCA reports and carbon footprint disclosures, provides the data required for the battery passport, and manages coordination with government agencies, local communities, and partner organisations."
+    }
+  ]
+}

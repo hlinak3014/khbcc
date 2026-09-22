@@ -73,22 +73,58 @@ var L = {
         place:'장소', placeHint:'예 - 부다페스트 · BME (비워도 됩니다)',
         image:'사진', imageHint:'사진을 끌어다 놓거나 눌러서 올리세요. 없으면 비워둡니다.',
         link:'관련 링크', linkHint:'기사나 보도자료 주소가 있으면 넣으세요. https:// 로 시작해야 합니다.',
-        gKo:'한국어', gHu:'헝가리어', gEn:'영어', title:'제목', body:'내용' },
+        gKo:'한국어', gHu:'헝가리어', gEn:'영어', title:'제목', body:'내용',
+        pages:'사이트 문구', pagesDesc:'각 페이지의 본문입니다. 한 문구를 고칠 때 세 언어를 함께 확인하세요.', line:'문구', key:'식별자 (수정 금지)' },
   hu: { coll:'Tevékenységek', file:'Tevékenységek listája',
         desc:'Új bejegyzés hozzáadása vagy meglévő szerkesztése. Mentés után 1–2 perccel jelenik meg az oldalon.',
         item:'Bejegyzés', date:'Dátum', dateHint:'Ez határozza meg az évet és a sorrendet.',
         place:'Helyszín', placeHint:'Pl. Budapest · BME (üresen hagyható)',
         image:'Fénykép', imageHint:'Húzza ide a képet, vagy kattintson a feltöltéshez. Üresen is hagyható.',
         link:'Hivatkozás', linkHint:'Ha van cikk vagy sajtóközlemény, adja meg. https:// kezdettel.',
-        gKo:'Koreai', gHu:'Magyar', gEn:'Angol', title:'Cím', body:'Szöveg' },
+        gKo:'Koreai', gHu:'Magyar', gEn:'Angol', title:'Cím', body:'Szöveg',
+        pages:'Oldalszövegek', pagesDesc:'Az egyes oldalak szövegei. Egy szöveg módosításakor mindhárom nyelvet ellenőrizze.', line:'Szöveg', key:'Azonosító (ne módosítsa)' },
   en: { coll:'Activities', file:'Activity list',
         desc:'Add a new entry or edit an existing one. Changes appear on the site 1–2 minutes after saving.',
         item:'Entry', date:'Date', dateHint:'This determines the year grouping and the order.',
         place:'Place', placeHint:'e.g. Budapest · BME (may be left blank)',
         image:'Photo', imageHint:'Drag a photo here or click to upload. May be left blank.',
         link:'Link', linkHint:'Add a news article or press release URL if there is one. Must start with https://.',
-        gKo:'Korean', gHu:'Hungarian', gEn:'English', title:'Title', body:'Body' }
+        gKo:'Korean', gHu:'Hungarian', gEn:'English', title:'Title', body:'Body',
+        pages:'Site text', pagesDesc:'The text of each page. When you edit a line, check all three languages together.', line:'Line', key:'Key (do not edit)' }
 };
+
+
+var CONTENT_FILES = [
+  ['common',  {ko:'공통 (메뉴·하단)', hu:'Közös (menü, lábléc)', en:'Common (menu, footer)'}],
+  ['index',   {ko:'메인 페이지',       hu:'Főoldal',              en:'Home page'}],
+  ['research',{ko:'연구 내용',         hu:'Kutatás',              en:'Research'}],
+  ['people',  {ko:'연구진',            hu:'Kutatócsoport',        en:'Research team'}],
+  ['news',    {ko:'활동 기록',         hu:'Tevékenységek',        en:'Activities'}],
+  ['apply',   {ko:'기업 등록',         hu:'Cégregisztráció',      en:'Firm registration'}],
+  ['reports', {ko:'보고서',            hu:'Jelentések',           en:'Reports'}]
+];
+function buildPageCollection(t, lang){
+  return {
+    name:'pages', label:t.pages, description:t.pagesDesc,
+    editor:{ preview:false },
+    files: CONTENT_FILES.map(function(f){
+      return {
+        name:f[0], label:f[1][lang], file:'content/'+f[0]+'.json',
+        fields:[
+          { name:'title', label:t.title, widget:'hidden' },
+          { name:'items', label:t.line, label_singular:t.line, widget:'list', collapsed:true,
+            summary:'{{fields.' + lang + '}}',
+            fields:[
+              { name:'key', label:t.key, widget:'hidden' },
+              { name:'ko', label:t.gKo, widget:'text', required:false },
+              { name:'hu', label:t.gHu, widget:'text', required:false },
+              { name:'en', label:t.gEn, widget:'text', required:false }
+            ] }
+        ]
+      };
+    })
+  };
+}
 
 function buildCollections(t, lang){
   return [{
@@ -160,15 +196,22 @@ function boot(repoFiles){
       media_folder: 'assets/news',
       public_folder: 'assets/news',
       load_config_file: false,
-      collections: buildCollections(L[lang], lang)
+      collections: [buildPageCollection(L[lang], lang)].concat(buildCollections(L[lang], lang))
     }
   });
 }
 
-fetch('../news.json?v=' + Date.now())
-  .then(function(r){ return r.ok ? r.text() : '{"items":[]}'; })
-  .then(function(txt){ boot({ 'news.json': { content: txt } }); })
-  .catch(function(){ boot({}); });
+(function(){
+  var names = CONTENT_FILES.map(function(f){ return f[0]; });
+  function get(u){ return fetch(u + '?v=' + Date.now()).then(function(r){ return r.ok ? r.text() : null; }).catch(function(){ return null; }); }
+  Promise.all([get('../news.json')].concat(names.map(function(n){ return get('../content/' + n + '.json'); })))
+    .then(function(res){
+      var files = { 'news.json': { content: res[0] || '{"items":[]}' }, 'content': {} };
+      names.forEach(function(n, i){ if (res[i+1]) files.content[n + '.json'] = { content: res[i+1] }; });
+      boot(files);
+    })
+    .catch(function(){ boot({}); });
+})();
 </script>
 </body>
 </html>

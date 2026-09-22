@@ -1,0 +1,95 @@
+{
+  "title": "공통 (메뉴·하단)",
+  "items": [
+    {
+      "key": "nav1",
+      "ko": "센터 소개",
+      "hu": "A központról",
+      "en": "About"
+    },
+    {
+      "key": "sub1a",
+      "ko": "설립 배경",
+      "hu": "Háttér",
+      "en": "Background"
+    },
+    {
+      "key": "sub1c",
+      "ko": "운영 체계",
+      "hu": "Szervezet",
+      "en": "Organization"
+    },
+    {
+      "key": "sub1d",
+      "ko": "참여 기관",
+      "hu": "Partnerek",
+      "en": "Partners"
+    },
+    {
+      "key": "nav2",
+      "ko": "연구",
+      "hu": "Kutatási egységek",
+      "en": "Research units"
+    },
+    {
+      "key": "sub2a",
+      "ko": "5개 연구소",
+      "hu": "Öt egység",
+      "en": "Five units"
+    },
+    {
+      "key": "sub2b",
+      "ko": "연구 내용",
+      "hu": "Kutatás",
+      "en": "Research"
+    },
+    {
+      "key": "sub2c",
+      "ko": "연구진",
+      "hu": "Kutatócsoport",
+      "en": "Research team"
+    },
+    {
+      "key": "sub2d",
+      "ko": "보고서",
+      "hu": "Jelentések",
+      "en": "Reports"
+    },
+    {
+      "key": "nav3",
+      "ko": "기업 지원",
+      "hu": "Cégpárosítás",
+      "en": "Firm matching"
+    },
+    {
+      "key": "sub3a",
+      "ko": "매칭 절차",
+      "hu": "Párosítási folyamat",
+      "en": "Matching process"
+    },
+    {
+      "key": "sub3b",
+      "ko": "기업 등록",
+      "hu": "Regisztráció",
+      "en": "Register"
+    },
+    {
+      "key": "nav6",
+      "ko": "활동 기록",
+      "hu": "Tevékenységek",
+      "en": "Activities"
+    },
+    {
+      "key": "nav7",
+      "ko": "문의",
+      "hu": "Kapcsolat",
+      "en": "Contact"
+    },
+    {
+      "key": "f1",
+      "ko": "KHBCC — 한국–헝가리 배터리 협력센터",
+      "hu": "KHBCC — Koreai–Magyar Akkumulátoripari Együttműködési Központ",
+      "en": "KHBCC — Korea–Hungary Battery Cooperation Center"
+    }
+  ]
+}

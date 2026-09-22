@@ -392,7 +392,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
 footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
 </style>
 </head>
-<body>
+<body data-page="index">
 
 <header>
   <div class="bar">
@@ -474,29 +474,6 @@ footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
   </div>
 </div>
 
-
-<!-- SPOTLIGHT -->
-<section id="spot" class="spot">
-  <div class="wrap spot-in">
-    <div class="spot-txt">
-      <span class="eyebrow" data-i18n="acEyebrow">최근 활동</span>
-      <h2 data-i18n="acTitle">센터는 이미 움직이고 있습니다</h2>
-      <p data-i18n="acBody">2024년부터 이어온 회의와 협정, 행사 기록입니다.</p>
-      <a class="tm-more" href="news.html" data-i18n="acMore">활동 기록 전체 보기 &rarr;</a>
-    </div>
-    <figure class="hero-shot" id="heroShot">
-      <a class="hs-frame" href="news.html" id="hsLink">
-        <img id="hsA" src="assets/news/2026-08-26-interim-workshop.jpg" alt="" loading="eager">
-        <img id="hsB" alt="" aria-hidden="true">
-      </a>
-      <figcaption>
-        <span class="hs-when" id="hsWhen"></span>
-        <span class="hs-title" id="hsTitle" data-i18n="heroShot">2026년 8월 · 부다페스트 중간보고 워크숍</span>
-        <span class="hs-dots" id="hsDots" aria-hidden="true"></span>
-      </figcaption>
-    </figure>
-  </div>
-</section>
 
 <!-- LABS -->
 <section id="labs" class="alt">
@@ -987,7 +964,7 @@ footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
 
 <footer>
   <span data-i18n="f1">KHBCC — 한국–헝가리 배터리 협력센터</span>
-  <span class="ver">v2026.09.22-c</span>
+  <span class="ver">v2026.09.22-d</span>
 </footer>
 
 <script src="i18n.js"></script>
@@ -1022,77 +999,7 @@ document.addEventListener('keydown',function(e){
   if(e.key==='Escape') document.querySelectorAll('.nv').forEach(function(n){ n.classList.remove('open'); n.querySelector('.nv-t').setAttribute('aria-expanded','false'); });
 });
 
-/* ---- 히어로 슬라이드쇼 : 활동 기록에서 사진을 가져와 순환 ---- */
-(function(){
-  var SLIDES=[], idx=0, timer=null, showingA=true;
-  var INTERVAL = 12000;               // 사진이 바뀌는 간격 (밀리초). 12000 = 12초
-  var MAX = 6;                        // 순환에 쓸 최근 사진 개수
 
-  var MONTHS={
-    ko:['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
-    hu:['jan.','febr.','márc.','ápr.','máj.','jún.','júl.','aug.','szept.','okt.','nov.','dec.'],
-    en:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
-  };
-  function fmt(iso,lang){
-    var p=iso.split('-'), y=p[0], m=+p[1];
-    var mo=(MONTHS[lang]||MONTHS.ko)[m-1];
-    if(lang==='ko') return y+'년 '+mo;
-    if(lang==='hu') return y+'. '+mo;
-    return mo+' '+y;
-  }
-  function lang(){
-    var l=document.documentElement.lang;
-    return (l==='hu'||l==='en')?l:'ko';
-  }
-  function paint(){
-    if(!SLIDES.length) return;
-    var s=SLIDES[idx], L=lang();
-    var t=(s[L]&&s[L].title)||(s.ko&&s.ko.title)||'';
-    var when=document.getElementById('hsWhen'), title=document.getElementById('hsTitle');
-    if(when) when.textContent=fmt(s.date,L);
-    if(title) title.textContent=t;
-    var dots=document.getElementById('hsDots');
-    if(dots) for(var i=0;i<dots.children.length;i++)
-      dots.children[i].className = (i===idx?'on':'');
-  }
-  function show(i){
-    idx=i; 
-    var a=document.getElementById('hsA'), b=document.getElementById('hsB');
-    var incoming = showingA ? b : a, outgoing = showingA ? a : b;
-    incoming.onload=function(){
-      incoming.classList.add('on'); outgoing.classList.remove('on'); showingA=!showingA; paint();
-    };
-    incoming.src = SLIDES[idx].image;
-    if(incoming.complete) incoming.onload();
-  }
-  function next(){ show((idx+1)%SLIDES.length); }
-
-  fetch('news.json?v='+Date.now())
-    .then(function(r){ return r.ok?r.json():null; })
-    .then(function(d){
-      if(!d||!d.items) return;
-      SLIDES = d.items.filter(function(n){ return n.image; })
-                      .sort(function(x,y){ return x.date<y.date?1:-1; })
-                      .slice(0,MAX);
-      if(!SLIDES.length) return;
-      var dots=document.getElementById('hsDots');
-      if(dots){ dots.innerHTML=''; SLIDES.forEach(function(){ dots.appendChild(document.createElement('i')); }); }
-      var a=document.getElementById('hsA');
-      a.src=SLIDES[0].image; a.classList.add('on'); showingA=true; idx=0; paint();
-      var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      if(!still && SLIDES.length>1) timer=setInterval(next, INTERVAL);
-      document.addEventListener('visibilitychange', function(){
-        if(document.hidden){ clearInterval(timer); timer=null; }
-        else if(!timer && !still && SLIDES.length>1) timer=setInterval(next, INTERVAL);
-      });
-    })
-    .catch(function(){});
-
-  // 언어 전환 시 제목도 함께 갱신
-  document.querySelectorAll('.lang button').forEach(function(btn){
-    btn.addEventListener('click', function(){ setTimeout(paint, 60); });
-  });
-})();
 
 /* ---- 최근 활동 3건 ---- */
 (function(){
@@ -1137,5 +1044,6 @@ document.addEventListener('keydown',function(e){
   t.src='assets/hero/seoul.jpg';
 })();
 </script>
+<script src="content-loader.js"></script>
 </body>
 </html>

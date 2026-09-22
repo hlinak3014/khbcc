@@ -1,0 +1,65 @@
+{
+  "title": "활동 기록",
+  "items": [
+    {
+      "key": "n_eyebrow",
+      "ko": "활동 기록",
+      "hu": "Tevékenységek",
+      "en": "Activities"
+    },
+    {
+      "key": "n_title",
+      "ko": "2024년부터 지금까지",
+      "hu": "Amit 2024 óta elvégeztünk",
+      "en": "What we have done since 2024"
+    },
+    {
+      "key": "n_lede",
+      "ko": "KHBCC는 2024년 타당성 검토로 출발해 시범 설계를 거쳐 운영 단계로 넘어왔습니다. 아래 회의와 협정, 행사 기록이 그 과정을 보여줍니다.",
+      "hu": "A KHBCC 2024-ben megvalósíthatósági tanulmányként indult, majd a pilot tervezésén át eljutott a működésig. Az alábbi találkozók, megállapodások és események ezt az utat követik.",
+      "en": "KHBCC began in 2024 as a feasibility study and has moved through pilot design into operation. The meetings, agreements, and events below trace that progression."
+    },
+    {
+      "key": "n_ph1",
+      "ko": "타당성 검토",
+      "hu": "Megvalósíthatóság",
+      "en": "Feasibility"
+    },
+    {
+      "key": "n_ph1d",
+      "ko": "배터리 생애주기 관리·추적 체계 구축",
+      "hu": "EIPP 2024 · Akkumulátor-életciklus kezelési és nyomonkövetési rendszer kialakítása",
+      "en": "EIPP 2024 · Development of a battery lifecycle management and traceability system"
+    },
+    {
+      "key": "n_ph2",
+      "ko": "시범 설계",
+      "hu": "Pilot tervezés",
+      "en": "Pilot design"
+    },
+    {
+      "key": "n_ph2d",
+      "ko": "헝가리 내 KHBCC 설립 및 시범 운영 계획",
+      "hu": "EIPP 2025 · A KHBCC magyarországi létrehozási és pilot működési terve",
+      "en": "EIPP 2025 · Establishment and pilot operation plan for KHBCC in Hungary"
+    },
+    {
+      "key": "n_ph3",
+      "ko": "운영",
+      "hu": "Működés",
+      "en": "Operation"
+    },
+    {
+      "key": "n_ph3d",
+      "ko": "KHBCC 제도 및 운영 체계 구축",
+      "hu": "EIPP 2026 · A KHBCC intézményi és működési keretének kialakítása",
+      "en": "EIPP 2026 · Establishing the institutional and operational framework for KHBCC"
+    },
+    {
+      "key": "f2",
+      "ko": "2025/26 EIPP · 재정경제부 · KDI 지원",
+      "hu": "2025/26 EIPP · A MOFE és a KDI támogatásával",
+      "en": "2025/26 EIPP · Supported by MOFE and KDI"
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "title": "연구진",
+  "items": [
+    {
+      "key": "prEyebrow",
+      "ko": "연구진",
+      "hu": "Kutatócsoport",
+      "en": "Research team"
+    },
+    {
+      "key": "prTitle",
+      "ko": "세부주제별 양국 연구진",
+      "hu": "Párban dolgozó kutatók a két országból",
+      "en": "Paired researchers across the two countries"
+    },
+    {
+      "key": "prLede",
+      "ko": "네 개 세부주제마다 한국과 헝가리에서 각각 한 명씩 책임자를 두고 짝을 이뤄 연구를 진행합니다. 양측이 같은 주제를 서로 다른 각도에서 맡습니다.",
+      "hu": "Mind a négy altémának egy koreai és egy magyar felelőse van, akik párban dolgoznak. A két oldal ugyanazt a témát más-más szemszögből viszi.",
+      "en": "Each of the four sub-topics has one lead in Korea and one in Hungary, working as a pair. The two sides take on the same subject from different angles."
+    },
+    {
+      "key": "p0t",
+      "ko": "사업 총괄",
+      "hu": "Programirányítás",
+      "en": "Program management"
+    },
+    {
+      "key": "p0d",
+      "ko": "경제혁신 파트너십 프로그램(EIPP)의 기획과 관리는 한국개발연구원 국제개발협력센터가 맡고, 사업 수행은 연세대학교가 담당합니다.",
+      "hu": "A Gazdasági Innovációs Partnerségi Programot (EIPP) a Korea Development Institute Nemzetközi Fejlesztési Központja tervezi és irányítja, a végrehajtó intézmény a Yonsei Egyetem.",
+      "en": "The Economic Innovation Partnership Program (EIPP) is planned and managed by the Center for International Development at the Korea Development Institute, with Yonsei University as the implementing institution."
+    },
+    {
+      "key": "p0r2",
+      "ko": "사업 관리",
+      "hu": "Projektvezető",
+      "en": "Project Manager"
+    },
+    {
+      "key": "p0a2",
+      "ko": "한국개발연구원 국제개발협력센터 실장",
+      "hu": "Igazgató, Nemzetközi Fejlesztési Központ, KDI",
+      "en": "Director, Center for International Development, KDI"
+    },
+    {
+      "key": "p0b2",
+      "ko": "한국개발연구원 국제개발협력센터에서 한–헝가리 경제혁신 파트너십 프로그램의 사업 관리를 맡고 있습니다.",
+      "hu": "A Korea Development Institute Nemzetközi Fejlesztési Központjában a koreai–magyar Gazdasági Innovációs Partnerségi Program irányításáért felel.",
+      "en": "Manages the Korea–Hungary Economic Innovation Partnership Program at the Center for International Development, Korea Development Institute."
+    },
+    {
+      "key": "p1t",
+      "ko": "제도 기반 구축",
+      "hu": "Intézményi alapok",
+      "en": "Institutional foundation"
+    },
+    {
+      "key": "p1d",
+      "ko": "센터의 거버넌스 구조와 법적 지위, 재정 모델을 설계하고 3개국어 플랫폼과 기업 매칭 체계를 운영합니다.",
+      "hu": "Kialakítja a központ irányítási szerkezetét, jogi státuszát és finanszírozási modelljét, valamint működteti a háromnyelvű platformot és a cégpárosítási rendszert.",
+      "en": "Designs the center's governance structure, legal status, and financing model, and operates the trilingual platform and the firm matching system."
+    },
+    {
+      "key": "pr_kr",
+      "ko": "한국 측",
+      "hu": "Koreai fél",
+      "en": "Korean side"
+    },
+    {
+      "key": "p1krA",
+      "ko": "연세대학교 교수",
+      "hu": "Egyetemi tanár, Yonsei Egyetem",
+      "en": "Professor, Yonsei University"
+    },
+    {
+      "key": "p1krB",
+      "ko": "EIPP 사업 전 기간의 연구책임자로 센터 설립과 운영 체계 수립을 총괄합니다. 2025년 BME 연구년을 계기로 연세대–BME 복수학위 협정과 초청교수 임명이 이뤄졌습니다.",
+      "hu": "Az EIPP program teljes időszakának vezető kutatója, a központ létrehozásáért és működési kereteinek kialakításáért felelős. A BME-n 2025-ben töltött alkotószabadsága vezetett a Yonsei–BME kettős diplomás megállapodáshoz és a meghívott professzori kinevezéshez.",
+      "en": "Principal investigator across the full span of the EIPP program, responsible for the establishment of the center and the design of its operating framework. A sabbatical at BME in 2025 led to the Yonsei–BME dual degree agreement and an invited professorship."
+    },
+    {
+      "key": "pr_hu",
+      "ko": "헝가리 측",
+      "hu": "Magyar fél",
+      "en": "Hungarian side"
+    },
+    {
+      "key": "p1huA",
+      "ko": "헝가리배터리협회(HUBA) 전무이사",
+      "hu": "Ügyvezető igazgató, Magyar Akkumulátor Szövetség (HUBA)",
+      "en": "Managing Director, Hungarian Battery Association (HUBA)"
+    },
+    {
+      "key": "p1huB",
+      "ko": "헝가리 배터리 산업계를 대표해 센터의 전략 방향과 정부 협의를 이끕니다. HUBA는 KHBCC 이사회 구성 기관이자 시범 기간 행정 운영을 지원합니다.",
+      "hu": "A magyar akkumulátoripart képviseli a központ stratégiai irányának kijelölésében, és vezeti a kormányzati egyeztetéseket. A HUBA a KHBCC igazgatótanácsának tagja, és a pilot időszakban támogatja az adminisztratív működést.",
+      "en": "Represents the Hungarian battery industry in setting the center's strategic direction and leads consultation with government. HUBA sits on the KHBCC board and supports administrative operations during the pilot period."
+    },
+    {
+      "key": "p2t",
+      "ko": "배터리 여권 요구사항 분석·성능 시험 검증",
+      "hu": "Akkumulátor-útlevél követelmények és teljesítményvizsgálat",
+      "en": "Battery Passport requirements and performance testing"
+    },
+    {
+      "key": "p2d",
+      "ko": "EU 배터리 여권이 요구하는 데이터 항목을 실제 측정 가능한 시험 요건으로 바꾸고, 감사 대응이 가능한 검증 체계를 설계합니다.",
+      "hu": "Az EU akkumulátor-útlevél által előírt adatmezőket ténylegesen mérhető követelményekké alakítja, és auditra alkalmas bizonyítékot előállító ellenőrzési keretet tervez.",
+      "en": "Converts the data items required by the EU Battery Passport into requirements that can actually be measured, and designs a verification framework capable of producing audit-ready evidence."
+    },
+    {
+      "key": "p2krA",
+      "ko": "공주대학교 조교수",
+      "hu": "Adjunktus, Kongju Nemzeti Egyetem",
+      "en": "Assistant Professor, Kongju National University"
+    },
+    {
+      "key": "p2krB",
+      "ko": "EU 배터리 규정 부속서 XIII의 데이터 항목을 시험 가능한 요건으로 변환하는 작업을 맡고 있습니다. 국제 표준과 국내 기준의 대응 관계를 정리하고 성능시험검증단위(PTVU)의 구성을 설계합니다.",
+      "hu": "A XIII. melléklet adatmezőinek vizsgálható követelményekké alakítását vezeti: megfelelteti a nemzetközi szabványokat a koreai előírásoknak, és megtervezi a teljesítményvizsgáló és ellenőrző egység felépítését.",
+      "en": "Leads the conversion of Annex XIII data items into testable requirements, mapping international standards against Korean criteria and designing the composition of the Performance Testing and Verification Unit."
+    },
+    {
+      "key": "p2huA",
+      "ko": "HUBA 연구 프로젝트 리더",
+      "hu": "Kutatási projektvezető, HUBA",
+      "en": "Research Project Leader, HUBA"
+    },
+    {
+      "key": "p2huB",
+      "ko": "헝가리 현지 시험 인프라를 기반으로 사용후 배터리의 모듈 단위 시험을 담당합니다. 2026년에는 시험 범위를 셀에서 모듈로 확장합니다.",
+      "hu": "A használt akkumulátorok modulszintű vizsgálatáért felel a magyar vizsgálati infrastruktúra felhasználásával. 2026-ban a vizsgálat cellaszintről modulszintre bővül.",
+      "en": "Responsible for module-level testing of used batteries using Hungarian testing infrastructure. In 2026 the scope extends from cell level to module level."
+    },
+    {
+      "key": "p3t",
+      "ko": "AI 기반 데이터 분석·수명 예측",
+      "hu": "MI-alapú adatelemzés és élettartam-előrejelzés",
+      "en": "AI-based data analysis and lifetime prediction"
+    },
+    {
+      "key": "p3d",
+      "ko": "배터리 사용 데이터를 AI로 분석해 건전성을 추정하고 잔존 수명을 예측합니다. 전기버스 등 실제 운행 데이터를 확보해 모델을 검증합니다.",
+      "hu": "Mesterséges intelligenciával elemzi az akkumulátorok használati adatait az állapot becsléséhez és a hátralévő élettartam előrejelzéséhez, a modelleket elektromos buszok és más flották valós üzemi adatain validálva.",
+      "en": "Applies AI to battery usage data to estimate state of health and predict remaining useful life, validating the models against real operating data from electric buses and other fleets."
+    },
+    {
+      "key": "p3krA",
+      "ko": "공주대학교 조교수",
+      "hu": "Adjunktus, Kongju Nemzeti Egyetem",
+      "en": "Assistant Professor, Kongju National University"
+    },
+    {
+      "key": "p3krB",
+      "ko": "배터리 관리 시스템이 수집하는 전압·전류·온도 데이터만으로 건전성을 추정하고 잔존 수명을 예측하는 AI 모델을 연구합니다. 불확실성 정량화와 전이학습이 주요 주제입니다.",
+      "hu": "Olyan MI-modelleket kutat, amelyek az akkumulátorkezelő rendszer által amúgy is gyűjtött feszültség-, áram- és hőmérsékletadatokból becslik az állapotot és jelzik előre a hátralévő élettartamot. Fő témái a bizonytalanság kvantifikálása és a transzfertanulás.",
+      "en": "Researches AI models that estimate state of health and predict remaining useful life from the voltage, current, and temperature data a battery management system already collects. Uncertainty quantification and transfer learning are the main themes."
+    },
+    {
+      "key": "p3huA",
+      "ko": "HUBA 전기모빌리티 분과장 · 연구 프로젝트 리더",
+      "hu": "Az e-mobilitási munkacsoport vezetője és kutatási projektvezető, HUBA",
+      "en": "E-mobility Working Group Leader and Research Project Leader, HUBA"
+    },
+    {
+      "key": "p3huB",
+      "ko": "전기버스 배터리 시스템의 운영 데이터를 기반으로 한 최적화를 담당합니다. 실제 운행 데이터를 확보해 모델 검증에 활용합니다.",
+      "hu": "Az elektromos buszok akkumulátorrendszereinek üzemi adataira épülő optimalizálást vezeti, valós flottaadatokat biztosítva a modellek validálásához.",
+      "en": "Leads optimization based on operating data from e-bus battery systems, securing real-world fleet data for model validation."
+    },
+    {
+      "key": "p4t",
+      "ko": "환경 영향 평가·순환경제",
+      "hu": "Környezeti hatás és körforgásos gazdaság",
+      "en": "Environmental impact and circular economy"
+    },
+    {
+      "key": "p4d",
+      "ko": "배터리 제조와 재활용 과정의 환경 영향을 측정하고, 오염물질 저감과 순환경제 체계를 연구합니다.",
+      "hu": "Méri az akkumulátorgyártás és -újrahasznosítás környezeti hatását, és kutatja a szennyezőanyag-csökkentést és a körforgásos gazdasági rendszereket.",
+      "en": "Measures the environmental impact of battery manufacturing and recycling, and researches pollutant reduction and circular economy systems."
+    },
+    {
+      "key": "p4krA",
+      "ko": "이화여자대학교 조교수",
+      "hu": "Adjunktus, Ewha Womans Egyetem",
+      "en": "Assistant Professor, Ewha Womans University"
+    },
+    {
+      "key": "p4krB",
+      "ko": "배터리 산업의 주요 오염물질을 규정하고 전과정평가로 환경 영향을 정량화합니다. 저화학 습식제련과 양극재 직접 재활용 기술을 함께 다룹니다.",
+      "hu": "Azonosítja az akkumulátoripar szempontjából legkritikusabb szennyezőket, és életciklus-értékeléssel kvantifikálja a környezeti hatást, az alacsony vegyszerigényű hidrometallurgia és a közvetlen katód-újrahasznosítás kutatása mellett.",
+      "en": "Identifies the pollutants most critical to the battery industry and quantifies environmental impact through lifecycle assessment, alongside work on low-chemical hydrometallurgy and direct cathode recycling."
+    },
+    {
+      "key": "p4huA",
+      "ko": "HUBA 환경보건안전 분과장",
+      "hu": "Az EHS munkacsoport vezetője, HUBA",
+      "en": "EHS Working Group Leader, HUBA"
+    },
+    {
+      "key": "p4huB",
+      "ko": "헝가리 현지 배터리 시설의 환경·보건·안전 기준 수립을 담당합니다. 전기화학 분야 연구를 바탕으로 친환경 재활용 공정을 연구합니다.",
+      "hu": "A magyar akkumulátoripari létesítmények környezetvédelmi, egészségügyi és biztonsági előírásaiért felel, elektrokémiai kutatásaira építve tisztább újrahasznosítási eljárásokat fejleszt.",
+      "en": "Responsible for environmental, health, and safety standards at Hungarian battery facilities, drawing on electrochemistry research to develop cleaner recycling processes."
+    },
+    {
+      "key": "prNote",
+      "ko": "각 세부주제의 연구 내용은 <a href=\"research.html\">연구 내용</a> 페이지에서 자세히 볼 수 있습니다.",
+      "hu": "Az egyes altémák részletei a <a href=\"research.html\">kutatási</a> oldalon olvashatók.",
+      "en": "The detail of each sub-topic is set out on the <a href=\"research.html\">research</a> page."
+    }
+  ]
+}

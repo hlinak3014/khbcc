@@ -1,0 +1,341 @@
+{
+  "title": "기업 등록",
+  "items": [
+    {
+      "key": "ap_eyebrow",
+      "ko": "기업 등록 신청",
+      "hu": "Cégregisztráció",
+      "en": "Firm registration"
+    },
+    {
+      "key": "ap_title",
+      "ko": "회원사 데이터베이스 등록",
+      "hu": "Csatlakozás a tagvállalati adatbázishoz",
+      "en": "Join the member database"
+    },
+    {
+      "key": "ap_lede",
+      "ko": "아래 항목은 매칭 절차 1단계인 자격 검증과 2단계인 역량·수요 분석에 사용됩니다. 등록 후 담당자가 확인해 연락드립니다.",
+      "hu": "Az alábbi adatokat a párosítási folyamat első (minősítés) és második (képesség- és igényfelmérés) szakaszában használjuk. Átnézzük a jelentkezést, és felvesszük Önnel a kapcsolatot.",
+      "en": "The information below is used in stage one (qualification) and stage two (capability and needs profiling) of the matching process. We will review your entry and get in touch."
+    },
+    {
+      "key": "ap_note",
+      "ko": "작성하신 내용은 이메일 프로그램으로 옮겨져 발송됩니다. 보내기를 누르면 메일 작성 창이 열리니, 내용을 확인하신 뒤 발송해 주세요.",
+      "hu": "A bejegyzés a levélküldő programba kerül át. Beküldéskor megnyílik egy levélablak — kérjük, ellenőrizze a tartalmat és küldje el.",
+      "en": "Your entry is transferred to your email program for sending. When you submit, a mail window opens — please review the contents and send it."
+    },
+    {
+      "key": "critEyebrow",
+      "ko": "선별 기준",
+      "hu": "Kiválasztási szempontok",
+      "en": "Selection criteria"
+    },
+    {
+      "key": "critTitle",
+      "ko": "무엇을 보고 고르는가",
+      "hu": "Mit nézünk",
+      "en": "What we look for"
+    },
+    {
+      "key": "critBody",
+      "ko": "매출 규모가 아니라 세 가지 가치를 기준으로 매칭 대상을 정합니다. 아래 항목이 등록 정보를 검토할 때의 판단 기준입니다.",
+      "hu": "A párosítási jelölteket nem árbevétel, hanem három érték alapján választjuk ki. Ezek a szempontok érvényesek a regisztráció elbírálásakor.",
+      "en": "Matching candidates are selected on three values rather than revenue. These are the criteria applied when your registration is reviewed."
+    },
+    {
+      "key": "v1t",
+      "ko": "기술적 가치",
+      "hu": "Műszaki érték",
+      "en": "Technical value"
+    },
+    {
+      "key": "v1b",
+      "ko": "밸류체인 기여도와 기술 성숙도. 헝가리 현지 파트너와 공동 연구가 가능하거나 생산라인에 바로 적용할 수 있는 수준인지 확인합니다.",
+      "hu": "Az értéklánchoz való hozzájárulás és a technológiai érettség. Azt nézzük, megvalósítható-e a közös kutatás egy magyar partnerrel, vagy a technológia közvetlenül gyártósorra vihető-e.",
+      "en": "Value chain contribution and technology readiness. We look at whether joint research with a Hungarian partner is feasible, or whether the technology can go straight onto a production line."
+    },
+    {
+      "key": "v2t",
+      "ko": "경제적 영향",
+      "hu": "Gazdasági hatás",
+      "en": "Economic impact"
+    },
+    {
+      "key": "v2b",
+      "ko": "공급망에 실제로 편입될 수 있는지, 계약과 투자로 이어질 가능성이 있는지를 봅니다.",
+      "hu": "Reálisan beilleszthető-e a cég az ellátási láncba, és várhatóan vezet-e a kapcsolat szerződéshez vagy befektetéshez.",
+      "en": "Whether the firm can realistically be integrated into the supply chain, and whether the relationship is likely to lead to a contract or investment."
+    },
+    {
+      "key": "v3t",
+      "ko": "환경적 지속가능성",
+      "hu": "Környezeti fenntarthatóság",
+      "en": "Environmental sustainability"
+    },
+    {
+      "key": "v3b",
+      "ko": "배터리 여권 대응 준비 상태와 순환경제 기여도. 재사용·재활용 관련 실적이 있는지 확인합니다.",
+      "hu": "Felkészültség az akkumulátor-útlevél követelményeire és hozzájárulás a körforgásos gazdasághoz, az újrahasználatban és újrahasznosításban szerzett eredményekkel együtt.",
+      "en": "Readiness for Battery Passport requirements and contribution to the circular economy, including any track record in reuse and recycling."
+    },
+    {
+      "key": "ap_s1",
+      "ko": "기업 정보",
+      "hu": "Cégadatok",
+      "en": "Company"
+    },
+    {
+      "key": "ap_company",
+      "ko": "회사명",
+      "hu": "Cégnév",
+      "en": "Company name"
+    },
+    {
+      "key": "ap_country",
+      "ko": "소재 국가",
+      "hu": "Ország",
+      "en": "Country"
+    },
+    {
+      "key": "ap_choose",
+      "ko": "선택하세요",
+      "hu": "Kérjük, válasszon",
+      "en": "Please select"
+    },
+    {
+      "key": "ap_kr",
+      "ko": "대한민국",
+      "hu": "Korea",
+      "en": "Korea"
+    },
+    {
+      "key": "ap_hu",
+      "ko": "헝가리",
+      "hu": "Magyarország",
+      "en": "Hungary"
+    },
+    {
+      "key": "ap_other",
+      "ko": "기타",
+      "hu": "Egyéb",
+      "en": "Other"
+    },
+    {
+      "key": "ap_website",
+      "ko": "홈페이지",
+      "hu": "Weboldal",
+      "en": "Website"
+    },
+    {
+      "key": "ap_employees",
+      "ko": "임직원 수",
+      "hu": "Alkalmazottak száma",
+      "en": "Employees"
+    },
+    {
+      "key": "ap_chain",
+      "ko": "배터리 밸류체인 내 역할",
+      "hu": "Szerep az akkumulátoripari értékláncban",
+      "en": "Role in the battery value chain"
+    },
+    {
+      "key": "ap_c1",
+      "ko": "소재·원료",
+      "hu": "Alapanyagok",
+      "en": "Materials"
+    },
+    {
+      "key": "ap_c2",
+      "ko": "셀·모듈·팩",
+      "hu": "Cella, modul, csomag",
+      "en": "Cell, module, pack"
+    },
+    {
+      "key": "ap_c3",
+      "ko": "장비·부품",
+      "hu": "Berendezések és alkatrészek",
+      "en": "Equipment and parts"
+    },
+    {
+      "key": "ap_c4",
+      "ko": "BMS·소프트웨어",
+      "hu": "BMS és szoftver",
+      "en": "BMS and software"
+    },
+    {
+      "key": "ap_c5",
+      "ko": "시험·인증",
+      "hu": "Vizsgálat és tanúsítás",
+      "en": "Testing and certification"
+    },
+    {
+      "key": "ap_c6",
+      "ko": "재사용·재활용",
+      "hu": "Újrahasználat és újrahasznosítás",
+      "en": "Reuse and recycling"
+    },
+    {
+      "key": "ap_c7",
+      "ko": "기타",
+      "hu": "Egyéb",
+      "en": "Other"
+    },
+    {
+      "key": "ap_s2",
+      "ko": "담당자",
+      "hu": "Kapcsolattartó",
+      "en": "Contact person"
+    },
+    {
+      "key": "ap_name",
+      "ko": "이름",
+      "hu": "Név",
+      "en": "Name"
+    },
+    {
+      "key": "ap_position",
+      "ko": "직위",
+      "hu": "Beosztás",
+      "en": "Position"
+    },
+    {
+      "key": "ap_email",
+      "ko": "이메일",
+      "hu": "E-mail",
+      "en": "Email"
+    },
+    {
+      "key": "ap_phone",
+      "ko": "연락처",
+      "hu": "Telefon",
+      "en": "Phone"
+    },
+    {
+      "key": "ap_s3",
+      "ko": "협력 수요",
+      "hu": "Keresett együttműködés",
+      "en": "Cooperation sought"
+    },
+    {
+      "key": "ap_interest",
+      "ko": "찾고 있는 협력 형태",
+      "hu": "A keresett együttműködés típusa",
+      "en": "Type of cooperation sought"
+    },
+    {
+      "key": "ap_i1",
+      "ko": "합작 투자",
+      "hu": "Vegyesvállalat",
+      "en": "Joint venture"
+    },
+    {
+      "key": "ap_i2",
+      "ko": "기술 공동개발",
+      "hu": "Közös technológiafejlesztés",
+      "en": "Joint technology development"
+    },
+    {
+      "key": "ap_i3",
+      "ko": "현지 유통망",
+      "hu": "Helyi értékesítés",
+      "en": "Local distribution"
+    },
+    {
+      "key": "ap_i4",
+      "ko": "공급 계약",
+      "hu": "Szállítási szerződés",
+      "en": "Supply contract"
+    },
+    {
+      "key": "ap_i5",
+      "ko": "규제 대응 지원",
+      "hu": "Szabályozási megfelelés támogatása",
+      "en": "Regulatory compliance support"
+    },
+    {
+      "key": "ap_i6",
+      "ko": "인력 교류",
+      "hu": "Szakembercsere",
+      "en": "Staff exchange"
+    },
+    {
+      "key": "ap_trl",
+      "ko": "주력 기술 성숙도 (TRL)",
+      "hu": "Technológiai érettségi szint",
+      "en": "Technology readiness level"
+    },
+    {
+      "key": "ap_t1",
+      "ko": "TRL 1–3 · 기초 연구",
+      "hu": "TRL 1–3 · Alapkutatás",
+      "en": "TRL 1–3 · Basic research"
+    },
+    {
+      "key": "ap_t2",
+      "ko": "TRL 4–6 · 시제품 검증",
+      "hu": "TRL 4–6 · Prototípus-validálás",
+      "en": "TRL 4–6 · Prototype validation"
+    },
+    {
+      "key": "ap_t3",
+      "ko": "TRL 7–9 · 상용화 단계",
+      "hu": "TRL 7–9 · Kereskedelmi szakasz",
+      "en": "TRL 7–9 · Commercial stage"
+    },
+    {
+      "key": "ap_hungary",
+      "ko": "헝가리 진출 여부",
+      "hu": "Magyarországi jelenlét",
+      "en": "Presence in Hungary"
+    },
+    {
+      "key": "ap_h1",
+      "ko": "이미 진출함",
+      "hu": "Már működik",
+      "en": "Already operating"
+    },
+    {
+      "key": "ap_h2",
+      "ko": "진출 준비 중",
+      "hu": "Belépésre készül",
+      "en": "Preparing to enter"
+    },
+    {
+      "key": "ap_h3",
+      "ko": "검토 단계",
+      "hu": "Mérlegelés alatt",
+      "en": "Under consideration"
+    },
+    {
+      "key": "ap_h4",
+      "ko": "해당 없음",
+      "hu": "Nem alkalmazható",
+      "en": "Not applicable"
+    },
+    {
+      "key": "ap_message",
+      "ko": "문의 내용",
+      "hu": "Megkeresés tartalma",
+      "en": "Your inquiry"
+    },
+    {
+      "key": "ap_mhint",
+      "ko": "주요 제품과 기술, 찾고 계신 파트너의 조건을 구체적으로 적어주실수록 매칭 정확도가 높아집니다.",
+      "hu": "Minél pontosabban írja le termékeit, technológiáját és a keresett partner feltételeit, annál pontosabb lesz a párosítás.",
+      "en": "The more specific you are about your products, technology, and the partner you are looking for, the more accurate the matching will be."
+    },
+    {
+      "key": "ap_submit",
+      "ko": "보내기",
+      "hu": "Beküldés",
+      "en": "Submit"
+    },
+    {
+      "key": "ap_back",
+      "ko": "매칭 절차 보기",
+      "hu": "Párosítási folyamat",
+      "en": "See the matching process"
+    }
+  ]
+}
