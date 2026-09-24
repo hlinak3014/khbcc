@@ -74,24 +74,6 @@
       "en": "A digital battery passport becomes mandatory for EV batteries, light means of transport (LMT) batteries, and industrial batteries above 2 kWh placed on the EU market. (18 February 2027)"
     },
     {
-      "key": "nbEyebrow",
-      "ko": "최근 소식",
-      "hu": "Legfrissebb hírek",
-      "en": "Latest news"
-    },
-    {
-      "key": "nbTitle",
-      "ko": "센터는 이미 움직이고 있습니다",
-      "hu": "A központ már működik",
-      "en": "The center is already running"
-    },
-    {
-      "key": "nbMore",
-      "ko": "활동 기록 전체 보기 →",
-      "hu": "Minden tevékenység &rarr;",
-      "en": "See all activities &rarr;"
-    },
-    {
       "key": "whyEyebrow",
       "ko": "설립 배경",
       "hu": "Háttér",
@@ -708,6 +690,24 @@
       "ko": "출처: 2025/26 EIPP 최종보고서, Figure 2-8",
       "hu": "Forrás: 2025/26 EIPP zárójelentés, 2-8. ábra",
       "en": "Source: 2025/26 EIPP final report, Figure 2-8"
+    },
+    {
+      "key": "nbEyebrow",
+      "ko": "최근 소식",
+      "hu": "Legfrissebb hírek",
+      "en": "Latest news"
+    },
+    {
+      "key": "nbTitle",
+      "ko": "센터는 이미 움직이고 있습니다",
+      "hu": "A központ már működik",
+      "en": "The center is already running"
+    },
+    {
+      "key": "nbMore",
+      "ko": "활동 기록 전체 보기 →",
+      "hu": "Minden tevékenység &rarr;",
+      "en": "See all activities &rarr;"
     },
     {
       "key": "parEyebrow",
