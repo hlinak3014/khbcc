@@ -50,22 +50,10 @@
       "en": "Manages the Korea–Hungary Economic Innovation Partnership Program at the Center for International Development, Korea Development Institute."
     },
     {
-      "key": "p1t",
-      "ko": "제도 기반 구축",
-      "hu": "Intézményi alapok",
-      "en": "Institutional foundation"
-    },
-    {
       "key": "p1d",
       "ko": "센터의 거버넌스 구조와 법적 지위, 재정 모델을 설계하고 3개국어 플랫폼과 기업 매칭 체계를 운영합니다.",
       "hu": "Kialakítja a központ irányítási szerkezetét, jogi státuszát és finanszírozási modelljét, valamint működteti a háromnyelvű platformot és a cégpárosítási rendszert.",
       "en": "Designs the center's governance structure, legal status, and financing model, and operates the trilingual platform and the firm matching system."
-    },
-    {
-      "key": "pr_kr",
-      "ko": "한국 측",
-      "hu": "Koreai fél",
-      "en": "Korean side"
     },
     {
       "key": "p1krA",
@@ -80,12 +68,6 @@
       "en": "Principal investigator across the full span of the EIPP program, responsible for the establishment of the center and the design of its operating framework. A sabbatical at BME in 2025 led to the Yonsei–BME dual degree agreement and an invited professorship."
     },
     {
-      "key": "pr_hu",
-      "ko": "헝가리 측",
-      "hu": "Magyar fél",
-      "en": "Hungarian side"
-    },
-    {
       "key": "p1huA",
       "ko": "헝가리배터리협회(HUBA) 전무이사",
       "hu": "Ügyvezető igazgató, Magyar Akkumulátor Szövetség (HUBA)",
@@ -96,12 +78,6 @@
       "ko": "헝가리 배터리 산업계를 대표해 센터의 전략 방향과 정부 협의를 이끕니다. HUBA는 KHBCC 이사회 구성 기관이자 시범 기간 행정 운영을 지원합니다.",
       "hu": "A magyar akkumulátoripart képviseli a központ stratégiai irányának kijelölésében, és vezeti a kormányzati egyeztetéseket. A HUBA a KHBCC igazgatótanácsának tagja, és a pilot időszakban támogatja az adminisztratív működést.",
       "en": "Represents the Hungarian battery industry in setting the center's strategic direction and leads consultation with government. HUBA sits on the KHBCC board and supports administrative operations during the pilot period."
-    },
-    {
-      "key": "p2t",
-      "ko": "배터리 여권 요구사항 분석·성능 시험 검증",
-      "hu": "Akkumulátor-útlevél követelmények és teljesítményvizsgálat",
-      "en": "Battery Passport requirements and performance testing"
     },
     {
       "key": "p2d",
@@ -134,12 +110,6 @@
       "en": "Responsible for module-level testing of used batteries using Hungarian testing infrastructure. In 2026 the scope extends from cell level to module level."
     },
     {
-      "key": "p3t",
-      "ko": "AI 기반 데이터 분석·수명 예측",
-      "hu": "MI-alapú adatelemzés és élettartam-előrejelzés",
-      "en": "AI-based data analysis and lifetime prediction"
-    },
-    {
       "key": "p3d",
       "ko": "배터리 사용 데이터를 AI로 분석해 건전성을 추정하고 잔존 수명을 예측합니다. 전기버스 등 실제 운행 데이터를 확보해 모델을 검증합니다.",
       "hu": "Mesterséges intelligenciával elemzi az akkumulátorok használati adatait az állapot becsléséhez és a hátralévő élettartam előrejelzéséhez, a modelleket elektromos buszok és más flották valós üzemi adatain validálva.",
@@ -168,12 +138,6 @@
       "ko": "전기버스 배터리 시스템의 운영 데이터를 기반으로 한 최적화를 담당합니다. 실제 운행 데이터를 확보해 모델 검증에 활용합니다.",
       "hu": "Az elektromos buszok akkumulátorrendszereinek üzemi adataira épülő optimalizálást vezeti, valós flottaadatokat biztosítva a modellek validálásához.",
       "en": "Leads optimization based on operating data from e-bus battery systems, securing real-world fleet data for model validation."
-    },
-    {
-      "key": "p4t",
-      "ko": "환경 영향 평가·순환경제",
-      "hu": "Környezeti hatás és körforgásos gazdaság",
-      "en": "Environmental impact and circular economy"
     },
     {
       "key": "p4d",

@@ -84,6 +84,11 @@ main{padding:clamp(34px,5vw,56px) var(--pad) clamp(56px,7vw,88px)}
 .pr-side{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--steel);display:block;margin-bottom:7px}
 .pr-txt h3{font-size:19px;margin-bottom:5px}
 .pr-aff{font-size:13px;color:var(--steel);margin-bottom:11px;line-height:1.45}
+
+.pr-links{display:flex;flex-direction:column;gap:5px;margin:0 0 11px}
+.pr-links a{font-family:var(--mono);font-size:11.5px;color:var(--steel);text-decoration:none;display:inline-flex;align-items:center;gap:6px;width:fit-content;border-bottom:1px solid transparent;overflow-wrap:anywhere}
+.pr-links a:hover{color:var(--ink);border-bottom-color:var(--red)}
+.pr-links .ic{color:var(--red);font-size:11px}
 .pr-bio{font-size:14px;color:var(--steel);line-height:1.62}
 
 .pr-note{margin-top:8px;padding:16px 18px;background:#fff;border:1px solid var(--line);border-left:3px solid var(--red);border-radius:3px}
@@ -106,20 +111,15 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
 
-/* page-head wallpaper — language dependent */
+/* page-head wallpaper */
 .page-head{background:#0B1029}
 .page-head::after{display:none}
 .hbg{position:absolute;inset:0;z-index:0;overflow:hidden}
-.hbg i{position:absolute;inset:0;background-size:cover;background-position:center 40%;opacity:0}
+.hbg i{position:absolute;inset:0;background-size:cover;background-position:center 45%;background-image:url('assets/hero/budapest-parliament.jpg')}
 .hbg::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,13,36,.93) 0%,rgba(9,13,36,.80) 45%,rgba(9,13,36,.55) 100%)}
-html[lang="ko"] .hbg-a{background-image:url('assets/hero/budapest-chainbridge.jpg');opacity:1}
-html[lang="hu"] .hbg-a{background-image:url('assets/hero/seoul.jpg');opacity:1}
-html[lang="hu"].no-seoul .hbg-a{background-image:url('assets/hero/budapest-panorama.jpg')}
-html[lang="en"] .hbg-a{background-image:url('assets/hero/budapest-chainbridge.jpg');opacity:1;-webkit-mask-image:linear-gradient(90deg,#000 40%,transparent 62%);mask-image:linear-gradient(90deg,#000 40%,transparent 62%)}
-html[lang="en"] .hbg-b{background-image:url('assets/hero/seoul.jpg');opacity:1;-webkit-mask-image:linear-gradient(90deg,transparent 38%,#000 60%);mask-image:linear-gradient(90deg,transparent 38%,#000 60%)}
-html[lang="en"].no-seoul .hbg-a{-webkit-mask-image:none;mask-image:none;background-image:url('assets/hero/budapest-panorama.jpg')}
-html[lang="en"].no-seoul .hbg-b{opacity:0}
-footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
+.eb-wrap{display:flex;align-items:center;gap:9px}
+.flags{display:inline-flex;gap:5px;flex-shrink:0}
+.fl{width:20px;height:auto;border-radius:1.5px;box-shadow:0 0 0 1px rgba(255,255,255,.35)}
 </style>
 </head>
 <body data-page="people">
@@ -154,7 +154,7 @@ footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
       <div class="nv">
         <button class="nv-t" aria-expanded="false" data-i18n="nav3">기업 지원</button>
         <div class="nv-m">
-          <a href="index.html#platform" data-i18n="sub3a">매칭 절차</a>
+          <a href="apply.html#process" data-i18n="sub3a">매칭 절차</a>
           <a href="apply.html" data-i18n="sub3b">기업 등록</a>
         </div>
       </div>
@@ -170,9 +170,9 @@ footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
 </header>
 
 <div class="page-head">
-  <div class="hbg"><i class="hbg-a"></i><i class="hbg-b"></i></div>
+  <div class="hbg"><i></i></div>
   <div class="wrap">
-    <span class="eyebrow" data-i18n="prEyebrow">연구진</span>
+    <span class="eb-wrap"><span class="flags"><svg class="fl" viewBox="0 0 60 40" role="img" aria-label="Korea"><rect width="60" height="40" fill="#fff"/><g transform="translate(30,20) rotate(-33.69)"><circle r="8" fill="#CD2E3A"/><path d="M-8,0 a4,4 0 0,1 8,0 a4,4 0 0,0 8,0 a8,8 0 0,1 -16,0 Z" fill="#0047A0"/></g><g fill="#000"><g transform="translate(10.5,7.5) rotate(56.31)"><rect x="-4.5" y="-2.6" width="9" height="1.6"/><rect x="-4.5" y="-0.8" width="9" height="1.6"/><rect x="-4.5" y="1" width="9" height="1.6"/></g><g transform="translate(49.5,32.5) rotate(56.31)"><rect x="-4.5" y="-2.6" width="3.9" height="1.6"/><rect x="0.6" y="-2.6" width="3.9" height="1.6"/><rect x="-4.5" y="-0.8" width="9" height="1.6"/><rect x="-4.5" y="1" width="3.9" height="1.6"/><rect x="0.6" y="1" width="3.9" height="1.6"/></g><g transform="translate(49.5,7.5) rotate(-56.31)"><rect x="-4.5" y="-2.6" width="3.9" height="1.6"/><rect x="0.6" y="-2.6" width="3.9" height="1.6"/><rect x="-4.5" y="-0.8" width="3.9" height="1.6"/><rect x="0.6" y="-0.8" width="3.9" height="1.6"/><rect x="-4.5" y="1" width="3.9" height="1.6"/><rect x="0.6" y="1" width="3.9" height="1.6"/></g><g transform="translate(10.5,32.5) rotate(-56.31)"><rect x="-4.5" y="-2.6" width="9" height="1.6"/><rect x="-4.5" y="-0.8" width="3.9" height="1.6"/><rect x="0.6" y="-0.8" width="3.9" height="1.6"/><rect x="-4.5" y="1" width="9" height="1.6"/></g></g></svg><svg class="fl" viewBox="0 0 60 40" role="img" aria-label="Hungary"><rect width="60" height="13.33" fill="#CE2939"/><rect y="13.33" width="60" height="13.34" fill="#fff"/><rect y="26.67" width="60" height="13.33" fill="#477050"/></svg></span><span class="eyebrow" data-i18n="prEyebrow">연구진</span></span>
     <h1 data-i18n="prTitle">세부주제별 양국 연구진</h1>
     <p data-i18n="prLede">네 개 세부주제마다 한국과 헝가리에서 각각 한 명씩 책임자를 두고 짝을 이뤄 연구를 진행합니다. 양측이 같은 주제를 서로 다른 각도에서 맡습니다.</p>
   </div>
@@ -223,6 +223,7 @@ footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
               <span class="pr-side" data-i18n="pr_kr">한국 측</span>
               <h3>Yong-June Shin</h3>
               <p class="pr-aff" data-i18n="p1krA">연세대학교 교수</p>
+              <div class="pr-links"><a href="https://powerlab.yonsei.ac.kr" target="_blank" rel="noopener"><span class="ic">↗</span>powerlab.yonsei.ac.kr</a><a href="mailto:yongjune@yonsei.ac.kr"><span class="ic">✉</span>yongjune@yonsei.ac.kr</a></div>
               <p class="pr-bio" data-i18n="p1krB">EIPP 사업 전 기간의 연구책임자로 센터 설립과 운영 체계 수립을 총괄합니다. 2025년 BME 연구년을 계기로 연세대–BME 복수학위 협정과 초청교수 임명이 이뤄졌습니다.</p>
             </div>
           </div>
@@ -235,6 +236,7 @@ footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
               <span class="pr-side" data-i18n="pr_hu">헝가리 측</span>
               <h3>Péter Kaderják</h3>
               <p class="pr-aff" data-i18n="p1huA">헝가리배터리협회(HUBA) 전무이사</p>
+              <div class="pr-links"><a href="https://hu-ba.hu/en/organization/#szervezet-info" target="_blank" rel="noopener"><span class="ic">↗</span>hu-ba.hu/en/organization</a><a href="mailto:kaderjak.peter@hu-ba.hu"><span class="ic">✉</span>kaderjak.peter@hu-ba.hu</a></div>
               <p class="pr-bio" data-i18n="p1huB">헝가리 배터리 산업계를 대표해 센터의 전략 방향과 정부 협의를 이끕니다. HUBA는 KHBCC 이사회 구성 기관이자 시범 기간 행정 운영을 지원합니다.</p>
             </div>
           </div>
@@ -259,6 +261,7 @@ footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
               <span class="pr-side" data-i18n="pr_kr">한국 측</span>
               <h3>Seon Hyeog Kim</h3>
               <p class="pr-aff" data-i18n="p2krA">공주대학교 조교수</p>
+              <div class="pr-links"><a href="https://sites.google.com/view/aienergylab" target="_blank" rel="noopener"><span class="ic">↗</span>sites.google.com/view/aienergylab</a><a href="mailto:seonh@kongju.ac.kr"><span class="ic">✉</span>seonh@kongju.ac.kr</a></div>
               <p class="pr-bio" data-i18n="p2krB">EU 배터리 규정 부속서 XIII의 데이터 항목을 시험 가능한 요건으로 변환하는 작업을 맡고 있습니다. 국제 표준과 국내 기준의 대응 관계를 정리하고 성능시험검증단위(PTVU)의 구성을 설계합니다.</p>
             </div>
           </div>
@@ -271,6 +274,7 @@ footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
               <span class="pr-side" data-i18n="pr_hu">헝가리 측</span>
               <h3>Gergely Lagler</h3>
               <p class="pr-aff" data-i18n="p2huA">HUBA 연구 프로젝트 리더</p>
+              <div class="pr-links"><a href="mailto:gergely.lagler@phiarotechnologies.com"><span class="ic">✉</span>gergely.lagler@phiarotechnologies.com</a></div>
               <p class="pr-bio" data-i18n="p2huB">헝가리 현지 시험 인프라를 기반으로 사용후 배터리의 모듈 단위 시험을 담당합니다. 2026년에는 시험 범위를 셀에서 모듈로 확장합니다.</p>
             </div>
           </div>
@@ -295,6 +299,7 @@ footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
               <span class="pr-side" data-i18n="pr_kr">한국 측</span>
               <h3>Gu Young Kwon</h3>
               <p class="pr-aff" data-i18n="p3krA">공주대학교 조교수</p>
+              <div class="pr-links"><a href="https://sites.google.com/view/energyinfo" target="_blank" rel="noopener"><span class="ic">↗</span>sites.google.com/view/energyinfo</a><a href="mailto:gykwon@kongju.ac.kr"><span class="ic">✉</span>gykwon@kongju.ac.kr</a></div>
               <p class="pr-bio" data-i18n="p3krB">배터리 관리 시스템이 수집하는 전압·전류·온도 데이터만으로 건전성을 추정하고 잔존 수명을 예측하는 AI 모델을 연구합니다. 불확실성 정량화와 전이학습이 주요 주제입니다.</p>
             </div>
           </div>
@@ -307,6 +312,7 @@ footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
               <span class="pr-side" data-i18n="pr_hu">헝가리 측</span>
               <h3>Péter Szilassy</h3>
               <p class="pr-aff" data-i18n="p3huA">HUBA 전기모빌리티 분과장 · 연구 프로젝트 리더</p>
+              <div class="pr-links"><a href="mailto:szilassy.peter@hu-ba.hu"><span class="ic">✉</span>szilassy.peter@hu-ba.hu</a></div>
               <p class="pr-bio" data-i18n="p3huB">전기버스 배터리 시스템의 운영 데이터를 기반으로 한 최적화를 담당합니다. 실제 운행 데이터를 확보해 모델 검증에 활용합니다.</p>
             </div>
           </div>
@@ -331,6 +337,7 @@ footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
               <span class="pr-side" data-i18n="pr_kr">한국 측</span>
               <h3>Seoni Kim</h3>
               <p class="pr-aff" data-i18n="p4krA">이화여자대학교 조교수</p>
+              <div class="pr-links"><a href="https://enec.ewha.ac.kr" target="_blank" rel="noopener"><span class="ic">↗</span>enec.ewha.ac.kr</a><a href="mailto:seonikim@ewha.ac.kr"><span class="ic">✉</span>seonikim@ewha.ac.kr</a></div>
               <p class="pr-bio" data-i18n="p4krB">배터리 산업의 주요 오염물질을 규정하고 전과정평가로 환경 영향을 정량화합니다. 저화학 습식제련과 양극재 직접 재활용 기술을 함께 다룹니다.</p>
             </div>
           </div>
@@ -343,6 +350,7 @@ footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
               <span class="pr-side" data-i18n="pr_hu">헝가리 측</span>
               <h3>Győző Láng</h3>
               <p class="pr-aff" data-i18n="p4huA">HUBA 환경보건안전 분과장</p>
+              <div class="pr-links"><a href="https://ttk.elte.hu/en/staff/gyozo-g-lang" target="_blank" rel="noopener"><span class="ic">↗</span>ttk.elte.hu/en/staff/gyozo-g-lang</a><a href="mailto:gyozo.lang@ttk.elte.hu"><span class="ic">✉</span>gyozo.lang@ttk.elte.hu</a></div>
               <p class="pr-bio" data-i18n="p4huB">헝가리 현지 배터리 시설의 환경·보건·안전 기준 수립을 담당합니다. 전기화학 분야 연구를 바탕으로 친환경 재활용 공정을 연구합니다.</p>
             </div>
           </div>
@@ -357,7 +365,7 @@ footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
 
 <footer>
   <span data-i18n="f1">KHBCC — 한국–헝가리 배터리 협력센터</span>
-  <span class="ver">v2026.09.22-f</span>
+  <span class="ver">v2026.09.23-a</span>
 </footer>
 
 <script src="i18n.js"></script>
@@ -400,7 +408,7 @@ document.querySelectorAll('.pr-photo').forEach(function(box){
   if(!img || !img.getAttribute('src')) box.classList.add('noimg');
 });
 
-(function(){ var t=new Image(); t.onerror=function(){ document.documentElement.classList.add('no-seoul'); }; t.src='assets/hero/seoul.jpg'; })();
+
 </script>
 <script src="content-loader.js"></script>
 </body>

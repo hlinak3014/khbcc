@@ -130,20 +130,15 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
 
-/* page-head wallpaper — language dependent */
+/* page-head wallpaper */
 .page-head{background:#0B1029}
 .page-head::after{display:none}
 .hbg{position:absolute;inset:0;z-index:0;overflow:hidden}
-.hbg i{position:absolute;inset:0;background-size:cover;background-position:center 40%;opacity:0}
+.hbg i{position:absolute;inset:0;background-size:cover;background-position:center 45%;background-image:url('assets/hero/budapest-parliament.jpg')}
 .hbg::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,13,36,.93) 0%,rgba(9,13,36,.80) 45%,rgba(9,13,36,.55) 100%)}
-html[lang="ko"] .hbg-a{background-image:url('assets/hero/budapest-chainbridge.jpg');opacity:1}
-html[lang="hu"] .hbg-a{background-image:url('assets/hero/seoul.jpg');opacity:1}
-html[lang="hu"].no-seoul .hbg-a{background-image:url('assets/hero/budapest-panorama.jpg')}
-html[lang="en"] .hbg-a{background-image:url('assets/hero/budapest-chainbridge.jpg');opacity:1;-webkit-mask-image:linear-gradient(90deg,#000 40%,transparent 62%);mask-image:linear-gradient(90deg,#000 40%,transparent 62%)}
-html[lang="en"] .hbg-b{background-image:url('assets/hero/seoul.jpg');opacity:1;-webkit-mask-image:linear-gradient(90deg,transparent 38%,#000 60%);mask-image:linear-gradient(90deg,transparent 38%,#000 60%)}
-html[lang="en"].no-seoul .hbg-a{-webkit-mask-image:none;mask-image:none;background-image:url('assets/hero/budapest-panorama.jpg')}
-html[lang="en"].no-seoul .hbg-b{opacity:0}
-footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
+.eb-wrap{display:flex;align-items:center;gap:9px}
+.flags{display:inline-flex;gap:5px;flex-shrink:0}
+.fl{width:20px;height:auto;border-radius:1.5px;box-shadow:0 0 0 1px rgba(255,255,255,.35)}
 </style>
 </head>
 <body data-page="research">
@@ -178,7 +173,7 @@ footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
       <div class="nv">
         <button class="nv-t" aria-expanded="false" data-i18n="nav3">기업 지원</button>
         <div class="nv-m">
-          <a href="index.html#platform" data-i18n="sub3a">매칭 절차</a>
+          <a href="apply.html#process" data-i18n="sub3a">매칭 절차</a>
           <a href="apply.html" data-i18n="sub3b">기업 등록</a>
         </div>
       </div>
@@ -194,9 +189,9 @@ footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
 </header>
 
 <div class="page-head">
-  <div class="hbg"><i class="hbg-a"></i><i class="hbg-b"></i></div>
+  <div class="hbg"><i></i></div>
   <div class="wrap">
-    <span class="eyebrow" data-i18n="rEyebrow">연구 내용</span>
+    <span class="eb-wrap"><span class="flags"><svg class="fl" viewBox="0 0 60 40" role="img" aria-label="Korea"><rect width="60" height="40" fill="#fff"/><g transform="translate(30,20) rotate(-33.69)"><circle r="8" fill="#CD2E3A"/><path d="M-8,0 a4,4 0 0,1 8,0 a4,4 0 0,0 8,0 a8,8 0 0,1 -16,0 Z" fill="#0047A0"/></g><g fill="#000"><g transform="translate(10.5,7.5) rotate(56.31)"><rect x="-4.5" y="-2.6" width="9" height="1.6"/><rect x="-4.5" y="-0.8" width="9" height="1.6"/><rect x="-4.5" y="1" width="9" height="1.6"/></g><g transform="translate(49.5,32.5) rotate(56.31)"><rect x="-4.5" y="-2.6" width="3.9" height="1.6"/><rect x="0.6" y="-2.6" width="3.9" height="1.6"/><rect x="-4.5" y="-0.8" width="9" height="1.6"/><rect x="-4.5" y="1" width="3.9" height="1.6"/><rect x="0.6" y="1" width="3.9" height="1.6"/></g><g transform="translate(49.5,7.5) rotate(-56.31)"><rect x="-4.5" y="-2.6" width="3.9" height="1.6"/><rect x="0.6" y="-2.6" width="3.9" height="1.6"/><rect x="-4.5" y="-0.8" width="3.9" height="1.6"/><rect x="0.6" y="-0.8" width="3.9" height="1.6"/><rect x="-4.5" y="1" width="3.9" height="1.6"/><rect x="0.6" y="1" width="3.9" height="1.6"/></g><g transform="translate(10.5,32.5) rotate(-56.31)"><rect x="-4.5" y="-2.6" width="9" height="1.6"/><rect x="-4.5" y="-0.8" width="3.9" height="1.6"/><rect x="0.6" y="-0.8" width="3.9" height="1.6"/><rect x="-4.5" y="1" width="9" height="1.6"/></g></g></svg><svg class="fl" viewBox="0 0 60 40" role="img" aria-label="Hungary"><rect width="60" height="13.33" fill="#CE2939"/><rect y="13.33" width="60" height="13.34" fill="#fff"/><rect y="26.67" width="60" height="13.33" fill="#477050"/></svg></span><span class="eyebrow" data-i18n="rEyebrow">연구 내용</span></span>
     <h1 data-i18n="rTitle">무엇을 연구하는가</h1>
     <p data-i18n="rLede">KHBCC의 연구는 EU 배터리 규정(2023/1542)이 요구하는 것을 실제로 측정하고 증명하는 방법을 찾는 데 집중합니다. 네 개 영역으로 나뉘며, 각각 양국 기관이 함께 수행합니다.</p>
   </div>
@@ -422,7 +417,7 @@ footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
 
 <footer>
   <span data-i18n="f1">KHBCC — 한국–헝가리 배터리 협력센터</span>
-  <span class="ver">v2026.09.22-f</span>
+  <span class="ver">v2026.09.23-a</span>
 </footer>
 
 <script src="i18n.js"></script>
@@ -462,7 +457,7 @@ document.addEventListener('keydown',function(e){
   if(e.key==='Escape') document.querySelectorAll('.nv').forEach(function(n){ n.classList.remove('open'); n.querySelector('.nv-t').setAttribute('aria-expanded','false'); });
 });
 
-(function(){ var t=new Image(); t.onerror=function(){ document.documentElement.classList.add('no-seoul'); }; t.src='assets/hero/seoul.jpg'; })();
+
 </script>
 <script src="content-loader.js"></script>
 </body>

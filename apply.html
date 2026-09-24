@@ -66,6 +66,30 @@ main{padding:clamp(34px,5vw,56px) var(--pad) clamp(56px,7vw,88px)}
 .note p{font-size:14.5px;color:var(--steel);margin:0}
 
 
+
+.proc{margin-bottom:clamp(34px,5vw,52px);scroll-margin-top:80px}
+.proc .sec-head{margin-bottom:20px;max-width:72ch}
+.proc .sec-head h2{font-size:clamp(20px,2.6vw,27px);margin:11px 0 12px}
+.proc .sec-head p{font-size:14.5px;color:var(--steel)}
+.fig{margin:0;padding:24px 20px;background:#fff;border:1px solid var(--line);border-radius:4px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.bp-db{background:var(--ink);color:#FAFAFB;border-radius:3px;padding:11px 14px;text-align:center;font-family:var(--mono);font-size:13px;overflow-wrap:anywhere}
+.bp-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;position:relative;padding-top:40px}
+.bp-grid::before{content:'';position:absolute;top:20px;left:12.5%;right:12.5%;border-top:1px solid #9BA3B4}
+.bp-grid::after{content:'';position:absolute;top:0;left:50%;width:1px;height:20px;background:#9BA3B4}
+.bp-col{position:relative;display:flex;flex-direction:column}
+.bp-col::before{content:'';position:absolute;top:-20px;left:50%;width:1px;height:20px;background:#9BA3B4}
+.bp-card{border:1.5px solid var(--d);border-radius:4px;overflow:hidden;background:#fff;flex:1;display:flex;flex-direction:column}
+.bp-num{background:var(--d);color:#fff;font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.1em;padding:6px 14px}
+.bp-body{padding:13px 15px 16px}
+.bp-body h4{font-family:var(--display);font-size:15.5px;font-weight:600;line-height:1.3;margin-bottom:10px;overflow-wrap:anywhere}
+.bp-body ul{list-style:none;display:flex;flex-direction:column;gap:5px}
+.bp-body li{font-size:13px;color:var(--steel);line-height:1.45;overflow-wrap:anywhere}
+.bp-arrow{height:22px;position:relative}
+.bp-arrow::before{content:'';position:absolute;left:50%;top:0;width:1px;height:16px;background:var(--d)}
+.bp-arrow::after{content:'';position:absolute;left:50%;top:11px;width:7px;height:7px;border-right:1.5px solid var(--d);border-bottom:1.5px solid var(--d);transform:translateX(-50%) rotate(45deg)}
+.bp-out{background:var(--l);border:1px solid var(--d);border-radius:3px;padding:9px 10px;text-align:center;font-family:var(--mono);font-size:12px;color:var(--ink);line-height:1.35;overflow-wrap:anywhere}
+@media (max-width:820px){ .bp-grid{grid-template-columns:1fr} .bp-grid::before,.bp-col::before,.bp-grid::after{display:none} }
 .crit{margin-bottom:clamp(34px,5vw,52px);scroll-margin-top:80px}
 .crit .sec-head{margin-bottom:22px;max-width:72ch}
 .crit .sec-head h2{font-size:clamp(20px,2.6vw,27px);margin:11px 0 12px}
@@ -126,20 +150,15 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
 
-/* page-head wallpaper — language dependent */
+/* page-head wallpaper */
 .page-head{background:#0B1029}
 .page-head::after{display:none}
 .hbg{position:absolute;inset:0;z-index:0;overflow:hidden}
-.hbg i{position:absolute;inset:0;background-size:cover;background-position:center 40%;opacity:0}
+.hbg i{position:absolute;inset:0;background-size:cover;background-position:center 45%;background-image:url('assets/hero/budapest-parliament.jpg')}
 .hbg::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,13,36,.93) 0%,rgba(9,13,36,.80) 45%,rgba(9,13,36,.55) 100%)}
-html[lang="ko"] .hbg-a{background-image:url('assets/hero/budapest-chainbridge.jpg');opacity:1}
-html[lang="hu"] .hbg-a{background-image:url('assets/hero/seoul.jpg');opacity:1}
-html[lang="hu"].no-seoul .hbg-a{background-image:url('assets/hero/budapest-panorama.jpg')}
-html[lang="en"] .hbg-a{background-image:url('assets/hero/budapest-chainbridge.jpg');opacity:1;-webkit-mask-image:linear-gradient(90deg,#000 40%,transparent 62%);mask-image:linear-gradient(90deg,#000 40%,transparent 62%)}
-html[lang="en"] .hbg-b{background-image:url('assets/hero/seoul.jpg');opacity:1;-webkit-mask-image:linear-gradient(90deg,transparent 38%,#000 60%);mask-image:linear-gradient(90deg,transparent 38%,#000 60%)}
-html[lang="en"].no-seoul .hbg-a{-webkit-mask-image:none;mask-image:none;background-image:url('assets/hero/budapest-panorama.jpg')}
-html[lang="en"].no-seoul .hbg-b{opacity:0}
-footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
+.eb-wrap{display:flex;align-items:center;gap:9px}
+.flags{display:inline-flex;gap:5px;flex-shrink:0}
+.fl{width:20px;height:auto;border-radius:1.5px;box-shadow:0 0 0 1px rgba(255,255,255,.35)}
 </style>
 </head>
 <body data-page="apply">
@@ -174,7 +193,7 @@ footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
       <div class="nv">
         <button class="nv-t" aria-expanded="false" data-i18n="nav3">기업 지원</button>
         <div class="nv-m">
-          <a href="index.html#platform" data-i18n="sub3a">매칭 절차</a>
+          <a href="apply.html#process" data-i18n="sub3a">매칭 절차</a>
           <a href="apply.html" class="cur" data-i18n="sub3b">기업 등록</a>
         </div>
       </div>
@@ -190,9 +209,9 @@ footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
 </header>
 
 <div class="page-head">
-  <div class="hbg"><i class="hbg-a"></i><i class="hbg-b"></i></div>
+  <div class="hbg"><i></i></div>
   <div class="wrap">
-    <span class="eyebrow" data-i18n="ap_eyebrow">기업 등록 신청</span>
+    <span class="eb-wrap"><span class="flags"><svg class="fl" viewBox="0 0 60 40" role="img" aria-label="Korea"><rect width="60" height="40" fill="#fff"/><g transform="translate(30,20) rotate(-33.69)"><circle r="8" fill="#CD2E3A"/><path d="M-8,0 a4,4 0 0,1 8,0 a4,4 0 0,0 8,0 a8,8 0 0,1 -16,0 Z" fill="#0047A0"/></g><g fill="#000"><g transform="translate(10.5,7.5) rotate(56.31)"><rect x="-4.5" y="-2.6" width="9" height="1.6"/><rect x="-4.5" y="-0.8" width="9" height="1.6"/><rect x="-4.5" y="1" width="9" height="1.6"/></g><g transform="translate(49.5,32.5) rotate(56.31)"><rect x="-4.5" y="-2.6" width="3.9" height="1.6"/><rect x="0.6" y="-2.6" width="3.9" height="1.6"/><rect x="-4.5" y="-0.8" width="9" height="1.6"/><rect x="-4.5" y="1" width="3.9" height="1.6"/><rect x="0.6" y="1" width="3.9" height="1.6"/></g><g transform="translate(49.5,7.5) rotate(-56.31)"><rect x="-4.5" y="-2.6" width="3.9" height="1.6"/><rect x="0.6" y="-2.6" width="3.9" height="1.6"/><rect x="-4.5" y="-0.8" width="3.9" height="1.6"/><rect x="0.6" y="-0.8" width="3.9" height="1.6"/><rect x="-4.5" y="1" width="3.9" height="1.6"/><rect x="0.6" y="1" width="3.9" height="1.6"/></g><g transform="translate(10.5,32.5) rotate(-56.31)"><rect x="-4.5" y="-2.6" width="9" height="1.6"/><rect x="-4.5" y="-0.8" width="3.9" height="1.6"/><rect x="0.6" y="-0.8" width="3.9" height="1.6"/><rect x="-4.5" y="1" width="9" height="1.6"/></g></g></svg><svg class="fl" viewBox="0 0 60 40" role="img" aria-label="Hungary"><rect width="60" height="13.33" fill="#CE2939"/><rect y="13.33" width="60" height="13.34" fill="#fff"/><rect y="26.67" width="60" height="13.33" fill="#477050"/></svg></span><span class="eyebrow" data-i18n="ap_eyebrow">기업 등록 신청</span></span>
     <h1 data-i18n="ap_title">회원사 데이터베이스 등록</h1>
     <p data-i18n="ap_lede">아래 항목은 매칭 절차 1단계인 자격 검증과 2단계인 역량·수요 분석에 사용됩니다. 등록 후 담당자가 확인해 연락드립니다.</p>
   </div>
@@ -205,6 +224,65 @@ footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
       <p data-i18n="ap_note">작성하신 내용은 이메일 프로그램으로 옮겨져 발송됩니다. 보내기를 누르면 메일 작성 창이 열리니, 내용을 확인하신 뒤 발송해 주세요.</p>
     </div>
 
+
+
+    <section id="process" class="proc">
+      <div class="sec-head">
+        <span class="eyebrow" data-i18n="platEyebrow">3개국어 플랫폼 · 기업 매칭</span>
+        <h2 data-i18n="platTitle">기업 매칭은 네 단계를 거칩니다</h2>
+        <p data-i18n="platBody">검증된 기업에서 출발해 실제 성과가 나오는 미팅까지, 네 단계를 거쳐 연결합니다.</p>
+      </div>
+<figure class="fig" aria-labelledby="figB2bT">
+      <figcaption class="sr-only" id="figB2bT" data-i18n="figB2bT">B2B 매칭 4단계 절차</figcaption>
+      <div class="bp-db" data-i18n="figDb">KBIA · HUBA 회원사 데이터베이스</div>
+      <div class="bp-grid">
+          <div class="bp-col" style="--d:#2E75B6;--l:#BDD7EE">
+            <article class="bp-card">
+              <div class="bp-num">01</div>
+              <div class="bp-body">
+                <h4 data-i18n="figS1t">확인</h4>
+                <ul><li data-i18n="figS1a">사업 실재성 확인</li><li data-i18n="figS1b">밸류체인 내 역할 확인</li></ul>
+              </div>
+            </article>
+            <div class="bp-arrow" aria-hidden="true"></div>
+            <div class="bp-out" data-i18n="figO1">검증된 파트너 풀</div>
+          </div>
+          <div class="bp-col" style="--d:#ED7D31;--l:#F8CBAD">
+            <article class="bp-card">
+              <div class="bp-num">02</div>
+              <div class="bp-body">
+                <h4 data-i18n="figS2t">분석</h4>
+                <ul><li data-i18n="figS2a">기술 성숙도·생산 역량 평가</li><li data-i18n="figS2b">협력 수요 파악</li></ul>
+              </div>
+            </article>
+            <div class="bp-arrow" aria-hidden="true"></div>
+            <div class="bp-out" data-i18n="figO2">기업 프로파일</div>
+          </div>
+          <div class="bp-col" style="--d:#70AD47;--l:#C5E0B4">
+            <article class="bp-card">
+              <div class="bp-num">03</div>
+              <div class="bp-body">
+                <h4 data-i18n="figS3t">선별</h4>
+                <ul><li data-i18n="figS3a">기술적 가치 · 경제적 영향</li><li data-i18n="figS3b">환경적 지속가능성</li></ul>
+              </div>
+            </article>
+            <div class="bp-arrow" aria-hidden="true"></div>
+            <div class="bp-out" data-i18n="figO3">큐레이션 리스트</div>
+          </div>
+          <div class="bp-col" style="--d:#7030A0;--l:#DDC4E2">
+            <article class="bp-card">
+              <div class="bp-num">04</div>
+              <div class="bp-body">
+                <h4 data-i18n="figS4t">연결</h4>
+                <ul><li data-i18n="figS4a">추천 미팅 일정 전달</li><li data-i18n="figS4b">상대 기업 정보 제공</li></ul>
+              </div>
+            </article>
+            <div class="bp-arrow" aria-hidden="true"></div>
+            <div class="bp-out" data-i18n="figO4">실질적 B2B 미팅</div>
+          </div>
+      </div>
+    </figure>
+    </section>
 
     <section id="criteria" class="crit">
       <div class="sec-head">
@@ -340,7 +418,7 @@ footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
 
       <div class="actions">
         <button type="submit" class="btn btn-primary" data-i18n="ap_submit">보내기</button>
-        <a href="index.html#platform" class="btn btn-ghost" data-i18n="ap_back">매칭 절차 보기</a>
+        <a href="apply.html#process" class="btn btn-ghost" data-i18n="ap_back">매칭 절차 보기</a>
         <span class="status" id="status" role="status" aria-live="polite"></span>
       </div>
 
@@ -350,7 +428,7 @@ footer .ver{opacity:.55;font-family:var(--mono);font-size:10.5px}
 
 <footer>
   <span data-i18n="f1">KHBCC — 한국–헝가리 배터리 협력센터</span>
-  <span class="ver">v2026.09.22-f</span>
+  <span class="ver">v2026.09.23-a</span>
 </footer>
 
 <script src="i18n.js"></script>
@@ -450,7 +528,7 @@ document.addEventListener('keydown',function(e){
   if(e.key==='Escape') document.querySelectorAll('.nv').forEach(function(n){ n.classList.remove('open'); n.querySelector('.nv-t').setAttribute('aria-expanded','false'); });
 });
 
-(function(){ var t=new Image(); t.onerror=function(){ document.documentElement.classList.add('no-seoul'); }; t.src='assets/hero/seoul.jpg'; })();
+
 </script>
 <script src="content-loader.js"></script>
 </body>

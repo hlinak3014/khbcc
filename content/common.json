@@ -86,6 +86,42 @@
       "en": "Contact"
     },
     {
+      "key": "p1t",
+      "ko": "제도 기반 구축",
+      "hu": "Intézményi alapok",
+      "en": "Institutional foundation"
+    },
+    {
+      "key": "pr_kr",
+      "ko": "한국 측",
+      "hu": "Koreai fél",
+      "en": "Korean side"
+    },
+    {
+      "key": "pr_hu",
+      "ko": "헝가리 측",
+      "hu": "Magyar fél",
+      "en": "Hungarian side"
+    },
+    {
+      "key": "p2t",
+      "ko": "배터리 여권 요구사항 분석·성능 시험 검증",
+      "hu": "Akkumulátor-útlevél követelmények és teljesítményvizsgálat",
+      "en": "Battery Passport requirements and performance testing"
+    },
+    {
+      "key": "p3t",
+      "ko": "AI 기반 데이터 분석·수명 예측",
+      "hu": "MI-alapú adatelemzés és élettartam-előrejelzés",
+      "en": "AI-based data analysis and lifetime prediction"
+    },
+    {
+      "key": "p4t",
+      "ko": "환경 영향 평가·순환경제",
+      "hu": "Környezeti hatás és körforgásos gazdaság",
+      "en": "Environmental impact and circular economy"
+    },
+    {
       "key": "f1",
       "ko": "KHBCC — 한국–헝가리 배터리 협력센터",
       "hu": "KHBCC — Koreai–Magyar Akkumulátoripari Együttműködési Központ",

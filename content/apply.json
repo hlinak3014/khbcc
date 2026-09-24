@@ -26,6 +26,132 @@
       "en": "Your entry is transferred to your email program for sending. When you submit, a mail window opens — please review the contents and send it."
     },
     {
+      "key": "platEyebrow",
+      "ko": "3개국어 플랫폼 · 기업 매칭",
+      "hu": "Háromnyelvű platform · cégpárosítás",
+      "en": "Trilingual platform · firm matching"
+    },
+    {
+      "key": "platTitle",
+      "ko": "기업 매칭은 네 단계를 거칩니다",
+      "hu": "A párosítás négy szakaszból áll",
+      "en": "Matching runs through four stages"
+    },
+    {
+      "key": "platBody",
+      "ko": "검증된 기업에서 출발해 실제 성과가 나오는 미팅까지, 네 단계를 거쳐 연결합니다.",
+      "hu": "Az ellenőrzött partnerektől a kurátorált üzleti találkozókig, négy lépésben.",
+      "en": "From verified partners to curated business meetings, in four stages."
+    },
+    {
+      "key": "figB2bT",
+      "ko": "B2B 매칭 4단계 절차",
+      "hu": "Négylépcsős B2B párosítási folyamat",
+      "en": "Four-stage B2B matching process"
+    },
+    {
+      "key": "figDb",
+      "ko": "KBIA · HUBA 회원사 데이터베이스",
+      "hu": "KBIA és HUBA tagvállalati adatbázis",
+      "en": "KBIA and HUBA member company database"
+    },
+    {
+      "key": "figS1t",
+      "ko": "확인",
+      "hu": "Minősítés",
+      "en": "Qualification"
+    },
+    {
+      "key": "figS1a",
+      "ko": "사업 실재성 확인",
+      "hu": "Cégstátusz ellenőrzése",
+      "en": "Verify corporate status"
+    },
+    {
+      "key": "figS1b",
+      "ko": "밸류체인 내 역할 확인",
+      "hu": "Értéklánc-szerep igazolása",
+      "en": "Confirm value chain role"
+    },
+    {
+      "key": "figO1",
+      "ko": "검증된 파트너 풀",
+      "hu": "Ellenőrzött partnerkör",
+      "en": "Verified partner pool"
+    },
+    {
+      "key": "figS2t",
+      "ko": "분석",
+      "hu": "Képességfelmérés",
+      "en": "Capability profiling"
+    },
+    {
+      "key": "figS2a",
+      "ko": "기술 성숙도·생산 역량 평가",
+      "hu": "TRL és kapacitás értékelése",
+      "en": "Assess TRL and capacity"
+    },
+    {
+      "key": "figS2b",
+      "ko": "협력 수요 파악",
+      "hu": "Együttműködési igény feltárása",
+      "en": "Establish cooperation needs"
+    },
+    {
+      "key": "figO2",
+      "ko": "기업 프로파일",
+      "hu": "Részletes cégprofilok",
+      "en": "Detailed firm profiles"
+    },
+    {
+      "key": "figS3t",
+      "ko": "선별",
+      "hu": "Szűrés",
+      "en": "Screening"
+    },
+    {
+      "key": "figS3a",
+      "ko": "기술적 가치 · 경제적 영향",
+      "hu": "Műszaki érték, gazdasági hatás",
+      "en": "Technical value, economic impact"
+    },
+    {
+      "key": "figS3b",
+      "ko": "환경적 지속가능성",
+      "hu": "Környezeti fenntarthatóság",
+      "en": "Environmental sustainability"
+    },
+    {
+      "key": "figO3",
+      "ko": "큐레이션 리스트",
+      "hu": "Kurátorált partnerlista",
+      "en": "Curated partner list"
+    },
+    {
+      "key": "figS4t",
+      "ko": "연결",
+      "hu": "Előzetes párosítás",
+      "en": "Pre-matching"
+    },
+    {
+      "key": "figS4a",
+      "ko": "추천 미팅 일정 전달",
+      "hu": "Javasolt találkozók küldése",
+      "en": "Send suggested meetings"
+    },
+    {
+      "key": "figS4b",
+      "ko": "상대 기업 정보 제공",
+      "hu": "Partnertájékoztatók átadása",
+      "en": "Provide counterpart briefings"
+    },
+    {
+      "key": "figO4",
+      "ko": "실질적 B2B 미팅",
+      "hu": "Nagy hatású B2B találkozók",
+      "en": "High-impact B2B meetings"
+    },
+    {
       "key": "critEyebrow",
       "ko": "선별 기준",
       "hu": "Kiválasztási szempontok",
