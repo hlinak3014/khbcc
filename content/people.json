@@ -1,11 +1,11 @@
 {
-  "title": "연구진",
+  "title": "센터 구성원",
   "items": [
     {
       "key": "prEyebrow",
-      "ko": "연구진",
-      "hu": "Kutatócsoport",
-      "en": "Research team"
+      "ko": "센터 구성원",
+      "hu": "A központ tagjai",
+      "en": "Center members"
     },
     {
       "key": "prTitle",
@@ -57,9 +57,9 @@
     },
     {
       "key": "p1krA",
-      "ko": "연세대학교 교수",
-      "hu": "Egyetemi tanár, Yonsei Egyetem",
-      "en": "Professor, Yonsei University"
+      "ko": "연세대학교 전기전자공학부 교수",
+      "hu": "Egyetemi tanár, Villamosmérnöki és Elektronikai Kar, Yonsei Egyetem",
+      "en": "Professor, School of Electrical and Electronic Engineering, Yonsei University"
     },
     {
       "key": "p1krB",
@@ -87,9 +87,9 @@
     },
     {
       "key": "p2krA",
-      "ko": "공주대학교 조교수",
-      "hu": "Adjunktus, Kongju Nemzeti Egyetem",
-      "en": "Assistant Professor, Kongju National University"
+      "ko": "국립공주대학교 제어계측공학과 조교수",
+      "hu": "Adjunktus, Irányítás- és Méréstechnikai Tanszék, Kongju Nemzeti Egyetem",
+      "en": "Assistant Professor, Department of Control and Instrumentation Engineering, Kongju National University"
     },
     {
       "key": "p2krB",
@@ -117,9 +117,9 @@
     },
     {
       "key": "p3krA",
-      "ko": "공주대학교 조교수",
-      "hu": "Adjunktus, Kongju Nemzeti Egyetem",
-      "en": "Assistant Professor, Kongju National University"
+      "ko": "국립공주대학교 스마트정보기술공학과 조교수",
+      "hu": "Adjunktus, Okos Információtechnológiai Tanszék, Kongju Nemzeti Egyetem",
+      "en": "Assistant Professor, Department of Smart Information Technology Engineering, Kongju National University"
     },
     {
       "key": "p3krB",
@@ -147,9 +147,9 @@
     },
     {
       "key": "p4krA",
-      "ko": "이화여자대학교 조교수",
-      "hu": "Adjunktus, Ewha Womans Egyetem",
-      "en": "Assistant Professor, Ewha Womans University"
+      "ko": "이화여자대학교 환경공학과 조교수",
+      "hu": "Adjunktus, Környezettudományi és -mérnöki Tanszék, Ewha Womans Egyetem",
+      "en": "Assistant Professor, Department of Environmental Science and Engineering, Ewha Womans University"
     },
     {
       "key": "p4krB",
@@ -159,9 +159,9 @@
     },
     {
       "key": "p4huA",
-      "ko": "HUBA 환경보건안전 분과장",
-      "hu": "Az EHS munkacsoport vezetője, HUBA",
-      "en": "EHS Working Group Leader, HUBA"
+      "ko": "외트뵈시 로란드 대학교(ELTE) 물리화학과 교수 · HUBA 환경보건안전 분과장",
+      "hu": "Egyetemi tanár, Fizikai Kémiai Tanszék, Eötvös Loránd Tudományegyetem · az EHS munkacsoport vezetője, HUBA",
+      "en": "Professor, Department of Physical Chemistry, Eötvös Loránd University (ELTE) · EHS Working Group Leader, HUBA"
     },
     {
       "key": "p4huB",

@@ -566,6 +566,78 @@
       "en": "We pass EU regulatory developments to firms and carry their concerns to the ministries on both sides, alongside environmental assessment and battery safety standards."
     },
     {
+      "key": "tmEyebrow",
+      "ko": "센터 구성원",
+      "hu": "A központ tagjai",
+      "en": "Center members"
+    },
+    {
+      "key": "tmTitle",
+      "ko": "누구와 이야기하면 되는가",
+      "hu": "Kihez forduljon",
+      "en": "Who to talk to"
+    },
+    {
+      "key": "tmBody",
+      "ko": "네 개 세부주제마다 한국과 헝가리에서 각각 한 명씩 책임자를 두고 짝을 이뤄 연구를 진행합니다.",
+      "hu": "Mind a négy altémának egy koreai és egy magyar felelőse van, akik párban dolgoznak.",
+      "en": "Each of the four sub-topics has one lead in Korea and one in Hungary, working as a pair."
+    },
+    {
+      "key": "tp1",
+      "ko": "연세대학교 전기전자공학부",
+      "hu": "Villamosmérnöki és Elektronikai Kar, Yonsei Egyetem",
+      "en": "School of Electrical and Electronic Engineering, Yonsei Univ."
+    },
+    {
+      "key": "tp2",
+      "ko": "HUBA",
+      "hu": "HUBA",
+      "en": "HUBA"
+    },
+    {
+      "key": "tp3",
+      "ko": "국립공주대학교 제어계측공학과",
+      "hu": "Irányítás- és Méréstechnikai Tanszék, Kongju Nemzeti Egyetem",
+      "en": "Dept. of Control and Instrumentation Eng., Kongju Nat. Univ."
+    },
+    {
+      "key": "tp4",
+      "ko": "HUBA",
+      "hu": "HUBA",
+      "en": "HUBA"
+    },
+    {
+      "key": "tp5",
+      "ko": "국립공주대학교 스마트정보기술공학과",
+      "hu": "Okos Információtechnológiai Tanszék, Kongju Nemzeti Egyetem",
+      "en": "Dept. of Smart Information Technology Eng., Kongju Nat. Univ."
+    },
+    {
+      "key": "tp6",
+      "ko": "HUBA",
+      "hu": "HUBA",
+      "en": "HUBA"
+    },
+    {
+      "key": "tp7",
+      "ko": "이화여자대학교 환경공학과",
+      "hu": "Környezettudományi és -mérnöki Tanszék, Ewha Womans Egyetem",
+      "en": "Dept. of Environmental Science and Engineering, Ewha Womans Univ."
+    },
+    {
+      "key": "tp8",
+      "ko": "ELTE · HUBA",
+      "hu": "HUBA",
+      "en": "ELTE · HUBA"
+    },
+    {
+      "key": "tmMore",
+      "ko": "연구진 전체 보기 →",
+      "hu": "A teljes csapat &rarr;",
+      "en": "See the full team &rarr;"
+    },
+    {
       "key": "govEyebrow",
       "ko": "운영 체계",
       "hu": "Szervezet",
@@ -810,78 +882,6 @@
       "ko": "헝가리 연구 네트워크",
       "hu": "Magyar Kutatási Hálózat",
       "en": "Hungarian Research Network"
-    },
-    {
-      "key": "tmEyebrow",
-      "ko": "연구진",
-      "hu": "Kutatócsoport",
-      "en": "Research team"
-    },
-    {
-      "key": "tmTitle",
-      "ko": "누구와 이야기하면 되는가",
-      "hu": "Kihez forduljon",
-      "en": "Who to talk to"
-    },
-    {
-      "key": "tmBody",
-      "ko": "네 개 세부주제마다 한국과 헝가리에서 각각 한 명씩 책임자를 두고 짝을 이뤄 연구를 진행합니다.",
-      "hu": "Mind a négy altémának egy koreai és egy magyar felelőse van, akik párban dolgoznak.",
-      "en": "Each of the four sub-topics has one lead in Korea and one in Hungary, working as a pair."
-    },
-    {
-      "key": "tp1",
-      "ko": "연세대학교",
-      "hu": "Yonsei Egyetem",
-      "en": "Yonsei University"
-    },
-    {
-      "key": "tp2",
-      "ko": "HUBA",
-      "hu": "HUBA",
-      "en": "HUBA"
-    },
-    {
-      "key": "tp3",
-      "ko": "공주대학교",
-      "hu": "Kongju Nemzeti Egyetem",
-      "en": "Kongju National University"
-    },
-    {
-      "key": "tp4",
-      "ko": "HUBA",
-      "hu": "HUBA",
-      "en": "HUBA"
-    },
-    {
-      "key": "tp5",
-      "ko": "공주대학교",
-      "hu": "Kongju Nemzeti Egyetem",
-      "en": "Kongju National University"
-    },
-    {
-      "key": "tp6",
-      "ko": "HUBA",
-      "hu": "HUBA",
-      "en": "HUBA"
-    },
-    {
-      "key": "tp7",
-      "ko": "이화여자대학교",
-      "hu": "Ewha Womans Egyetem",
-      "en": "Ewha Womans University"
-    },
-    {
-      "key": "tp8",
-      "ko": "HUBA",
-      "hu": "HUBA",
-      "en": "HUBA"
-    },
-    {
-      "key": "tmMore",
-      "ko": "연구진 전체 보기 →",
-      "hu": "A teljes csapat &rarr;",
-      "en": "See the full team &rarr;"
     },
     {
       "key": "conEyebrow",

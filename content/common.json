@@ -14,6 +14,12 @@
       "en": "Background"
     },
     {
+      "key": "sub1e",
+      "ko": "센터 구성원",
+      "hu": "A központ tagjai",
+      "en": "Center members"
+    },
+    {
       "key": "sub1c",
       "ko": "운영 체계",
       "hu": "Szervezet",
@@ -42,12 +48,6 @@
       "ko": "연구 내용",
       "hu": "Kutatás",
       "en": "Research"
-    },
-    {
-      "key": "sub2c",
-      "ko": "연구진",
-      "hu": "Kutatócsoport",
-      "en": "Research team"
     },
     {
       "key": "sub2d",
