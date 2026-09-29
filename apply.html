@@ -90,6 +90,24 @@ main{padding:clamp(34px,5vw,56px) var(--pad) clamp(56px,7vw,88px)}
 .bp-arrow::after{content:'';position:absolute;left:50%;top:11px;width:7px;height:7px;border-right:1.5px solid var(--d);border-bottom:1.5px solid var(--d);transform:translateX(-50%) rotate(45deg)}
 .bp-out{background:var(--l);border:1px solid var(--d);border-radius:3px;padding:9px 10px;text-align:center;font-family:var(--mono);font-size:12px;color:var(--ink);line-height:1.35;overflow-wrap:anywhere}
 @media (max-width:820px){ .bp-grid{grid-template-columns:1fr} .bp-grid::before,.bp-col::before,.bp-grid::after{display:none} }
+
+.kbia{margin-bottom:clamp(34px,5vw,52px);scroll-margin-top:80px}
+.kbia .sec-head{margin-bottom:22px;max-width:72ch}
+.kbia .sec-head h2{font-size:clamp(20px,2.6vw,27px);margin:11px 0 12px}
+.kbia .sec-head p{font-size:14.5px;color:var(--steel)}
+.kb-split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.kb-col{background:#fff;padding:22px}
+.kb-h{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--red);display:block;margin-bottom:13px}
+.kb-list{list-style:none;display:flex;flex-direction:column;gap:9px}
+.kb-list li{font-size:14px;color:var(--ink);line-height:1.5;padding-left:16px;position:relative}
+.kb-list li::before{content:'';position:absolute;left:0;top:8px;width:5px;height:5px;border-radius:50%;background:var(--line)}
+.kb-mem{margin-top:18px;background:#fff;border:1px solid var(--line);border-radius:4px;padding:22px}
+.kb-mem-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:16px}
+.kb-mem-grid b{display:block;font-family:var(--display);font-size:15px;margin-bottom:6px}
+.kb-mem-grid span{font-size:13px;color:var(--steel);line-height:1.5}
+.kb-note{font-size:13.5px;color:var(--steel);line-height:1.6;margin-bottom:14px;max-width:none}
+.kb-link{display:inline-block}
+@media (max-width:760px){ .kb-split{grid-template-columns:1fr} }
 .crit{margin-bottom:clamp(34px,5vw,52px);scroll-margin-top:80px}
 .crit .sec-head{margin-bottom:22px;max-width:72ch}
 .crit .sec-head h2{font-size:clamp(20px,2.6vw,27px);margin:11px 0 12px}
@@ -284,6 +302,50 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
     </figure>
     </section>
 
+    <section id="kbia" class="kbia">
+      <div class="sec-head">
+        <span class="eyebrow" data-i18n="kbEyebrow">KBIA 연계</span>
+        <h2 data-i18n="kbTitle">기업 지원은 한국배터리산업협회와 함께합니다</h2>
+        <p data-i18n="kbBody">KHBCC의 기업 매칭은 한국배터리산업협회(KBIA)의 회원사 네트워크 위에서 이뤄집니다. 회원 관리와 국내 기업 지원은 KBIA가, 헝가리 현지 연결과 EU 규제 대응은 KHBCC가 맡습니다.</p>
+      </div>
+
+      <div class="kb-split">
+        <div class="kb-col">
+          <span class="kb-h" data-i18n="kbH1">KBIA가 맡는 일</span>
+          <ul class="kb-list">
+            <li data-i18n="kbA1">회원사 애로사항 지원</li>
+            <li data-i18n="kbA2">전지 산업정보 제공</li>
+            <li data-i18n="kbA3">협회 추진사업 참여 기회 제공</li>
+            <li data-i18n="kbA4">해외시장 개척 지원</li>
+            <li data-i18n="kbA5">R&amp;D 사업 참여기회 확대</li>
+            <li data-i18n="kbA6">회원사 간 교류활동 지원</li>
+          </ul>
+        </div>
+        <div class="kb-col">
+          <span class="kb-h" data-i18n="kbH2">KHBCC가 더하는 일</span>
+          <ul class="kb-list">
+            <li data-i18n="kbB1">헝가리 현지 기업·기관과의 연결</li>
+            <li data-i18n="kbB2">EU 배터리 규정 대응 자문</li>
+            <li data-i18n="kbB3">배터리 여권 대비 시험·데이터 지원</li>
+            <li data-i18n="kbB4">양국 공동 연구개발 과제 발굴</li>
+            <li data-i18n="kbB5">EU Horizon 컨소시엄 구성 지원</li>
+            <li data-i18n="kbB6">3개국어 기업 정보 제공</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="kb-mem">
+        <span class="kb-h" data-i18n="kbH3">KBIA 회원 구분</span>
+        <div class="kb-mem-grid">
+          <div><b data-i18n="kbM1">정회원</b><span data-i18n="kbM1d">전지·장비·부품·재료 등 전지 관련 제품을 제조·판매하거나 용역을 제공하는 기업</span></div>
+          <div><b data-i18n="kbM2">특별회원</b><span data-i18n="kbM2d">전지산업 발전과 관련된 국내 대학, 연구기관, 유관단체</span></div>
+          <div><b data-i18n="kbM3">준회원</b><span data-i18n="kbM3d">협회가 총괄 주관하는 기술개발사업에 참여하는 비회원 기업 (참여 기간 중)</span></div>
+        </div>
+        <p class="kb-note" data-i18n="kbNote">회원 가입과 회비, 협회 주관 사업의 자세한 내용은 KBIA에서 확인하실 수 있습니다. 인터배터리 전시회 연계 수출상담회 등 해외 진출 지원 사업도 KBIA가 운영합니다.</p>
+        <a class="rp-a kb-link" href="https://www.k-bia.or.kr/" target="_blank" rel="noopener" data-i18n="kbGo">한국배터리산업협회 누리집 &rarr;</a>
+      </div>
+    </section>
+
     <section id="criteria" class="crit">
       <div class="sec-head">
         <span class="eyebrow" data-i18n="critEyebrow">선별 기준</span>
@@ -428,7 +490,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
 
 <footer>
   <span data-i18n="f1">KHBCC — 한국–헝가리 배터리 협력센터</span>
-  <span class="ver">v2026.09.24-a</span>
+  <span class="ver">v2026.09.29-a</span>
 </footer>
 
 <script src="i18n.js"></script>

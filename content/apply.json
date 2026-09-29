@@ -1,5 +1,5 @@
 {
-  "title": "기업 등록",
+  "title": "기업 지원",
   "items": [
     {
       "key": "ap_eyebrow",
@@ -150,6 +150,162 @@
       "ko": "실질적 B2B 미팅",
       "hu": "Nagy hatású B2B találkozók",
       "en": "High-impact B2B meetings"
+    },
+    {
+      "key": "kbEyebrow",
+      "ko": "KBIA 연계",
+      "hu": "KBIA-együttműködés",
+      "en": "KBIA partnership"
+    },
+    {
+      "key": "kbTitle",
+      "ko": "기업 지원은 한국배터리산업협회와 함께합니다",
+      "hu": "A vállalati támogatás a Koreai Akkumulátoripari Szövetséggel közösen működik",
+      "en": "Firm support runs with the Korea Battery Industry Association"
+    },
+    {
+      "key": "kbBody",
+      "ko": "KHBCC의 기업 매칭은 한국배터리산업협회(KBIA)의 회원사 네트워크 위에서 이뤄집니다. 회원 관리와 국내 기업 지원은 KBIA가, 헝가리 현지 연결과 EU 규제 대응은 KHBCC가 맡습니다.",
+      "hu": "A KHBCC cégpárosítása a Koreai Akkumulátoripari Szövetség (KBIA) tagi hálózatára épül. A tagságot és a hazai vállalati támogatást a KBIA végzi; a KHBCC a magyarországi kapcsolatot és az uniós szabályozási munkát teszi hozzá.",
+      "en": "KHBCC's firm matching is built on the member network of the Korea Battery Industry Association (KBIA). KBIA handles membership and domestic firm support; KHBCC adds the Hungarian connection and EU regulatory work."
+    },
+    {
+      "key": "kbH1",
+      "ko": "KBIA가 맡는 일",
+      "hu": "Amit a KBIA végez",
+      "en": "What KBIA does"
+    },
+    {
+      "key": "kbA1",
+      "ko": "회원사 애로사항 지원",
+      "hu": "A tagvállalatok működési nehézségeinek kezelése",
+      "en": "Resolving member firms' operational difficulties"
+    },
+    {
+      "key": "kbA2",
+      "ko": "전지 산업정보 제공",
+      "hu": "Akkumulátoripari információszolgáltatás",
+      "en": "Battery industry information"
+    },
+    {
+      "key": "kbA3",
+      "ko": "협회 추진사업 참여 기회 제공",
+      "hu": "Részvétel a szövetség programjaiban",
+      "en": "Access to association-led programs"
+    },
+    {
+      "key": "kbA4",
+      "ko": "해외시장 개척 지원",
+      "hu": "Külpiaci terjeszkedés támogatása",
+      "en": "Overseas market development support"
+    },
+    {
+      "key": "kbA5",
+      "ko": "R&amp;D 사업 참여기회 확대",
+      "hu": "Szélesebb hozzáférés K+F programokhoz",
+      "en": "Wider access to R&D programs"
+    },
+    {
+      "key": "kbA6",
+      "ko": "회원사 간 교류활동 지원",
+      "hu": "Kapcsolatépítés a tagvállalatok között",
+      "en": "Networking among member firms"
+    },
+    {
+      "key": "kbH2",
+      "ko": "KHBCC가 더하는 일",
+      "hu": "Amit a KHBCC hozzátesz",
+      "en": "What KHBCC adds"
+    },
+    {
+      "key": "kbB1",
+      "ko": "헝가리 현지 기업·기관과의 연결",
+      "hu": "Kapcsolat magyar cégekkel és intézményekkel",
+      "en": "Connection to Hungarian firms and institutions"
+    },
+    {
+      "key": "kbB2",
+      "ko": "EU 배터리 규정 대응 자문",
+      "hu": "Tanácsadás az uniós akkumulátorrendeletnek való megfeleléshez",
+      "en": "Advisory on EU Battery Regulation compliance"
+    },
+    {
+      "key": "kbB3",
+      "ko": "배터리 여권 대비 시험·데이터 지원",
+      "hu": "Vizsgálati és adattámogatás az akkumulátor-útlevélhez",
+      "en": "Testing and data support for the battery passport"
+    },
+    {
+      "key": "kbB4",
+      "ko": "양국 공동 연구개발 과제 발굴",
+      "hu": "Közös kétoldalú K+F projektek azonosítása",
+      "en": "Identifying joint R&D projects between the two countries"
+    },
+    {
+      "key": "kbB5",
+      "ko": "EU Horizon 컨소시엄 구성 지원",
+      "hu": "Segítség a Horizont Európa konzorciumok kialakításában",
+      "en": "Support in forming EU Horizon consortia"
+    },
+    {
+      "key": "kbB6",
+      "ko": "3개국어 기업 정보 제공",
+      "hu": "Cégadatok három nyelven",
+      "en": "Company information in three languages"
+    },
+    {
+      "key": "kbH3",
+      "ko": "KBIA 회원 구분",
+      "hu": "KBIA tagsági kategóriák",
+      "en": "KBIA membership categories"
+    },
+    {
+      "key": "kbM1",
+      "ko": "정회원",
+      "hu": "Rendes tag",
+      "en": "Full member"
+    },
+    {
+      "key": "kbM1d",
+      "ko": "전지·장비·부품·재료 등 전지 관련 제품을 제조·판매하거나 용역을 제공하는 기업",
+      "hu": "Akkumulátorokat, berendezéseket, alkatrészeket és alapanyagokat gyártó, forgalmazó vagy ezekhez szolgáltatást nyújtó cégek",
+      "en": "Firms manufacturing, selling, or providing services for batteries, equipment, components, and materials"
+    },
+    {
+      "key": "kbM2",
+      "ko": "특별회원",
+      "hu": "Különleges tag",
+      "en": "Special member"
+    },
+    {
+      "key": "kbM2d",
+      "ko": "전지산업 발전과 관련된 국내 대학, 연구기관, 유관단체",
+      "hu": "Az akkumulátoriparhoz kapcsolódó koreai egyetemek, kutatóintézetek és társszervezetek",
+      "en": "Korean universities, research institutes, and related organizations connected to the battery industry"
+    },
+    {
+      "key": "kbM3",
+      "ko": "준회원",
+      "hu": "Társult tag",
+      "en": "Associate member"
+    },
+    {
+      "key": "kbM3d",
+      "ko": "협회가 총괄 주관하는 기술개발사업에 참여하는 비회원 기업 (참여 기간 중)",
+      "hu": "A szövetség által vezetett technológiafejlesztési projektekben részt vevő, nem tag cégek — a részvétel idejére",
+      "en": "Non-member firms participating in technology development projects led by the association, for the duration of participation"
+    },
+    {
+      "key": "kbNote",
+      "ko": "회원 가입과 회비, 협회 주관 사업의 자세한 내용은 KBIA에서 확인하실 수 있습니다. 인터배터리 전시회 연계 수출상담회 등 해외 진출 지원 사업도 KBIA가 운영합니다.",
+      "hu": "A tagságról, a díjakról és a szövetség programjairól a KBIA honlapján olvashat bővebben. A külpiaci programokat — köztük az InterBattery kiállításhoz kapcsolódó exporttanácsadást — szintén a KBIA működteti.",
+      "en": "Membership, fees, and association-led programs are detailed on the KBIA website. Overseas market programs, including the export consultation sessions linked to the InterBattery exhibition, are also run by KBIA."
+    },
+    {
+      "key": "kbGo",
+      "ko": "한국배터리산업협회 누리집 →",
+      "hu": "Koreai Akkumulátoripari Szövetség &rarr;",
+      "en": "Korea Battery Industry Association &rarr;"
     },
     {
       "key": "critEyebrow",
