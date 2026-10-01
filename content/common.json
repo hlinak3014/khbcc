@@ -16,7 +16,7 @@
     {
       "key": "sub1e",
       "ko": "센터 구성원",
-      "hu": "A központ tagjai",
+      "hu": "Szakmai kapcsolattartók",
       "en": "Center members"
     },
     {
@@ -40,7 +40,7 @@
     {
       "key": "sub2a",
       "ko": "5개 연구소",
-      "hu": "Öt egység",
+      "hu": "Öt kutatóintézet",
       "en": "Five units"
     },
     {
@@ -98,10 +98,22 @@
       "en": "Korean side"
     },
     {
+      "key": "nmShin",
+      "ko": "Yong-June Shin",
+      "hu": "Yong-June Shin",
+      "en": "Yong-June Shin"
+    },
+    {
       "key": "pr_hu",
       "ko": "헝가리 측",
       "hu": "Magyar fél",
       "en": "Hungarian side"
+    },
+    {
+      "key": "nmKaderjak",
+      "ko": "Péter Kaderják",
+      "hu": "Kaderják Péter",
+      "en": "Péter Kaderják"
     },
     {
       "key": "p2t",
@@ -110,10 +122,34 @@
       "en": "Battery Passport requirements and performance testing"
     },
     {
+      "key": "nmKimSH",
+      "ko": "Seon Hyeog Kim",
+      "hu": "Seon Hyeog Kim",
+      "en": "Seon Hyeog Kim"
+    },
+    {
+      "key": "nmLagler",
+      "ko": "Gergely Lagler",
+      "hu": "Lagler Gergely",
+      "en": "Gergely Lagler"
+    },
+    {
       "key": "p3t",
       "ko": "AI 기반 데이터 분석·수명 예측",
       "hu": "MI-alapú adatelemzés és élettartam-előrejelzés",
       "en": "AI-based data analysis and lifetime prediction"
+    },
+    {
+      "key": "nmKwon",
+      "ko": "Gu Young Kwon",
+      "hu": "Gu Young Kwon",
+      "en": "Gu Young Kwon"
+    },
+    {
+      "key": "nmSzilassy",
+      "ko": "Péter Szilassy",
+      "hu": "Szilassy Péter",
+      "en": "Péter Szilassy"
     },
     {
       "key": "p4t",
@@ -122,9 +158,21 @@
       "en": "Environmental impact and circular economy"
     },
     {
+      "key": "nmKimSI",
+      "ko": "Seoni Kim",
+      "hu": "Seoni Kim",
+      "en": "Seoni Kim"
+    },
+    {
+      "key": "nmLang",
+      "ko": "Győző Láng",
+      "hu": "Láng Győző",
+      "en": "Győző Láng"
+    },
+    {
       "key": "f1",
       "ko": "KHBCC — 한국–헝가리 배터리 협력센터",
-      "hu": "KHBCC — Koreai–Magyar Akkumulátoripari Együttműködési Központ",
+      "hu": "KHBCC — Koreai–Magyar Akkumulátor-együttműködési Központ",
       "en": "KHBCC — Korea–Hungary Battery Cooperation Center"
     }
   ]

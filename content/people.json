@@ -4,13 +4,13 @@
     {
       "key": "prEyebrow",
       "ko": "센터 구성원",
-      "hu": "A központ tagjai",
+      "hu": "Szakmai kapcsolattartók",
       "en": "Center members"
     },
     {
       "key": "prTitle",
       "ko": "세부주제별 양국 연구진",
-      "hu": "Párban dolgozó kutatók a két országból",
+      "hu": "A KHBCC szakmai felelősei – altémánként",
       "en": "Paired researchers across the two countries"
     },
     {
@@ -36,6 +36,12 @@
       "ko": "사업 관리",
       "hu": "Projektvezető",
       "en": "Project Manager"
+    },
+    {
+      "key": "nmHong",
+      "ko": "Song Chang Hong",
+      "hu": "Song Chang Hong",
+      "en": "Song Chang Hong"
     },
     {
       "key": "p0a2",
@@ -70,7 +76,7 @@
     {
       "key": "p1huA",
       "ko": "헝가리배터리협회(HUBA) 전무이사",
-      "hu": "Ügyvezető igazgató, Magyar Akkumulátor Szövetség (HUBA)",
+      "hu": "Ügyvezető igazgató, HUBA – Magyar Akkumulátor Szövetség",
       "en": "Managing Director, Hungarian Battery Association (HUBA)"
     },
     {
@@ -100,7 +106,7 @@
     {
       "key": "p2huA",
       "ko": "HUBA 연구 프로젝트 리더",
-      "hu": "Kutatási projektvezető, HUBA",
+      "hu": "Kutatási projektvezető, HUBA – Magyar Akkumulátor Szövetség",
       "en": "Research Project Leader, HUBA"
     },
     {
@@ -130,7 +136,7 @@
     {
       "key": "p3huA",
       "ko": "HUBA 전기모빌리티 분과장 · 연구 프로젝트 리더",
-      "hu": "Az e-mobilitási munkacsoport vezetője és kutatási projektvezető, HUBA",
+      "hu": "Az e-mobilitási munkacsoport vezetője és kutatási projektvezető, HUBA – Magyar Akkumulátor Szövetség",
       "en": "E-mobility Working Group Leader and Research Project Leader, HUBA"
     },
     {

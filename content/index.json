@@ -10,7 +10,7 @@
     {
       "key": "heroTitle",
       "ko": "한국–헝가리<br>배터리 협력센터",
-      "hu": "Koreai–Magyar<br>Akkumulátoripari Központ",
+      "hu": "Koreai–Magyar<br>Akkumulátor-együttműködési Központ",
       "en": "Korea–Hungary<br>Battery Cooperation Center"
     },
     {
@@ -52,7 +52,7 @@
     {
       "key": "stat1",
       "ko": "개 기능 연구소",
-      "hu": "Funkcionális egység",
+      "hu": "Funkcionális kutatóintézet",
       "en": "Functional institutes"
     },
     {
@@ -70,7 +70,7 @@
     {
       "key": "stat2n",
       "ko": "EU 시장에 출시되는 전기차, 경량 운송수단(LMT), 2kWh 초과 산업용 배터리에 디지털 배터리 여권이 의무 적용됩니다.",
-      "hu": "A digitális akkumulátor-útlevél kötelezővé válik az uniós piacra kerülő elektromos jármű-akkumulátorokra, a könnyű járművek (LMT) akkumulátoraira és a 2 kWh feletti ipari akkumulátorokra. (2027. február 18.)",
+      "hu": "A 2023/1542/EU rendelet 77. cikke szerint 2027. február 18-tól digitális akkumulátor-útlevél szükséges az uniós piacra kerülő elektromos jármű-akkumulátorokhoz, a könnyű járművek (LMT) akkumulátoraihoz és a 2 kWh feletti ipari akkumulátorokhoz. A pontos követelmények akkumulátor-kategóriánként eltérnek.",
       "en": "A digital battery passport becomes mandatory for EV batteries, light means of transport (LMT) batteries, and industrial batteries above 2 kWh placed on the EU market. (18 February 2027)"
     },
     {
@@ -112,7 +112,7 @@
     {
       "key": "why2b",
       "ko": "EU 배터리 규정(2023/1542)은 2027년 2월부터 디지털 배터리 여권을 의무화합니다. 탄소발자국, 재활용 원료 함량, 공급망 실사, 성능·내구성까지 생애주기 전반을 수치로 공개해야 합니다. 잘 만드는 것만으로는 팔 수 없게 됩니다.",
-      "hu": "Az EU 2023/1542 akkumulátorrendelete 2027 februárjától kötelezővé teszi a digitális akkumulátor-útlevelet. A szénlábnyomot, az újrahasznosított tartalmat, az ellátásilánc-átvilágítást, a teljesítményt és a tartósságot számszerűen kell közzétenni a teljes életciklusra. A jó termék önmagában már nem elég az értékesítéshez.",
+      "hu": "A 2023/1542/EU akkumulátorrendelet 2027. február 18-tól – kategóriától függő feltételekkel – megköveteli a digitális akkumulátor-útlevelet. A szénlábnyomot, az újrahasznosított tartalmat, az ellátásilánc-átvilágítást, a teljesítményt és a tartósságot számszerűen kell közzétenni a teljes életciklusra. A jó termék önmagában már nem elég az értékesítéshez.",
       "en": "EU Battery Regulation 2023/1542 makes the digital battery passport mandatory from February 2027. Carbon footprint, recycled content, supply-chain due diligence, performance and durability must all be disclosed as figures across the lifecycle. Making a good product is no longer enough to sell it."
     },
     {
@@ -154,7 +154,7 @@
     {
       "key": "labsTitle",
       "ko": "2개 부문, 5개 기능 연구소",
-      "hu": "Két divízió, öt funkcionális egység",
+      "hu": "Két divízió, öt funkcionális kutatóintézet",
       "en": "Two divisions, five functional units"
     },
     {
@@ -166,7 +166,7 @@
     {
       "key": "figLabsT",
       "ko": "KHBCC 5개 기능 연구소 구성",
-      "hu": "A KHBCC öt funkcionális egysége",
+      "hu": "A KHBCC öt funkcionális kutatóintézete",
       "en": "KHBCC five functional units"
     },
     {
@@ -190,7 +190,7 @@
     {
       "key": "figL4b",
       "ko": "연구소",
-      "hu": "egység",
+      "hu": "kutatóintézet",
       "en": "unit"
     },
     {
@@ -232,7 +232,7 @@
     {
       "key": "figL5b",
       "ko": "연구소",
-      "hu": "egység",
+      "hu": "kutatóintézet",
       "en": "unit"
     },
     {
@@ -268,13 +268,13 @@
     {
       "key": "figL1a",
       "ko": "성능 검사",
-      "hu": "Teljesítményvizsgáló",
+      "hu": "Akkumulátor-teljesítményvizsgálati",
       "en": "Competency test"
     },
     {
       "key": "figL1b",
       "ko": "연구소",
-      "hu": "egység",
+      "hu": "kutatóintézet",
       "en": "unit"
     },
     {
@@ -310,7 +310,7 @@
     {
       "key": "figL2b",
       "ko": "분석 연구소",
-      "hu": "adatelemző egység",
+      "hu": "adatelemző kutatóintézet",
       "en": "data analysis unit"
     },
     {
@@ -346,7 +346,7 @@
     {
       "key": "figL3b",
       "ko": "연구소",
-      "hu": "biztonsági egység",
+      "hu": "biztonsági kutatóintézet",
       "en": "safety research unit"
     },
     {
@@ -382,7 +382,7 @@
     {
       "key": "l1t",
       "ko": "성능 검사 연구소",
-      "hu": "Teljesítményvizsgáló egység",
+      "hu": "Akkumulátor-teljesítményvizsgálati kutatóintézet",
       "en": "Competency Test Unit"
     },
     {
@@ -394,7 +394,7 @@
     {
       "key": "l2t",
       "ko": "배터리 여권·데이터 분석 연구소",
-      "hu": "Akkumulátor-útlevél és adatelemző egység",
+      "hu": "Akkumulátor-útlevél és adatelemző kutatóintézet",
       "en": "Battery Passport and Data Analysis Unit"
     },
     {
@@ -406,7 +406,7 @@
     {
       "key": "l3t",
       "ko": "환경·안전 연구소",
-      "hu": "Környezetvédelmi és biztonsági kutatóegység",
+      "hu": "Környezetvédelmi és biztonsági kutatóintézet",
       "en": "Environmental and Safety Research Unit"
     },
     {
@@ -430,7 +430,7 @@
     {
       "key": "l4t",
       "ko": "사업 개발 연구소",
-      "hu": "Üzletfejlesztési egység",
+      "hu": "Üzletfejlesztési kutatóintézet",
       "en": "Business Development Unit"
     },
     {
@@ -448,7 +448,7 @@
     {
       "key": "l5t",
       "ko": "교육 협력 연구소",
-      "hu": "Oktatási együttműködési egység",
+      "hu": "Oktatási együttműködési kutatóintézet",
       "en": "Education Cooperation Unit"
     },
     {
@@ -466,7 +466,7 @@
     {
       "key": "aboutTitle",
       "ko": "KHBCC가 하는 일",
-      "hu": "Mivel foglalkozik a KHBCC",
+      "hu": "A KHBCC fő tevékenységei",
       "en": "What KHBCC does"
     },
     {
@@ -568,13 +568,13 @@
     {
       "key": "tmEyebrow",
       "ko": "센터 구성원",
-      "hu": "A központ tagjai",
+      "hu": "Szakmai kapcsolattartók",
       "en": "Center members"
     },
     {
       "key": "tmTitle",
       "ko": "누구와 이야기하면 되는가",
-      "hu": "Kihez forduljon",
+      "hu": "A KHBCC szakmai felelősei",
       "en": "Who to talk to"
     },
     {
@@ -592,7 +592,7 @@
     {
       "key": "tp2",
       "ko": "HUBA",
-      "hu": "HUBA",
+      "hu": "HUBA – Magyar Akkumulátor Szövetség",
       "en": "HUBA"
     },
     {
@@ -604,7 +604,7 @@
     {
       "key": "tp4",
       "ko": "HUBA",
-      "hu": "HUBA",
+      "hu": "HUBA – Magyar Akkumulátor Szövetség",
       "en": "HUBA"
     },
     {
@@ -616,7 +616,7 @@
     {
       "key": "tp6",
       "ko": "HUBA",
-      "hu": "HUBA",
+      "hu": "HUBA – Magyar Akkumulátor Szövetség",
       "en": "HUBA"
     },
     {
@@ -628,7 +628,7 @@
     {
       "key": "tp8",
       "ko": "ELTE · HUBA",
-      "hu": "HUBA",
+      "hu": "ELTE · HUBA – Magyar Akkumulátor Szövetség",
       "en": "ELTE · HUBA"
     },
     {
@@ -724,13 +724,13 @@
     {
       "key": "gvU1",
       "ko": "사업 개발 연구소",
-      "hu": "Üzletfejlesztési egység",
+      "hu": "Üzletfejlesztési kutatóintézet",
       "en": "Business Development Unit"
     },
     {
       "key": "gvU2",
       "ko": "교육 협력 연구소",
-      "hu": "Oktatási együttműködési egység",
+      "hu": "Oktatási együttműködési kutatóintézet",
       "en": "Education Cooperation Unit"
     },
     {
@@ -742,19 +742,19 @@
     {
       "key": "gvU3",
       "ko": "성능 검사 연구소",
-      "hu": "Teljesítményvizsgáló egység",
+      "hu": "Akkumulátor-teljesítményvizsgálati kutatóintézet",
       "en": "Competency Test Unit"
     },
     {
       "key": "gvU4",
       "ko": "배터리 여권·데이터 분석 연구소",
-      "hu": "Akkumulátor-útlevél és adatelemző egység",
+      "hu": "Akkumulátor-útlevél és adatelemző kutatóintézet",
       "en": "Battery Passport and Data Analysis Unit"
     },
     {
       "key": "gvU5",
       "ko": "환경·안전 연구소",
-      "hu": "Környezetvédelmi és biztonsági kutatóegység",
+      "hu": "Környezetvédelmi és biztonsági kutatóintézet",
       "en": "Environmental and Safety Research Unit"
     },
     {
