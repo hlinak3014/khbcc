@@ -47,11 +47,13 @@ nav{display:flex;gap:4px;margin-left:auto;align-items:center}
 .nv-m a:hover{background:#EDEFF4}
 .nv-m a.cur{background:#EDEFF4;font-weight:600}
 .nv.open .nv-m{display:block}
-.lang{display:flex;border:1.5px solid var(--ink);border-radius:3px;overflow:hidden;flex-shrink:0}
-.lang button{font-family:var(--mono);font-size:11px;letter-spacing:.07em;background:transparent;border:0;border-right:1px solid var(--ink);color:var(--ink);padding:6px 9px;cursor:pointer;line-height:1;transition:.15s}
-.lang button:last-child{border-right:0}
-.lang button[aria-pressed="true"]{background:var(--ink);color:var(--paper-2)}
-.lang button:hover:not([aria-pressed="true"]){background:rgba(14,20,48,.09)}
+.lang{display:flex;gap:6px;flex-shrink:0}
+.lang button{display:flex;flex-direction:column;align-items:center;gap:4px;background:transparent;border:1px solid var(--line);border-radius:4px;color:var(--steel);padding:5px 7px 4px;cursor:pointer;transition:.15s;line-height:1}
+.lang button span{font-family:var(--mono);font-size:9.5px;font-weight:600;letter-spacing:.06em}
+.lang .lsf{width:24px;height:16px;display:block;border-radius:1.5px;box-shadow:0 0 0 .5px rgba(14,20,48,.25)}
+.lang button:hover{border-color:var(--ink);color:var(--ink)}
+.lang button[aria-pressed="true"]{border-color:var(--ink);background:var(--ink);color:#fff}
+.lang button[aria-pressed="true"] .lsf{box-shadow:0 0 0 .5px rgba(255,255,255,.5)}
 
 .page-head{background:var(--ink);color:var(--paper-2);padding:clamp(40px,6vw,68px) var(--pad) clamp(30px,4.5vw,50px);position:relative;overflow:hidden}
 .page-head::after{content:'';position:absolute;right:-8%;top:12%;width:54%;aspect-ratio:2.79;background:url('assets/khbcc-logo.png?v=2') center/contain no-repeat;opacity:.08;pointer-events:none}
@@ -181,9 +183,9 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
       <a class="nv-s" href="index.html#contact" data-i18n="nav7">문의</a>
     </nav>
     <div class="lang" role="group" aria-label="Language">
-      <button data-lang="ko" aria-pressed="true">KO</button>
-      <button data-lang="hu" aria-pressed="false">HU</button>
-      <button data-lang="en" aria-pressed="false">EN</button>
+      <button data-lang="ko" aria-pressed="true"><svg class="lsf" viewBox="-36 -24 72 48" aria-hidden="true"><path fill="#fff" d="M-36-24h72v48h-72z"/><g transform="rotate(-56.31)"><g id="ls3b"><path id="ls3a" stroke="#000" stroke-width="2" d="M-6-25H6m-12 3H6m-12 3H6"/><use href="#ls3a" y="44"/></g><path stroke="#fff" d="M0 17v10"/><circle r="12" fill="#cd2e3a"/><path fill="#0047a0" d="M0-12A6 6 0 000 0A6 6 0 010 12A12 12 0 000-12Z"/><g id="ls3c"><path stroke="#fff" d="M0-23.5v3M0 17v3"/><use href="#ls3a" y="-44"/></g><use href="#ls3b" transform="rotate(90)"/><use href="#ls3c" transform="rotate(180)"/></g></svg><span>KOR</span></button>
+      <button data-lang="hu" aria-pressed="false"><svg class="lsf" viewBox="0 0 6 3" aria-hidden="true"><path fill="#436F4D" d="M0 0h6v3H0z"/><path fill="#FFF" d="M0 0h6v2H0z"/><path fill="#CD2A3E" d="M0 0h6v1H0z"/></svg><span>HUN</span></button>
+      <button data-lang="en" aria-pressed="false"><svg class="lsf" viewBox="0 0 60 30" aria-hidden="true"><clipPath id="ls3uk"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><path fill="#00247d" d="M0 0h60v30H0z"/><path stroke="#fff" stroke-width="6" d="M0,0 L60,30 M60,0 L0,30"/><path stroke="#cf142b" stroke-width="4" clip-path="url(#ls3uk)" d="M0,0 L60,30 M60,0 L0,30"/><path stroke="#fff" stroke-width="10" d="M30,0 v30 M0,15 h60"/><path stroke="#cf142b" stroke-width="6" d="M30,0 v30 M0,15 h60"/></svg><span>ENG</span></button>
     </div>
   </div>
 </header>
@@ -417,7 +419,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
 
 <footer>
   <span data-i18n="f1">KHBCC — 한국–헝가리 배터리 협력센터</span>
-  <span class="ver">v2026.09.29-b</span>
+  <span class="ver">v2026.09.29-c</span>
 </footer>
 
 <script src="i18n.js"></script>
