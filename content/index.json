@@ -99,9 +99,9 @@
     },
     {
       "key": "why1b",
-      "ko": "삼성SDI, SK온, CATL의 대규모 공장이 들어서면서 헝가리는 유럽에서 손꼽히는 배터리 생산국이 되었습니다. 한국 기업과 협력사가 현지에 자리 잡았고, 부품·소재 공급망도 함께 이동했습니다.",
-      "hu": "A Samsung SDI, az SK On és a CATL nagyüzemeivel Magyarország Európa vezető akkumulátorgyártói közé került. A koreai vállalatok és beszállítóik helyben rendezkedtek be, és velük együtt költözött az alkatrész- és alapanyag-ellátási lánc is.",
-      "en": "With large plants from Samsung SDI, SK On, and CATL, Hungary is now one of Europe's leading battery producers. Korean firms and their suppliers have established themselves locally, and the components and materials supply chain has moved with them."
+      "ko": "한국·중국 셀 제조사의 대규모 공장이 들어서면서 헝가리는 유럽에서 손꼽히는 배터리 생산국이 되었습니다. 한국 기업과 협력사가 현지에 자리 잡았고, 부품·소재 공급망도 함께 이동했습니다.",
+      "hu": "Koreai és kínai cellagyártók nagyüzemeivel Magyarország Európa vezető akkumulátorgyártói közé került. A koreai vállalatok és beszállítóik helyben rendezkedtek be, és velük együtt költözött az alkatrész- és alapanyag-ellátási lánc is.",
+      "en": "With large plants operated by Korean and Chinese cell manufacturers, Hungary is now one of Europe's leading battery producers. Korean firms and their suppliers have established themselves locally, and the components and materials supply chain has moved with them."
     },
     {
       "key": "why2t",
@@ -111,9 +111,9 @@
     },
     {
       "key": "why2b",
-      "ko": "EU 배터리 규정(2023/1542)은 2027년 2월부터 디지털 배터리 여권을 의무화합니다. 탄소발자국, 재활용 원료 함량, 공급망 실사, 성능·내구성까지 생애주기 전반을 수치로 공개해야 합니다. 잘 만드는 것만으로는 팔 수 없게 됩니다.",
+      "ko": "EU 배터리 규정(2023/1542)은 2027년 2월 18일부터 디지털 배터리 여권을 의무화합니다. 탄소발자국, 재활용 원료 함량, 공급망 실사, 성능·내구성까지 생애주기 전반을 수치로 공개해야 합니다. 잘 만드는 것만으로는 팔 수 없게 됩니다.",
       "hu": "A 2023/1542/EU akkumulátorrendelet 2027. február 18-tól – kategóriától függő feltételekkel – megköveteli a digitális akkumulátor-útlevelet. A szénlábnyomot, az újrahasznosított tartalmat, az ellátásilánc-átvilágítást, a teljesítményt és a tartósságot számszerűen kell közzétenni a teljes életciklusra. A jó termék önmagában már nem elég az értékesítéshez.",
-      "en": "EU Battery Regulation 2023/1542 makes the digital battery passport mandatory from February 2027. Carbon footprint, recycled content, supply-chain due diligence, performance and durability must all be disclosed as figures across the lifecycle. Making a good product is no longer enough to sell it."
+      "en": "EU Battery Regulation 2023/1542 makes the digital battery passport mandatory from 18 February 2027. Carbon footprint, recycled content, supply-chain due diligence, performance and durability must all be disclosed as figures across the lifecycle. Making a good product is no longer enough to sell it."
     },
     {
       "key": "why3t",
@@ -141,9 +141,9 @@
     },
     {
       "key": "whyFoot",
-      "ko": "KHBCC는 2022년 타당성 검토로 시작해 2025년 11월 헝가리 배터리 위크에서 공식 출범했습니다.",
-      "hu": "A KHBCC 2022-ben megvalósíthatósági tanulmányként indult, és 2025 novemberében, a Hungarian Battery Week keretében indult el hivatalosan.",
-      "en": "KHBCC began as a feasibility study in 2022 and was formally launched at Hungarian Battery Week in November 2025."
+      "ko": "KHBCC는 2022년 타당성 검토로 시작해 2025년 11월 헝가리 배터리 위크에서 공식 출범을 알렸으며, 현재는 시범 운영을 준비하는 단계입니다.",
+      "hu": "A KHBCC 2022-ben megvalósíthatósági tanulmányként indult, és 2025 novemberében, a Hungarian Battery Week keretében jelentette be indulását, és jelenleg a próbaüzemre készül.",
+      "en": "KHBCC began as a feasibility study in 2022 and announced its launch at Hungarian Battery Week in November 2025 and is now preparing for pilot operation."
     },
     {
       "key": "labsEyebrow",
@@ -419,7 +419,7 @@
       "key": "p2",
       "ko": "한국·헝가리 협력 부문",
       "hu": "Koreai–magyar együttműködési divízió",
-      "en": "Korea–Hungary Collaboration Division"
+      "en": "Korea–Hungary Cooperation Division"
     },
     {
       "key": "p2n",
@@ -471,9 +471,9 @@
     },
     {
       "key": "aboutBody",
-      "ko": "헝가리에는 삼성SDI, SK온, CATL의 대규모 배터리 생산기지가 들어서 있습니다. 동시에 EU 배터리 규정(2023/1542)은 생산부터 폐기까지 전 생애주기에 걸친 규제 대응을 요구하고 있습니다. KHBCC는 이 두 가지를 잇기 위해 한국과 헝가리 정부의 지원으로 설립되었으며, 2025년 11월 헝가리 배터리 위크에서 공식 출범했습니다. 시험 검증, 데이터 추적, 환경 진단, 기업 협력, 인력 양성을 하나의 조직 안에서 함께 다룹니다.",
-      "hu": "Magyarországon ma a Samsung SDI, az SK On és a CATL nagy akkumulátorgyárai működnek. Ezzel egyidejűleg az Európai Unió 2023/1542 rendelete a gyártástól a hulladékkezelésig a teljes életciklusra kiterjedő megfelelést ír elő. A KHBCC a két ország kormányának támogatásával jött létre, hogy összekapcsolja ezt a kettőt, és 2025 novemberében, a Hungarian Battery Week keretében hivatalosan is elindult. A vizsgálat, az adatnyomonkövetés, a környezeti értékelés, az ipari együttműködés és a szakemberképzés egyetlen szervezeten belül zajlik.",
-      "en": "Hungary now hosts large battery plants operated by Samsung SDI, SK On, and CATL. At the same time, EU Battery Regulation 2023/1542 requires compliance across the entire lifecycle, from production through disposal. KHBCC was established with support from both governments to connect the two, and was formally launched at Hungarian Battery Week in November 2025. Testing, data traceability, environmental assessment, industry cooperation, and workforce development are handled within a single organization."
+      "ko": "헝가리에는 한국과 중국 셀 제조사의 대규모 배터리 생산기지가 들어서 있습니다. 동시에 EU 배터리 규정(2023/1542)은 생산부터 폐기까지 전 생애주기에 걸친 규제 대응을 요구하고 있습니다. KHBCC는 이 두 가지를 잇기 위해 양국 정부의 지원 아래 설립이 추진되고 있으며, 2025년 11월 헝가리 배터리 위크에서 공식 출범을 알렸습니다. 운영 기관과 법적 형태는 협의 중입니다. 시험 검증, 데이터 추적, 환경 진단, 기업 협력, 인력 양성을 하나의 조직 안에서 함께 다룹니다.",
+      "hu": "Magyarországon ma koreai és kínai cellagyártók nagy akkumulátorgyárai működnek. Ezzel egyidejűleg az Európai Unió 2023/1542 rendelete a gyártástól a hulladékkezelésig a teljes életciklusra kiterjedő megfelelést ír elő. A KHBCC a két ország kormányának támogatásával jön létre, hogy összekapcsolja ezt a kettőt, és 2025 novemberében, a Hungarian Battery Week keretében jelentette be indulását. Működtető szervezete és jogi formája még egyeztetés alatt áll. A vizsgálat, az adatnyomonkövetés, a környezeti értékelés, az ipari együttműködés és a szakemberképzés egyetlen szervezeten belül zajlik.",
+      "en": "Hungary now hosts large battery plants operated by Korean and Chinese cell manufacturers. At the same time, EU Battery Regulation 2023/1542 requires compliance across the entire lifecycle, from production through disposal. KHBCC is being established with support from both governments to connect the two, and announced its launch at Hungarian Battery Week in November 2025. Its operating body and legal form are still under discussion. Testing, data traceability, environmental assessment, industry cooperation, and workforce development are handled within a single organization."
     },
     {
       "key": "a1h",
@@ -669,9 +669,9 @@
     },
     {
       "key": "gvBoardM",
-      "ko": "KDI · 주헝가리 한국대사관 · KOTRA · KBIA · HUBA",
-      "hu": "KDI · Korea magyarországi nagykövetsége · KOTRA · KBIA · HUBA",
-      "en": "KDI · Korean Embassy in Hungary · KOTRA · KBIA · HUBA"
+      "ko": "HUBA · KBIA · 연세대학교 · BME · 헝가리 경제에너지부",
+      "hu": "HUBA · KBIA · Yonsei Egyetem · BME · Gazdasági és Energiaügyi Minisztérium",
+      "en": "HUBA · KBIA · Yonsei University · BME · Hungarian Ministry of Economy and Energy"
     },
     {
       "key": "gvDir",

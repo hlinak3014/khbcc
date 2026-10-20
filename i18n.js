@@ -10,6 +10,7 @@ var I18N = {
 
   /* ---------------- ENGLISH ---------------- */
   en: {
+    ar1t:"Market and policy information", ar1d:"Track market and policy change", ar2t:"Local entry and investment", ar2d:"Guidance on entity, site and investment", ar3t:"Partners and market access", ar3d:"Find customers, suppliers and partners", ar4t:"Regulation, certification, environment", ar4d:"Check product and operating requirements", ar5t:"Management, labour and staffing", ar5d:"Support for local operations and staffing", ar6t:"Logistics, customs, supply chain", ar6d:"Prepare for trade, sourcing and delivery", ar7t:"Technical cooperation and joint R&D", ar7d:"Find research partners and joint projects", ar8t:"Public programmes and finance", ar8d:"Find calls and financing that fit", ar9t:"Training, events, networking", ar9d:"Learn and meet people in the industry", lk1d:"Investment, site and supplier support in Hungary", lk2d:"Overseas market, sales channel and logistics support", lk3d:"Guidance on entry and establishment in Korea", lk4d:"Full text of EU Battery Regulation 2023/1542", lk5d:"EU calls for joint R&D and grants", lk6d:"Korea Battery Industry Association — industry data and members", arEyebrow:"What we support", arTitle:"Support for Korean and Hungarian battery firms entering, operating and cooperating", arBody:"Nine areas, set out by the work a firm actually faces. Guidance and official sources are being built up area by area; where material is not yet available, send us an enquiry and a staff member will confirm and reply.", arFoot:"The nine areas follow advice from the Korea Battery Industry Association and the Battery R&D Association of Korea. The center is preparing for pilot operation and is currently receiving enquiries in each area.", lkEyebrow:"Official sources", lkTitle:"Where to check first", lkBody:"Until the center has its own guidance for each area, these are the official channels a firm can check directly. Each link opens the institution's public page.", ap_area:"Enquiry area", ap_a0:"Other", ap_ahint:"Choose the one of the nine support areas closest to your enquiry. It is used to assign a staff member.", ap_s4:"Consent to collection and use of personal data", pv1:"<b>What we collect</b> Company name, country, website, headcount, role in the value chain; contact person's name, position, email and phone; enquiry area and message", pv2:"<b>Why</b> To confirm and reply to your enquiry, to understand cooperation needs, and to assess matching", pv3:"<b>How long</b> Two years after the enquiry is closed, then deleted without delay", pv4:"<b>Who processes it</b> The KHBCC secretariat. We do not pass it to third parties or transfer it abroad without your consent.", pv5:"<b>Your rights</b> You may request access, correction, deletion or restriction, and you may refuse consent — though without it we cannot process the enquiry. The same rights apply where the EU General Data Protection Regulation (GDPR) is engaged.", ap_agree:"I have read the above and consent to the collection and use of my personal data.", kbTitle:"Discussions with the Korea Battery Industry Association are under way", kbBody:"We are discussing how KHBCC firm matching could connect to the member network of the Korea Battery Industry Association (KBIA). The structure under review has KBIA handling membership and domestic support while KHBCC handles local connections in Hungary and EU regulatory work. The scope of member data use and the signing of an agreement are not yet settled.",
     /* --- 공통 --- */
     nav1:"About", nav2:"Research units", nav3:"Firm matching", nav4:"Organization",
     nav5:"Partners", nav6:"Activities", nav7:"Contact",
@@ -50,7 +51,7 @@ var I18N = {
     parBody:"Government, industry, and universities take part from each side. The center is the platform that connects them.",
     c1:"Companies", c1b:"Register your firm &rarr;",
     aboutEyebrow:"About", aboutTitle:"What KHBCC does",
-    aboutBody:"Hungary now hosts large battery plants operated by Samsung SDI, SK On, and CATL. At the same time, EU Battery Regulation 2023/1542 requires compliance across the entire lifecycle, from production through disposal. KHBCC was established with support from both governments to connect the two, and was formally launched at Hungarian Battery Week in November 2025. Testing, data traceability, environmental assessment, industry cooperation, and workforce development are handled within a single organization.",
+    aboutBody:"Hungary now hosts large battery plants operated by Korean and Chinese cell manufacturers. At the same time, EU Battery Regulation 2023/1542 requires compliance across the entire lifecycle, from production through disposal. KHBCC is being established with support from both governments to connect the two, and announced its launch at Hungarian Battery Week in November 2025. Its operating body and legal form are still under discussion. Testing, data traceability, environmental assessment, industry cooperation, and workforce development are handled within a single organization.",
 
     /* --- 연구 조직 --- */
     labsEyebrow:"Research units", labsTitle:"Two divisions, five functional units",
@@ -62,7 +63,7 @@ var I18N = {
     l2b:"Serves as the hub for collecting and analyzing battery usage data for both countries. Research on battery recycling processes is carried out here as well.",
     l3t:"Environmental and Safety Research Unit",
     l3b:"Tracks waste to reduce environmental impact and to confirm regulatory compliance. Sets and enforces safety protocols for handling.",
-    p2:"Korea–Hungary Collaboration Division", p2n:"Firm-facing · rapid response",
+    p2:"Korea–Hungary Cooperation Division", p2n:"Firm-facing · rapid response",
     l4t:"Business Development Unit",
     l4b:"Coordinates between KBIA and HUBA on firm matching and member support. Global networking through InterBattery and other exhibitions, and building EU Horizon consortia, also sit with this unit.",
     l5h:"Yonsei · BME", l5t:"Education Cooperation Unit",
@@ -84,7 +85,7 @@ var I18N = {
     /* --- 운영 체계 --- */
     govEyebrow:"Organization", govTitle:"How the center is structured",
     g1l:"Tier 1 · Decision", g1t:"Governing Board",
-    g1b:"The center's highest decision-making body, with KDI, the Korean Embassy in Hungary, KOTRA, the Korea Battery Industry Association (KBIA), and the Hungarian Battery Association (HUBA) among its members.",
+    g1b:"The center's highest decision-making body. Its composition is still being settled: the Hungarian Battery Association (HUBA), the Korea Battery Industry Association (KBIA), Yonsei University, BME, and the Hungarian Ministry of Economy and Energy are the institutions currently proposed.",
     g2l:"Tier 2 · Direction", g2t:"Director and Industrial Advisory Board",
     g2b:"The Director oversees operations, while the Industrial Advisory Board carries requirements from firms in both countries into how the center runs.",
     g3l:"Tier 3 · Execution", g3t:"Three Associate Directors",
@@ -139,7 +140,7 @@ var I18N = {
     pe1b:"Designs the center's governance structure, legal status, and financing model, and operates the trilingual platform and the firm matching system.",
     pe1krA:"Professor, School of Electrical and Electronic Engineering, Yonsei University",
     pe1huA:"Managing Director, Hungarian Battery Association (HUBA)",
-    pe1org:"Yonsei University · KDI · KBIA · KOTRA / HUBA · Ministry for National Economy",
+    pe1org:"Yonsei University · KDI · KBIA · KOTRA / HUBA · Ministry of Economy and Energy",
     pe2t:"Performance testing and verification",
     pe2b:"Converts the data items required by the EU Battery Passport into requirements that can actually be measured, and designs a verification framework capable of producing audit-ready evidence. In 2026 the work extends to module-level testing of used batteries.",
     pe2krA:"Assistant Professor, Kongju National University",
@@ -216,7 +217,7 @@ var I18N = {
     p0b2:"Manages the Korea–Hungary Economic Innovation Partnership Program at the Center for International Development, Korea Development Institute.",
     sub2d:"Reports",
     gvCap:"KHBCC governance architecture (final report, Figure 2-8)",
-    gvBoard:"Governing Board", gvBoardM:"KDI · Korean Embassy in Hungary · KOTRA · KBIA · HUBA",
+    gvBoard:"Governing Board", gvBoardM:"HUBA · KBIA · Yonsei University · BME · Hungarian Ministry of Economy and Energy",
     gvDir:"Center Director", gvIAB:"Industrial Advisory Board",
     gvADl:"Associate Director", gvAD1:"Administration", gvAD2:"International Collaboration", gvAD3:"Research and Development",
     gvT1:"Legal and Finance Support Team", gvT2:"Human Resources Support Team", gvT3:"Language Support and PR Team",
@@ -261,14 +262,14 @@ var I18N = {
     whyEyebrow:"Background", whyTitle:"Why this center is needed",
     whyLede:"Korean firms have built large battery plants in Hungary, but manufacturing capacity alone does not satisfy the rules of the European market. KHBCC was created to close that gap.",
     why1t:"Hungary has become a hub of European battery production",
-    why1b:"With large plants from Samsung SDI, SK On, and CATL, Hungary is now one of Europe's leading battery producers. Korean firms and their suppliers have established themselves locally, and the components and materials supply chain has moved with them.",
+    why1b:"With large plants operated by Korean and Chinese cell manufacturers, Hungary is now one of Europe's leading battery producers. Korean firms and their suppliers have established themselves locally, and the components and materials supply chain has moved with them.",
     why2t:"The rules have shifted from making to proving",
-    why2b:"EU Battery Regulation 2023/1542 makes the digital battery passport mandatory from February 2027. Carbon footprint, recycled content, supply-chain due diligence, performance and durability must all be disclosed as figures across the lifecycle. Making a good product is no longer enough to sell it.",
+    why2b:"EU Battery Regulation 2023/1542 makes the digital battery passport mandatory from 18 February 2027. Carbon footprint, recycled content, supply-chain due diligence, performance and durability must all be disclosed as figures across the lifecycle. Making a good product is no longer enough to sell it.",
     why3t:"Individual firms cannot carry this alone",
     why3b:"The regulation does not specify what to measure, how to measure it, or what evidence is acceptable. Few firms have testing facilities, data systems, and regulatory interpretation capacity all at once, and suppliers and smaller firms least of all.",
     why4t:"It is more efficient for the two countries to solve it together",
     why4b:"If both countries agree on test methods and data definitions in advance, the same battery does not have to be tested twice. A standing channel was needed to connect Korean battery technology with Hungarian production sites and access to EU regulation, and that need led from the Korea\u2013Hungary Economic Innovation Partnership Program (EIPP) to KHBCC.",
-    whyFoot:"KHBCC began as a feasibility study in 2022 and was formally launched at Hungarian Battery Week in November 2025.",
+    whyFoot:"KHBCC began as a feasibility study in 2022 and announced its launch at Hungarian Battery Week in November 2025 and is now preparing for pilot operation.",
     kbEyebrow:"KBIA partnership", kbTitle:"Firm support runs with the Korea Battery Industry Association",
     kbBody:"KHBCC's firm matching is built on the member network of the Korea Battery Industry Association (KBIA). KBIA handles membership and domestic firm support; KHBCC adds the Hungarian connection and EU regulatory work.",
     kbH1:"What KBIA does", kbH2:"What KHBCC adds", kbH3:"KBIA membership categories",
@@ -285,7 +286,7 @@ var I18N = {
     nmShin:"Yong-June Shin", nmKaderjak:"Péter Kaderják", nmKimSH:"Seon Hyeog Kim", nmLagler:"Gergely Lagler", nmKwon:"Gu Young Kwon", nmSzilassy:"Péter Szilassy", nmKimSI:"Seoni Kim", nmLang:"Győző Láng", nmHong:"Song Chang Hong",
     peEyebrow:"Research team", peTitle:"Who does what",
     peBody:"KHBCC operates as a decentralized partnership rather than a single consolidated facility, with institutions in both countries taking on the areas that match their established strengths. The four research areas and their responsible institutions are set out below.", peLeadAff:"Professor, School of Electrical and Electronic Engineering, Yonsei University",
-    pe_kr:"Korea", pe_hu:"Hungary", pe1hu:"HUBA · Ministry for National Economy", pe2hu:"BME", pe3hu:"BME", pe4hu:"ELTE · HUN-REN",
+    pe_kr:"Korea", pe_hu:"Hungary", pe1hu:"HUBA · Ministry of Economy and Energy", pe2hu:"BME", pe3hu:"BME", pe4hu:"ELTE · HUN-REN",
     peNote:"The detail of each area is set out on the <a href=\"research.html\">research</a> page.",
 
     rEyebrow:"Research", rTitle:"What we research",
@@ -293,10 +294,10 @@ var I18N = {
     rT1:"Institutional foundation", rT2:"Testing and verification", rT3:"AI data analytics", rT4:"Environment and safety", rT5:"Yonsei pilot",
 
     r1t:"Institutional foundation and a sustainable operating framework",
-    r1w:"Yonsei University · KDI · KBIA · KOTRA / HUBA · Ministry for National Economy",
+    r1w:"Yonsei University · KDI · KBIA · KOTRA / HUBA · Ministry of Economy and Energy",
     r1p1:"For the center to outlive the project period it needs legal standing and a source of funds. This area of work creates those conditions: designing the governance structure, the form of establishment, and the financing model, and negotiating them with both governments.",
     r1h1:"Options for establishment",
-    r1p2:"Three options are being compared following consultation with the Hungarian Ministry for National Economy. Each produces a different outcome in terms of speed of establishment, autonomy, and access to EU funding.",
+    r1p2:"Three options are being compared following consultation with the Hungarian Ministry of Economy and Energy. Each produces a different outcome in terms of speed of establishment, autonomy, and access to EU funding.",
     r1c1:"Option", r1c2:"Form", r1c3:"Consideration",
     r1a1:"A", r1a1c:"Established as a unit within HUBA", r1a1n:"Fastest to establish; least local administrative burden",
     r1a2:"B", r1a2c:"Joint venture, 50% Korean and 50% HUBA", r1a2n:"Equal shareholding gives balanced decision-making",
@@ -392,6 +393,7 @@ var I18N = {
 
   /* ---------------- MAGYAR ---------------- */
   hu: {
+    ar1t:"Piaci és szabályozási információ", ar1d:"Kövesse a piaci és szabályozási változásokat", ar2t:"Belépés és beruházás", ar2d:"Útmutató cégalapításhoz, telephelyhez, beruházáshoz", ar3t:"Partnerkeresés és értékesítés", ar3d:"Vevők, beszállítók és partnerek keresése", ar4t:"Szabályozás, tanúsítás, környezet", ar4d:"Termék- és működési követelmények ellenőrzése", ar5t:"Működés, munkaügy, munkaerő", ar5d:"Helyi működési és munkaerő-kérdések", ar6t:"Logisztika, vám, ellátási lánc", ar6d:"Felkészülés a kereskedelemre és beszerzésre", ar7t:"Műszaki együttműködés és közös K+F", ar7d:"Kutatópartnerek és közös projektek", ar8t:"Támogatások és finanszírozás", ar8d:"Pályázatok és finanszírozás keresése", ar9t:"Képzés, rendezvények, kapcsolatok", ar9d:"Tanulás és iparági kapcsolatépítés", lk1d:"Beruházás-, telephely- és beszállítótámogatás", lk2d:"Külpiaci, értékesítési és logisztikai támogatás", lk3d:"Útmutató a koreai belépéshez és cégalapításhoz", lk4d:"Az EU 2023/1542 akkumulátorrendelet teljes szövege", lk5d:"Uniós K+F- és támogatási pályázatok", lk6d:"Koreai Akkumulátoripari Szövetség — iparági adatok", arEyebrow:"Támogatási területek", arTitle:"Koreai és magyar akkumulátoripari cégek belépésének, működésének és együttműködésének támogatása", arBody:"Kilenc terület, a cégek tényleges feladatai szerint. A területenkénti útmutatókat és hivatalos forrásokat fokozatosan építjük fel; ahol még nincs anyag, küldjön megkeresést, és munkatársunk visszajelez.", arFoot:"A kilenc terület a Koreai Akkumulátoripari Szövetség és a Koreai Akkumulátor-kutatási Szövetség szakértői javaslatát követi. A központ a próbaüzemre készül, és jelenleg minden területen fogad megkereséseket.", lkEyebrow:"Hivatalos források", lkTitle:"Hol érdemes először megnézni", lkBody:"Amíg a központ saját területi útmutatói elkészülnek, ezek a hivatalos csatornák érhetők el közvetlenül. Minden hivatkozás az adott intézmény nyilvános oldalát nyitja meg.", ap_area:"Megkeresés területe", ap_a0:"Egyéb", ap_ahint:"Válassza ki a kilenc támogatási terület közül a megkereséséhez legközelebb állót. Ez alapján jelöljük ki a felelőst.", ap_s4:"Hozzájárulás a személyes adatok kezeléséhez", pv1:"<b>Kezelt adatok</b> Cégnév, ország, honlap, létszám, szerep az ellátási láncban; a kapcsolattartó neve, beosztása, e-mail-címe és telefonszáma; a megkeresés területe és szövege", pv2:"<b>Cél</b> A megkeresés visszaigazolása és megválaszolása, az együttműködési igények felmérése, a párosítás mérlegelése", pv3:"<b>Megőrzés</b> A megkeresés lezárását követő két év, azt követően haladéktalan törlés", pv4:"<b>Adatkezelő</b> A KHBCC titkársága. Hozzájárulás nélkül nem adjuk át harmadik félnek és nem továbbítjuk külföldre.", pv5:"<b>Jogai</b> Kérheti az adatokhoz való hozzáférést, helyesbítést, törlést vagy a kezelés korlátozását, és megtagadhatja a hozzájárulást — enélkül azonban a megkeresést nem tudjuk feldolgozni. Ugyanezek a jogok illetik meg az EU általános adatvédelmi rendelete (GDPR) hatálya alatt is.", ap_agree:"Elolvastam a fentieket, és hozzájárulok személyes adataim kezeléséhez.", kbTitle:"Egyeztetés folyik a Koreai Akkumulátoripari Szövetséggel", kbBody:"Egyeztetjük, hogyan kapcsolódhat a KHBCC cégpárosítása a Koreai Akkumulátoripari Szövetség (KBIA) tagi hálózatához. A vizsgált felépítésben a tagsági ügyeket és a hazai támogatást a KBIA, a magyarországi kapcsolatokat és az uniós szabályozási munkát a KHBCC viszi. A tagi adatok felhasználásának köre és a megállapodás aláírása még nem eldöntött.",
     /* --- közös --- */
     nav1:"A központról", nav2:"Kutatási egységek", nav3:"Cégpárosítás", nav4:"Szervezet",
     nav5:"Partnerek", nav6:"Tevékenységek", nav7:"Kapcsolat",
@@ -432,7 +434,7 @@ var I18N = {
     parBody:"Mindkét oldalról részt vesz a kormányzat, az ipar és az egyetemek. A központ az őket összekötő platform.",
     c1:"Cégek", c1b:"Cégregisztráció &rarr;",
     aboutEyebrow:"A központról", aboutTitle:"A KHBCC fő tevékenységei",
-    aboutBody:"Magyarországon ma a Samsung SDI, az SK On és a CATL nagy akkumulátorgyárai működnek. Ezzel egyidejűleg az Európai Unió 2023/1542 rendelete a gyártástól a hulladékkezelésig a teljes életciklusra kiterjedő megfelelést ír elő. A KHBCC a két ország kormányának támogatásával jött létre, hogy összekapcsolja ezt a kettőt, és 2025 novemberében, a Hungarian Battery Week keretében hivatalosan is elindult. A vizsgálat, az adatnyomonkövetés, a környezeti értékelés, az ipari együttműködés és a szakemberképzés egyetlen szervezeten belül zajlik.",
+    aboutBody:"Magyarországon ma koreai és kínai cellagyártók nagy akkumulátorgyárai működnek. Ezzel egyidejűleg az Európai Unió 2023/1542 rendelete a gyártástól a hulladékkezelésig a teljes életciklusra kiterjedő megfelelést ír elő. A KHBCC a két ország kormányának támogatásával jön létre, hogy összekapcsolja ezt a kettőt, és 2025 novemberében, a Hungarian Battery Week keretében jelentette be indulását. Működtető szervezete és jogi formája még egyeztetés alatt áll. A vizsgálat, az adatnyomonkövetés, a környezeti értékelés, az ipari együttműködés és a szakemberképzés egyetlen szervezeten belül zajlik.",
 
     /* --- kutatási egységek --- */
     labsEyebrow:"Kutatási egységek", labsTitle:"Két divízió, öt funkcionális kutatóintézet",
@@ -466,7 +468,7 @@ var I18N = {
     /* --- szervezet --- */
     govEyebrow:"Szervezet", govTitle:"A központ felépítése",
     g1l:"1. szint · Döntés", g1t:"Igazgatótanács",
-    g1b:"A központ legfőbb döntéshozó testülete, tagjai között a KDI, Korea magyarországi nagykövetsége, a KOTRA, a Koreai Akkumulátoripari Szövetség (KBIA) és a Magyar Akkumulátor Szövetség (HUBA).",
+    g1b:"A központ legfőbb döntéshozó testülete. Összetétele még egyeztetés alatt áll: jelenleg a Magyar Akkumulátor Szövetség (HUBA), a Koreai Akkumulátoripari Szövetség (KBIA), a Yonsei Egyetem, a BME és a Gazdasági és Energiaügyi Minisztérium szerepel a javaslatban.",
     g2l:"2. szint · Vezetés", g2t:"Igazgató és Ipari Tanácsadó Testület",
     g2b:"Az igazgató felügyeli a működést, az Ipari Tanácsadó Testület pedig a két ország cégeinek igényeit becsatornázza a központ munkájába.",
     g3l:"3. szint · Végrehajtás", g3t:"Három igazgatóhelyettes",
@@ -521,7 +523,7 @@ var I18N = {
     pe1b:"Kialakítja a központ irányítási szerkezetét, jogi státuszát és finanszírozási modelljét, valamint működteti a háromnyelvű platformot és a cégpárosítási rendszert.",
     pe1krA:"Egyetemi tanár, Villamosmérnöki és Elektronikai Kar, Yonsei Egyetem",
     pe1huA:"Ügyvezető igazgató, Magyar Akkumulátor Szövetség (HUBA)",
-    pe1org:"Yonsei Egyetem · KDI · KBIA · KOTRA / HUBA · Nemzetgazdasági Minisztérium",
+    pe1org:"Yonsei Egyetem · KDI · KBIA · KOTRA / HUBA · Gazdasági és Energiaügyi Minisztérium",
     pe2t:"Teljesítményvizsgálat és ellenőrzés",
     pe2b:"Az EU akkumulátor-útlevél által előírt adatmezőket ténylegesen mérhető követelményekké alakítja, és auditra alkalmas bizonyítékot előállító ellenőrzési keretet tervez. 2026-ban a munka a használt akkumulátorok modulszintű vizsgálatára bővül.",
     pe2krA:"Adjunktus, Kongju Nemzeti Egyetem",
@@ -598,7 +600,7 @@ var I18N = {
     p0b2:"A Korea Development Institute Nemzetközi Fejlesztési Központjában a koreai–magyar Gazdasági Innovációs Partnerségi Program irányításáért felel.",
     sub2d:"Jelentések",
     gvCap:"A KHBCC irányítási felépítése (zárójelentés, 2-8. ábra)",
-    gvBoard:"Igazgatótanács", gvBoardM:"KDI · Korea magyarországi nagykövetsége · KOTRA · KBIA · HUBA",
+    gvBoard:"Igazgatótanács", gvBoardM:"HUBA · KBIA · Yonsei Egyetem · BME · Gazdasági és Energiaügyi Minisztérium",
     gvDir:"Központvezető", gvIAB:"Ipari Tanácsadó Testület",
     gvADl:"Igazgatóhelyettes", gvAD1:"Adminisztráció", gvAD2:"Nemzetközi együttműködés", gvAD3:"Kutatás-fejlesztés",
     gvT1:"Jogi és pénzügyi támogató csoport", gvT2:"Humánerőforrás-támogató csoport", gvT3:"Nyelvi támogatási és PR csoport",
@@ -643,14 +645,14 @@ var I18N = {
     whyEyebrow:"Háttér", whyTitle:"Miért van szükség erre a központra",
     whyLede:"Koreai vállalatok nagy akkumulátorgyárakat építettek Magyarországon, a gyártási kapacitás önmagában azonban nem elégíti ki az európai piac szabályait. A KHBCC ezt a rést hivatott betölteni.",
     why1t:"Magyarország az európai akkumulátorgyártás központjává vált",
-    why1b:"A Samsung SDI, az SK On és a CATL nagyüzemeivel Magyarország Európa vezető akkumulátorgyártói közé került. A koreai vállalatok és beszállítóik helyben rendezkedtek be, és velük együtt költözött az alkatrész- és alapanyag-ellátási lánc is.",
+    why1b:"Koreai és kínai cellagyártók nagyüzemeivel Magyarország Európa vezető akkumulátorgyártói közé került. A koreai vállalatok és beszállítóik helyben rendezkedtek be, és velük együtt költözött az alkatrész- és alapanyag-ellátási lánc is.",
     why2t:"A szabályok a gyártásról a bizonyításra helyeződtek át",
     why2b:"A 2023/1542/EU akkumulátorrendelet 2027. február 18-tól – kategóriától függő feltételekkel – megköveteli a digitális akkumulátor-útlevelet. A szénlábnyomot, az újrahasznosított tartalmat, az ellátásilánc-átvilágítást, a teljesítményt és a tartósságot számszerűen kell közzétenni a teljes életciklusra. A jó termék önmagában már nem elég az értékesítéshez.",
     why3t:"Ezt egyetlen vállalat sem tudja egyedül elvégezni",
     why3b:"A rendelet nem mondja meg, mit, hogyan kell mérni, és milyen bizonyíték fogadható el. Kevés cég rendelkezik egyszerre vizsgálati infrastruktúrával, adatrendszerrel és szabályozásértelmezési kapacitással — a beszállítók és a kisebb vállalatok pedig végképp nem.",
     why4t:"Hatékonyabb, ha a két ország közösen oldja meg",
     why4b:"Ha a két ország előre megegyezik a vizsgálati módszerekben és az adatdefiníciókban, ugyanazt az akkumulátort nem kell kétszer megvizsgálni. Állandó csatornára volt szükség, amely összeköti a koreai akkumulátortechnológiát a magyarországi gyártással és az uniós szabályozáshoz való hozzáféréssel — ez az igény vezetett a koreai–magyar Gazdasági Innovációs Partnerségi Programtól (EIPP) a KHBCC-ig.",
-    whyFoot:"A KHBCC 2022-ben megvalósíthatósági tanulmányként indult, és 2025 novemberében, a Hungarian Battery Week keretében indult el hivatalosan.",
+    whyFoot:"A KHBCC 2022-ben megvalósíthatósági tanulmányként indult, és 2025 novemberében, a Hungarian Battery Week keretében jelentette be indulását, és jelenleg a próbaüzemre készül.",
     kbEyebrow:"KBIA-együttműködés", kbTitle:"A vállalati támogatás a Koreai Akkumulátoripari Szövetséggel közösen működik",
     kbBody:"A KHBCC cégpárosítása a Koreai Akkumulátoripari Szövetség (KBIA) tagi hálózatára épül. A tagságot és a hazai vállalati támogatást a KBIA végzi; a KHBCC a magyarországi kapcsolatot és az uniós szabályozási munkát teszi hozzá.",
     kbH1:"Amit a KBIA végez", kbH2:"Amit a KHBCC hozzátesz", kbH3:"KBIA tagsági kategóriák",
@@ -667,7 +669,7 @@ var I18N = {
     nmShin:"Yong-June Shin", nmKaderjak:"Kaderják Péter", nmKimSH:"Seon Hyeog Kim", nmLagler:"Lagler Gergely", nmKwon:"Gu Young Kwon", nmSzilassy:"Szilassy Péter", nmKimSI:"Seoni Kim", nmLang:"Láng Győző", nmHong:"Song Chang Hong",
     peEyebrow:"Kutat\u00f3csoport", peTitle:"Ki mit v\u00e9gez",
     peBody:"A KHBCC nem egyetlen \u00f6sszevont l\u00e9tes\u00edtm\u00e9nyk\u00e9nt, hanem decentraliz\u00e1lt partners\u00e9gk\u00e9nt m\u0171k\u00f6dik: mindk\u00e9t orsz\u00e1g int\u00e9zm\u00e9nyei azokat a ter\u00fcleteket viszik, amelyeken er\u0151sek. Az al\u00e1bbiakban a n\u00e9gy kutat\u00e1si ter\u00fclet \u00e9s a fel\u0151l\u00fck felel\u0151s int\u00e9zm\u00e9nyek szerepelnek.", peLeadAff:"Egyetemi tan\u00e1r, Villamosm\u00e9rn\u00f6ki \u00e9s Elektronikai Kar, Yonsei Egyetem",
-    pe_kr:"Korea", pe_hu:"Magyarorsz\u00e1g", pe1hu:"HUBA · Nemzetgazdas\u00e1gi Miniszt\u00e9rium", pe2hu:"BME", pe3hu:"BME", pe4hu:"ELTE · HUN-REN",
+    pe_kr:"Korea", pe_hu:"Magyarorsz\u00e1g", pe1hu:"HUBA · Gazdas\u00e1gi \u00e9s Energia\u00fcgyi Miniszt\u00e9rium", pe2hu:"BME", pe3hu:"BME", pe4hu:"ELTE · HUN-REN",
     peNote:"Az egyes ter\u00fcletek r\u00e9szletei a <a href=\"research.html\">kutat\u00e1si</a> oldalon olvashat\u00f3k.",
 
     rEyebrow:"Kutat\u00e1s", rTitle:"Mit kutatunk",
@@ -675,10 +677,10 @@ var I18N = {
     rT1:"Intézményi alapok", rT2:"Vizsgálat és ellenőrzés", rT3:"MI-adatelemzés", rT4:"Környezet és biztonság", rT5:"Yonsei pilot",
 
     r1t:"Int\u00e9zm\u00e9nyi alapok \u00e9s fenntarthat\u00f3 m\u0171k\u00f6d\u00e9si keret",
-    r1w:"Yonsei Egyetem · KDI · KBIA · KOTRA / HUBA · Nemzetgazdas\u00e1gi Miniszt\u00e9rium",
+    r1w:"Yonsei Egyetem · KDI · KBIA · KOTRA / HUBA · Gazdas\u00e1gi \u00e9s Energia\u00fcgyi Miniszt\u00e9rium",
     r1p1:"Ahhoz, hogy a k\u00f6zpont t\u00fal\u00e9lje a projektid\u0151szakot, jogi st\u00e1tuszra \u00e9s forr\u00e1sra van sz\u00fcks\u00e9ge. Ez a munkater\u00fclet ezeket a felt\u00e9teleket teremti meg: megtervezi az ir\u00e1ny\u00edt\u00e1si szerkezetet, a l\u00e9trehoz\u00e1s form\u00e1j\u00e1t \u00e9s a finansz\u00edroz\u00e1si modellt, \u00e9s egyeztet r\u00f3luk mindk\u00e9t korm\u00e1nnyal.",
     r1h1:"A l\u00e9trehoz\u00e1s lehets\u00e9ges form\u00e1i",
-    r1p2:"A Nemzetgazdas\u00e1gi Miniszt\u00e9riummal folytatott egyeztet\u00e9s nyom\u00e1n h\u00e1rom lehet\u0151s\u00e9get vet\u00fcnk \u00f6ssze. Mindegyik m\u00e1s eredm\u00e9nyt ad a l\u00e9trehoz\u00e1s gyorsas\u00e1ga, az \u00f6n\u00e1ll\u00f3s\u00e1g \u00e9s az uni\u00f3s forr\u00e1sokhoz val\u00f3 hozz\u00e1f\u00e9r\u00e9s szempontj\u00e1b\u00f3l.",
+    r1p2:"A Gazdas\u00e1gi \u00e9s Energia\u00fcgyi Miniszt\u00e9riummal folytatott egyeztet\u00e9s nyom\u00e1n h\u00e1rom lehet\u0151s\u00e9get vet\u00fcnk \u00f6ssze. Mindegyik m\u00e1s eredm\u00e9nyt ad a l\u00e9trehoz\u00e1s gyorsas\u00e1ga, az \u00f6n\u00e1ll\u00f3s\u00e1g \u00e9s az uni\u00f3s forr\u00e1sokhoz val\u00f3 hozz\u00e1f\u00e9r\u00e9s szempontj\u00e1b\u00f3l.",
     r1c1:"Lehet\u0151s\u00e9g", r1c2:"Forma", r1c3:"M\u00e9rlegelend\u0151",
     r1a1:"A", r1a1c:"A HUBA szervezeti egys\u00e9gek\u00e9nt", r1a1n:"A leggyorsabban l\u00e9trehozhat\u00f3, a legkisebb helyi adminisztr\u00e1ci\u00f3s teherrel",
     r1a2:"B", r1a2c:"Vegyesv\u00e1llalat, 50% koreai \u00e9s 50% HUBA", r1a2n:"Az egyenl\u0151 tulajdonr\u00e9sz kiegyensúlyozott d\u00f6nt\u00e9shozatalt ad",

@@ -618,6 +618,114 @@
       "ko": "매칭 절차 보기",
       "hu": "Párosítási folyamat",
       "en": "See the matching process"
+    },
+    {
+      "key": "ar1t",
+      "ko": "시장 및 정책정보",
+      "hu": "Piaci és szabályozási információ",
+      "en": "Market and policy information"
+    },
+    {
+      "key": "ar1d",
+      "ko": "시장과 정책 변화를 확인합니다",
+      "hu": "Kövesse a piaci és szabályozási változásokat",
+      "en": "Track market and policy change"
+    },
+    {
+      "key": "ar2t",
+      "ko": "현지 진출 및 투자",
+      "hu": "Belépés és beruházás",
+      "en": "Local entry and investment"
+    },
+    {
+      "key": "ar2d",
+      "ko": "법인·거점·투자 준비를 안내합니다",
+      "hu": "Útmutató cégalapításhoz, telephelyhez, beruházáshoz",
+      "en": "Guidance on entity, site and investment"
+    },
+    {
+      "key": "ar3t",
+      "ko": "파트너 발굴 및 판로",
+      "hu": "Partnerkeresés és értékesítés",
+      "en": "Partners and market access"
+    },
+    {
+      "key": "ar3d",
+      "ko": "고객과 공급·협력 파트너를 찾습니다",
+      "hu": "Vevők, beszállítók és partnerek keresése",
+      "en": "Find customers, suppliers and partners"
+    },
+    {
+      "key": "ar4t",
+      "ko": "규제 인증 및 환경 대응",
+      "hu": "Szabályozás, tanúsítás, környezet",
+      "en": "Regulation, certification, environment"
+    },
+    {
+      "key": "ar4d",
+      "ko": "제품과 사업의 규제 확인을 돕습니다",
+      "hu": "Termék- és működési követelmények ellenőrzése",
+      "en": "Check product and operating requirements"
+    },
+    {
+      "key": "ar5t",
+      "ko": "경영 노무 및 인력",
+      "hu": "Működés, munkaügy, munkaerő",
+      "en": "Management, labour and staffing"
+    },
+    {
+      "key": "ar5d",
+      "ko": "현지 운영과 인력 애로를 연결합니다",
+      "hu": "Helyi működési és munkaerő-kérdések",
+      "en": "Support for local operations and staffing"
+    },
+    {
+      "key": "ar6t",
+      "ko": "물류 통관 및 공급망",
+      "hu": "Logisztika, vám, ellátási lánc",
+      "en": "Logistics, customs, supply chain"
+    },
+    {
+      "key": "ar6d",
+      "ko": "수출입과 조달·납품 준비를 돕습니다",
+      "hu": "Felkészülés a kereskedelemre és beszerzésre",
+      "en": "Prepare for trade, sourcing and delivery"
+    },
+    {
+      "key": "ar7t",
+      "ko": "기술협력 및 공동 연구개발",
+      "hu": "Műszaki együttműködés és közös K+F",
+      "en": "Technical cooperation and joint R&D"
+    },
+    {
+      "key": "ar7d",
+      "ko": "연구기관과 공동개발 기회를 찾습니다",
+      "hu": "Kutatópartnerek és közös projektek",
+      "en": "Find research partners and joint projects"
+    },
+    {
+      "key": "ar8t",
+      "ko": "지원사업 및 금융",
+      "hu": "Támogatások és finanszírozás",
+      "en": "Public programmes and finance"
+    },
+    {
+      "key": "ar8d",
+      "ko": "사업 목적에 맞는 공고·금융을 확인합니다",
+      "hu": "Pályázatok és finanszírozás keresése",
+      "en": "Find calls and financing that fit"
+    },
+    {
+      "key": "ar9t",
+      "ko": "교육 행사 및 네트워킹",
+      "hu": "Képzés, rendezvények, kapcsolatok",
+      "en": "Training, events, networking"
+    },
+    {
+      "key": "ar9d",
+      "ko": "교육을 배우고 산업 관계자를 만납니다",
+      "hu": "Tanulás és iparági kapcsolatépítés",
+      "en": "Learn and meet people in the industry"
     }
   ]
 }

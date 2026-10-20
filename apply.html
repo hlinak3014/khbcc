@@ -179,6 +179,31 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
 .eb-wrap{display:flex;align-items:center;gap:9px}
 .flags{display:inline-flex;gap:5px;flex-shrink:0;align-items:center}
 .fl{height:15px;width:auto;display:block;border-radius:1.5px;box-shadow:0 0 0 1px rgba(255,255,255,.35)}
+
+/* 지원 영역 · 공식 자료 · 개인정보 */
+.areas{padding:72px 0;border-bottom:1px solid var(--line,#e4e7ee)}
+.ar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+.ar-card{display:block;padding:18px 18px 20px;border:1px solid #e2e5ea;border-radius:10px;
+  background:#fff;text-decoration:none;transition:border-color .15s,transform .15s}
+.ar-card:hover{border-color:#2b3563;transform:translateY(-2px)}
+.ar-n{display:block;font-size:12px;font-weight:700;letter-spacing:.08em;color:#9aa2b6;margin-bottom:8px}
+.ar-card b{display:block;font-size:16px;color:#1b2140;margin-bottom:6px;line-height:1.35}
+.ar-card span.ar-d{display:block;font-size:13.5px;color:#5a6179;line-height:1.5}
+.ar-foot{margin-top:22px;font-size:14px;color:#5a6179;padding:14px 16px;background:#f6f7f9;border-radius:8px}
+.links{padding:72px 0;border-bottom:1px solid var(--line,#e4e7ee)}
+.lk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:26px}
+.lk-card{display:block;padding:16px 18px;border:1px solid #e2e5ea;border-radius:10px;background:#fff;text-decoration:none}
+.lk-card:hover{border-color:#2b3563}
+.lk-card b{display:block;font-size:15px;color:#2b3563;margin-bottom:5px}
+.lk-card span{display:block;font-size:13px;color:#5a6179;line-height:1.5}
+.pv-box{background:#f6f7f9;border:1px solid #e2e5ea;border-radius:8px;padding:16px 18px;margin-bottom:14px}
+.pv-box p{margin:0 0 8px;font-size:13.5px;color:#5a6179;line-height:1.6}
+.pv-box p:last-child{margin-bottom:0}
+.pv-box b{color:#1b2140}
+.pv-agree{display:flex;align-items:flex-start;gap:9px;font-size:14px;color:#1b2140;line-height:1.5}
+.pv-agree input{margin-top:3px}
+@media(max-width:860px){.ar-grid,.lk-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.ar-grid,.lk-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body data-page="apply">
@@ -196,7 +221,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
       <div class="nv">
         <button class="nv-t" aria-expanded="false" data-i18n="nav1">센터 소개</button>
         <div class="nv-m">
-          <a href="index.html#about" data-i18n="sub1a">설립 배경</a>
+          <a href="index.html#why" data-i18n="sub1a">설립 배경</a>
           <a href="people.html" data-i18n="sub1e">센터 구성원</a>
           <a href="index.html#governance" data-i18n="sub1c">운영 체계</a>
           <a href="index.html#partners" data-i18n="sub1d">참여 기관</a>
@@ -245,6 +270,62 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
     </div>
 
 
+
+    <section id="areas" class="areas">
+      <div class="sec-head">
+        <span class="eyebrow" data-i18n="arEyebrow">지원 범위</span>
+        <h2 data-i18n="arTitle">한국과 헝가리 배터리기업의 진출·운영·협력을 지원합니다</h2>
+        <p data-i18n="arBody">기업이 실제로 부딪히는 업무를 기준으로 아홉 개 영역을 두었습니다. 영역별 안내 자료와 공식 출처를 순차적으로 갖추는 중이며, 자료가 준비되지 않은 영역은 문의해 주시면 담당자가 확인 후 회신합니다.</p>
+      </div>
+      <div class="ar-grid">
+        <a class="ar-card" href="#form">
+          <span class="ar-n">01</span>
+          <b data-i18n="ar1t">시장 및 정책정보</b>
+          <span class="ar-d" data-i18n="ar1d">시장과 정책 변화를 확인합니다</span>
+        </a>
+        <a class="ar-card" href="#form">
+          <span class="ar-n">02</span>
+          <b data-i18n="ar2t">현지 진출 및 투자</b>
+          <span class="ar-d" data-i18n="ar2d">법인·거점·투자 준비를 안내합니다</span>
+        </a>
+        <a class="ar-card" href="#form">
+          <span class="ar-n">03</span>
+          <b data-i18n="ar3t">파트너 발굴 및 판로</b>
+          <span class="ar-d" data-i18n="ar3d">고객과 공급·협력 파트너를 찾습니다</span>
+        </a>
+        <a class="ar-card" href="#form">
+          <span class="ar-n">04</span>
+          <b data-i18n="ar4t">규제 인증 및 환경 대응</b>
+          <span class="ar-d" data-i18n="ar4d">제품과 사업의 규제 확인을 돕습니다</span>
+        </a>
+        <a class="ar-card" href="#form">
+          <span class="ar-n">05</span>
+          <b data-i18n="ar5t">경영 노무 및 인력</b>
+          <span class="ar-d" data-i18n="ar5d">현지 운영과 인력 애로를 연결합니다</span>
+        </a>
+        <a class="ar-card" href="#form">
+          <span class="ar-n">06</span>
+          <b data-i18n="ar6t">물류 통관 및 공급망</b>
+          <span class="ar-d" data-i18n="ar6d">수출입과 조달·납품 준비를 돕습니다</span>
+        </a>
+        <a class="ar-card" href="#form">
+          <span class="ar-n">07</span>
+          <b data-i18n="ar7t">기술협력 및 공동 연구개발</b>
+          <span class="ar-d" data-i18n="ar7d">연구기관과 공동개발 기회를 찾습니다</span>
+        </a>
+        <a class="ar-card" href="#form">
+          <span class="ar-n">08</span>
+          <b data-i18n="ar8t">지원사업 및 금융</b>
+          <span class="ar-d" data-i18n="ar8d">사업 목적에 맞는 공고·금융을 확인합니다</span>
+        </a>
+        <a class="ar-card" href="#form">
+          <span class="ar-n">09</span>
+          <b data-i18n="ar9t">교육 행사 및 네트워킹</b>
+          <span class="ar-d" data-i18n="ar9d">교육을 배우고 산업 관계자를 만납니다</span>
+        </a>
+      </div>
+      <p class="ar-foot" data-i18n="arFoot">아홉 개 영역 구분은 한국배터리산업협회·한국배터리연구조합의 자문 결과를 따랐습니다. 현재는 시범 운영을 준비하는 단계로, 각 영역의 문의를 접수하고 있습니다.</p>
+    </section>
 
     <section id="process" class="proc">
       <div class="sec-head">
@@ -307,8 +388,8 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
     <section id="kbia" class="kbia">
       <div class="sec-head">
         <span class="eyebrow" data-i18n="kbEyebrow">KBIA 연계</span>
-        <h2 data-i18n="kbTitle">기업 지원은 한국배터리산업협회와 함께합니다</h2>
-        <p data-i18n="kbBody">KHBCC의 기업 매칭은 한국배터리산업협회(KBIA)의 회원사 네트워크 위에서 이뤄집니다. 회원 관리와 국내 기업 지원은 KBIA가, 헝가리 현지 연결과 EU 규제 대응은 KHBCC가 맡습니다.</p>
+        <h2 data-i18n="kbTitle">한국배터리산업협회와 협력 방안을 협의하고 있습니다</h2>
+        <p data-i18n="kbBody">KHBCC의 기업 매칭을 한국배터리산업협회(KBIA)의 회원사 네트워크와 연계하는 방안을 협의하고 있습니다. 회원 관리와 국내 기업 지원은 KBIA가, 헝가리 현지 연결과 EU 규제 대응은 KHBCC가 맡는 구조를 검토 중이며, 회원사 정보 활용 범위와 협약 체결은 확정되지 않았습니다.</p>
       </div>
 
       <div class="kb-split">
@@ -369,6 +450,41 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
       </div>
     </div>
     </section>
+
+    <section id="links" class="links">
+      <div class="sec-head">
+        <span class="eyebrow" data-i18n="lkEyebrow">공식 자료</span>
+        <h2 data-i18n="lkTitle">자주 찾는 공식 출처</h2>
+        <p data-i18n="lkBody">센터가 영역별 안내 자료를 갖추기 전까지, 기업이 직접 확인할 수 있는 공식 창구를 모았습니다. 각 기관의 공개 페이지로 연결됩니다.</p>
+      </div>
+      <div class="lk-grid">
+        <a class="lk-card" href="https://hipa.hu/" target="_blank" rel="noopener">
+          <b>HIPA</b>
+          <span data-i18n="lk1d">헝가리 투자·부지·공급사 지원</span>
+        </a>
+        <a class="lk-card" href="https://www.kotra.or.kr/" target="_blank" rel="noopener">
+          <b>KOTRA</b>
+          <span data-i18n="lk2d">해외시장·판로·물류 지원</span>
+        </a>
+        <a class="lk-card" href="https://www.investkorea.org/" target="_blank" rel="noopener">
+          <b>Invest KOREA</b>
+          <span data-i18n="lk3d">한국 진출·설립 절차 안내</span>
+        </a>
+        <a class="lk-card" href="https://eur-lex.europa.eu/eli/reg/2023/1542/oj" target="_blank" rel="noopener">
+          <b>EUR-Lex</b>
+          <span data-i18n="lk4d">EU 배터리 규정 2023/1542 원문</span>
+        </a>
+        <a class="lk-card" href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home" target="_blank" rel="noopener">
+          <b>EU Funding & Tenders</b>
+          <span data-i18n="lk5d">EU 공동 R&D·보조금 공고</span>
+        </a>
+        <a class="lk-card" href="https://www.k-bia.or.kr/" target="_blank" rel="noopener">
+          <b>KBIA</b>
+          <span data-i18n="lk6d">한국배터리산업협회 산업 동향·회원사</span>
+        </a>
+      </div>
+    </section>
+
 
     <form id="applyForm" novalidate>
 
@@ -473,11 +589,40 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
             </select>
           </div>
           <div class="f wide">
+            <label for="area"><span data-i18n="ap_area">문의 영역</span><span class="req">*</span></label>
+            <select id="area" name="area" required>
+              <option value="" data-i18n="ap_choose">선택하세요</option>
+              <option value="시장 및 정책정보" data-i18n="ar1t">시장 및 정책정보</option>
+              <option value="현지 진출 및 투자" data-i18n="ar2t">현지 진출 및 투자</option>
+              <option value="파트너 발굴 및 판로" data-i18n="ar3t">파트너 발굴 및 판로</option>
+              <option value="규제 인증 및 환경 대응" data-i18n="ar4t">규제 인증 및 환경 대응</option>
+              <option value="경영 노무 및 인력" data-i18n="ar5t">경영 노무 및 인력</option>
+              <option value="물류 통관 및 공급망" data-i18n="ar6t">물류 통관 및 공급망</option>
+              <option value="기술협력 및 공동 연구개발" data-i18n="ar7t">기술협력 및 공동 연구개발</option>
+              <option value="지원사업 및 금융" data-i18n="ar8t">지원사업 및 금융</option>
+              <option value="교육 행사 및 네트워킹" data-i18n="ar9t">교육 행사 및 네트워킹</option>
+              <option value="기타" data-i18n="ap_a0">기타</option>
+            </select>
+            <span class="hint" data-i18n="ap_ahint">아홉 개 지원 영역 가운데 문의 내용에 가장 가까운 것을 선택해 주십시오. 담당자 배정에 사용됩니다.</span>
+          </div>
+          <div class="f wide">
             <label for="message"><span data-i18n="ap_message">문의 내용</span><span class="req">*</span></label>
             <textarea id="message" name="message" required></textarea>
             <span class="hint" data-i18n="ap_mhint">주요 제품과 기술, 찾고 계신 파트너의 조건을 구체적으로 적어주실수록 매칭 정확도가 높아집니다.</span>
           </div>
         </div>
+      </fieldset>
+
+      <fieldset id="privacy">
+        <legend data-i18n="ap_s4">개인정보 수집·이용 동의</legend>
+        <div class="pv-box">
+          <p data-i18n="pv1"><b>수집 항목</b> 회사명·소재 국가·홈페이지·임직원 수·밸류체인 역할, 담당자 성명·직위·이메일·연락처, 문의 영역과 문의 내용</p>
+          <p data-i18n="pv2"><b>이용 목적</b> 기업 지원 문의의 확인과 회신, 협력 수요 파악, 매칭 검토</p>
+          <p data-i18n="pv3"><b>보유 기간</b> 문의 처리 완료 후 2년. 기간이 지나면 지체 없이 파기합니다.</p>
+          <p data-i18n="pv4"><b>처리 주체</b> 한국–헝가리 배터리협력센터 사무국. 동의 없이 제3자에게 제공하거나 국외로 이전하지 않습니다.</p>
+          <p data-i18n="pv5"><b>권리</b> 열람·정정·삭제·처리정지를 요청하실 수 있고 동의를 거부하실 수 있습니다. 다만 동의하지 않으시면 문의 접수가 어렵습니다. EU 일반개인정보보호법(GDPR) 적용 대상인 경우에도 동일한 권리가 보장됩니다.</p>
+        </div>
+        <label class="pv-agree"><input type="checkbox" id="agree" name="agree" required><span data-i18n="ap_agree">위 내용을 확인했으며 개인정보 수집·이용에 동의합니다.</span><span class="req">*</span></label>
       </fieldset>
 
       <div class="actions">
@@ -492,7 +637,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
 
 <footer>
   <span data-i18n="f1">KHBCC — 한국–헝가리 배터리 협력센터</span>
-  <span class="ver">v2026.09.29-d</span>
+  <span class="ver">v2026.10.20-a</span>
 </footer>
 
 <script src="i18n.js"></script>
