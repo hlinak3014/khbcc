@@ -70,14 +70,14 @@
     {
       "key": "r1w",
       "ko": "연세대학교 · KDI · KBIA · KOTRA / HUBA · 경제에너지부",
-      "hu": "Yonsei Egyetem · KDI · KBIA · KOTRA / HUBA · Gazdasági és Energiaügyi Minisztérium",
+      "hu": "Yonsei Egyetem · KDI · KBIA · KOTRA / HUBA · Gazdasági és Energetikai Minisztérium",
       "en": "Yonsei University · KDI · KBIA · KOTRA / HUBA · Ministry of Economy and Energy"
     },
     {
       "key": "r1p1",
-      "ko": "센터가 사업 기간이 끝난 뒤에도 존속하려면 법적 지위와 재원이 필요합니다. 이 영역은 그 조건을 만드는 연구입니다. 거버넌스 구조, 설립 형태, 재정 모델을 설계하고 양국 정부와 협의합니다.",
-      "hu": "Ahhoz, hogy a központ túlélje a projektidőszakot, jogi státuszra és forrásra van szüksége. Ez a munkaterület ezeket a feltételeket teremti meg: megtervezi az irányítási szerkezetet, a létrehozás formáját és a finanszírozási modellt, és egyeztet róluk mindkét kormánnyal.",
-      "en": "For the center to outlive the project period it needs legal standing and a source of funds. This area of work creates those conditions: designing the governance structure, the form of establishment, and the financing model, and negotiating them with both governments."
+      "ko": "사업 종료 후 지속가능성을 위해 공동 운영의 권한·인력·재원을 구체화하는 연구입니다. 현지 법인 기반과 양국 공동 운영의 세부 합의, 이 웹사이트 운영주체의 확정은 구분합니다.",
+      "hu": "A kutatás a projekt utáni fenntartható közös működés hatásköreit, létszámát és finanszírozását vizsgálja. A helyi vállalati hátteret megkülönböztetjük a részletes kétoldalú működési megállapodásoktól és a weboldal üzemeltetőjének kijelölésétől.",
+      "en": "This research specifies authority, staffing and funding for sustainable joint operation after the project. The local corporate basis is distinguished from detailed bilateral operating agreements and designation of the website operator."
     },
     {
       "key": "cap27",
@@ -99,9 +99,9 @@
     },
     {
       "key": "r1p2",
-      "ko": "헝가리 경제에너지부와의 협의를 거쳐 세 가지 안을 비교하고 있습니다. 각 안은 설립 속도, 자율성, EU 자금 접근성에서 서로 다른 결과를 낳습니다.",
-      "hu": "A Gazdasági és Energiaügyi Minisztériummal folytatott egyeztetés nyomán három lehetőséget vetünk össze. Mindegyik más eredményt ad a létrehozás gyorsasága, az önállóság és az uniós forrásokhoz való hozzáférés szempontjából.",
-      "en": "Three options are being compared following consultation with the Hungarian Ministry of Economy and Energy. Each produces a different outcome in terms of speed of establishment, autonomy, and access to EU funding."
+      "ko": "연구에서 검토한 법적·조직적 대안은 아래와 같습니다. HUBA 공개자료는 HUBA Kompetencia Kft.를 현지 법적·운영 기반으로 설명하며, 아래 비교는 그 법인의 설립 자체가 미완료라는 의미가 아닙니다. 공동 운영의 구체 권한·재원은 추가 확인이 필요합니다.",
+      "hu": "A kutatás az alábbi jogi és szervezeti lehetőségeket vizsgálta. A HUBA nyilvános tájékoztatása szerint a HUBA Kompetencia Kft. biztosítja a helyi jogi és működési hátteret; az összehasonlítás nem jelenti azt, hogy ez a társaság még nem jött létre. A közös működés részletes hatásköreit és finanszírozását meg kell erősíteni.",
+      "en": "The research considered the options below. HUBA’s public information identifies HUBA Kompetencia Kft. as the local legal and operational host; the comparison does not imply that this company has yet to be established. Detailed authority and funding for joint operation require confirmation."
     },
     {
       "key": "r1c1",
@@ -183,21 +183,21 @@
     },
     {
       "key": "r1l1",
-      "ko": "<b>단기</b> — EIPP 후속 예산, 산업자문위원회 참여 회비, 헝가리 정부 지원",
-      "hu": "<b>Rövid táv</b> — követő EIPP költségvetés, az ipari tanácsadó testület tagsági díjai, magyar kormányzati támogatás",
-      "en": "<b>Short term</b> — follow-on EIPP budget, membership fees from the industrial advisory board, Hungarian government support"
+      "ko": "<b>사업기간</b> — EIPP 예산은 승인된 사업 범위에 사용합니다. 사업 종료 후 센터 운영비 지원을 약속하는 재원이 아닙니다.",
+      "hu": "<b>Projektidőszak</b> — Az EIPP-források a jóváhagyott projekt keretében használhatók fel. Nem jelentenek vállalást a központ projekt utáni működési költségeire.",
+      "en": "<b>Project period</b> — EIPP funding is used within the approved project scope. It is not a commitment to finance Centre operations after the project."
     },
     {
       "key": "r1l2",
-      "ko": "<b>중기</b> — EU 공동 재원, 배터리 여권 데이터 서비스 제공, KBIA·HUBA 회원사 대상 컨설팅",
-      "hu": "<b>Középtáv</b> — közös uniós források, akkumulátor-útlevél adatszolgáltatás, tanácsadás a KBIA és a HUBA tagvállalatainak",
-      "en": "<b>Medium term</b> — joint EU funding, battery passport data services, consulting for KBIA and HUBA member firms"
+      "ko": "<b>종료 후 검토재원</b> — 현지 기여금·회원 기여·외부 공모·서비스 수입을 검토합니다. 확약·선정·매출이 확인된 재원과 계획을 구분해야 합니다.",
+      "hu": "<b>Projekt utáni lehetőségek</b> — Helyi és tagi hozzájárulások, külső pályázatok és szolgáltatási bevételek vizsgálhatók. A vállalásokat, támogatási döntéseket és realizált bevételt el kell különíteni a tervektől.",
+      "en": "<b>Post-project options</b> — Local contributions, member contributions, external calls and service income are options under review. Commitments, awards and earned revenue must be distinguished from plans."
     },
     {
       "key": "r1l3",
-      "ko": "<b>장기</b> — Horizon Europe 참여, 인증·규제 준수 모니터링 역량 확보",
-      "hu": "<b>Hosszú táv</b> — részvétel a Horizont Európában, tanúsítási és megfelelés-felügyeleti kapacitás kiépítése",
-      "en": "<b>Long term</b> — participation in Horizon Europe, capability in certification and regulatory compliance monitoring"
+      "ko": "<b>확대 조건</b> — 운영기관·인력·예산과 서비스 제공 역량이 확보된 범위에서 확대합니다. Horizon Europe 등 공모는 신청·선정 전까지 확정재원으로 계상하지 않습니다.",
+      "hu": "<b>A bővítés feltételei</b> — A bővítés üzemeltetőtől, személyzettől, költségvetéstől és szolgáltatási kapacitástól függ. A Horizon Europe és más pályázatok a támogatási döntés előtt nem tekinthetők biztosított forrásnak.",
+      "en": "<b>Expansion conditions</b> — Expansion depends on an operator, staff, budget and service capacity. Calls such as Horizon Europe are not secured funding before an award."
     },
     {
       "key": "r1h3",
@@ -207,9 +207,9 @@
     },
     {
       "key": "r1p3",
-      "ko": "본 웹사이트가 그 산출물입니다. 회원사 데이터베이스를 기반으로 자격 검증부터 사전 큐레이션까지 4단계 매칭 절차를 설계했습니다.",
-      "hu": "Ez a weboldal maga az eredmény. A tagvállalati adatbázisra épülve négylépcsős párosítási folyamatot valósít meg a minősítéstől a kurátorált előzetes párosításig.",
-      "en": "This website is that output. Built on the member company database, it implements a four-stage matching process running from qualification through to curated pre-matching."
+      "ko": "이 웹사이트는 3개 언어 안내와 기업 문의 메일 작성을 지원하는 시제품입니다. 4단계 매칭은 절차 설계이며, 실제 기업 DB 등록·검색·자동 매칭·접수 상태관리는 구현하지 않았습니다.",
+      "hu": "Ez a háromnyelvű prototípus tájékoztatást és érdeklődő levél előkészítését biztosítja. A négy lépéses partnerközvetítés eljárásterv; a vállalati adatbázis-regisztráció, keresés, automatikus párosítás és ügyállapot-kezelés nincs megvalósítva.",
+      "en": "This trilingual prototype provides information and helps prepare an enquiry email. The four-stage matching process is a design; company database registration, search, automatic matching and case-status management are not implemented."
     },
     {
       "key": "r2t",
@@ -736,7 +736,7 @@
     {
       "key": "r4call",
       "ko": "<b>헝가리 자연과학연구센터와의 공동 과제를 준비하고 있습니다.</b> 친환경 전기화학적 침출과 탄소 소재 회수를 결합한 하이브리드 재활용 플랫폼입니다. 산화환원 보조 용해와 친환경 용매로 블랙매스에서 리튬·코발트·니켈을 선택적으로 추출하면서 2차 오염을 줄이고, 폐음극에서 흑연을 함께 회수해 전극 소재의 순환 고리를 닫는 것이 목표입니다.",
-      "hu": "<b>Közös projekt készül a Természettudományi Kutatóközponttal.</b> A téma egy hibrid újrahasznosítási platform, amely környezetbarát elektrokémiai kioldást köt össze szénalapú anyagok visszanyerésével. Redoxi-támogatott olddáás és zöld oldószerek szelektíven vonnák ki a lítiumot, kobaltot és nikkelt a fekete masszából, minimális másodlagos szennyezéssel, miközben a használt anódokból a grafit is visszanyerésre kerülne, bezárva az elektródaanyagok körét.",
+      "hu": "<b>Közös projekt készül a Természettudományi Kutatóközponttal.</b> A téma egy hibrid újrahasznosítási platform, amely környezetbarát elektrokémiai kioldást köt össze szénalapú anyagok visszanyerésével. Redoxi-támogatott oldás és zöld oldószerek szelektíven vonnák ki a lítiumot, kobaltot és nikkelt a fekete masszából, minimális másodlagos szennyezéssel, miközben a használt anódokból a grafit is visszanyerésre kerülne, bezárva az elektródaanyagok körét.",
       "en": "<b>A joint project with the Research Centre for Natural Sciences in Hungary is in preparation.</b> It concerns a hybrid recycling platform combining eco-friendly electrochemical leaching with carbon material recovery. Redox-assisted dissolution and green solvents would selectively extract lithium, cobalt, and nickel from black mass while minimising secondary pollution, with graphite recovered in parallel from spent anodes to close the loop on electrode materials."
     },
     {
@@ -750,6 +750,12 @@
       "ko": "EU 배터리 규정과 REACH, 인허가 요건을 해석해 규제 준수를 지원합니다. LCA 보고서와 탄소발자국 공시 자료를 작성하고 배터리 여권에 필요한 데이터를 제공하며, 정부·지역사회·협력기관과의 소통을 담당합니다.",
       "hu": "Értelmezi az uniós akkumulátorrendeletet, a REACH-et és az engedélyezési követelményeket a megfelelés támogatásához. LCA-jelentéseket és szénlábnyom-közléseket készít, biztosítja az akkumulátor-útlevélhez szükséges adatokat, és koordinálja a kapcsolattartást kormányzati szervekkel, helyi közösségekkel és partnerszervezetekkel.",
       "en": "Interprets the EU Battery Regulation, REACH, and permitting requirements to support compliance. Prepares LCA reports and carbon footprint disclosures, provides the data required for the battery passport, and manages coordination with government agencies, local communities, and partner organisations."
+    },
+    {
+      "key": "sub3b",
+      "ko": "기업 문의",
+      "en": "Business enquiry",
+      "hu": "Vállalati érdeklődés"
     }
   ]
 }

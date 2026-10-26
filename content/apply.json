@@ -3,27 +3,27 @@
   "items": [
     {
       "key": "ap_eyebrow",
-      "ko": "기업 등록 신청",
-      "hu": "Cégregisztráció",
-      "en": "Firm registration"
+      "ko": "기업 지원 문의",
+      "hu": "Vállalati támogatási érdeklődés",
+      "en": "Business support enquiry"
     },
     {
       "key": "ap_title",
-      "ko": "회원사 데이터베이스 등록",
-      "hu": "Csatlakozás a tagvállalati adatbázishoz",
-      "en": "Join the member database"
+      "ko": "기업 지원 문의 메일 작성",
+      "hu": "Vállalati támogatási levél előkészítése",
+      "en": "Prepare a business support enquiry"
     },
     {
       "key": "ap_lede",
-      "ko": "아래 항목은 매칭 절차 1단계인 자격 검증과 2단계인 역량·수요 분석에 사용됩니다. 등록 후 담당자가 확인해 연락드립니다.",
-      "hu": "Az alábbi adatokat a párosítási folyamat első (minősítés) és második (képesség- és igényfelmérés) szakaszában használjuk. Átnézzük a jelentkezést, és felvesszük Önnel a kapcsolatot.",
-      "en": "The information below is used in stage one (qualification) and stage two (capability and needs profiling) of the matching process. We will review your entry and get in touch."
+      "ko": "지원 분야와 협력 수요를 정리해 문의 메일을 작성합니다. 이 화면은 기업 DB 등록이나 매칭 완료를 의미하지 않습니다.",
+      "hu": "Az űrlap támogatási és együttműködési igényeit foglalja e-mailbe. Nem jelent vállalati adatbázis-regisztrációt vagy létrejött partnerkapcsolatot.",
+      "en": "Use this form to prepare an email about your support needs. It does not register a company in a database or complete a match."
     },
     {
       "key": "ap_note",
-      "ko": "작성하신 내용은 이메일 프로그램으로 옮겨져 발송됩니다. 보내기를 누르면 메일 작성 창이 열리니, 내용을 확인하신 뒤 발송해 주세요.",
-      "hu": "A bejegyzés a levélküldő programba kerül át. Beküldéskor megnyílik egy levélablak — kérjük, ellenőrizze a tartalmat és küldje el.",
-      "en": "Your entry is transferred to your email program for sending. When you submit, a mail window opens — please review the contents and send it."
+      "ko": "버튼은 메일 프로그램의 초안 작성을 요청합니다. 수신기관·주소와 정식 개인정보 처리기준이 확인되기 전에는 실제 발송을 권하지 않습니다. 사이트는 입력 내용을 저장하거나 발송·접수 성공을 확인하지 않습니다.",
+      "hu": "A gomb piszkozatot kér a levelezőprogramban. A tényleges küldés nem ajánlott, amíg a fogadó szervezetet, címet és jóváhagyott adatkezelési feltételeket nem erősítették meg. A weboldal nem tárolja a bejegyzést, és nem igazolja a kézbesítést vagy beérkezést.",
+      "en": "The button requests a draft in your email app. Actual sending is not recommended until the recipient organization, address and approved privacy terms are confirmed. The site does not store your entry or confirm delivery or receipt."
     },
     {
       "key": "platEyebrow",
@@ -33,27 +33,27 @@
     },
     {
       "key": "platTitle",
-      "ko": "기업 매칭은 네 단계를 거칩니다",
-      "hu": "A párosítás négy szakaszból áll",
-      "en": "Matching runs through four stages"
+      "ko": "기업 매칭의 4단계 설계",
+      "hu": "A partnerközvetítés tervezett négy lépése",
+      "en": "A proposed four-stage matching process"
     },
     {
       "key": "platBody",
-      "ko": "검증된 기업에서 출발해 실제 성과가 나오는 미팅까지, 네 단계를 거쳐 연결합니다.",
-      "hu": "Az ellenőrzött partnerektől a kurátorált üzleti találkozókig, négy lépésben.",
-      "en": "From verified partners to curated business meetings, in four stages."
+      "ko": "확인·분석·선별·연결의 절차를 설계했습니다. 실제 기업 검증, 양측 동의와 담당 운영체계가 마련된 범위에서 시행할 계획입니다.",
+      "hu": "A terv ellenőrzést, igényfelmérést, kiválasztást és bemutatást foglal magában. A megvalósításhoz vállalati ellenőrzés, mindkét fél hozzájárulása és kijelölt felelős szükséges.",
+      "en": "The design covers verification, profiling, selection and introduction. Implementation requires company verification, consent from both parties and an assigned operator."
     },
     {
       "key": "figB2bT",
-      "ko": "B2B 매칭 4단계 절차",
-      "hu": "Négylépcsős B2B párosítási folyamat",
-      "en": "Four-stage B2B matching process"
+      "ko": "B2B 매칭 4단계 절차안",
+      "hu": "A B2B partnerközvetítés tervezett négy lépése",
+      "en": "Proposed four-stage B2B matching process"
     },
     {
       "key": "figDb",
-      "ko": "KBIA · HUBA 회원사 데이터베이스",
-      "hu": "KBIA és HUBA tagvállalati adatbázis",
-      "en": "KBIA and HUBA member company database"
+      "ko": "KBIA · HUBA 회원사 네트워크 연계안",
+      "hu": "Tervezett kapcsolódás a KBIA és a HUBA tagvállalati hálózatához",
+      "en": "Proposed links to KBIA and HUBA member networks"
     },
     {
       "key": "figS1t",
@@ -159,15 +159,15 @@
     },
     {
       "key": "kbTitle",
-      "ko": "기업 지원은 한국배터리산업협회와 함께합니다",
-      "hu": "A vállalati támogatás a Koreai Akkumulátoripari Szövetséggel közösen működik",
-      "en": "Firm support runs with the Korea Battery Industry Association"
+      "ko": "한국배터리산업협회와 협력 방안을 협의하고 있습니다",
+      "hu": "Egyeztetés folyik a Koreai Akkumulátoripari Szövetséggel való együttműködésről",
+      "en": "Discussions with the Korea Battery Industry Association are under way"
     },
     {
       "key": "kbBody",
-      "ko": "KHBCC의 기업 매칭은 한국배터리산업협회(KBIA)의 회원사 네트워크 위에서 이뤄집니다. 회원 관리와 국내 기업 지원은 KBIA가, 헝가리 현지 연결과 EU 규제 대응은 KHBCC가 맡습니다.",
-      "hu": "A KHBCC cégpárosítása a Koreai Akkumulátoripari Szövetség (KBIA) tagi hálózatára épül. A tagságot és a hazai vállalati támogatást a KBIA végzi; a KHBCC a magyarországi kapcsolatot és az uniós szabályozási munkát teszi hozzá.",
-      "en": "KHBCC's firm matching is built on the member network of the Korea Battery Industry Association (KBIA). KBIA handles membership and domestic firm support; KHBCC adds the Hungarian connection and EU regulatory work."
+      "ko": "KHBCC의 기업 매칭을 한국배터리산업협회(KBIA)의 회원사 네트워크와 연계하는 방안을 협의하고 있습니다. 국내 기업 지원과 헝가리 현지 연결의 역할 분담, 회원사 정보 활용 범위와 협약 체결은 확정되지 않았습니다.",
+      "hu": "Egyeztetés folyik arról, hogyan kapcsolódhatna a KHBCC tervezett partnerközvetítése a KBIA tagvállalati hálózatához. A feladatmegosztás, a tagvállalati adatok felhasználása és a megállapodás még nem végleges.",
+      "en": "We are discussing how proposed KHBCC matching could connect to the KBIA member network. The division of responsibilities, use of member information and agreement have not been finalized."
     },
     {
       "key": "kbH1",
@@ -321,9 +321,9 @@
     },
     {
       "key": "critBody",
-      "ko": "매출 규모가 아니라 세 가지 가치를 기준으로 매칭 대상을 정합니다. 아래 항목이 등록 정보를 검토할 때의 판단 기준입니다.",
-      "hu": "A párosítási jelölteket nem árbevétel, hanem három érték alapján választjuk ki. Ezek a szempontok érvényesek a regisztráció elbírálásakor.",
-      "en": "Matching candidates are selected on three values rather than revenue. These are the criteria applied when your registration is reviewed."
+      "ko": "아래 세 가지 가치는 향후 기업 정보를 검토할 때 사용할 매칭 기준안입니다. 실제 검증·소개 실적과는 구분합니다.",
+      "hu": "Az alábbi három érték a vállalati profilok későbbi értékelésének tervezett szempontja. Nem jelent már elvégzett ellenőrzést vagy bemutatást.",
+      "en": "These three values are proposed criteria for future review of company profiles. They do not represent completed verification or introductions."
     },
     {
       "key": "v1t",
@@ -609,9 +609,9 @@
     },
     {
       "key": "ap_submit",
-      "ko": "보내기",
-      "hu": "Beküldés",
-      "en": "Submit"
+      "ko": "문의 메일 초안 열기",
+      "hu": "Érdeklődő levél piszkozatának megnyitása",
+      "en": "Open enquiry email draft"
     },
     {
       "key": "ap_back",
@@ -726,6 +726,78 @@
       "ko": "교육을 배우고 산업 관계자를 만납니다",
       "hu": "Tanulás és iparági kapcsolatépítés",
       "en": "Learn and meet people in the industry"
+    },
+    {
+      "key": "ap_ahint",
+      "ko": "문의 내용과 가장 가까운 지원 분야를 선택해 주세요. 선택한 분야는 문의 메일에 포함됩니다.",
+      "en": "Choose the support area closest to your enquiry. Your selection is included in the email draft.",
+      "hu": "Válassza ki az érdeklődéséhez legközelebb álló területet. A választás bekerül a levélpiszkozatba."
+    },
+    {
+      "key": "arBody",
+      "ko": "기업의 실제 업무를 기준으로 아홉 개 지원 영역을 제안합니다. 분야별 안내 자료와 공식 출처는 순차적으로 갖추는 중입니다. 아래 카드를 선택하면 문의 분야가 입력됩니다.",
+      "en": "Nine proposed support areas reflect the tasks firms face. Guidance and official sources are being developed area by area. Selecting a card fills in the enquiry area below.",
+      "hu": "A vállalatok feladatai alapján kilenc támogatási területet javaslunk. Az útmutatók és hivatalos források területenként készülnek. A kártya kiválasztása kitölti az alábbi érdeklődési területet."
+    },
+    {
+      "key": "arFoot",
+      "ko": "아홉 개 영역 구분은 한국배터리산업협회·한국배터리연구조합의 자문 결과를 따랐습니다. 현재는 분야별 안내와 시범 운영을 준비하는 단계이며, 카드를 선택하면 해당 분야의 문의 메일을 작성할 수 있습니다.",
+      "en": "The nine areas follow advice from KBIA and the Battery R&D Association of Korea. Area-specific guidance and pilot operation are being prepared. Choose a card to prepare an enquiry for that area.",
+      "hu": "A kilenc terület a KBIA és a koreai akkumulátoripari kutatási szövetség tanácsaira épül. A szakterületi útmutatók és a próbaüzem előkészítés alatt állnak. A kártyák a kiválasztott területhez tartozó érdeklődő levél előkészítéséhez vezetnek."
+    },
+    {
+      "key": "sub3b",
+      "ko": "기업 문의",
+      "en": "Business enquiry",
+      "hu": "Vállalati érdeklődés"
+    },
+    {
+      "key": "ap_s4",
+      "ko": "문의 메일 초안·개인정보 안내",
+      "en": "Email draft and personal data notice",
+      "hu": "Levélpiszkozat és személyes adatokra vonatkozó tájékoztató"
+    },
+    {
+      "key": "pv0",
+      "ko": "<b>운영기관 승인 전 안내 초안</b> 이 정적 양식은 입력 정보를 사이트에 저장하지 않고 메일 초안만 작성합니다. 실제 발송 후에는 수신기관이 정보를 처리합니다. 수신기관·연락처·저장 위치·보유기간은 확정이 필요하며, 아래 사무국·2년 보유는 기존 제안사항입니다. 실제 발송 전 수신 주소와 정식 개인정보 처리기준을 확인해 주세요.",
+      "en": "<b>Draft notice pending operator approval</b> This static form only prepares an email draft; it does not store your entry on the site. If you send it, the recipient processes the information. The recipient organization, contact details, storage location and retention period require confirmation; the secretariat and two-year period below are earlier proposals. Confirm the address and approved privacy terms before sending.",
+      "hu": "<b>Az üzemeltető jóváhagyására váró tájékoztatótervezet</b> A statikus űrlap csak levélpiszkozatot készít, az adatokat nem tárolja a weboldalon. Elküldés esetén az adatokat a címzett kezeli. A fogadó szervezetet, elérhetőségeit, a tárolás helyét és a megőrzési időt még meg kell erősíteni; az alábbi titkárság és kétéves időszak korábbi javaslat. Küldés előtt ellenőrizze a címet és a jóváhagyott adatkezelési feltételeket."
+    },
+    {
+      "key": "pv1",
+      "ko": "<b>초안에 포함되는 항목</b> 회사명·국가·홈페이지·임직원 수·밸류체인 역할, 담당자 성명·직위·이메일·연락처, 문의 영역·내용, 카드 식별자와 초안 확인·동의 표시",
+      "en": "<b>Included in the draft</b> Company, country, website, headcount, value-chain role; contact name, position, email and phone; enquiry area and message, card ID and draft-notice acknowledgement",
+      "hu": "<b>A piszkozat tartalma</b> Cégnév, ország, honlap, létszám, értéklánc-szerep; kapcsolattartó neve, beosztása, e-mail-címe és telefonszáma; érdeklődési terület és üzenet, kártyaazonosító és a tervezet tudomásulvétele"
+    },
+    {
+      "key": "pv2",
+      "ko": "<b>이용 목적안</b> 기업 지원 문의 확인·회신, 협력 수요 파악과 매칭 검토. 실제 처리 목적·범위는 수신 운영기관의 승인이 필요합니다.",
+      "en": "<b>Proposed purpose</b> Enquiry review and reply, cooperation-needs assessment and matching review. The actual purposes and scope require approval by the receiving operator.",
+      "hu": "<b>Javasolt cél</b> Az érdeklődés áttekintése és megválaszolása, az együttműködési igények és a partnerközvetítés mérlegelése. A tényleges célokat és terjedelmet a fogadó üzemeltetőnek kell jóváhagynia."
+    },
+    {
+      "key": "pv3",
+      "ko": "<b>보유기간 승인 필요</b> 기존안은 문의 처리 완료 후 2년입니다. 확정된 보유·파기 약속이 아니며, 수신 운영기관이 실제 기간과 파기 절차를 정해야 합니다.",
+      "en": "<b>Retention requires approval</b> The earlier proposal was two years after an enquiry closes. This is not an approved retention or deletion commitment; the receiving operator must set the actual period and deletion procedure.",
+      "hu": "<b>A megőrzési idő jóváhagyást igényel</b> A korábbi javaslat a megkeresés lezárása után két év volt. Ez nem jóváhagyott megőrzési vagy törlési vállalás; a tényleges időt és törlési eljárást a fogadó üzemeltetőnek kell meghatároznia."
+    },
+    {
+      "key": "pv4",
+      "ko": "<b>운영기관 확정 필요</b> 기존 ‘KHBCC 사무국’은 제안된 처리주체입니다. 실제 처리기관·연락처·저장 위치·제3자 제공 및 국외이전 방침은 운영기관이 확정해 안내해야 합니다.",
+      "en": "<b>Operator requires designation</b> The previously named KHBCC secretariat is a proposed recipient. The actual controller, contact details, storage location and arrangements for third-party disclosure and international transfers must be confirmed and published by the operator.",
+      "hu": "<b>Az üzemeltető kijelölése szükséges</b> A korábban megnevezett KHBCC-titkárság javasolt fogadó fél. A tényleges adatkezelőt, elérhetőségeit, a tárolás helyét, a harmadik félnek történő átadást és a nemzetközi adattovábbítást az üzemeltetőnek kell meghatároznia és közzétennie."
+    },
+    {
+      "key": "pv5",
+      "ko": "<b>확인할 사항</b> 실제 발송 전 수신기관의 정식 처리방침에서 열람·정정·삭제·처리제한 요청 방법을 확인해 주세요. 이 안내와 초안 작성 동의는 GDPR 등 개인정보 처리체계의 승인·준수 완료를 의미하지 않습니다.",
+      "en": "<b>What to confirm</b> Before sending, consult the recipient’s approved privacy notice for access, correction, deletion and restriction procedures. This draft notice and draft-preparation consent do not confirm approval or compliance of a GDPR or other data-processing framework.",
+      "hu": "<b>Ellenőrizendő</b> Küldés előtt a címzett jóváhagyott tájékoztatójában ellenőrizze a hozzáférés, helyesbítés, törlés és korlátozás kérésének módját. E tervezet és a piszkozatkészítéshez adott hozzájárulás nem igazolja a GDPR vagy más adatkezelési rendszer jóváhagyását vagy megfelelőségét."
+    },
+    {
+      "key": "ap_agree",
+      "ko": "운영 승인 전 안내 초안을 확인했으며, 입력 정보를 메일 초안에 포함하는 데 동의합니다. 실제 발송 전 수신 주소와 처리기준을 확인하겠습니다.",
+      "en": "I acknowledge this draft notice pending operator approval and agree to include my entries in an email draft. I will confirm the recipient address and processing terms before sending.",
+      "hu": "Tudomásul veszem az üzemeltető jóváhagyására váró tájékoztatótervezetet, és hozzájárulok a megadott adatok levélpiszkozatba foglalásához. Küldés előtt ellenőrzöm a címzettet és az adatkezelési feltételeket."
     }
   ]
 }

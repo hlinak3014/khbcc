@@ -39,9 +39,9 @@
     },
     {
       "key": "stat0",
-      "ko": "개국 공동 운영",
-      "hu": "Ország",
-      "en": "Countries"
+      "ko": "개국 협력",
+      "hu": "együttműködő ország",
+      "en": "Countries in cooperation"
     },
     {
       "key": "stat0n",
@@ -51,15 +51,15 @@
     },
     {
       "key": "stat1",
-      "ko": "개 기능 연구소",
-      "hu": "Funkcionális kutatóintézet",
-      "en": "Functional institutes"
+      "ko": "개 기능 연구소 구상",
+      "hu": "tervezett funkcionális egység",
+      "en": "Proposed functional units"
     },
     {
       "key": "stat1n",
-      "ko": "공동 연구개발 부문 3개, 한국·헝가리 협력 부문 2개로 구성됩니다.",
-      "hu": "Három a közös K+F divízióban, kettő a koreai–magyar együttműködési divízióban.",
-      "en": "Three in the Joint R&D Division and two in the Korea–Hungary Cooperation Division."
+      "ko": "공동 연구개발 3개, 한국·헝가리 협력 2개의 기능을 제안합니다.",
+      "hu": "Három közös K+F és két koreai–magyar együttműködési funkciót javaslunk.",
+      "en": "Three joint R&D functions and two Korea–Hungary cooperation functions are proposed."
     },
     {
       "key": "stat2",
@@ -111,9 +111,9 @@
     },
     {
       "key": "why2b",
-      "ko": "EU 배터리 규정(2023/1542)은 2027년 2월 18일부터 디지털 배터리 여권을 의무화합니다. 탄소발자국, 재활용 원료 함량, 공급망 실사, 성능·내구성까지 생애주기 전반을 수치로 공개해야 합니다. 잘 만드는 것만으로는 팔 수 없게 됩니다.",
-      "hu": "A 2023/1542/EU akkumulátorrendelet 2027. február 18-tól – kategóriától függő feltételekkel – megköveteli a digitális akkumulátor-útlevelet. A szénlábnyomot, az újrahasznosított tartalmat, az ellátásilánc-átvilágítást, a teljesítményt és a tartósságot számszerűen kell közzétenni a teljes életciklusra. A jó termék önmagában már nem elég az értékesítéshez.",
-      "en": "EU Battery Regulation 2023/1542 makes the digital battery passport mandatory from 18 February 2027. Carbon footprint, recycled content, supply-chain due diligence, performance and durability must all be disclosed as figures across the lifecycle. Making a good product is no longer enough to sell it."
+      "ko": "EU 배터리 규정 제77조에 따라 2027년 2월 18일부터 전기차 배터리, 경량 운송수단(LMT) 배터리, 2kWh를 초과하는 산업용 배터리에 디지털 배터리 여권이 적용됩니다. 탄소발자국·재생원료 함량·공급망 실사·성능·내구성의 요구사항은 항목별 적용 대상과 시행일이 서로 다릅니다. <a href=\"https://eur-lex.europa.eu/eli/reg/2023/1542/2026-08-13/eng\" target=\"_blank\" rel=\"noopener\">공식 규정 원문(EUR-Lex)</a>에서 개별 요건을 확인해야 합니다.",
+      "hu": "Az uniós akkumulátorrendelet 77. cikke szerint 2027. február 18-tól az elektromos járművek akkumulátoraira, a könnyű járművek (LMT) akkumulátoraira és a 2 kWh feletti ipari akkumulátorokra digitális akkumulátor-útlevél vonatkozik. A szénlábnyomra, az újrahasznosított tartalomra, az ellátásilánc-átvilágításra, a teljesítményre és a tartósságra vonatkozó követelmények hatálya és alkalmazási időpontja eltér. Az egyes előírásokat a <a href=\"https://eur-lex.europa.eu/eli/reg/2023/1542/2026-08-13/eng\" target=\"_blank\" rel=\"noopener\">hivatalos rendeletben (EUR-Lex)</a> kell ellenőrizni.",
+      "en": "Under Article 77 of the EU Battery Regulation, the digital battery passport applies from 18 February 2027 to EV batteries, light means of transport (LMT) batteries and industrial batteries above 2 kWh. Carbon footprint, recycled content, supply-chain due diligence, performance and durability requirements apply to different categories and dates. Check each requirement in the <a href=\"https://eur-lex.europa.eu/eli/reg/2023/1542/2026-08-13/eng\" target=\"_blank\" rel=\"noopener\">official Regulation (EUR-Lex)</a>."
     },
     {
       "key": "why3t",
@@ -153,21 +153,21 @@
     },
     {
       "key": "labsTitle",
-      "ko": "2개 부문, 5개 기능 연구소",
-      "hu": "Két divízió, öt funkcionális kutatóintézet",
-      "en": "Two divisions, five functional units"
+      "ko": "2개 부문, 5개 기능 연구소 구성안",
+      "hu": "Két részleg és öt funkcionális egység javaslata",
+      "en": "Two divisions and five proposed functional units"
     },
     {
       "key": "labsBody",
-      "ko": "기술 부문은 연구 속도로, 협력 부문은 산업 속도로 움직이기 때문에 두 부문을 나누어 운영합니다. 다만 산출물은 서로 이어집니다. 연구개발 부문의 규제 분석 결과가 기업 자문 자료와 교육 과정에 그대로 쓰입니다.",
-      "hu": "A technikai oldal kutatási, az együttműködési oldal ipari ütemben halad, ezért a két divíziót külön működtetjük. Az eredmények mégis összekapcsolódnak: a K+F oldal szabályozási elemzései közvetlenül a cégeknek szóló tanácsadási anyagokba és a képzésbe kerülnek.",
-      "en": "The technical side works at research pace and the cooperation side at industry pace, so the two divisions are run separately. Their outputs stay connected: regulatory analysis from the R&amp;D side goes directly into advisory material for firms and into coursework."
+      "ko": "기술 연구와 산업·교육 협력을 연결하는 기능 구성안입니다. 각 연구소의 조직화·상설 운영은 인력, 예산과 참여기관 협의를 전제로 하며, 다섯 연구소가 모두 운영 중이라는 의미는 아닙니다.",
+      "hu": "A funkcionális terv a műszaki kutatást kapcsolja össze az ipari és oktatási együttműködéssel. Az egységek létrehozása és tartós működése létszámtól, forrásoktól és partneri megállapodástól függ; nem jelenti, hogy mind az öt már működik.",
+      "en": "This functional design connects technical research with industry and education. Establishment and continuing operation of each unit depend on staffing, funding and partner agreement; it does not mean all five units are operating."
     },
     {
       "key": "figLabsT",
-      "ko": "KHBCC 5개 기능 연구소 구성",
-      "hu": "A KHBCC öt funkcionális kutatóintézete",
-      "en": "KHBCC five functional units"
+      "ko": "KHBCC 5개 기능 연구소 구성안",
+      "hu": "A KHBCC öt funkcionális egységének terve",
+      "en": "Five-unit functional design for KHBCC"
     },
     {
       "key": "figP2",
@@ -243,9 +243,9 @@
     },
     {
       "key": "figL5d",
-      "ko": "복수학위 운영",
-      "hu": "Kettős diploma működtetése",
-      "en": "Dual degree operation"
+      "ko": "석사 복수학위 협력 준비",
+      "hu": "Kettős mesterképzési együttműködés előkészítése",
+      "en": "Preparation for dual master’s cooperation"
     },
     {
       "key": "figL5e",
@@ -387,9 +387,9 @@
     },
     {
       "key": "l1b",
-      "ko": "사용후 배터리의 성능을 평가하고 잔존 수명을 산정합니다. 시험 결과를 바탕으로 새로운 기술 기준을 개발하는 것도 이 연구소의 과제입니다.",
-      "hu": "Értékeli a használt akkumulátorok teljesítményét és megállapítja hátralévő hasznos élettartamukat. Az eredményekből új műszaki szabványok kidolgozása is ide tartozik.",
-      "en": "Evaluates the performance of used batteries and assesses their remaining useful life. Developing new technical standards from those results is also part of this unit's work."
+      "ko": "사용후 배터리의 성능과 잔존 수명 평가, 시험기준 개발을 담당하도록 제안한 기능입니다. 실제 서비스 제공 범위는 시험 역량과 운영 조건을 확인해 확정해야 합니다.",
+      "hu": "A javasolt funkció használt akkumulátorok teljesítmény- és hátralévőélettartam-értékelésére, valamint vizsgálati módszerek fejlesztésére irányul. Az elérhető szolgáltatásokat a kapacitás és a működési feltételek alapján kell megerősíteni.",
+      "en": "This proposed function covers used-battery performance and remaining-life assessment and test-method development. Available services must be confirmed against testing capacity and operating conditions."
     },
     {
       "key": "l2t",
@@ -399,9 +399,9 @@
     },
     {
       "key": "l2b",
-      "ko": "배터리 사용 데이터를 수집·분석하고 양국이 함께 활용하는 거점 역할을 합니다. 재활용 공정 연구도 함께 수행합니다.",
-      "hu": "Az akkumulátorok használati adatainak gyűjtésére és elemzésére szolgáló központ mindkét ország számára. Az újrahasznosítási eljárások kutatása is itt folyik.",
-      "en": "Serves as the hub for collecting and analyzing battery usage data for both countries. Research on battery recycling processes is carried out here as well."
+      "ko": "배터리 데이터 수집·분석과 양국 공동 활용을 지원하기 위한 기능안입니다. 데이터 접근권, 관리체계와 실제 제공 범위는 별도로 확정해야 합니다.",
+      "hu": "A javasolt funkció az akkumulátoradatok gyűjtését, elemzését és közös használatát támogatná. Az adathozzáférést, az adatkezelést és a szolgáltatások körét külön kell megerősíteni.",
+      "en": "This proposed function supports battery data collection, analysis and shared use. Data access, governance and the scope of services require separate confirmation."
     },
     {
       "key": "l3t",
@@ -411,9 +411,9 @@
     },
     {
       "key": "l3b",
-      "ko": "폐기물 발생을 추적해 환경 부담을 줄이고 규제 준수 여부를 확인합니다. 취급 과정의 안전 기준을 마련하고 적용합니다.",
-      "hu": "Nyomon követi a hulladékot a környezeti terhelés csökkentése és a szabályozási megfelelés igazolása érdekében. Kidolgozza és érvényesíti a kezelési biztonsági előírásokat.",
-      "en": "Tracks waste to reduce environmental impact and to confirm regulatory compliance. Sets and enforces safety protocols for handling."
+      "ko": "환경부담 분석, 규제 대응과 취급 안전을 연구하는 기능안입니다. 개별 연구 성과와 상설 자문·시험 서비스의 운영 여부는 구분합니다.",
+      "hu": "A javasolt funkció környezeti elemzéssel, szabályozási megfeleléssel és biztonságos kezeléssel foglalkozna. A kutatási eredményeket megkülönböztetjük a tartós tanácsadási vagy vizsgálati szolgáltatásoktól.",
+      "en": "This proposed function covers environmental analysis, regulatory response and handling safety. Research outputs are distinguished from continuing advisory or testing services."
     },
     {
       "key": "p2",
@@ -435,9 +435,9 @@
     },
     {
       "key": "l4b",
-      "ko": "KBIA와 HUBA를 연결해 기업 매칭과 회원사 지원을 담당합니다. 인터배터리 등 전시회를 통한 네트워킹과 EU Horizon 컨소시엄 구성도 이곳에서 맡습니다.",
-      "hu": "Összehangolja a KBIA és a HUBA munkáját a cégpárosításban és a tagvállalatok támogatásában. Az InterBattery és más kiállítások nemzetközi kapcsolatépítése, valamint a Horizont Európa konzorciumok szervezése is ehhez az egységhez tartozik.",
-      "en": "Coordinates between KBIA and HUBA on firm matching and member support. Global networking through InterBattery and other exhibitions, and building EU Horizon consortia, also sit with this unit."
+      "ko": "KBIA·HUBA와의 협의를 통해 기업 연결, 전시회 네트워킹과 공동과제 발굴을 지원하도록 제안한 기능입니다. 기관별 역할과 회원정보 활용은 별도 합의가 필요합니다.",
+      "hu": "A KBIA-val és a HUBA-val folytatott egyeztetések alapján e javasolt funkció partnerbemutatást, kiállítási kapcsolatépítést és közös projektek előkészítését támogatná. A szerepekről és a tagi adatok felhasználásáról megállapodás szükséges.",
+      "en": "This proposed function would support introductions, exhibition networking and joint-project development through discussions with KBIA and HUBA. Roles and use of member information require agreement."
     },
     {
       "key": "l5h",
@@ -453,9 +453,9 @@
     },
     {
       "key": "l5b",
-      "ko": "학술 교류 프로그램을 운영하고, 현직 인력의 직무 역량을 높이는 재교육 과정을 마련합니다.",
-      "hu": "Akadémiai csereprogramokat működtet, és továbbképzéseket dolgoz ki az iparágban már dolgozók készségeinek fejlesztésére.",
-      "en": "Runs academic exchange programs and develops retraining courses that build the skills of people already working in the industry."
+      "ko": "연세대–BME 석사 복수학위 협정을 바탕으로 학술교류와 재직자 교육을 준비하는 기능안입니다. 실제 학생 참여와 학점교류 실적은 별도로 확인해야 합니다.",
+      "hu": "A javasolt funkció a Yonsei–BME kettős mesterképzési megállapodás alapján akadémiai cserét és szakmai továbbképzést készítene elő. A tényleges hallgatói részvételt és kreditátvitelt külön kell megerősíteni.",
+      "en": "This proposed function prepares academic exchange and workforce training around the Yonsei–BME dual master’s agreement. Actual student participation and credit transfer require separate confirmation."
     },
     {
       "key": "aboutEyebrow",
@@ -471,9 +471,9 @@
     },
     {
       "key": "aboutBody",
-      "ko": "헝가리에는 한국과 중국 셀 제조사의 대규모 배터리 생산기지가 들어서 있습니다. 동시에 EU 배터리 규정(2023/1542)은 생산부터 폐기까지 전 생애주기에 걸친 규제 대응을 요구하고 있습니다. KHBCC는 이 두 가지를 잇기 위해 양국 정부의 지원 아래 설립이 추진되고 있으며, 2025년 11월 헝가리 배터리 위크에서 공식 출범을 알렸습니다. 운영 기관과 법적 형태는 협의 중입니다. 시험 검증, 데이터 추적, 환경 진단, 기업 협력, 인력 양성을 하나의 조직 안에서 함께 다룹니다.",
-      "hu": "Magyarországon ma koreai és kínai cellagyártók nagy akkumulátorgyárai működnek. Ezzel egyidejűleg az Európai Unió 2023/1542 rendelete a gyártástól a hulladékkezelésig a teljes életciklusra kiterjedő megfelelést ír elő. A KHBCC a két ország kormányának támogatásával jön létre, hogy összekapcsolja ezt a kettőt, és 2025 novemberében, a Hungarian Battery Week keretében jelentette be indulását. Működtető szervezete és jogi formája még egyeztetés alatt áll. A vizsgálat, az adatnyomonkövetés, a környezeti értékelés, az ipari együttműködés és a szakemberképzés egyetlen szervezeten belül zajlik.",
-      "en": "Hungary now hosts large battery plants operated by Korean and Chinese cell manufacturers. At the same time, EU Battery Regulation 2023/1542 requires compliance across the entire lifecycle, from production through disposal. KHBCC is being established with support from both governments to connect the two, and announced its launch at Hungarian Battery Week in November 2025. Its operating body and legal form are still under discussion. Testing, data traceability, environmental assessment, industry cooperation, and workforce development are handled within a single organization."
+      "ko": "KHBCC는 2025년 11월 공식 출범을 알렸습니다. HUBA 공개자료는 HUBA Kompetencia Kft.를 센터의 현지 법적·운영 기반으로 설명합니다. 양국 공동 운영의 권한·재원, 개별 기관 참여와 이 웹사이트의 운영체계는 추가 협의·확정이 필요합니다. 본 사이트는 연구성과와 협력 방안을 소개하는 3개 언어 시제품입니다.",
+      "hu": "A KHBCC 2025 novemberében jelentette be indulását. A HUBA nyilvános tájékoztatása a HUBA Kompetencia Kft.-t nevezi meg a központ helyi jogi és működési háttereként. A közös működés hatáskörei és finanszírozása, az intézmények részvétele és e weboldal működtetése további egyeztetést igényel. Az oldal háromnyelvű prototípus, amely kutatási eredményeket és együttműködési javaslatokat mutat be.",
+      "en": "KHBCC announced its launch in November 2025. HUBA’s public information identifies HUBA Kompetencia Kft. as the Centre’s local legal and operational host. Authority and funding for joint operation, individual institutional participation and operation of this website require further agreement. This site is a trilingual prototype presenting research outputs and cooperation proposals."
     },
     {
       "key": "a1h",
@@ -525,9 +525,9 @@
     },
     {
       "key": "a3b",
-      "ko": "한국과 헝가리 기업을 검증해 연결하고, 공동 연구개발과 EU Horizon 컨소시엄 구성을 지원합니다.",
-      "hu": "Ellenőrizzük és összekapcsoljuk a koreai és magyar cégeket, és támogatjuk a közös K+F-et, valamint a Horizont Európa konzorciumok létrehozását.",
-      "en": "We verify and connect Korean and Hungarian firms, and support joint R&D and the formation of EU Horizon consortia."
+      "ko": "양국 기업 연결과 공동 연구개발을 위한 협력 절차를 설계합니다. 실제 매칭은 기업 확인과 양측 동의를 전제로 합니다.",
+      "hu": "Vállalati bemutatásokhoz és közös K+F-hez tervezünk együttműködési eljárásokat. A tényleges partnerközvetítés vállalati ellenőrzést és mindkét fél hozzájárulását igényli.",
+      "en": "We design cooperation procedures for company introductions and joint R&D. Actual matching requires company verification and consent from both parties."
     },
     {
       "key": "a4h",
@@ -543,9 +543,9 @@
     },
     {
       "key": "a4b",
-      "ko": "연세대–BME 협정을 축으로 학생 교류와 공동 지도를 운영하고, 산업 현직 인력의 재교육 과정을 마련합니다.",
-      "hu": "A Yonsei–BME megállapodásra épülve hallgatói cserét és közös témavezetést működtetünk, és továbbképzéseket dolgozunk ki az iparágban már dolgozóknak.",
-      "en": "Built on the Yonsei–BME agreement, we run student exchange and co-supervision, and develop retraining courses for people already working in the industry."
+      "ko": "연세대–BME 석사 복수학위 협정을 기반으로 교류와 교육의 후속 운영을 준비합니다. 실제 참여 실적과 BME 자체 학사과정 추진은 구분합니다.",
+      "hu": "A Yonsei–BME kettős mesterképzési megállapodás alapján további csere- és oktatási együttműködést készítünk elő. A tényleges részvételt megkülönböztetjük a BME saját alapképzésének terveitől.",
+      "en": "We prepare follow-up exchange and education around the Yonsei–BME dual master’s agreement. Actual participation is distinguished from plans for BME’s own bachelor’s programme."
     },
     {
       "key": "a5h",
@@ -645,33 +645,33 @@
     },
     {
       "key": "govTitle",
-      "ko": "조직 구성",
-      "hu": "A központ felépítése",
-      "en": "How the center is structured"
+      "ko": "장기 조직 구성안",
+      "hu": "Javasolt hosszú távú szervezet",
+      "en": "Proposed long-term organization"
     },
     {
       "key": "govBody",
-      "ko": "KHBCC는 공동 연구개발과 한국·헝가리 협력이라는 두 축으로 움직입니다. 연구 성과가 산업 협력과 교육, 정책 지원으로 곧바로 이어지도록 설계했습니다.",
-      "hu": "A KHBCC két tengely mentén működik: közös kutatás-fejlesztés, valamint koreai–magyar együttműködés. A kutatási eredmények közvetlenül beépülnek az ipari együttműködésbe, az oktatásba és a szakpolitikai támogatásba.",
-      "en": "KHBCC runs on two axes: joint research and development, and Korea–Hungary cooperation. Research outcomes feed directly into industrial collaboration, education, and policy support."
+      "ko": "아래는 공동 연구개발과 한국·헝가리 협력을 연결하는 장기 구성안입니다. 이사회 참여기관, 인력·예산과 개별 연구소의 운영은 협의·확정이 필요합니다. 현재 가동 조직이나 확정된 이사 명단을 뜻하지 않습니다.",
+      "hu": "Az ábra a közös K+F-et és a koreai–magyar együttműködést összekötő hosszú távú szervezeti javaslat. Az igazgatótanácsi részvételről, a létszámról, a költségvetésről és az egységek működéséről még megállapodás szükséges. Nem működő szervezetet vagy megerősített igazgatói névsort mutat.",
+      "en": "The diagram is a proposed long-term structure connecting joint R&D with Korea–Hungary cooperation. Board participation, staffing, budgets and unit operations require agreement. It is not a roster of an operating organization or confirmed directors."
     },
     {
       "key": "gvCap",
-      "ko": "KHBCC 운영 체계 (최종보고서 Figure 2-8)",
-      "hu": "A KHBCC irányítási felépítése (zárójelentés, 2-8. ábra)",
-      "en": "KHBCC governance architecture (final report, Figure 2-8)"
+      "ko": "KHBCC 장기 운영체계 구성안",
+      "hu": "A KHBCC javasolt hosszú távú irányítási szerkezete",
+      "en": "Proposed long-term KHBCC governance structure"
     },
     {
       "key": "gvBoard",
-      "ko": "이사회",
-      "hu": "Igazgatótanács",
-      "en": "Governing Board"
+      "ko": "이사회 구성안",
+      "hu": "Javasolt igazgatótanács",
+      "en": "Proposed governing board"
     },
     {
       "key": "gvBoardM",
-      "ko": "HUBA · KBIA · 연세대학교 · BME · 헝가리 경제에너지부",
-      "hu": "HUBA · KBIA · Yonsei Egyetem · BME · Gazdasági és Energiaügyi Minisztérium",
-      "en": "HUBA · KBIA · Yonsei University · BME · Hungarian Ministry of Economy and Energy"
+      "ko": "참여 협의 대상: HUBA · KBIA · 연세대학교 · BME · 헝가리 담당 부처",
+      "hu": "Egyeztetésre javasolt résztvevők: HUBA · KBIA · Yonsei Egyetem · BME · illetékes magyar minisztérium",
+      "en": "Participation to be agreed: HUBA · KBIA · Yonsei University · BME · relevant Hungarian ministry"
     },
     {
       "key": "gvDir",
@@ -759,9 +759,9 @@
     },
     {
       "key": "gvSrc",
-      "ko": "출처: 2025/26 EIPP 최종보고서, Figure 2-8",
-      "hu": "Forrás: 2025/26 EIPP zárójelentés, 2-8. ábra",
-      "en": "Source: 2025/26 EIPP final report, Figure 2-8"
+      "ko": "설계 근거: 2025/26 EIPP 최종보고서 Table 2-5. 기관 참여·조직별 운영은 별도 협의 사항입니다.",
+      "hu": "Tervezési alap: 2025/26 EIPP zárójelentés, 2-5. táblázat. Az intézményi részvétel és az egységek működtetése külön megállapodást igényel.",
+      "en": "Design basis: 2025/26 EIPP final report, Table 2-5. Institutional participation and unit operation require separate agreement."
     },
     {
       "key": "nbEyebrow",
@@ -795,9 +795,9 @@
     },
     {
       "key": "parBody",
-      "ko": "정부와 산업계, 대학이 양국에서 각각 참여합니다. 센터는 그 사이를 잇는 공동 플랫폼입니다.",
-      "hu": "Mindkét oldalról részt vesz a kormányzat, az ipar és az egyetemek. A központ az őket összekötő platform.",
-      "en": "Government, industry, and universities take part from each side. The center is the platform that connects them."
+      "ko": "EIPP 연구·자문과 협력 논의에 관련된 기관을 소개합니다. 아래 표시는 KHBCC 이사회 참여, 회원정보 제공 또는 종료 후 운영재원 확약을 의미하지 않습니다.",
+      "hu": "Az intézmények az EIPP kutatási, tanácsadási és együttműködési egyeztetéseihez kapcsolódnak. Feltüntetésük nem igazol KHBCC-igazgatótanácsi tagságot, tagi adatszolgáltatást vagy projekt utáni finanszírozási kötelezettséget.",
+      "en": "These institutions are connected with EIPP research, advice and cooperation discussions. Their inclusion does not confirm KHBCC board membership, provision of member data or post-project funding."
     },
     {
       "key": "sideKR",
@@ -915,9 +915,9 @@
     },
     {
       "key": "c1b",
-      "ko": "기업 등록 신청 →",
-      "hu": "Cégregisztráció &rarr;",
-      "en": "Register your firm &rarr;"
+      "ko": "기업 문의 메일 작성 →",
+      "hu": "Vállalati érdeklődő levél →",
+      "en": "Prepare a business enquiry →"
     },
     {
       "key": "c2",
@@ -954,6 +954,12 @@
       "ko": "HUBA 본부, 부다페스트",
       "hu": "HUBA központ, Budapest",
       "en": "HUBA headquarters, Budapest"
+    },
+    {
+      "key": "sub3b",
+      "ko": "기업 문의",
+      "en": "Business enquiry",
+      "hu": "Vállalati érdeklődés"
     }
   ]
 }

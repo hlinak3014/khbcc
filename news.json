@@ -25,15 +25,15 @@
       "link": "",
       "ko": {
         "title": "연세대 연구부총장 BME 방문",
-        "body": "연세대학교 연구부총장이 BME를 방문해 양 대학의 후속 협력 방안을 논의했습니다. 복수학위 협정 체결 다음 날 이뤄진 방문으로, 대학 본부 차원의 지원 의사를 확인하는 자리였습니다."
+        "body": "연세대학교 연구부총장이 BME를 방문해 양 대학의 후속 협력 방안을 논의했습니다. 2025년 12월의 석사 복수학위 협정과 연계한 대학 본부 차원의 협력 논의였습니다."
       },
       "en": {
         "title": "Yonsei Vice President for Research visits BME",
-        "body": "The Vice President for Research at Yonsei University visited BME to discuss further cooperation between the two universities. Coming a day after the dual degree agreement was signed, the visit confirmed institutional backing at university leadership level."
+        "body": "Yonsei University’s Vice President for Research visited BME to discuss further cooperation, alongside the universities’ dual master’s agreement in December 2025."
       },
       "hu": {
         "title": "A Yonsei kutatási rektorhelyettesének látogatása a BME-n",
-        "body": "A Yonsei Egyetem kutatási rektorhelyettese a BME-re látogatott, hogy megvitassa a két egyetem további együttműködését. A kettős diplomás megállapodás aláírását követő napon tett látogatás megerősítette az egyetemi vezetés intézményi támogatását."
+        "body": "A Yonsei Egyetem kutatási rektorhelyettese a BME-re látogatott, hogy a 2025. decemberi kettős mesterképzési megállapodáshoz kapcsolódó további együttműködésről tárgyaljon."
       }
     },
     {
@@ -55,22 +55,23 @@
       }
     },
     {
-      "date": "2025-12-10",
+      "date": "2025-12",
       "place": "부다페스트 · BME",
       "image": "assets/news/2025-12-10-dual-degree.jpg",
       "link": "",
       "ko": {
-        "title": "연세대–BME 복수학위 협정 체결",
-        "body": "연세대학교와 부다페스트 공과대학이 복수학위 협정에 서명했습니다. 학사·석사·박사 과정에서 공동 지도와 학점 교류가 가능해지며, KHBCC 교육 협력 연구소의 기반이 됩니다."
+        "title": "연세대–BME 석사 복수학위 협정 체결",
+        "body": "2025년 12월 양 대학은 석사 복수학위 협정에 서명했습니다. 배터리 분야의 후속 교육협력 기반이며, BME 자체 학사과정 추진와 실제 학생 참여·학점교류 실적은 구분해 확인해야 합니다."
       },
       "en": {
-        "title": "Yonsei–BME dual degree agreement signed",
-        "body": "Yonsei University and the Budapest University of Technology and Economics signed a dual degree agreement. It allows co-supervision and credit transfer at bachelor's, master's, and doctoral level, and forms the basis of the KHBCC Education Cooperation Unit."
+        "title": "Yonsei–BME dual master’s agreement signed",
+        "body": "In December 2025 the universities signed a dual master’s agreement, providing a basis for further battery-related education cooperation. Plans for BME’s own bachelor’s programme and actual student participation or credit transfer are separate matters requiring confirmation."
       },
       "hu": {
-        "title": "Aláírták a Yonsei–BME kettős diplomás megállapodást",
-        "body": "A Yonsei Egyetem és a Budapesti Műszaki és Gazdaságtudományi Egyetem kettős diplomás megállapodást írt alá. A megállapodás lehetővé teszi a közös témavezetést és a kreditátvitelt alap-, mester- és doktori szinten, és a KHBCC oktatási együttműködési egységének alapját képezi."
-      }
+        "title": "Aláírták a Yonsei–BME kettős mesterképzési megállapodást",
+        "body": "Az egyetemek 2025 decemberében kettős mesterképzési megállapodást írtak alá az akkumulátoripari oktatási együttműködés alapjaként. A BME saját alapképzésének terveit, valamint a tényleges hallgatói részvételt és kreditátvitelt külön kell megerősíteni."
+      },
+      "date_precision": "month"
     },
     {
       "date": "2025-11-06",

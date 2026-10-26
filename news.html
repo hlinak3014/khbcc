@@ -166,7 +166,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
         <button class="nv-t" aria-expanded="false" data-i18n="nav3">기업 지원</button>
         <div class="nv-m">
           <a href="apply.html#process" data-i18n="sub3a">매칭 절차</a>
-          <a href="apply.html" data-i18n="sub3b">기업 등록</a>
+          <a href="apply.html" data-i18n="sub3b">기업 문의</a>
         </div>
       </div>
       <a class="nv-s on" href="news.html" data-i18n="nav6">활동 기록</a>
@@ -216,7 +216,7 @@ footer{background:#080C22;color:#6C769F;padding:22px var(--pad);font-family:var(
 <footer>
   <span data-i18n="f1">KHBCC — 한국–헝가리 배터리 협력센터</span>
   <span data-i18n="f2">2025/26 EIPP · 재정경제부 · KDI 지원</span>
-  <span class="ver">v2026.10.20-a</span>
+  <span class="ver">v2026.10.25-c</span>
 </footer>
 
 <script src="i18n.js"></script>
@@ -247,6 +247,7 @@ function pick(item){
 function fmtDate(iso){
   var p=iso.split('-'), y=+p[0], m=+p[1], d=+p[2];
   var mo=MONTHS[LANG][m-1];
+  if(p.length===2){return LANG==='ko'?mo:LANG==='hu'?mo:mo;}
   if(LANG==='ko') return mo+' '+d+'일';
   if(LANG==='hu') return mo+' '+d+'.';
   return mo+' '+d;

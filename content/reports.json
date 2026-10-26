@@ -30,6 +30,12 @@
       "ko": "EIPP 발간물 목록 열기 →",
       "hu": "Az EIPP kiadványlista megnyitása &rarr;",
       "en": "Open the EIPP publication list &rarr;"
+    },
+    {
+      "key": "sub3b",
+      "ko": "기업 문의",
+      "en": "Business enquiry",
+      "hu": "Vállalati érdeklődés"
     }
   ]
 }

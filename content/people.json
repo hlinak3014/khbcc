@@ -81,9 +81,9 @@
     },
     {
       "key": "p1huB",
-      "ko": "헝가리 배터리 산업계를 대표해 센터의 전략 방향과 정부 협의를 이끕니다. HUBA는 KHBCC 이사회 구성 기관이자 시범 기간 행정 운영을 지원합니다.",
-      "hu": "A magyar akkumulátoripart képviseli a központ stratégiai irányának kijelölésében, és vezeti a kormányzati egyeztetéseket. A HUBA a KHBCC igazgatótanácsának tagja, és a pilot időszakban támogatja az adminisztratív működést.",
-      "en": "Represents the Hungarian battery industry in setting the center's strategic direction and leads consultation with government. HUBA sits on the KHBCC board and supports administrative operations during the pilot period."
+      "ko": "헝가리배터리협회(HUBA·Magyar Akkumulátor Szövetség)를 대표해 전략·정부 협의에 참여합니다. HUBA는 현지 법인·시험기반 구축을 추진했으며, 공동 운영체계와 이사회 참여의 구체 조건은 별도 협의 사항입니다.",
+      "hu": "A Magyar Akkumulátor Szövetséget (HUBA) képviseli a stratégiai és kormányzati egyeztetéseken. A HUBA kialakította a helyi vállalati és vizsgálati hátteret; a közös irányítás és az igazgatótanácsi részvétel feltételei külön megállapodást igényelnek.",
+      "en": "Represents the Hungarian Battery Association (HUBA, Magyar Akkumulátor Szövetség) in strategy and government discussions. HUBA has developed the local corporate and testing basis; terms for joint governance and board participation require separate agreement."
     },
     {
       "key": "p2d",
@@ -180,6 +180,12 @@
       "ko": "각 세부주제의 연구 내용은 <a href=\"research.html\">연구 내용</a> 페이지에서 자세히 볼 수 있습니다.",
       "hu": "Az egyes altémák részletei a <a href=\"research.html\">kutatási</a> oldalon olvashatók.",
       "en": "The detail of each sub-topic is set out on the <a href=\"research.html\">research</a> page."
+    },
+    {
+      "key": "sub3b",
+      "ko": "기업 문의",
+      "en": "Business enquiry",
+      "hu": "Vállalati érdeklődés"
     }
   ]
 }
